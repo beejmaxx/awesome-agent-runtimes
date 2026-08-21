@@ -178,7 +178,7 @@ def render_catalog(catalog: dict[str, Any], metrics: dict[str, Any]) -> str:
             if item.get("archived"):
                 project_name += " **Archived**"
             stars = item.get("stars")
-            star_text = f"[⭐ {stars:,}](https://github.com/{repo}/stargazers)" if isinstance(stars, int) else "—"
+            star_text = f"⭐ {stars:,}" if isinstance(stars, int) else "—"
             license_name = item.get("license")
             if license_name == "NOASSERTION":
                 license_name = None
