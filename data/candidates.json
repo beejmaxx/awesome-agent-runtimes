@@ -1,0 +1,1426 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-08-21T16:23:00+00:00",
+  "notice": "Discovery candidates are not endorsed catalog entries; every item requires a manual scope review.",
+  "criteria": {
+    "minimum_stars": 5000,
+    "minimum_source_mentions": 2,
+    "minimum_repository_age_days": 180,
+    "maximum_days_since_push": 365,
+    "archived_repositories": "excluded",
+    "forks": "excluded"
+  },
+  "source_count": 8,
+  "candidate_count": 81,
+  "candidates": [
+    {
+      "repo": "OpenBMB/ChatDev",
+      "stars": 34084,
+      "forks": 4255,
+      "language": "Python",
+      "license": "Apache-2.0",
+      "created_at": "2023-08-28T02:18:13Z",
+      "pushed_at": "2026-07-24T08:01:27Z",
+      "age_days": 1089,
+      "days_since_push": 28,
+      "source_mentions": 4,
+      "sources": [
+        "aglio-lab/ai-agent-frameworks",
+        "alexbevi/awesome-agent-frameworks",
+        "e2b-dev/awesome-ai-agents",
+        "giakoumidis/best-of-agent-harnesses"
+      ],
+      "description": "ChatDev 2.0: Dev All through LLM-powered Multi-Agent Collaboration"
+    },
+    {
+      "repo": "Pythagora-io/gpt-pilot",
+      "stars": 33686,
+      "forks": 3476,
+      "language": "Python",
+      "license": "NOASSERTION",
+      "created_at": "2023-08-16T11:56:07Z",
+      "pushed_at": "2026-06-18T18:38:25Z",
+      "age_days": 1101,
+      "days_since_push": 63,
+      "source_mentions": 4,
+      "sources": [
+        "alexbevi/awesome-agent-frameworks",
+        "e2b-dev/awesome-ai-agents",
+        "kyrolabs/awesome-agents",
+        "mahonzhan/awesome-agent-harness"
+      ],
+      "description": "The first real AI developer"
+    },
+    {
+      "repo": "assafelovic/gpt-researcher",
+      "stars": 29067,
+      "forks": 3941,
+      "language": "Python",
+      "license": "Apache-2.0",
+      "created_at": "2023-05-12T10:33:54Z",
+      "pushed_at": "2026-07-18T07:56:55Z",
+      "age_days": 1197,
+      "days_since_push": 34,
+      "source_mentions": 4,
+      "sources": [
+        "alexbevi/awesome-agent-frameworks",
+        "e2b-dev/awesome-ai-agents",
+        "giakoumidis/best-of-agent-harnesses",
+        "kyrolabs/awesome-agents"
+      ],
+      "description": "An autonomous agent that conducts deep research on any data using any LLM providers"
+    },
+    {
+      "repo": "n8n-io/n8n",
+      "stars": 201501,
+      "forks": 60261,
+      "language": "TypeScript",
+      "license": "NOASSERTION",
+      "created_at": "2019-06-22T09:24:21Z",
+      "pushed_at": "2026-08-21T16:09:21Z",
+      "age_days": 2617,
+      "days_since_push": 0,
+      "source_mentions": 3,
+      "sources": [
+        "aglio-lab/ai-agent-frameworks",
+        "alexbevi/awesome-agent-frameworks",
+        "giakoumidis/best-of-agent-harnesses"
+      ],
+      "description": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations."
+    },
+    {
+      "repo": "mem0ai/mem0",
+      "stars": 63757,
+      "forks": 7453,
+      "language": "Python",
+      "license": "Apache-2.0",
+      "created_at": "2023-06-20T08:58:36Z",
+      "pushed_at": "2026-08-21T14:14:41Z",
+      "age_days": 1158,
+      "days_since_push": 0,
+      "source_mentions": 3,
+      "sources": [
+        "aglio-lab/ai-agent-frameworks",
+        "alexbevi/awesome-agent-frameworks",
+        "giakoumidis/best-of-agent-harnesses"
+      ],
+      "description": "Universal memory layer for AI Agents"
+    },
+    {
+      "repo": "BerriAI/litellm",
+      "stars": 56933,
+      "forks": 10785,
+      "language": "Python",
+      "license": "NOASSERTION",
+      "created_at": "2023-07-27T00:09:52Z",
+      "pushed_at": "2026-08-21T15:58:22Z",
+      "age_days": 1121,
+      "days_since_push": 0,
+      "source_mentions": 3,
+      "sources": [
+        "aglio-lab/ai-agent-frameworks",
+        "alexbevi/awesome-agent-frameworks",
+        "giakoumidis/best-of-agent-harnesses"
+      ],
+      "description": "The fastest, litest AI Gateway. Rust core with Python SDK. Call 100+ LLM APIs in OpenAI (or native) format with cost tracking, guardrails, load balancing, and logging [Bedrock, Azure, OpenAI, Anthropic, OpenAI, VertexAI, vLLM, Nvidia NIM]"
+    },
+    {
+      "repo": "stanfordnlp/dspy",
+      "stars": 37474,
+      "forks": 3241,
+      "language": "Python",
+      "license": "MIT",
+      "created_at": "2023-01-09T21:01:51Z",
+      "pushed_at": "2026-08-21T16:22:23Z",
+      "age_days": 1319,
+      "days_since_push": 0,
+      "source_mentions": 3,
+      "sources": [
+        "aglio-lab/ai-agent-frameworks",
+        "alexbevi/awesome-agent-frameworks",
+        "kyrolabs/awesome-agents"
+      ],
+      "description": "DSPy: The framework for programming—not prompting—language models"
+    },
+    {
+      "repo": "khoj-ai/khoj",
+      "stars": 36624,
+      "forks": 2397,
+      "language": "Python",
+      "license": "AGPL-3.0",
+      "created_at": "2021-08-16T01:48:44Z",
+      "pushed_at": "2026-08-02T01:55:40Z",
+      "age_days": 1831,
+      "days_since_push": 19,
+      "source_mentions": 3,
+      "sources": [
+        "aglio-lab/ai-agent-frameworks",
+        "alexbevi/awesome-agent-frameworks",
+        "giakoumidis/best-of-agent-harnesses"
+      ],
+      "description": "Your AI second brain. Self-hostable. Get answers from the web or your docs. Build custom agents, schedule automations, do deep research. Turn any online or local LLM into your personal, autonomous AI (gpt, claude, gemini, llama, qwen, mistral). Get started - free."
+    },
+    {
+      "repo": "ComposioHQ/composio",
+      "stars": 29805,
+      "forks": 4725,
+      "language": "TypeScript",
+      "license": "MIT",
+      "created_at": "2024-02-23T13:58:27Z",
+      "pushed_at": "2026-08-21T15:11:37Z",
+      "age_days": 910,
+      "days_since_push": 0,
+      "source_mentions": 3,
+      "sources": [
+        "aglio-lab/ai-agent-frameworks",
+        "alexbevi/awesome-agent-frameworks",
+        "giakoumidis/best-of-agent-harnesses"
+      ],
+      "description": "Composio powers 1000+ toolkits, tool search, context management, authentication, and a sandboxed workbench to help you build AI agents that turn intent into action."
+    },
+    {
+      "repo": "vercel/ai",
+      "stars": 26334,
+      "forks": 5000,
+      "language": "TypeScript",
+      "license": "NOASSERTION",
+      "created_at": "2023-05-23T15:04:08Z",
+      "pushed_at": "2026-08-21T16:19:00Z",
+      "age_days": 1186,
+      "days_since_push": 0,
+      "source_mentions": 3,
+      "sources": [
+        "aglio-lab/ai-agent-frameworks",
+        "alexbevi/awesome-agent-frameworks",
+        "giakoumidis/best-of-agent-harnesses"
+      ],
+      "description": "The AI Toolkit for TypeScript. From the creators of Next.js, the AI SDK is a free open-source library for building AI-powered applications and agents "
+    },
+    {
+      "repo": "deepset-ai/haystack",
+      "stars": 26268,
+      "forks": 3026,
+      "language": "Python",
+      "license": "Apache-2.0",
+      "created_at": "2019-11-14T09:05:28Z",
+      "pushed_at": "2026-08-21T15:30:45Z",
+      "age_days": 2472,
+      "days_since_push": 0,
+      "source_mentions": 3,
+      "sources": [
+        "aglio-lab/ai-agent-frameworks",
+        "alexbevi/awesome-agent-frameworks",
+        "kyrolabs/awesome-agents"
+      ],
+      "description": "Open-source AI orchestration framework for building context-engineered, production-ready LLM applications. Design modular pipelines and agent workflows with explicit control over retrieval, routing, memory, and generation. Built for scalable agents, RAG, multimodal applications, semantic search, and conversational systems."
+    },
+    {
+      "repo": "yoheinakajima/babyagi",
+      "stars": 22355,
+      "forks": 2858,
+      "language": "Python",
+      "license": null,
+      "created_at": "2023-04-03T00:40:27Z",
+      "pushed_at": "2026-01-31T05:05:45Z",
+      "age_days": 1236,
+      "days_since_push": 202,
+      "source_mentions": 3,
+      "sources": [
+        "alexbevi/awesome-agent-frameworks",
+        "e2b-dev/awesome-ai-agents",
+        "mahonzhan/awesome-agent-harness"
+      ],
+      "description": null
+    },
+    {
+      "repo": "PromtEngineer/localGPT",
+      "stars": 22204,
+      "forks": 2462,
+      "language": "Python",
+      "license": "MIT",
+      "created_at": "2023-05-24T05:32:40Z",
+      "pushed_at": "2026-08-21T01:31:02Z",
+      "age_days": 1185,
+      "days_since_push": 0,
+      "source_mentions": 3,
+      "sources": [
+        "alexbevi/awesome-agent-frameworks",
+        "e2b-dev/awesome-ai-agents",
+        "kyrolabs/awesome-agents"
+      ],
+      "description": "Chat with your documents on your local device using GPT models. No data leaves your device and 100% private. "
+    },
+    {
+      "repo": "openai/swarm",
+      "stars": 21912,
+      "forks": 2329,
+      "language": "Python",
+      "license": "MIT",
+      "created_at": "2024-02-22T20:53:54Z",
+      "pushed_at": "2026-04-15T17:10:28Z",
+      "age_days": 910,
+      "days_since_push": 127,
+      "source_mentions": 3,
+      "sources": [
+        "aglio-lab/ai-agent-frameworks",
+        "alexbevi/awesome-agent-frameworks",
+        "kyrolabs/awesome-agents"
+      ],
+      "description": "Educational framework exploring ergonomic, lightweight multi-agent orchestration. Managed by OpenAI Solution team."
+    },
+    {
+      "repo": "RasaHQ/rasa",
+      "stars": 21300,
+      "forks": 4918,
+      "language": "Python",
+      "license": "Apache-2.0",
+      "created_at": "2016-10-14T12:27:49Z",
+      "pushed_at": "2026-07-24T07:39:04Z",
+      "age_days": 3598,
+      "days_since_push": 28,
+      "source_mentions": 3,
+      "sources": [
+        "aglio-lab/ai-agent-frameworks",
+        "alexbevi/awesome-agent-frameworks",
+        "giakoumidis/best-of-agent-harnesses"
+      ],
+      "description": "💬   Open source machine learning framework to automate text- and voice-based conversations: NLU, dialogue management, connect to Slack, Facebook, and more - Create chatbots and voice assistants"
+    },
+    {
+      "repo": "vectorize-io/hindsight",
+      "stars": 20823,
+      "forks": 1603,
+      "language": "Python",
+      "license": "MIT",
+      "created_at": "2025-10-30T11:49:48Z",
+      "pushed_at": "2026-08-21T15:51:08Z",
+      "age_days": 295,
+      "days_since_push": 0,
+      "source_mentions": 3,
+      "sources": [
+        "aglio-lab/ai-agent-frameworks",
+        "AutoJunjie/awesome-agent-harness",
+        "kyrolabs/awesome-agents"
+      ],
+      "description": "Hindsight: Agent Memory That  Learns"
+    },
+    {
+      "repo": "stitionai/devika",
+      "stars": 19559,
+      "forks": 2581,
+      "language": "Python",
+      "license": "MIT",
+      "created_at": "2024-03-21T03:03:21Z",
+      "pushed_at": "2025-09-25T08:47:36Z",
+      "age_days": 883,
+      "days_since_push": 330,
+      "source_mentions": 3,
+      "sources": [
+        "alexbevi/awesome-agent-frameworks",
+        "e2b-dev/awesome-ai-agents",
+        "kyrolabs/awesome-agents"
+      ],
+      "description": "Devika is the first open-source implementation of an Agentic Software Engineer. Initially started as an open-source alternative to Devin."
+    },
+    {
+      "repo": "plandex-ai/plandex",
+      "stars": 15591,
+      "forks": 1172,
+      "language": "Go",
+      "license": "MIT",
+      "created_at": "2023-10-24T22:11:43Z",
+      "pushed_at": "2025-10-03T21:49:58Z",
+      "age_days": 1031,
+      "days_since_push": 321,
+      "source_mentions": 3,
+      "sources": [
+        "alexbevi/awesome-agent-frameworks",
+        "kyrolabs/awesome-agents",
+        "mahonzhan/awesome-agent-harness"
+      ],
+      "description": "Open source AI coding agent. Designed for large projects and real world tasks."
+    },
+    {
+      "repo": "botpress/botpress",
+      "stars": 14873,
+      "forks": 2294,
+      "language": "TypeScript",
+      "license": "MIT",
+      "created_at": "2016-11-16T21:57:59Z",
+      "pushed_at": "2026-08-20T21:09:03Z",
+      "age_days": 3564,
+      "days_since_push": 0,
+      "source_mentions": 3,
+      "sources": [
+        "alexbevi/awesome-agent-frameworks",
+        "giakoumidis/best-of-agent-harnesses",
+        "kyrolabs/awesome-agents"
+      ],
+      "description": "The open-source hub to build & deploy GPT/LLM Agents ⚡️"
+    },
+    {
+      "repo": "pipecat-ai/pipecat",
+      "stars": 14391,
+      "forks": 2499,
+      "language": "Python",
+      "license": "BSD-2-Clause",
+      "created_at": "2023-12-27T12:59:00Z",
+      "pushed_at": "2026-08-21T16:23:23Z",
+      "age_days": 968,
+      "days_since_push": -1,
+      "source_mentions": 3,
+      "sources": [
+        "aglio-lab/ai-agent-frameworks",
+        "alexbevi/awesome-agent-frameworks",
+        "kyrolabs/awesome-agents"
+      ],
+      "description": "Open Source framework for voice agents, multimodal apps, and realtime AI. Maintained by Daily and the community."
+    },
+    {
+      "repo": "Arize-ai/phoenix",
+      "stars": 11135,
+      "forks": 1071,
+      "language": "Python",
+      "license": "NOASSERTION",
+      "created_at": "2022-11-09T23:44:35Z",
+      "pushed_at": "2026-08-21T16:17:00Z",
+      "age_days": 1380,
+      "days_since_push": 0,
+      "source_mentions": 3,
+      "sources": [
+        "aglio-lab/ai-agent-frameworks",
+        "alexbevi/awesome-agent-frameworks",
+        "kyrolabs/awesome-agents"
+      ],
+      "description": "AI Observability & Evaluation"
+    },
+    {
+      "repo": "aden-hive/hive",
+      "stars": 10938,
+      "forks": 5670,
+      "language": "Python",
+      "license": "Apache-2.0",
+      "created_at": "2026-01-12T00:04:22Z",
+      "pushed_at": "2026-08-21T05:30:06Z",
+      "age_days": 221,
+      "days_since_push": 0,
+      "source_mentions": 3,
+      "sources": [
+        "alexbevi/awesome-agent-frameworks",
+        "AutoJunjie/awesome-agent-harness",
+        "kyrolabs/awesome-agents"
+      ],
+      "description": "Multi-Agent Harness for Production AI"
+    },
+    {
+      "repo": "VoltAgent/voltagent",
+      "stars": 10391,
+      "forks": 1097,
+      "language": "TypeScript",
+      "license": "MIT",
+      "created_at": "2025-04-16T15:41:18Z",
+      "pushed_at": "2026-08-10T14:24:53Z",
+      "age_days": 492,
+      "days_since_push": 11,
+      "source_mentions": 3,
+      "sources": [
+        "aglio-lab/ai-agent-frameworks",
+        "alexbevi/awesome-agent-frameworks",
+        "kyrolabs/awesome-agents"
+      ],
+      "description": "AI Agent Engineering Platform built on an Open Source TypeScript AI Agent Framework"
+    },
+    {
+      "repo": "MervinPraison/PraisonAI",
+      "stars": 8933,
+      "forks": 1406,
+      "language": "Python",
+      "license": "MIT",
+      "created_at": "2024-03-19T16:45:25Z",
+      "pushed_at": "2026-08-21T10:39:00Z",
+      "age_days": 884,
+      "days_since_push": 0,
+      "source_mentions": 3,
+      "sources": [
+        "alexbevi/awesome-agent-frameworks",
+        "giakoumidis/best-of-agent-harnesses",
+        "kyrolabs/awesome-agents"
+      ],
+      "description": "PraisonAI 🦞 — Hire a 24/7 AI Workforce. Stop writing boilerplate and start shipping autonomous self-improving agents that research, plan, code, and execute tasks. Deployed in 5 lines of code with built-in memory, RAG, and support for 100+ LLMs."
+    },
+    {
+      "repo": "0xPlaygrounds/rig",
+      "stars": 8347,
+      "forks": 939,
+      "language": "Rust",
+      "license": "MIT",
+      "created_at": "2024-06-05T13:42:28Z",
+      "pushed_at": "2026-08-20T18:39:02Z",
+      "age_days": 807,
+      "days_since_push": 0,
+      "source_mentions": 3,
+      "sources": [
+        "aglio-lab/ai-agent-frameworks",
+        "alexbevi/awesome-agent-frameworks",
+        "mahonzhan/awesome-agent-harness"
+      ],
+      "description": "⚙️🦀 Build modular and scalable LLM Applications in Rust"
+    },
+    {
+      "repo": "SciPhi-AI/R2R",
+      "stars": 7973,
+      "forks": 646,
+      "language": "Python",
+      "license": "MIT",
+      "created_at": "2024-02-12T03:24:27Z",
+      "pushed_at": "2025-11-07T01:02:44Z",
+      "age_days": 921,
+      "days_since_push": 287,
+      "source_mentions": 3,
+      "sources": [
+        "aglio-lab/ai-agent-frameworks",
+        "alexbevi/awesome-agent-frameworks",
+        "giakoumidis/best-of-agent-harnesses"
+      ],
+      "description": "SoTA production-ready AI retrieval system. Agentic Retrieval-Augmented Generation (RAG) with a RESTful API."
+    },
+    {
+      "repo": "steel-dev/steel-browser",
+      "stars": 7521,
+      "forks": 965,
+      "language": "TypeScript",
+      "license": "Apache-2.0",
+      "created_at": "2024-11-01T18:15:29Z",
+      "pushed_at": "2026-08-19T21:49:36Z",
+      "age_days": 657,
+      "days_since_push": 1,
+      "source_mentions": 3,
+      "sources": [
+        "aglio-lab/ai-agent-frameworks",
+        "alexbevi/awesome-agent-frameworks",
+        "kyrolabs/awesome-agents"
+      ],
+      "description": "🔥 Open Source Browser API for AI Agents & Apps. Steel Browser is a batteries-included browser sandbox that lets you automate the web without worrying about infrastructure."
+    },
+    {
+      "repo": "kyegomez/swarms",
+      "stars": 7073,
+      "forks": 1003,
+      "language": "Python",
+      "license": "Apache-2.0",
+      "created_at": "2023-05-11T01:09:00Z",
+      "pushed_at": "2026-08-21T15:29:54Z",
+      "age_days": 1198,
+      "days_since_push": 0,
+      "source_mentions": 3,
+      "sources": [
+        "aglio-lab/ai-agent-frameworks",
+        "alexbevi/awesome-agent-frameworks",
+        "kyrolabs/awesome-agents"
+      ],
+      "description": "The Enterprise-Grade Multi-Agent Orchestration Framework. Website: https://swarms.ai"
+    },
+    {
+      "repo": "strands-agents/harness-sdk",
+      "stars": 6972,
+      "forks": 1053,
+      "language": "Python",
+      "license": "Apache-2.0",
+      "created_at": "2025-05-14T19:59:51Z",
+      "pushed_at": "2026-08-21T16:09:10Z",
+      "age_days": 463,
+      "days_since_push": 0,
+      "source_mentions": 3,
+      "sources": [
+        "alexbevi/awesome-agent-frameworks",
+        "giakoumidis/best-of-agent-harnesses",
+        "kyrolabs/awesome-agents"
+      ],
+      "description": "Build an agent harness and control it end-to-end. Open-source SDK for production AI agents in Python & TypeScript - any model, any cloud."
+    },
+    {
+      "repo": "thedotmack/claude-mem",
+      "stars": 91423,
+      "forks": 8004,
+      "language": "JavaScript",
+      "license": "Apache-2.0",
+      "created_at": "2025-08-31T20:50:03Z",
+      "pushed_at": "2026-08-20T16:23:20Z",
+      "age_days": 354,
+      "days_since_push": 0,
+      "source_mentions": 2,
+      "sources": [
+        "AutoJunjie/awesome-agent-harness",
+        "giakoumidis/best-of-agent-harnesses"
+      ],
+      "description": "Persistent Context Across Sessions for Every Agent –  Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More"
+    },
+    {
+      "repo": "infiniflow/ragflow",
+      "stars": 88979,
+      "forks": 10454,
+      "language": "Go",
+      "license": "Apache-2.0",
+      "created_at": "2023-12-12T06:13:13Z",
+      "pushed_at": "2026-08-21T13:47:45Z",
+      "age_days": 983,
+      "days_since_push": 0,
+      "source_mentions": 2,
+      "sources": [
+        "aglio-lab/ai-agent-frameworks",
+        "alexbevi/awesome-agent-frameworks"
+      ],
+      "description": "RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine that fuses cutting-edge RAG with Agent capabilities to create a superior context layer for LLMs"
+    },
+    {
+      "repo": "warpdotdev/warp",
+      "stars": 64422,
+      "forks": 5453,
+      "language": "Rust",
+      "license": "AGPL-3.0",
+      "created_at": "2021-07-08T18:48:08Z",
+      "pushed_at": "2026-08-21T16:22:47Z",
+      "age_days": 1869,
+      "days_since_push": 0,
+      "source_mentions": 2,
+      "sources": [
+        "AutoJunjie/awesome-agent-harness",
+        "mahonzhan/awesome-agent-harness"
+      ],
+      "description": "Warp is an agentic development environment, born out of the terminal."
+    },
+    {
+      "repo": "zylon-ai/private-gpt",
+      "stars": 57451,
+      "forks": 7607,
+      "language": "Python",
+      "license": "Apache-2.0",
+      "created_at": "2023-05-02T09:15:31Z",
+      "pushed_at": "2026-08-21T13:16:05Z",
+      "age_days": 1207,
+      "days_since_push": 0,
+      "source_mentions": 2,
+      "sources": [
+        "alexbevi/awesome-agent-frameworks",
+        "kyrolabs/awesome-agents"
+      ],
+      "description": "Complete API layer for private AI applications on local models: RAG, skills, tools, MCP, text-to-sql, and more. Works with any OpenAI-compatible inference server."
+    },
+    {
+      "repo": "AstrBotDevs/AstrBot",
+      "stars": 39455,
+      "forks": 2825,
+      "language": "Python",
+      "license": "AGPL-3.0",
+      "created_at": "2022-12-08T13:27:46Z",
+      "pushed_at": "2026-08-21T09:20:00Z",
+      "age_days": 1352,
+      "days_since_push": 0,
+      "source_mentions": 2,
+      "sources": [
+        "alexbevi/awesome-agent-frameworks",
+        "mahonzhan/awesome-agent-harness"
+      ],
+      "description": "AI Agent Assistant & development framework that integrates lots of IM platforms, LLMs, plugins and AI feature, and can be your openclaw alternative. ✨"
+    },
+    {
+      "repo": "langfuse/langfuse",
+      "stars": 33520,
+      "forks": 3614,
+      "language": "TypeScript",
+      "license": "NOASSERTION",
+      "created_at": "2023-05-18T17:47:09Z",
+      "pushed_at": "2026-08-21T16:21:08Z",
+      "age_days": 1190,
+      "days_since_push": 0,
+      "source_mentions": 2,
+      "sources": [
+        "aglio-lab/ai-agent-frameworks",
+        "alexbevi/awesome-agent-frameworks"
+      ],
+      "description": "🪢 Open source AI engineering platform: LLM evals, observability, metrics, prompt management, playground, datasets. Integrates with OpenTelemetry, LangChain, OpenAI SDK, LiteLLM, and more. 🍊YC W23 "
+    },
+    {
+      "repo": "github/github-mcp-server",
+      "stars": 32407,
+      "forks": 4829,
+      "language": "Go",
+      "license": "MIT",
+      "created_at": "2025-03-04T16:42:04Z",
+      "pushed_at": "2026-08-21T00:17:58Z",
+      "age_days": 534,
+      "days_since_push": 0,
+      "source_mentions": 2,
+      "sources": [
+        "alexbevi/awesome-agent-frameworks",
+        "giakoumidis/best-of-agent-harnesses"
+      ],
+      "description": "GitHub's official MCP Server"
+    },
+    {
+      "repo": "onyx-dot-app/onyx",
+      "stars": 31699,
+      "forks": 4370,
+      "language": "Python",
+      "license": "NOASSERTION",
+      "created_at": "2023-04-27T06:04:01Z",
+      "pushed_at": "2026-08-21T16:21:12Z",
+      "age_days": 1212,
+      "days_since_push": 0,
+      "source_mentions": 2,
+      "sources": [
+        "aglio-lab/ai-agent-frameworks",
+        "alexbevi/awesome-agent-frameworks"
+      ],
+      "description": "Open Source AI Platform - AI Chat with advanced features that works with every LLM"
+    },
+    {
+      "repo": "volcengine/OpenViking",
+      "stars": 31511,
+      "forks": 2420,
+      "language": "Python",
+      "license": "AGPL-3.0",
+      "created_at": "2026-01-05T07:11:17Z",
+      "pushed_at": "2026-08-21T13:10:47Z",
+      "age_days": 228,
+      "days_since_push": 0,
+      "source_mentions": 2,
+      "sources": [
+        "alexbevi/awesome-agent-frameworks",
+        "kyrolabs/awesome-agents"
+      ],
+      "description": "Self-evolving Context Database for AI Agents. Unify Agent Memory, Knowledge RAG and Skills."
+    },
+    {
+      "repo": "stanford-oval/storm",
+      "stars": 31093,
+      "forks": 2914,
+      "language": "Python",
+      "license": "MIT",
+      "created_at": "2024-03-24T16:23:39Z",
+      "pushed_at": "2025-09-30T18:07:21Z",
+      "age_days": 879,
+      "days_since_push": 324,
+      "source_mentions": 2,
+      "sources": [
+        "alexbevi/awesome-agent-frameworks",
+        "kyrolabs/awesome-agents"
+      ],
+      "description": "An LLM-powered knowledge curation system that researches a topic and generates a full-length report with citations."
+    },
+    {
+      "repo": "topoteretes/cognee",
+      "stars": 30170,
+      "forks": 2945,
+      "language": "Python",
+      "license": "Apache-2.0",
+      "created_at": "2023-08-16T16:16:33Z",
+      "pushed_at": "2026-08-21T15:58:27Z",
+      "age_days": 1101,
+      "days_since_push": 0,
+      "source_mentions": 2,
+      "sources": [
+        "aglio-lab/ai-agent-frameworks",
+        "alexbevi/awesome-agent-frameworks"
+      ],
+      "description": "Cognee is the open-source AI memory platform for agents. Give your AI agents persistent long-term memory across sessions with a self-hosted knowledge graph engine."
+    },
+    {
+      "repo": "getzep/graphiti",
+      "stars": 30166,
+      "forks": 3055,
+      "language": "Python",
+      "license": "Apache-2.0",
+      "created_at": "2024-08-08T22:08:30Z",
+      "pushed_at": "2026-08-21T01:52:20Z",
+      "age_days": 742,
+      "days_since_push": 0,
+      "source_mentions": 2,
+      "sources": [
+        "aglio-lab/ai-agent-frameworks",
+        "alexbevi/awesome-agent-frameworks"
+      ],
+      "description": "Build Real-Time Knowledge Graphs for AI Agents"
+    },
+    {
+      "repo": "supermemoryai/supermemory",
+      "stars": 28985,
+      "forks": 2525,
+      "language": "TypeScript",
+      "license": "MIT",
+      "created_at": "2024-02-27T20:10:04Z",
+      "pushed_at": "2026-08-21T15:55:07Z",
+      "age_days": 905,
+      "days_since_push": 0,
+      "source_mentions": 2,
+      "sources": [
+        "aglio-lab/ai-agent-frameworks",
+        "alexbevi/awesome-agent-frameworks"
+      ],
+      "description": "Memory and context engine + app that is extremely fast, scalable, and can be run fully locally. The Memory API for the AI era."
+    },
+    {
+      "repo": "BloopAI/vibe-kanban",
+      "stars": 27876,
+      "forks": 2979,
+      "language": "Rust",
+      "license": "Apache-2.0",
+      "created_at": "2025-06-14T19:10:21Z",
+      "pushed_at": "2026-04-24T09:17:34Z",
+      "age_days": 432,
+      "days_since_push": 119,
+      "source_mentions": 2,
+      "sources": [
+        "alexbevi/awesome-agent-frameworks",
+        "AutoJunjie/awesome-agent-harness"
+      ],
+      "description": "Get 10X more out of Claude Code, Codex or any coding agent"
+    },
+    {
+      "repo": "kestra-io/kestra",
+      "stars": 27876,
+      "forks": 2931,
+      "language": "Java",
+      "license": "Apache-2.0",
+      "created_at": "2019-08-24T13:56:15Z",
+      "pushed_at": "2026-08-21T16:17:09Z",
+      "age_days": 2554,
+      "days_since_push": 0,
+      "source_mentions": 2,
+      "sources": [
+        "aglio-lab/ai-agent-frameworks",
+        "alexbevi/awesome-agent-frameworks"
+      ],
+      "description": "Event Driven Orchestration & Scheduling Platform for Mission Critical Applications"
+    },
+    {
+      "repo": "a2aproject/A2A",
+      "stars": 25442,
+      "forks": 2575,
+      "language": "Shell",
+      "license": "Apache-2.0",
+      "created_at": "2025-03-25T18:44:21Z",
+      "pushed_at": "2026-08-18T17:09:57Z",
+      "age_days": 513,
+      "days_since_push": 2,
+      "source_mentions": 2,
+      "sources": [
+        "aglio-lab/ai-agent-frameworks",
+        "alexbevi/awesome-agent-frameworks"
+      ],
+      "description": "Agent2Agent (A2A) is an open protocol enabling communication and interoperability between opaque agentic applications."
+    },
+    {
+      "repo": "modelcontextprotocol/python-sdk",
+      "stars": 24079,
+      "forks": 3821,
+      "language": "Python",
+      "license": "MIT",
+      "created_at": "2024-09-24T21:01:35Z",
+      "pushed_at": "2026-08-21T16:03:01Z",
+      "age_days": 695,
+      "days_since_push": 0,
+      "source_mentions": 2,
+      "sources": [
+        "aglio-lab/ai-agent-frameworks",
+        "giakoumidis/best-of-agent-harnesses"
+      ],
+      "description": "The official Python SDK for Model Context Protocol servers and clients"
+    },
+    {
+      "repo": "PrefectHQ/prefect",
+      "stars": 23648,
+      "forks": 2473,
+      "language": "Python",
+      "license": "Apache-2.0",
+      "created_at": "2018-06-29T21:59:26Z",
+      "pushed_at": "2026-08-21T16:23:17Z",
+      "age_days": 2974,
+      "days_since_push": -1,
+      "source_mentions": 2,
+      "sources": [
+        "aglio-lab/ai-agent-frameworks",
+        "alexbevi/awesome-agent-frameworks"
+      ],
+      "description": "Prefect is a workflow orchestration framework for building resilient data pipelines in Python."
+    },
+    {
+      "repo": "coleam00/Archon",
+      "stars": 23243,
+      "forks": 3464,
+      "language": "TypeScript",
+      "license": "MIT",
+      "created_at": "2025-02-07T21:04:12Z",
+      "pushed_at": "2026-08-21T15:31:03Z",
+      "age_days": 559,
+      "days_since_push": 0,
+      "source_mentions": 2,
+      "sources": [
+        "alexbevi/awesome-agent-frameworks",
+        "AutoJunjie/awesome-agent-harness"
+      ],
+      "description": "The first open-source harness builder for AI coding. Make AI coding deterministic and repeatable."
+    },
+    {
+      "repo": "comet-ml/opik",
+      "stars": 21520,
+      "forks": 1716,
+      "language": "Python",
+      "license": "Apache-2.0",
+      "created_at": "2023-05-10T12:57:13Z",
+      "pushed_at": "2026-08-21T16:22:23Z",
+      "age_days": 1199,
+      "days_since_push": 0,
+      "source_mentions": 2,
+      "sources": [
+        "aglio-lab/ai-agent-frameworks",
+        "alexbevi/awesome-agent-frameworks"
+      ],
+      "description": "Debug, evaluate, and monitor your LLM applications, RAG systems, and agentic workflows with comprehensive tracing, automated evaluations, and production-ready dashboards."
+    },
+    {
+      "repo": "screenpipe/screenpipe",
+      "stars": 21153,
+      "forks": 2123,
+      "language": "Rust",
+      "license": "NOASSERTION",
+      "created_at": "2024-06-19T13:23:56Z",
+      "pushed_at": "2026-08-21T16:13:45Z",
+      "age_days": 793,
+      "days_since_push": 0,
+      "source_mentions": 2,
+      "sources": [
+        "alexbevi/awesome-agent-frameworks",
+        "kyrolabs/awesome-agents"
+      ],
+      "description": "YC (S26) | Open Computer History | Record your screen continuously locally and provide context to your agents (Claude, Codex, Openclaw, Hermes, Runner...)"
+    },
+    {
+      "repo": "eosphoros-ai/DB-GPT",
+      "stars": 19774,
+      "forks": 2885,
+      "language": "Python",
+      "license": "MIT",
+      "created_at": "2023-04-13T14:52:43Z",
+      "pushed_at": "2026-08-21T01:55:03Z",
+      "age_days": 1226,
+      "days_since_push": 0,
+      "source_mentions": 2,
+      "sources": [
+        "alexbevi/awesome-agent-frameworks",
+        "kyrolabs/awesome-agents"
+      ],
+      "description": "open-source agentic AI data assistant for the next generation of AI + Data products."
+    },
+    {
+      "repo": "arc53/DocsGPT",
+      "stars": 18220,
+      "forks": 2127,
+      "language": "Python",
+      "license": "MIT",
+      "created_at": "2023-02-02T11:03:23Z",
+      "pushed_at": "2026-08-21T14:01:48Z",
+      "age_days": 1296,
+      "days_since_push": 0,
+      "source_mentions": 2,
+      "sources": [
+        "aglio-lab/ai-agent-frameworks",
+        "alexbevi/awesome-agent-frameworks"
+      ],
+      "description": "Private AI platform for agents, assistants and enterprise search. Built-in Agent Builder, Deep research, Document analysis, Multi-model support, and API connectivity for agents."
+    },
+    {
+      "repo": "gastownhall/gastown",
+      "stars": 17706,
+      "forks": 1626,
+      "language": "Go",
+      "license": "MIT",
+      "created_at": "2025-12-16T00:33:33Z",
+      "pushed_at": "2026-08-19T04:16:45Z",
+      "age_days": 248,
+      "days_since_push": 2,
+      "source_mentions": 2,
+      "sources": [
+        "alexbevi/awesome-agent-frameworks",
+        "AutoJunjie/awesome-agent-harness"
+      ],
+      "description": "Gas Town - multi-agent workspace manager"
+    },
+    {
+      "repo": "windmill-labs/windmill",
+      "stars": 17602,
+      "forks": 1074,
+      "language": "Rust",
+      "license": "NOASSERTION",
+      "created_at": "2022-05-05T02:21:17Z",
+      "pushed_at": "2026-08-21T16:20:07Z",
+      "age_days": 1569,
+      "days_since_push": 0,
+      "source_mentions": 2,
+      "sources": [
+        "aglio-lab/ai-agent-frameworks",
+        "alexbevi/awesome-agent-frameworks"
+      ],
+      "description": "Open-source developer platform to power your entire infra and turn scripts into webhooks, workflows and UIs. Fastest workflow engine (13x vs Airflow). Open-source alternative to Retool and Temporal."
+    },
+    {
+      "repo": "Canner/WrenAI",
+      "stars": 17350,
+      "forks": 1959,
+      "language": "Python",
+      "license": "NOASSERTION",
+      "created_at": "2024-03-13T06:18:20Z",
+      "pushed_at": "2026-08-21T11:25:17Z",
+      "age_days": 891,
+      "days_since_push": 0,
+      "source_mentions": 2,
+      "sources": [
+        "alexbevi/awesome-agent-frameworks",
+        "e2b-dev/awesome-ai-agents"
+      ],
+      "description": "GenBI (Generative BI) for AI agents, an open-source, governed text-to-SQL through an open context layer that turns natural-language questions into trusted dashboards, charts, and SQL across 20+ data sources, such as BigQuery, Snowflake, PostgreSQL, ClickHouse, Amazon Redshift, Databricks and more."
+    },
+    {
+      "repo": "memvid/memvid",
+      "stars": 16429,
+      "forks": 1414,
+      "language": "Rust",
+      "license": "Apache-2.0",
+      "created_at": "2025-05-27T16:01:08Z",
+      "pushed_at": "2026-07-14T14:39:07Z",
+      "age_days": 451,
+      "days_since_push": 38,
+      "source_mentions": 2,
+      "sources": [
+        "aglio-lab/ai-agent-frameworks",
+        "alexbevi/awesome-agent-frameworks"
+      ],
+      "description": "Memory layer for AI Agents. Replace complex RAG pipelines with a serverless, single-file memory layer. Give your agents instant retrieval and long-term memory."
+    },
+    {
+      "repo": "dagster-io/dagster",
+      "stars": 16046,
+      "forks": 2254,
+      "language": "Python",
+      "license": "Apache-2.0",
+      "created_at": "2018-04-30T16:30:04Z",
+      "pushed_at": "2026-08-21T15:52:41Z",
+      "age_days": 3034,
+      "days_since_push": 0,
+      "source_mentions": 2,
+      "sources": [
+        "aglio-lab/ai-agent-frameworks",
+        "alexbevi/awesome-agent-frameworks"
+      ],
+      "description": "An orchestration platform for the development, production, and observation of data assets."
+    },
+    {
+      "repo": "lsdefine/GenericAgent",
+      "stars": 13846,
+      "forks": 1607,
+      "language": "Python",
+      "license": "MIT",
+      "created_at": "2026-01-16T15:45:24Z",
+      "pushed_at": "2026-08-21T06:21:33Z",
+      "age_days": 217,
+      "days_since_push": 0,
+      "source_mentions": 2,
+      "sources": [
+        "alexbevi/awesome-agent-frameworks",
+        "AutoJunjie/awesome-agent-harness"
+      ],
+      "description": "Self-evolving agent: grows skill tree from 3.3K-line seed, achieving full system control with 6x less token consumption"
+    },
+    {
+      "repo": "modelcontextprotocol/typescript-sdk",
+      "stars": 13220,
+      "forks": 2106,
+      "language": "TypeScript",
+      "license": "NOASSERTION",
+      "created_at": "2024-09-24T20:45:31Z",
+      "pushed_at": "2026-08-21T16:15:01Z",
+      "age_days": 695,
+      "days_since_push": 0,
+      "source_mentions": 2,
+      "sources": [
+        "aglio-lab/ai-agent-frameworks",
+        "giakoumidis/best-of-agent-harnesses"
+      ],
+      "description": "The official TypeScript SDK for Model Context Protocol servers and clients"
+    },
+    {
+      "repo": "livekit/agents",
+      "stars": 13124,
+      "forks": 3586,
+      "language": "Python",
+      "license": "Apache-2.0",
+      "created_at": "2023-10-19T23:00:55Z",
+      "pushed_at": "2026-08-21T15:00:13Z",
+      "age_days": 1036,
+      "days_since_push": 0,
+      "source_mentions": 2,
+      "sources": [
+        "aglio-lab/ai-agent-frameworks",
+        "alexbevi/awesome-agent-frameworks"
+      ],
+      "description": "A framework for building realtime voice AI agents 🤖🎙️📹 "
+    },
+    {
+      "repo": "neuml/txtai",
+      "stars": 12897,
+      "forks": 878,
+      "language": "Python",
+      "license": "Apache-2.0",
+      "created_at": "2020-08-09T19:14:59Z",
+      "pushed_at": "2026-08-19T10:44:29Z",
+      "age_days": 2202,
+      "days_since_push": 2,
+      "source_mentions": 2,
+      "sources": [
+        "aglio-lab/ai-agent-frameworks",
+        "alexbevi/awesome-agent-frameworks"
+      ],
+      "description": "💡 All-in-one AI framework for semantic search, LLM orchestration and language model workflows"
+    },
+    {
+      "repo": "Portkey-AI/gateway",
+      "stars": 12789,
+      "forks": 1258,
+      "language": "TypeScript",
+      "license": "MIT",
+      "created_at": "2023-08-23T11:52:47Z",
+      "pushed_at": "2026-05-25T13:54:51Z",
+      "age_days": 1094,
+      "days_since_push": 88,
+      "source_mentions": 2,
+      "sources": [
+        "aglio-lab/ai-agent-frameworks",
+        "alexbevi/awesome-agent-frameworks"
+      ],
+      "description": "A blazing fast AI Gateway with integrated guardrails. Route to 1,600+ LLMs, 50+ AI Guardrails with 1 fast & friendly API."
+    },
+    {
+      "repo": "cloudwego/eino",
+      "stars": 12787,
+      "forks": 1063,
+      "language": "Go",
+      "license": "Apache-2.0",
+      "created_at": "2024-12-04T06:47:27Z",
+      "pushed_at": "2026-08-21T12:41:01Z",
+      "age_days": 625,
+      "days_since_push": 0,
+      "source_mentions": 2,
+      "sources": [
+        "alexbevi/awesome-agent-frameworks",
+        "mahonzhan/awesome-agent-harness"
+      ],
+      "description": "The ultimate LLM/AI application development framework in Go."
+    },
+    {
+      "repo": "simular-ai/Agent-S",
+      "stars": 12181,
+      "forks": 1423,
+      "language": "Python",
+      "license": "Apache-2.0",
+      "created_at": "2024-10-09T15:43:12Z",
+      "pushed_at": "2026-08-01T03:31:09Z",
+      "age_days": 681,
+      "days_since_push": 20,
+      "source_mentions": 2,
+      "sources": [
+        "aglio-lab/ai-agent-frameworks",
+        "alexbevi/awesome-agent-frameworks"
+      ],
+      "description": "Agent S: an open agentic framework that uses computers like a human"
+    },
+    {
+      "repo": "bytedance/trae-agent",
+      "stars": 12045,
+      "forks": 1342,
+      "language": "Python",
+      "license": "MIT",
+      "created_at": "2025-06-13T12:05:15Z",
+      "pushed_at": "2026-02-05T11:21:00Z",
+      "age_days": 434,
+      "days_since_push": 197,
+      "source_mentions": 2,
+      "sources": [
+        "alexbevi/awesome-agent-frameworks",
+        "mahonzhan/awesome-agent-harness"
+      ],
+      "description": "Trae Agent is an LLM-based agent for general purpose software engineering tasks."
+    },
+    {
+      "repo": "The-Pocket/PocketFlow",
+      "stars": 11120,
+      "forks": 1211,
+      "language": "Python",
+      "license": "MIT",
+      "created_at": "2024-12-24T02:43:30Z",
+      "pushed_at": "2026-07-26T16:13:20Z",
+      "age_days": 605,
+      "days_since_push": 26,
+      "source_mentions": 2,
+      "sources": [
+        "aglio-lab/ai-agent-frameworks",
+        "alexbevi/awesome-agent-frameworks"
+      ],
+      "description": "Pocket Flow: 100-line LLM framework. Let Agents build Agents!"
+    },
+    {
+      "repo": "langchain-ai/open-swe",
+      "stars": 10585,
+      "forks": 1233,
+      "language": "Python",
+      "license": "MIT",
+      "created_at": "2025-05-21T21:44:24Z",
+      "pushed_at": "2026-08-21T15:44:37Z",
+      "age_days": 456,
+      "days_since_push": 0,
+      "source_mentions": 2,
+      "sources": [
+        "alexbevi/awesome-agent-frameworks",
+        "mahonzhan/awesome-agent-harness"
+      ],
+      "description": "An Open-Source Asynchronous Coding Agent"
+    },
+    {
+      "repo": "mcp-use/mcp-use",
+      "stars": 10512,
+      "forks": 1419,
+      "language": "TypeScript",
+      "license": "MIT",
+      "created_at": "2025-03-28T10:06:31Z",
+      "pushed_at": "2026-08-20T18:29:29Z",
+      "age_days": 511,
+      "days_since_push": 0,
+      "source_mentions": 2,
+      "sources": [
+        "aglio-lab/ai-agent-frameworks",
+        "alexbevi/awesome-agent-frameworks"
+      ],
+      "description": "The fullstack MCP framework to develop MCP Apps for ChatGPT / Claude & MCP Servers for AI Agents."
+    },
+    {
+      "repo": "iflytek/astron-agent",
+      "stars": 8944,
+      "forks": 858,
+      "language": "Java",
+      "license": "Apache-2.0",
+      "created_at": "2025-09-19T08:46:01Z",
+      "pushed_at": "2026-08-18T10:18:40Z",
+      "age_days": 336,
+      "days_since_push": 3,
+      "source_mentions": 2,
+      "sources": [
+        "alexbevi/awesome-agent-frameworks",
+        "kyrolabs/awesome-agents"
+      ],
+      "description": "Enterprise-grade, commercial-friendly agentic workflow platform for building next-generation SuperAgents."
+    },
+    {
+      "repo": "OpenBMB/XAgent",
+      "stars": 8543,
+      "forks": 904,
+      "language": "Python",
+      "license": "Apache-2.0",
+      "created_at": "2023-10-16T03:44:57Z",
+      "pushed_at": "2026-07-31T03:30:54Z",
+      "age_days": 1040,
+      "days_since_push": 21,
+      "source_mentions": 2,
+      "sources": [
+        "e2b-dev/awesome-ai-agents",
+        "kyrolabs/awesome-agents"
+      ],
+      "description": "An Autonomous LLM Agent for Complex Task Solving"
+    },
+    {
+      "repo": "Upsonic/Upsonic",
+      "stars": 7943,
+      "forks": 744,
+      "language": "Python",
+      "license": "MIT",
+      "created_at": "2024-05-26T16:23:38Z",
+      "pushed_at": "2026-06-18T14:55:50Z",
+      "age_days": 816,
+      "days_since_push": 64,
+      "source_mentions": 2,
+      "sources": [
+        "alexbevi/awesome-agent-frameworks",
+        "kyrolabs/awesome-agents"
+      ],
+      "description": "Build autonomous AI agents in Python."
+    },
+    {
+      "repo": "2FastLabs/agent-squad",
+      "stars": 7742,
+      "forks": 735,
+      "language": "Swift",
+      "license": "Apache-2.0",
+      "created_at": "2024-07-23T12:48:30Z",
+      "pushed_at": "2026-08-15T23:27:30Z",
+      "age_days": 759,
+      "days_since_push": 5,
+      "source_mentions": 2,
+      "sources": [
+        "aglio-lab/ai-agent-frameworks",
+        "giakoumidis/best-of-agent-harnesses"
+      ],
+      "description": "Flexible and powerful framework for managing multiple AI agents and handling complex conversations"
+    },
+    {
+      "repo": "mnfst/manifest",
+      "stars": 7464,
+      "forks": 499,
+      "language": "TypeScript",
+      "license": "MIT",
+      "created_at": "2022-09-27T16:33:35Z",
+      "pushed_at": "2026-08-21T14:41:06Z",
+      "age_days": 1423,
+      "days_since_push": 0,
+      "source_mentions": 2,
+      "sources": [
+        "alexbevi/awesome-agent-frameworks",
+        "kyrolabs/awesome-agents"
+      ],
+      "description": "Connect Your Agents And Harnesses With Any Provider 🦚"
+    },
+    {
+      "repo": "modelcontextprotocol/registry",
+      "stars": 7181,
+      "forks": 956,
+      "language": "Go",
+      "license": "NOASSERTION",
+      "created_at": "2025-02-05T17:58:01Z",
+      "pushed_at": "2026-08-21T15:00:17Z",
+      "age_days": 561,
+      "days_since_push": 0,
+      "source_mentions": 2,
+      "sources": [
+        "aglio-lab/ai-agent-frameworks",
+        "giakoumidis/best-of-agent-harnesses"
+      ],
+      "description": "A community driven registry service for Model Context Protocol (MCP) servers."
+    },
+    {
+      "repo": "plastic-labs/honcho",
+      "stars": 6760,
+      "forks": 834,
+      "language": "Python",
+      "license": "AGPL-3.0",
+      "created_at": "2023-09-10T21:29:54Z",
+      "pushed_at": "2026-08-21T15:35:28Z",
+      "age_days": 1075,
+      "days_since_push": 0,
+      "source_mentions": 2,
+      "sources": [
+        "alexbevi/awesome-agent-frameworks",
+        "AutoJunjie/awesome-agent-harness"
+      ],
+      "description": " Memory library for building stateful agents"
+    },
+    {
+      "repo": "superagent-ai/superagent",
+      "stars": 6716,
+      "forks": 963,
+      "language": "TypeScript",
+      "license": "MIT",
+      "created_at": "2023-05-10T18:50:39Z",
+      "pushed_at": "2026-08-13T20:23:19Z",
+      "age_days": 1198,
+      "days_since_push": 7,
+      "source_mentions": 2,
+      "sources": [
+        "alexbevi/awesome-agent-frameworks",
+        "kyrolabs/awesome-agents"
+      ],
+      "description": "Superagent protects your AI applications against prompt injections, data leaks, and harmful outputs. Embed safety directly into your app and prove compliance to your customers."
+    },
+    {
+      "repo": "Eigenwise/atomic-agents",
+      "stars": 6190,
+      "forks": 535,
+      "language": "Python",
+      "license": "MIT",
+      "created_at": "2024-06-03T08:24:07Z",
+      "pushed_at": "2026-08-20T09:29:03Z",
+      "age_days": 809,
+      "days_since_push": 1,
+      "source_mentions": 2,
+      "sources": [
+        "aglio-lab/ai-agent-frameworks",
+        "alexbevi/awesome-agent-frameworks"
+      ],
+      "description": "Building AI agents, atomically"
+    },
+    {
+      "repo": "AgentOps-AI/agentops",
+      "stars": 5789,
+      "forks": 613,
+      "language": "Python",
+      "license": "MIT",
+      "created_at": "2023-08-15T23:26:23Z",
+      "pushed_at": "2026-06-25T08:25:03Z",
+      "age_days": 1101,
+      "days_since_push": 57,
+      "source_mentions": 2,
+      "sources": [
+        "aglio-lab/ai-agent-frameworks",
+        "alexbevi/awesome-agent-frameworks"
+      ],
+      "description": "Python SDK for AI agent monitoring, LLM cost tracking, benchmarking, and more. Integrates with most LLMs and agent frameworks including CrewAI, Agno, OpenAI Agents SDK, Langchain, Autogen, AG2, and CamelAI"
+    },
+    {
+      "repo": "Q00/ouroboros",
+      "stars": 5603,
+      "forks": 561,
+      "language": "Python",
+      "license": "MIT",
+      "created_at": "2026-01-14T01:14:04Z",
+      "pushed_at": "2026-08-21T11:55:13Z",
+      "age_days": 219,
+      "days_since_push": 0,
+      "source_mentions": 2,
+      "sources": [
+        "alexbevi/awesome-agent-frameworks",
+        "kyrolabs/awesome-agents"
+      ],
+      "description": "Agent OS: the agent gets smarter on its own. We just hold the line: the grading command and expected result never make it into the success contract we hand it. Interview-gated, staged evaluation, budgeted evolution loop. MCP server, 13 runtimes: Claude Code, Codex CLI, Gemini CLI, OpenCode, Copilot, Kiro and more."
+    },
+    {
+      "repo": "the-open-agent/openagent",
+      "stars": 5545,
+      "forks": 643,
+      "language": "Go",
+      "license": "Apache-2.0",
+      "created_at": "2020-05-29T02:45:58Z",
+      "pushed_at": "2026-08-20T18:00:55Z",
+      "age_days": 2275,
+      "days_since_push": 0,
+      "source_mentions": 2,
+      "sources": [
+        "alexbevi/awesome-agent-frameworks",
+        "kyrolabs/awesome-agents"
+      ],
+      "description": "⚡️next-generation personal AI assistant powered by LLM, RAG and agent loops, supporting computer-use, browser-use and coding agent, demo: https://demo.openagentai.org"
+    },
+    {
+      "repo": "generalaction/emdash",
+      "stars": 5457,
+      "forks": 563,
+      "language": "TypeScript",
+      "license": "Apache-2.0",
+      "created_at": "2025-08-28T07:19:57Z",
+      "pushed_at": "2026-08-21T16:01:51Z",
+      "age_days": 358,
+      "days_since_push": 0,
+      "source_mentions": 2,
+      "sources": [
+        "alexbevi/awesome-agent-frameworks",
+        "AutoJunjie/awesome-agent-harness"
+      ],
+      "description": "Emdash is the Open-Source Agentic Development Environment (🧡 YC W26). Run multiple coding agents in parallel. Use any provider."
+    }
+  ]
+}

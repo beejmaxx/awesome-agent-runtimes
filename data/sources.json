@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "sources": [
+    {
+      "repo": "giakoumidis/best-of-agent-harnesses",
+      "focus": "Ranked agent harnesses and runtime characteristics"
+    },
+    {
+      "repo": "AutoJunjie/awesome-agent-harness",
+      "focus": "Harnesses, task runners, persistent runtimes, and coding agents"
+    },
+    {
+      "repo": "mahonzhan/awesome-agent-harness",
+      "focus": "Agent harness and framework chronology"
+    },
+    {
+      "repo": "alexbevi/awesome-agent-frameworks",
+      "focus": "Broad agent frameworks, runtimes, and infrastructure"
+    },
+    {
+      "repo": "pandastack-io/awesome-ai-agent-runtimes",
+      "focus": "Agent sandboxes and execution environments"
+    },
+    {
+      "repo": "aglio-lab/ai-agent-frameworks",
+      "focus": "Source-linked agent framework and operations directory"
+    },
+    {
+      "repo": "kyrolabs/awesome-agents",
+      "focus": "Agent products, frameworks, and tools"
+    },
+    {
+      "repo": "e2b-dev/awesome-ai-agents",
+      "focus": "Open-source autonomous agent projects"
+    }
+  ]
+}

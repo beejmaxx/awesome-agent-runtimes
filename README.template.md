@@ -30,6 +30,7 @@ placements and stars never determine ordering.
 - [Catalog](#catalog)
   - [Persistent agent runtimes](#persistent-agent-runtimes)
   - [Coding agent runtimes](#coding-agent-runtimes)
+  - [Browser and computer-use runtimes](#browser-and-computer-use-runtimes)
   - [Agent and workflow runtimes](#agent-and-workflow-runtimes)
   - [Serving and control planes](#serving-and-control-planes)
   - [Sandboxes and execution environments](#sandboxes-and-execution-environments)
@@ -62,6 +63,7 @@ metadata limitations, and the correction process.
 | ------------------------------------------------------------- | ----------------------------------- |
 | Run a persistent assistant or autonomous worker               | Persistent agent runtimes           |
 | Run an agent against a software repository                    | Coding agent runtimes               |
+| Automate browsers or desktop applications                     | Browser and computer-use runtimes   |
 | Embed agent control flow in an application                    | Agent and workflow runtimes         |
 | Deploy, operate, and expose agents as a service               | Serving and control planes          |
 | Execute untrusted code or browser tasks safely                | Sandboxes and execution environments |
@@ -93,6 +95,12 @@ No third-party Python packages are required.
 | [`TAGS.md`](TAGS.md) | Generated capability index |
 | [`data/history.json`](data/history.json) | Daily star history for trend analysis |
 | [`data/schema.json`](data/schema.json) | Source catalog JSON Schema |
+
+Coverage is audited against the trusted upstream lists in
+[`data/sources.json`](data/sources.json). The reproducible funnel and unreviewed
+candidate queue are documented in [`DISCOVERY.md`](DISCOVERY.md). Production
+layers that matter but are not themselves runtimes are mapped separately in
+[`STACK.md`](STACK.md).
 
 ```bash
 # Validate the catalog and generated files without using the network

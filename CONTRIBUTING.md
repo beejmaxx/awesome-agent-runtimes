@@ -14,11 +14,14 @@ A project should:
   archived.
 - Add a distinct implementation or operational tradeoff to the catalog.
 
-Established adoption is the default expectation. Star count is not itself an
-inclusion criterion, but projects with limited adoption need especially strong
+Established adoption is the default expectation. Star count is not sufficient
+for inclusion; projects with limited adoption need especially strong
 evidence of a distinct architecture, credible maintainership, and real usability.
 Paid products are eligible only when the linked repository contains a meaningful
 open-source runtime component. See `METHODOLOGY.md` for the full editorial policy.
+
+Core entries must clear the current 5,000-star operational floor. This is a
+noise-control threshold, not a ranking or an automatic acceptance rule.
 
 ## Add or update a project
 

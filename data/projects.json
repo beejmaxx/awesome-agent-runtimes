@@ -13,6 +13,11 @@
       "description": "Agent harnesses that own the software-engineering loop, workspace, tools, and sessions."
     },
     {
+      "id": "computer-use",
+      "title": "Browser and computer-use runtimes",
+      "description": "Runtimes and SDKs that own browser or desktop perception, action, and execution loops."
+    },
+    {
       "id": "orchestration",
       "title": "Agent and workflow runtimes",
       "description": "Libraries and kernels that own the agent loop, state transitions, or multi-agent coordination."
@@ -67,6 +72,14 @@
       "tags": ["multi-agent", "plugins", "memory"]
     },
     {
+      "name": "DeerFlow",
+      "repo": "bytedance/deer-flow",
+      "category": "persistent",
+      "description": "Long-horizon agent harness with sandboxes, memory, skills, subagents, and a messaging gateway.",
+      "deployment": ["local", "self-hosted"],
+      "tags": ["long-running", "skills", "multi-agent"]
+    },
+    {
       "name": "Goose",
       "repo": "aaif-goose/goose",
       "category": "coding",
@@ -89,6 +102,22 @@
       "description": "Stateful agent server centered on persistent memory, context management, and long-lived identities.",
       "deployment": ["self-hosted", "managed"],
       "tags": ["memory", "server", "stateful"]
+    },
+    {
+      "name": "NanoClaw",
+      "repo": "nanocoai/nanoclaw",
+      "category": "persistent",
+      "description": "Container-isolated personal agent runtime with messaging channels, memory, skills, and scheduled jobs.",
+      "deployment": ["local", "self-hosted"],
+      "tags": ["personal-agent", "containers", "scheduler"]
+    },
+    {
+      "name": "Nanobot",
+      "repo": "HKUDS/nanobot",
+      "category": "persistent",
+      "description": "Lightweight self-hosted personal agent with tools, memory, MCP, automations, and chat integrations.",
+      "deployment": ["local", "self-hosted"],
+      "tags": ["personal-agent", "MCP", "automation"]
     },
     {
       "name": "OpenClaw",
@@ -139,6 +168,14 @@
       "tags": ["coding", "IDE", "human-in-the-loop"]
     },
     {
+      "name": "Continue",
+      "repo": "continuedev/continue",
+      "category": "coding",
+      "description": "Open-source coding-agent runtime spanning IDE, CLI, and continuous repository automation.",
+      "deployment": ["local", "self-hosted"],
+      "tags": ["coding", "IDE", "automation"]
+    },
+    {
       "name": "Codex",
       "repo": "openai/codex",
       "category": "coding",
@@ -187,6 +224,46 @@
       "tags": ["coding", "research", "benchmark"]
     },
     {
+      "name": "Qwen Code",
+      "repo": "QwenLM/qwen-code",
+      "category": "coding",
+      "description": "Open-source terminal coding-agent runtime with tools, extensibility, and model-provider support.",
+      "deployment": ["local"],
+      "tags": ["coding", "terminal", "tools"]
+    },
+    {
+      "name": "Browser Use",
+      "repo": "browser-use/browser-use",
+      "category": "computer-use",
+      "description": "Browser-agent framework and runtime for perception, action, sessions, and web task automation.",
+      "deployment": ["library", "local", "managed"],
+      "tags": ["browser", "automation", "tools"]
+    },
+    {
+      "name": "Stagehand",
+      "repo": "browserbase/stagehand",
+      "category": "computer-use",
+      "description": "Browser-agent SDK that combines natural-language actions with deterministic browser automation.",
+      "deployment": ["library", "self-hosted", "managed"],
+      "tags": ["browser", "automation", "SDK"]
+    },
+    {
+      "name": "Skyvern",
+      "repo": "Skyvern-AI/skyvern",
+      "category": "computer-use",
+      "description": "Browser workflow runtime using visual and language-model reasoning instead of site-specific selectors.",
+      "deployment": ["self-hosted", "managed"],
+      "tags": ["browser", "workflows", "computer-use"]
+    },
+    {
+      "name": "UFO",
+      "repo": "microsoft/UFO",
+      "category": "computer-use",
+      "description": "Microsoft agent framework for automating Windows applications and multi-device desktop workflows.",
+      "deployment": ["local"],
+      "tags": ["computer-use", "desktop", "multi-agent"]
+    },
+    {
       "name": "Agno",
       "repo": "agno-agi/agno",
       "category": "orchestration",
@@ -201,6 +278,22 @@
       "description": "Developer framework for tool-using and multi-agent applications with runtime services.",
       "deployment": ["library", "self-hosted"],
       "tags": ["multi-agent", "tools", "distributed"]
+    },
+    {
+      "name": "Claude Agent SDK",
+      "repo": "anthropics/claude-agent-sdk-python",
+      "category": "orchestration",
+      "description": "Anthropic's Python SDK for building agents with Claude Code's tools, sessions, and execution loop.",
+      "deployment": ["library", "self-hosted"],
+      "tags": ["tools", "sessions", "SDK"]
+    },
+    {
+      "name": "Cloudflare Agents",
+      "repo": "cloudflare/agents",
+      "category": "orchestration",
+      "description": "Stateful agent SDK built on Durable Objects with identity, persistence, scheduling, and realtime connections.",
+      "deployment": ["library", "managed"],
+      "tags": ["stateful", "serverless", "realtime"]
     },
     {
       "name": "AutoGen",
@@ -227,12 +320,12 @@
       "tags": ["multi-agent", "flows", "observability"]
     },
     {
-      "name": "Dapr Agents",
-      "repo": "dapr/dapr-agents",
+      "name": "Deep Agents",
+      "repo": "langchain-ai/deepagents",
       "category": "orchestration",
-      "description": "Agent framework built on Dapr actors and durable workflows for resilient distributed execution.",
+      "description": "Batteries-included agent harness with planning, filesystems, subagents, and long-term memory.",
       "deployment": ["library", "self-hosted"],
-      "tags": ["durable", "actors", "distributed"]
+      "tags": ["planning", "multi-agent", "memory"]
     },
     {
       "name": "Google Agent Development Kit",
@@ -251,6 +344,22 @@
       "tags": ["durable", "human-in-the-loop", "graph"]
     },
     {
+      "name": "LangChain",
+      "repo": "langchain-ai/langchain",
+      "category": "orchestration",
+      "description": "Established agent application framework with model, tool, middleware, and agent-loop abstractions.",
+      "deployment": ["library", "self-hosted"],
+      "tags": ["tools", "middleware", "ecosystem"]
+    },
+    {
+      "name": "LlamaIndex",
+      "repo": "run-llama/llama_index",
+      "category": "orchestration",
+      "description": "Data-centric agent framework with workflows, tools, retrieval, memory, and multi-agent patterns.",
+      "deployment": ["library", "self-hosted", "managed"],
+      "tags": ["data", "workflows", "retrieval"]
+    },
+    {
       "name": "Mastra",
       "repo": "mastra-ai/mastra",
       "category": "orchestration",
@@ -265,6 +374,14 @@
       "description": "Microsoft framework for building agents and graph workflows with middleware and state management.",
       "deployment": ["library", "self-hosted", "managed"],
       "tags": ["workflows", "multi-agent", "middleware"]
+    },
+    {
+      "name": "MetaGPT",
+      "repo": "FoundationAgents/MetaGPT",
+      "category": "orchestration",
+      "description": "Multi-agent software-company framework that coordinates role-based agents through structured workflows.",
+      "deployment": ["library", "local"],
+      "tags": ["multi-agent", "roles", "workflows"]
     },
     {
       "name": "OpenAI Agents SDK",
@@ -283,20 +400,28 @@
       "tags": ["typed", "durable", "evaluation"]
     },
     {
+      "name": "Semantic Kernel",
+      "repo": "microsoft/semantic-kernel",
+      "category": "orchestration",
+      "description": "Microsoft agent SDK with plugins, process orchestration, memory integrations, and multi-agent patterns.",
+      "deployment": ["library", "self-hosted", "managed"],
+      "tags": ["plugins", "multi-agent", "enterprise"]
+    },
+    {
+      "name": "smolagents",
+      "repo": "huggingface/smolagents",
+      "category": "orchestration",
+      "description": "Compact Hugging Face agent library centered on code-executing agents and composable tools.",
+      "deployment": ["library", "local"],
+      "tags": ["code-agents", "tools", "lightweight"]
+    },
+    {
       "name": "Dify",
       "repo": "langgenius/dify",
       "category": "serving",
       "description": "Visual platform for building and operating agentic applications, workflows, and model services.",
       "deployment": ["self-hosted", "managed"],
       "tags": ["low-code", "workflows", "observability"]
-    },
-    {
-      "name": "Docker Agent",
-      "repo": "docker/docker-agent",
-      "category": "serving",
-      "description": "Declarative runtime and CLI for packaging and running agents with models, MCP tools, and subagents.",
-      "deployment": ["local", "self-hosted"],
-      "tags": ["containers", "MCP", "multi-agent"]
     },
     {
       "name": "Flowise",
@@ -313,14 +438,6 @@
       "description": "Visual Python framework for composing and serving agent workflows with an API.",
       "deployment": ["local", "self-hosted", "managed"],
       "tags": ["low-code", "builder", "API"]
-    },
-    {
-      "name": "LlamaDeploy",
-      "repo": "run-llama/llama_deploy",
-      "category": "serving",
-      "description": "Deployment system for running agent workflows as scalable, event-driven services.",
-      "deployment": ["self-hosted"],
-      "tags": ["event-driven", "services", "scaling"]
     },
     {
       "name": "T3 Code",
@@ -361,22 +478,6 @@
       "description": "Policy-governed runtime for running autonomous agents inside private sandboxes.",
       "deployment": ["local", "self-hosted"],
       "tags": ["sandbox", "policy", "privacy"]
-    },
-    {
-      "name": "SandboxFusion",
-      "repo": "bytedance/SandboxFusion",
-      "category": "sandbox",
-      "description": "Execution service for isolated code evaluation across many programming languages.",
-      "deployment": ["self-hosted"],
-      "tags": ["sandbox", "code-execution", "multi-language"]
-    },
-    {
-      "name": "DBOS",
-      "repo": "dbos-inc/dbos-transact-py",
-      "category": "durable",
-      "description": "Python durable-execution library for workflows that recover state and resume after failures.",
-      "deployment": ["library", "self-hosted", "managed"],
-      "tags": ["durable", "workflows", "recovery"]
     },
     {
       "name": "Hatchet",

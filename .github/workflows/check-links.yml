@@ -22,5 +22,5 @@ jobs:
           args: >-
             --no-progress
             --accept 200,429
-            README.md METHODOLOGY.md CONTRIBUTING.md TAGS.md
+            README.md METHODOLOGY.md CONTRIBUTING.md DISCOVERY.md STACK.md TAGS.md
           fail: true

@@ -29,6 +29,7 @@ TEMPLATE_PATH = ROOT / "README.template.md"
 README_PATH = ROOT / "README.md"
 REPO_RE = re.compile(r"^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$")
 ALLOWED_DEPLOYMENTS = {"library", "local", "self-hosted", "managed"}
+MINIMUM_STARS = 5000
 
 
 def load_json(path: Path, default: Any = None) -> Any:
@@ -103,10 +104,29 @@ def github_metadata(repo: str, token: str | None) -> dict[str, Any]:
         "language": payload["language"],
         "license": (payload.get("license") or {}).get("spdx_id"),
         "archived": payload["archived"],
+        "created_at": payload["created_at"],
         "pushed_at": payload["pushed_at"],
         "homepage": payload.get("homepage") or None,
         "default_branch": payload["default_branch"],
     }
+
+
+def validate_metrics(catalog: dict[str, Any], metrics: dict[str, Any]) -> list[str]:
+    errors: list[str] = []
+    metadata = metrics.get("repositories", {})
+    for project in catalog["projects"]:
+        repo = project["repo"]
+        item = metadata.get(repo)
+        if not item:
+            errors.append(f"{repo}: missing GitHub metadata")
+            continue
+        stars = item.get("stars")
+        if not isinstance(stars, int) or stars < MINIMUM_STARS:
+            errors.append(f"{repo}: requires at least {MINIMUM_STARS:,} stars (found {stars!r})")
+        canonical = item.get("repo")
+        if not isinstance(canonical, str) or canonical.casefold() != repo.casefold():
+            errors.append(f"{repo}: source should use canonical repository name {canonical!r}")
+    return errors
 
 
 def refresh(catalog: dict[str, Any], old_metrics: dict[str, Any]) -> dict[str, Any]:
@@ -224,6 +244,7 @@ def merged_catalog(catalog: dict[str, Any], metrics: dict[str, Any]) -> dict[str
                         "language",
                         "license",
                         "archived",
+                        "created_at",
                         "pushed_at",
                         "homepage",
                         "default_branch",
@@ -251,6 +272,7 @@ def render_csv(catalog: dict[str, Any], metrics: dict[str, Any]) -> str:
         "language",
         "license",
         "archived",
+        "created_at",
         "last_push",
         "deployment",
         "tags",
@@ -271,6 +293,7 @@ def render_csv(catalog: dict[str, Any], metrics: dict[str, Any]) -> str:
                 "language": item.get("language") or "",
                 "license": item.get("license") or "",
                 "archived": str(bool(item.get("archived"))).lower(),
+                "created_at": item.get("created_at") or "",
                 "last_push": item.get("pushed_at") or "",
                 "deployment": ";".join(project["deployment"]),
                 "tags": ";".join(project["tags"]),
@@ -376,6 +399,11 @@ def main() -> int:
 
     if args.check:
         metrics = load_json(METRICS_PATH)
+        metric_errors = validate_metrics(catalog, metrics)
+        if metric_errors:
+            for error in metric_errors:
+                print(f"error: {error}", file=sys.stderr)
+            return 1
         stale = [
             str(path.relative_to(ROOT))
             for path, expected in generated_files(catalog, metrics).items()
@@ -399,6 +427,11 @@ def main() -> int:
         metrics = refresh(catalog, old_metrics)
     except RuntimeError as error:
         print(f"error: {error}", file=sys.stderr)
+        return 1
+    metric_errors = validate_metrics(catalog, metrics)
+    if metric_errors:
+        for error in metric_errors:
+            print(f"error: {error}", file=sys.stderr)
         return 1
     dump_json(METRICS_PATH, metrics)
     if not args.no_history:

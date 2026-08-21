@@ -34,12 +34,19 @@ inherited after a repository pivot, or unrelated to the runtime component. Newer
 projects with limited adoption receive extra scrutiny and are included sparingly.
 There are no paid placements.
 
+The operational floor for the core catalog is currently 5,000 GitHub stars,
+180 days of public repository history, and activity within the last year. The
+star floor is enforced automatically; age, maintenance quality, repository pivots,
+and runtime scope are reviewed editorially. Crossing the floor makes a project
+eligible for review, not entitled to inclusion.
+
 ## Classification
 
 Projects are placed by their primary runtime responsibility:
 
 - **Persistent agent runtimes** run long-lived assistants or autonomous workers.
 - **Coding agent runtimes** own repository sessions, coding tools, and workspaces.
+- **Browser and computer-use runtimes** own perception and action loops over user interfaces.
 - **Agent and workflow runtimes** embed agent loops or control flow in applications.
 - **Serving and control planes** package, deploy, expose, or operate agents.
 - **Sandboxes and execution environments** isolate agent-controlled execution.
@@ -70,3 +77,7 @@ Category changes should explain which alternatives become easier to compare.
 The catalog is reviewed through pull requests. Automated checks validate its
 schema-like constraints, regenerate every derived artifact, and run the canonical
 Awesome list linter before merge.
+
+Coverage audits union the trusted lists in `data/sources.json`, normalize renamed
+repositories, and create a popularity-and-freshness-filtered review queue. See
+`DISCOVERY.md`; appearance in that queue is not an endorsement.
