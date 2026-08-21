@@ -61,6 +61,14 @@
       "tags": ["coding", "MCP", "desktop"]
     },
     {
+      "name": "Hermes Agent",
+      "repo": "NousResearch/hermes-agent",
+      "category": "persistent",
+      "description": "Persistent agent runtime with learned skills, cross-session memory, schedules, messaging gateways, and subagents.",
+      "deployment": ["local", "self-hosted"],
+      "tags": ["self-improving", "skills", "scheduler", "multi-agent"]
+    },
+    {
       "name": "Letta",
       "repo": "letta-ai/letta",
       "category": "persistent",
@@ -83,6 +91,22 @@
       "description": "Software-development agent platform with a runtime for executing tools in isolated workspaces.",
       "deployment": ["local", "self-hosted", "managed"],
       "tags": ["coding", "sandbox", "multi-agent"]
+    },
+    {
+      "name": "OpenCode",
+      "repo": "anomalyco/opencode",
+      "category": "persistent",
+      "description": "Open-source coding-agent runtime for terminal, desktop, and IDE clients with parallel sessions.",
+      "deployment": ["local", "self-hosted"],
+      "tags": ["coding", "client-server", "multi-session"]
+    },
+    {
+      "name": "Pi",
+      "repo": "earendil-works/pi",
+      "category": "persistent",
+      "description": "Extensible coding-agent toolkit and CLI with persistent sessions, a unified model API, and UI libraries.",
+      "deployment": ["local", "library"],
+      "tags": ["coding", "extensible", "sessions"]
     },
     {
       "name": "Agno",
@@ -219,6 +243,14 @@
       "description": "Deployment system for running agent workflows as scalable, event-driven services.",
       "deployment": ["self-hosted"],
       "tags": ["event-driven", "services", "scaling"]
+    },
+    {
+      "name": "T3 Code",
+      "repo": "pingdotgg/t3code",
+      "category": "serving",
+      "description": "Local control plane for operating existing coding-agent CLIs from web, desktop, and mobile clients.",
+      "deployment": ["local", "self-hosted"],
+      "tags": ["control-plane", "coding", "remote-access"]
     },
     {
       "name": "CubeSandbox",

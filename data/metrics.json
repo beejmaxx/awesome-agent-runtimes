@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "fetched_at": "2026-08-21T14:50:22+00:00",
+  "fetched_at": "2026-08-21T14:54:00+00:00",
   "repositories": {
     "agent0ai/agent-zero": {
       "repo": "agent0ai/agent-zero",
@@ -50,6 +50,18 @@
       "homepage": "https://goose-docs.ai/",
       "default_branch": "main"
     },
+    "NousResearch/hermes-agent": {
+      "repo": "NousResearch/hermes-agent",
+      "stars": 233842,
+      "forks": 46904,
+      "open_issues": 34196,
+      "language": "Python",
+      "license": "MIT",
+      "archived": false,
+      "pushed_at": "2026-08-21T13:47:57Z",
+      "homepage": "https://hermes-agent.nousresearch.com",
+      "default_branch": "main"
+    },
     "letta-ai/letta": {
       "repo": "letta-ai/letta",
       "stars": 24331,
@@ -66,11 +78,11 @@
       "repo": "openclaw/openclaw",
       "stars": 387024,
       "forks": 81291,
-      "open_issues": 5882,
+      "open_issues": 5883,
       "language": "TypeScript",
       "license": "NOASSERTION",
       "archived": false,
-      "pushed_at": "2026-08-21T14:39:58Z",
+      "pushed_at": "2026-08-21T14:53:13Z",
       "homepage": "https://openclaw.ai",
       "default_branch": "main"
     },
@@ -84,6 +96,30 @@
       "archived": false,
       "pushed_at": "2026-08-21T14:20:40Z",
       "homepage": "https://openhands.dev",
+      "default_branch": "main"
+    },
+    "anomalyco/opencode": {
+      "repo": "anomalyco/opencode",
+      "stars": 199823,
+      "forks": 25799,
+      "open_issues": 5278,
+      "language": "TypeScript",
+      "license": "MIT",
+      "archived": false,
+      "pushed_at": "2026-08-21T14:51:10Z",
+      "homepage": "https://opencode.ai",
+      "default_branch": "dev"
+    },
+    "earendil-works/pi": {
+      "repo": "earendil-works/pi",
+      "stars": 94927,
+      "forks": 11742,
+      "open_issues": 137,
+      "language": "TypeScript",
+      "license": "MIT",
+      "archived": false,
+      "pushed_at": "2026-08-21T14:47:16Z",
+      "homepage": null,
       "default_branch": "main"
     },
     "agno-agi/agno": {
@@ -100,7 +136,7 @@
     },
     "agentscope-ai/agentscope": {
       "repo": "agentscope-ai/agentscope",
-      "stars": 29149,
+      "stars": 29150,
       "forks": 3393,
       "open_issues": 341,
       "language": "Python",
@@ -125,7 +161,7 @@
     "camel-ai/camel": {
       "repo": "camel-ai/camel",
       "stars": 17614,
-      "forks": 2048,
+      "forks": 2049,
       "open_issues": 470,
       "language": "Python",
       "license": "Apache-2.0",
@@ -226,7 +262,7 @@
       "language": "Python",
       "license": "MIT",
       "archived": false,
-      "pushed_at": "2026-08-21T14:42:56Z",
+      "pushed_at": "2026-08-21T14:52:50Z",
       "homepage": "https://pydantic.dev/pydantic-ai",
       "default_branch": "main"
     },
@@ -290,6 +326,18 @@
       "homepage": "https://docs.llamaindex.ai/en/stable/module_guides/llama_deploy/",
       "default_branch": "main"
     },
+    "pingdotgg/t3code": {
+      "repo": "pingdotgg/t3code",
+      "stars": 19894,
+      "forks": 4667,
+      "open_issues": 1705,
+      "language": "TypeScript",
+      "license": "MIT",
+      "archived": false,
+      "pushed_at": "2026-08-21T12:25:32Z",
+      "homepage": "https://t3.codes",
+      "default_branch": "main"
+    },
     "TencentCloudAgentRuntime/CubeSandbox": {
       "repo": "TencentCloudAgentRuntime/CubeSandbox",
       "stars": 0,
@@ -322,7 +370,7 @@
       "language": "Python",
       "license": "Apache-2.0",
       "archived": false,
-      "pushed_at": "2026-08-21T14:45:13Z",
+      "pushed_at": "2026-08-21T14:52:19Z",
       "homepage": "https://e2b.dev/docs?utm_source=github&utm_medium=referral&utm_campaign=repo_website&utm_content=e2b",
       "default_branch": "main"
     },
@@ -334,7 +382,7 @@
       "language": "Rust",
       "license": "Apache-2.0",
       "archived": false,
-      "pushed_at": "2026-08-21T14:38:17Z",
+      "pushed_at": "2026-08-21T14:53:37Z",
       "homepage": "https://docs.microsandbox.dev",
       "default_branch": "main"
     },
@@ -346,7 +394,7 @@
       "language": "Rust",
       "license": "Apache-2.0",
       "archived": false,
-      "pushed_at": "2026-08-21T14:47:27Z",
+      "pushed_at": "2026-08-21T14:52:05Z",
       "homepage": "https://docs.nvidia.com/openshell/latest/",
       "default_branch": "main"
     },
