@@ -7,15 +7,19 @@ Discovery therefore uses a repeatable funnel rather than ad hoc GitHub search.
 
 1. Take the union of repository links from the trusted lists in
    [`data/sources.json`](data/sources.json).
-2. Normalize renamed and redirected repositories through the GitHub API.
-3. Remove projects already cataloged, forks, and archived repositories.
-4. Require repeated appearance across independent sources.
-5. Apply adoption and freshness floors.
-6. Manually verify scope, architecture, license, maintainership, and category.
+2. Run boundary-specific GitHub searches from
+   [`data/searches.json`](data/searches.json), so new categories do not depend on
+   appearing in an existing awesome list.
+3. Normalize renamed and redirected repositories through the GitHub API.
+4. Remove projects already cataloged, watched, excluded, forked, or archived.
+5. Require repeated appearance across list and search signals.
+6. Apply adoption, age, and freshness floors.
+7. Manually verify scope, architecture, license, maintainership, and category.
 
 The automated stages produce a review queue, not automatic additions. Repetition
-across lists can reflect copying, and stars can reflect hype or an earlier project
-that occupied the same repository.
+across lists can reflect copying, overlapping searches are not independent
+endorsements, and stars can reflect hype or an earlier project that occupied the
+same repository.
 
 ## Run an audit
 
@@ -23,9 +27,10 @@ that occupied the same repository.
 GITHUB_TOKEN=... python3 scripts/discover.py
 ```
 
-Defaults require at least 5,000 stars, mentions in two trusted sources, activity
-within the last year, at least 180 days of public history, and a non-archived,
-non-fork repository. The generated
+Defaults require at least 5,000 stars, two discovery signals, activity within the
+last year, at least 180 days of public history, and a non-archived, non-fork
+repository. Signals include trusted-list mentions and boundary-specific searches.
+The generated
 [`data/candidates.json`](data/candidates.json) file clearly marks candidates as
 unreviewed.
 

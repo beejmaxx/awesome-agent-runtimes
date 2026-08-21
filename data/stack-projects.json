@@ -1,0 +1,207 @@
+{
+  "schema_version": 1,
+  "categories": [
+    {
+      "id": "work-state",
+      "title": "Work state and continuity",
+      "description": "Durable projects, tasks, artifacts, decisions, dependencies, and outcomes that survive agent and session boundaries."
+    },
+    {
+      "id": "memory",
+      "title": "Memory and context",
+      "description": "Recall, retrieval, and context substrates; useful to agents but distinct from durable work state."
+    },
+    {
+      "id": "integrations",
+      "title": "Tool execution and integrations",
+      "description": "Authentication, tool catalogs, and managed action execution across external applications."
+    },
+    {
+      "id": "protocols",
+      "title": "Tool, agent, and user-interface protocols",
+      "description": "Open interfaces for tools, agent-to-agent exchange, agent clients, and agent-facing applications."
+    },
+    {
+      "id": "authority",
+      "title": "Authority and policy",
+      "description": "General policy engines used to express credentials, capabilities, approvals, and effect boundaries."
+    },
+    {
+      "id": "durable-reference",
+      "title": "Durable execution references",
+      "description": "Durable execution systems kept as architectural references when licensing or scope excludes them from the core catalog."
+    },
+    {
+      "id": "observability",
+      "title": "Observability and evaluation",
+      "description": "Tracing, evaluation, causality, and post-incident explanation for agent behavior."
+    },
+    {
+      "id": "gateway",
+      "title": "Model gateways",
+      "description": "Provider routing, credentials, budgets, fallback, and model-facing policy."
+    },
+    {
+      "id": "deployment",
+      "title": "Deployment and compute",
+      "description": "Placement, scaling, networking, and service lifecycle for agent workloads."
+    },
+    {
+      "id": "execution-primitives",
+      "title": "Execution primitives",
+      "description": "Generic microVM and userspace-kernel isolation beneath agent-specific sandboxes."
+    }
+  ],
+  "projects": [
+    {
+      "name": "Beads",
+      "repo": "gastownhall/beads",
+      "category": "work-state",
+      "description": "Distributed graph issue tracker for agents with persistent tasks, dependencies, claims, and cross-machine synchronization.",
+      "tags": ["tasks", "dependency-graph", "multi-agent"]
+    },
+    {
+      "name": "Mem0",
+      "repo": "mem0ai/mem0",
+      "category": "memory",
+      "description": "Memory layer for retaining and retrieving information across agent interactions.",
+      "tags": ["memory", "context", "retrieval"]
+    },
+    {
+      "name": "Graphiti",
+      "repo": "getzep/graphiti",
+      "category": "memory",
+      "description": "Temporal knowledge-graph framework for continuously updated agent memory.",
+      "tags": ["memory", "knowledge-graph", "temporal"]
+    },
+    {
+      "name": "Cognee",
+      "repo": "topoteretes/cognee",
+      "category": "memory",
+      "description": "Self-hosted agent memory and context engine built around knowledge graphs.",
+      "tags": ["memory", "knowledge-graph", "self-hosted"]
+    },
+    {
+      "name": "Composio",
+      "repo": "ComposioHQ/composio",
+      "category": "integrations",
+      "description": "Tool catalog, authentication layer, and managed execution workbench for agents.",
+      "tags": ["integrations", "authentication", "tools"]
+    },
+    {
+      "name": "Model Context Protocol",
+      "repo": "modelcontextprotocol/modelcontextprotocol",
+      "category": "protocols",
+      "description": "Open protocol for connecting AI applications to tools and context providers.",
+      "license_override": "Apache-2.0 / MIT transition",
+      "tags": ["MCP", "tools", "protocol"]
+    },
+    {
+      "name": "Agent2Agent",
+      "repo": "a2aproject/A2A",
+      "category": "protocols",
+      "description": "Open protocol for communication and interoperability between opaque agent applications.",
+      "tags": ["A2A", "interoperability", "protocol"]
+    },
+    {
+      "name": "Agent Client Protocol",
+      "repo": "agentclientprotocol/agent-client-protocol",
+      "category": "protocols",
+      "description": "Protocol for communication between code editors or clients and coding agents.",
+      "exception": "Official protocol boundary; tracked despite being below the core star floor.",
+      "tags": ["ACP", "client", "protocol"]
+    },
+    {
+      "name": "AG-UI",
+      "repo": "ag-ui-protocol/ag-ui",
+      "category": "protocols",
+      "description": "Event protocol connecting agent backends with user-facing applications.",
+      "tags": ["AG-UI", "events", "protocol"]
+    },
+    {
+      "name": "Open Policy Agent",
+      "repo": "open-policy-agent/opa",
+      "category": "authority",
+      "description": "General-purpose policy engine for expressing and evaluating authorization decisions.",
+      "tags": ["policy", "authorization", "governance"]
+    },
+    {
+      "name": "Cedar",
+      "repo": "cedar-policy/cedar",
+      "category": "authority",
+      "description": "Policy language and evaluation engine for fine-grained authorization.",
+      "exception": "Mature authorization primitive; tracked despite being below the core star floor.",
+      "tags": ["policy", "authorization", "language"]
+    },
+    {
+      "name": "Restate",
+      "repo": "restatedev/restate",
+      "category": "durable-reference",
+      "description": "Durable execution system with state, retries, promises, and recovery semantics.",
+      "license_override": "BSL-1.1",
+      "exception": "Architecturally relevant source-available reference; not an OSI-open core entry.",
+      "tags": ["durable", "recovery", "stateful"]
+    },
+    {
+      "name": "OpenTelemetry Semantic Conventions",
+      "repo": "open-telemetry/semantic-conventions",
+      "category": "observability",
+      "description": "Standard semantic conventions, including GenAI and agent telemetry attributes.",
+      "exception": "Official standard; repository stars do not represent OpenTelemetry adoption.",
+      "tags": ["OpenTelemetry", "tracing", "standard"]
+    },
+    {
+      "name": "Langfuse",
+      "repo": "langfuse/langfuse",
+      "category": "observability",
+      "description": "LLM engineering platform for traces, evaluations, metrics, prompts, and datasets.",
+      "license_override": "MIT (core)",
+      "tags": ["tracing", "evaluation", "metrics"]
+    },
+    {
+      "name": "Phoenix",
+      "repo": "Arize-ai/phoenix",
+      "category": "observability",
+      "description": "Agent and LLM observability and evaluation platform built around traces and experiments.",
+      "license_override": "Elastic-2.0",
+      "tags": ["tracing", "evaluation", "observability"]
+    },
+    {
+      "name": "LiteLLM",
+      "repo": "BerriAI/litellm",
+      "category": "gateway",
+      "description": "Model gateway and SDK for provider routing, budgets, load balancing, guardrails, and logging.",
+      "license_override": "MIT (core)",
+      "tags": ["gateway", "routing", "guardrails"]
+    },
+    {
+      "name": "Kubernetes",
+      "repo": "kubernetes/kubernetes",
+      "category": "deployment",
+      "description": "Container orchestration platform and reference implementation of desired-state reconciliation.",
+      "tags": ["deployment", "reconciliation", "containers"]
+    },
+    {
+      "name": "Modal",
+      "repo": "modal-labs/modal-client",
+      "category": "deployment",
+      "description": "Client and SDK for running containerized workloads on Modal's managed compute platform.",
+      "exception": "Official SDK for a widely used managed platform; repository stars understate service adoption.",
+      "tags": ["compute", "serverless", "managed"]
+    },
+    {
+      "name": "Firecracker",
+      "repo": "firecracker-microvm/firecracker",
+      "category": "execution-primitives",
+      "description": "MicroVM monitor used to provide lightweight hardware-virtualized workload isolation.",
+      "tags": ["microVM", "virtualization", "isolation"]
+    },
+    {
+      "name": "gVisor",
+      "repo": "google/gvisor",
+      "category": "execution-primitives",
+      "description": "Userspace application kernel that adds an isolation boundary around containers.",
+      "tags": ["containers", "kernel", "isolation"]
+    }
+  ]
+}

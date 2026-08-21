@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "queries": [
+    {"id": "coding-agent", "query": "\"coding agent\" stars:>5000 archived:false"},
+    {"id": "agent-runtime", "query": "\"agent runtime\" stars:>5000 archived:false"},
+    {"id": "agent-supervisor", "query": "agent supervisor stars:>5000 archived:false"},
+    {"id": "multi-agent-workspace", "query": "\"multi-agent\" workspace stars:>5000 archived:false"},
+    {"id": "voice-agent", "query": "\"voice agents\" stars:>5000 archived:false"},
+    {"id": "realtime-agent", "query": "realtime voice agent stars:>5000 archived:false"},
+    {"id": "computer-use", "query": "\"computer use\" agent stars:>5000 archived:false"},
+    {"id": "agent-sandbox", "query": "\"AI agents\" sandbox stars:>5000 archived:false"},
+    {"id": "durable-agent-work", "query": "task \"coding agents\" stars:>5000 archived:false"},
+    {"id": "agent-protocol", "query": "agent protocol stars:>5000 archived:false"},
+    {"id": "personal-agent", "query": "\"personal AI agent\" stars:>5000 archived:false"}
+  ]
+}

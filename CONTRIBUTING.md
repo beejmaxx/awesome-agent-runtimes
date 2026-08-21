@@ -13,6 +13,7 @@ A project should:
 - Show ongoing maintenance, or be historically important and clearly marked as
   archived.
 - Add a distinct implementation or operational tradeoff to the catalog.
+- Link primary documentation supporting the description and ownership boundary.
 
 Established adoption is required. Star count is not sufficient for inclusion;
 projects must also show a distinct architecture, credible maintainership, real
@@ -20,8 +21,10 @@ usability, and evidence for their claimed ownership boundary. Paid products are
 eligible only when the linked repository contains a meaningful open-source
 runtime component. See `METHODOLOGY.md` for the full editorial policy.
 
-Core entries must clear the current 5,000-star operational floor. This is a
-noise-control threshold, not a ranking or an automatic acceptance rule.
+Active core entries must clear the current 5,000-star, 180-day-age, one-year
+activity, and license-visibility gates. These are noise-control thresholds, not
+rankings or automatic acceptance rules. Archived projects belong in the
+historical category. Adjacent infrastructure belongs in `data/stack-projects.json`.
 
 ## Add or update a project
 
@@ -32,6 +35,10 @@ noise-control threshold, not a ranking or an automatic acceptance rule.
 4. Use one to four short tags and only the documented deployment values.
 5. Run `python3 scripts/update.py` to refresh metadata and every generated view.
 6. Run `python3 scripts/update.py --check` before opening a pull request.
+
+Projects that are promising but not mature enough belong in
+`data/watchlist.json`. Notable rejections belong in `data/exclusions.json` with a
+concrete condition under which maintainers should reconsider them.
 
 Please keep entries alphabetic within their category conceptually; the renderer
 sorts them automatically. A pull request should add one project or one coherent

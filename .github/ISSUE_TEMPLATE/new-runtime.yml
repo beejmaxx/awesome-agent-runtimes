@@ -17,12 +17,14 @@ body:
       options:
         - Agent cognition — coding harness
         - Agent cognition — construction SDK
+        - Agent cognition — realtime voice or multimodal
         - Agent cognition — browser or computer use
         - Agent host or supervisor
         - Durable orchestration
         - Personal agent OS or continuity
         - Execution and isolation
         - Application platform or infrastructure
+        - Supporting stack project
     validations:
       required: true
   - type: textarea

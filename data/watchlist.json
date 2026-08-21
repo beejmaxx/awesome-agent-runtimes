@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "projects": [
+    {
+      "name": "NVIDIA OpenShell",
+      "repo": "NVIDIA/OpenShell",
+      "boundary": "Execution and authority",
+      "review_after": "2026-08-24",
+      "reason": "One day short of the enforced 180-day repository-age gate when reviewed."
+    },
+    {
+      "name": "OpenAI Symphony",
+      "repo": "openai/symphony",
+      "boundary": "Agent host and supervisor",
+      "review_after": "2026-08-26",
+      "reason": "Strong adoption, but below the age gate and explicitly described as an experimental reference implementation."
+    },
+    {
+      "name": "Paperclip",
+      "repo": "paperclipai/paperclip",
+      "boundary": "Work state and continuity",
+      "review_after": "2026-08-30",
+      "reason": "Exceptional early adoption, but insufficient public history to establish maturity."
+    },
+    {
+      "name": "Microsoft Agent Governance Toolkit",
+      "repo": "microsoft/agent-governance-toolkit",
+      "boundary": "Authority and safety",
+      "review_after": "2026-08-30",
+      "reason": "Directly relevant governance architecture, but below the age gate."
+    },
+    {
+      "name": "Orca",
+      "repo": "stablyai/orca",
+      "boundary": "Agent host and supervisor",
+      "review_after": "2026-09-13",
+      "reason": "High early adoption for a parallel-agent environment, but below the age gate."
+    },
+    {
+      "name": "Herdr",
+      "repo": "herdrdev/herdr",
+      "boundary": "Agent host and supervisor",
+      "review_after": "2026-09-24",
+      "reason": "Promising coding-agent runtime with high early adoption, but below the age gate."
+    },
+    {
+      "name": "CubeSandbox",
+      "repo": "TencentCloud/CubeSandbox",
+      "boundary": "Execution and isolation",
+      "review_after": "2026-10-07",
+      "reason": "Popular lightweight agent sandbox, but below the age gate and without a GitHub-detected license."
+    },
+    {
+      "name": "Steel Browser",
+      "repo": "steel-dev/steel-browser",
+      "boundary": "Browser execution and isolation",
+      "review_after": "2026-09-30",
+      "reason": "Clears quantitative gates, but the latest public release remains beta; reassess operational maturity."
+    },
+    {
+      "name": "OpenSandbox",
+      "repo": "opensandbox-group/OpenSandbox",
+      "boundary": "Execution and isolation",
+      "review_after": "2026-09-30",
+      "reason": "Clears quantitative gates, but the server is still at an early 0.x release; reassess operational maturity."
+    }
+  ]
+}

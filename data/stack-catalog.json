@@ -1,0 +1,508 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-08-21T19:24:21+00:00",
+  "categories": [
+    {
+      "id": "work-state",
+      "title": "Work state and continuity",
+      "description": "Durable projects, tasks, artifacts, decisions, dependencies, and outcomes that survive agent and session boundaries."
+    },
+    {
+      "id": "memory",
+      "title": "Memory and context",
+      "description": "Recall, retrieval, and context substrates; useful to agents but distinct from durable work state."
+    },
+    {
+      "id": "integrations",
+      "title": "Tool execution and integrations",
+      "description": "Authentication, tool catalogs, and managed action execution across external applications."
+    },
+    {
+      "id": "protocols",
+      "title": "Tool, agent, and user-interface protocols",
+      "description": "Open interfaces for tools, agent-to-agent exchange, agent clients, and agent-facing applications."
+    },
+    {
+      "id": "authority",
+      "title": "Authority and policy",
+      "description": "General policy engines used to express credentials, capabilities, approvals, and effect boundaries."
+    },
+    {
+      "id": "durable-reference",
+      "title": "Durable execution references",
+      "description": "Durable execution systems kept as architectural references when licensing or scope excludes them from the core catalog."
+    },
+    {
+      "id": "observability",
+      "title": "Observability and evaluation",
+      "description": "Tracing, evaluation, causality, and post-incident explanation for agent behavior."
+    },
+    {
+      "id": "gateway",
+      "title": "Model gateways",
+      "description": "Provider routing, credentials, budgets, fallback, and model-facing policy."
+    },
+    {
+      "id": "deployment",
+      "title": "Deployment and compute",
+      "description": "Placement, scaling, networking, and service lifecycle for agent workloads."
+    },
+    {
+      "id": "execution-primitives",
+      "title": "Execution primitives",
+      "description": "Generic microVM and userspace-kernel isolation beneath agent-specific sandboxes."
+    }
+  ],
+  "projects": [
+    {
+      "name": "AG-UI",
+      "repo": "ag-ui-protocol/ag-ui",
+      "category": "protocols",
+      "description": "Event protocol connecting agent backends with user-facing applications.",
+      "tags": [
+        "AG-UI",
+        "events",
+        "protocol"
+      ],
+      "repository_url": "https://github.com/ag-ui-protocol/ag-ui",
+      "evidence_url": "https://github.com/ag-ui-protocol/ag-ui#readme",
+      "github": {
+        "stars": 15473,
+        "forks": 1392,
+        "language": "Python",
+        "license": "MIT",
+        "archived": false,
+        "created_at": "2025-05-07T12:49:37Z",
+        "pushed_at": "2026-08-21T16:25:30Z"
+      }
+    },
+    {
+      "name": "Agent Client Protocol",
+      "repo": "agentclientprotocol/agent-client-protocol",
+      "category": "protocols",
+      "description": "Protocol for communication between code editors or clients and coding agents.",
+      "exception": "Official protocol boundary; tracked despite being below the core star floor.",
+      "tags": [
+        "ACP",
+        "client",
+        "protocol"
+      ],
+      "repository_url": "https://github.com/agentclientprotocol/agent-client-protocol",
+      "evidence_url": "https://github.com/agentclientprotocol/agent-client-protocol#readme",
+      "github": {
+        "stars": 4039,
+        "forks": 349,
+        "language": "Rust",
+        "license": "Apache-2.0",
+        "archived": false,
+        "created_at": "2025-06-23T17:39:36Z",
+        "pushed_at": "2026-08-21T18:59:46Z"
+      }
+    },
+    {
+      "name": "Agent2Agent",
+      "repo": "a2aproject/A2A",
+      "category": "protocols",
+      "description": "Open protocol for communication and interoperability between opaque agent applications.",
+      "tags": [
+        "A2A",
+        "interoperability",
+        "protocol"
+      ],
+      "repository_url": "https://github.com/a2aproject/A2A",
+      "evidence_url": "https://github.com/a2aproject/A2A#readme",
+      "github": {
+        "stars": 25444,
+        "forks": 2575,
+        "language": "Shell",
+        "license": "Apache-2.0",
+        "archived": false,
+        "created_at": "2025-03-25T18:44:21Z",
+        "pushed_at": "2026-08-18T17:09:57Z"
+      }
+    },
+    {
+      "name": "Beads",
+      "repo": "gastownhall/beads",
+      "category": "work-state",
+      "description": "Distributed graph issue tracker for agents with persistent tasks, dependencies, claims, and cross-machine synchronization.",
+      "tags": [
+        "tasks",
+        "dependency-graph",
+        "multi-agent"
+      ],
+      "repository_url": "https://github.com/gastownhall/beads",
+      "evidence_url": "https://github.com/gastownhall/beads#readme",
+      "github": {
+        "stars": 26503,
+        "forks": 1783,
+        "language": "Go",
+        "license": "MIT",
+        "archived": false,
+        "created_at": "2025-10-12T03:09:46Z",
+        "pushed_at": "2026-08-21T13:10:47Z"
+      }
+    },
+    {
+      "name": "Cedar",
+      "repo": "cedar-policy/cedar",
+      "category": "authority",
+      "description": "Policy language and evaluation engine for fine-grained authorization.",
+      "exception": "Mature authorization primitive; tracked despite being below the core star floor.",
+      "tags": [
+        "policy",
+        "authorization",
+        "language"
+      ],
+      "repository_url": "https://github.com/cedar-policy/cedar",
+      "evidence_url": "https://github.com/cedar-policy/cedar#readme",
+      "github": {
+        "stars": 1679,
+        "forks": 169,
+        "language": "Rust",
+        "license": "Apache-2.0",
+        "archived": false,
+        "created_at": "2023-04-25T15:13:59Z",
+        "pushed_at": "2026-08-21T17:20:52Z"
+      }
+    },
+    {
+      "name": "Cognee",
+      "repo": "topoteretes/cognee",
+      "category": "memory",
+      "description": "Self-hosted agent memory and context engine built around knowledge graphs.",
+      "tags": [
+        "memory",
+        "knowledge-graph",
+        "self-hosted"
+      ],
+      "repository_url": "https://github.com/topoteretes/cognee",
+      "evidence_url": "https://github.com/topoteretes/cognee#readme",
+      "github": {
+        "stars": 30170,
+        "forks": 2945,
+        "language": "Python",
+        "license": "Apache-2.0",
+        "archived": false,
+        "created_at": "2023-08-16T16:16:33Z",
+        "pushed_at": "2026-08-21T19:17:40Z"
+      }
+    },
+    {
+      "name": "Composio",
+      "repo": "ComposioHQ/composio",
+      "category": "integrations",
+      "description": "Tool catalog, authentication layer, and managed execution workbench for agents.",
+      "tags": [
+        "integrations",
+        "authentication",
+        "tools"
+      ],
+      "repository_url": "https://github.com/ComposioHQ/composio",
+      "evidence_url": "https://github.com/ComposioHQ/composio#readme",
+      "github": {
+        "stars": 29809,
+        "forks": 4727,
+        "language": "TypeScript",
+        "license": "MIT",
+        "archived": false,
+        "created_at": "2024-02-23T13:58:27Z",
+        "pushed_at": "2026-08-21T19:04:47Z"
+      }
+    },
+    {
+      "name": "Firecracker",
+      "repo": "firecracker-microvm/firecracker",
+      "category": "execution-primitives",
+      "description": "MicroVM monitor used to provide lightweight hardware-virtualized workload isolation.",
+      "tags": [
+        "microVM",
+        "virtualization",
+        "isolation"
+      ],
+      "repository_url": "https://github.com/firecracker-microvm/firecracker",
+      "evidence_url": "https://github.com/firecracker-microvm/firecracker#readme",
+      "github": {
+        "stars": 36197,
+        "forks": 2576,
+        "language": "Rust",
+        "license": "Apache-2.0",
+        "archived": false,
+        "created_at": "2017-10-19T06:18:47Z",
+        "pushed_at": "2026-08-21T12:41:40Z"
+      }
+    },
+    {
+      "name": "Graphiti",
+      "repo": "getzep/graphiti",
+      "category": "memory",
+      "description": "Temporal knowledge-graph framework for continuously updated agent memory.",
+      "tags": [
+        "memory",
+        "knowledge-graph",
+        "temporal"
+      ],
+      "repository_url": "https://github.com/getzep/graphiti",
+      "evidence_url": "https://github.com/getzep/graphiti#readme",
+      "github": {
+        "stars": 30168,
+        "forks": 3055,
+        "language": "Python",
+        "license": "Apache-2.0",
+        "archived": false,
+        "created_at": "2024-08-08T22:08:30Z",
+        "pushed_at": "2026-08-21T01:52:20Z"
+      }
+    },
+    {
+      "name": "gVisor",
+      "repo": "google/gvisor",
+      "category": "execution-primitives",
+      "description": "Userspace application kernel that adds an isolation boundary around containers.",
+      "tags": [
+        "containers",
+        "kernel",
+        "isolation"
+      ],
+      "repository_url": "https://github.com/google/gvisor",
+      "evidence_url": "https://github.com/google/gvisor#readme",
+      "github": {
+        "stars": 19134,
+        "forks": 1931,
+        "language": "Go",
+        "license": "Apache-2.0",
+        "archived": false,
+        "created_at": "2018-04-26T21:28:49Z",
+        "pushed_at": "2026-08-21T19:22:31Z"
+      }
+    },
+    {
+      "name": "Kubernetes",
+      "repo": "kubernetes/kubernetes",
+      "category": "deployment",
+      "description": "Container orchestration platform and reference implementation of desired-state reconciliation.",
+      "tags": [
+        "deployment",
+        "reconciliation",
+        "containers"
+      ],
+      "repository_url": "https://github.com/kubernetes/kubernetes",
+      "evidence_url": "https://github.com/kubernetes/kubernetes#readme",
+      "github": {
+        "stars": 124756,
+        "forks": 43895,
+        "language": "Go",
+        "license": "Apache-2.0",
+        "archived": false,
+        "created_at": "2014-06-06T22:56:04Z",
+        "pushed_at": "2026-08-21T00:56:52Z"
+      }
+    },
+    {
+      "name": "Langfuse",
+      "repo": "langfuse/langfuse",
+      "category": "observability",
+      "description": "LLM engineering platform for traces, evaluations, metrics, prompts, and datasets.",
+      "license_override": "MIT (core)",
+      "tags": [
+        "tracing",
+        "evaluation",
+        "metrics"
+      ],
+      "repository_url": "https://github.com/langfuse/langfuse",
+      "evidence_url": "https://github.com/langfuse/langfuse#readme",
+      "github": {
+        "stars": 33526,
+        "forks": 3614,
+        "language": "TypeScript",
+        "license": "MIT (core)",
+        "archived": false,
+        "created_at": "2023-05-18T17:47:09Z",
+        "pushed_at": "2026-08-21T19:03:11Z"
+      }
+    },
+    {
+      "name": "LiteLLM",
+      "repo": "BerriAI/litellm",
+      "category": "gateway",
+      "description": "Model gateway and SDK for provider routing, budgets, load balancing, guardrails, and logging.",
+      "license_override": "MIT (core)",
+      "tags": [
+        "gateway",
+        "routing",
+        "guardrails"
+      ],
+      "repository_url": "https://github.com/BerriAI/litellm",
+      "evidence_url": "https://github.com/BerriAI/litellm#readme",
+      "github": {
+        "stars": 56947,
+        "forks": 10787,
+        "language": "Python",
+        "license": "MIT (core)",
+        "archived": false,
+        "created_at": "2023-07-27T00:09:52Z",
+        "pushed_at": "2026-08-21T19:20:25Z"
+      }
+    },
+    {
+      "name": "Mem0",
+      "repo": "mem0ai/mem0",
+      "category": "memory",
+      "description": "Memory layer for retaining and retrieving information across agent interactions.",
+      "tags": [
+        "memory",
+        "context",
+        "retrieval"
+      ],
+      "repository_url": "https://github.com/mem0ai/mem0",
+      "evidence_url": "https://github.com/mem0ai/mem0#readme",
+      "github": {
+        "stars": 63762,
+        "forks": 7451,
+        "language": "Python",
+        "license": "Apache-2.0",
+        "archived": false,
+        "created_at": "2023-06-20T08:58:36Z",
+        "pushed_at": "2026-08-21T14:14:41Z"
+      }
+    },
+    {
+      "name": "Modal",
+      "repo": "modal-labs/modal-client",
+      "category": "deployment",
+      "description": "Client and SDK for running containerized workloads on Modal's managed compute platform.",
+      "exception": "Official SDK for a widely used managed platform; repository stars understate service adoption.",
+      "tags": [
+        "compute",
+        "serverless",
+        "managed"
+      ],
+      "repository_url": "https://github.com/modal-labs/modal-client",
+      "evidence_url": "https://github.com/modal-labs/modal-client#readme",
+      "github": {
+        "stars": 506,
+        "forks": 118,
+        "language": "Python",
+        "license": "Apache-2.0",
+        "archived": false,
+        "created_at": "2022-10-18T23:14:11Z",
+        "pushed_at": "2026-08-21T16:38:12Z"
+      }
+    },
+    {
+      "name": "Model Context Protocol",
+      "repo": "modelcontextprotocol/modelcontextprotocol",
+      "category": "protocols",
+      "description": "Open protocol for connecting AI applications to tools and context providers.",
+      "license_override": "Apache-2.0 / MIT transition",
+      "tags": [
+        "MCP",
+        "tools",
+        "protocol"
+      ],
+      "repository_url": "https://github.com/modelcontextprotocol/modelcontextprotocol",
+      "evidence_url": "https://github.com/modelcontextprotocol/modelcontextprotocol#readme",
+      "github": {
+        "stars": 9018,
+        "forks": 1741,
+        "language": "TypeScript",
+        "license": "Apache-2.0 / MIT transition",
+        "archived": false,
+        "created_at": "2024-09-24T20:26:52Z",
+        "pushed_at": "2026-08-21T12:32:44Z"
+      }
+    },
+    {
+      "name": "Open Policy Agent",
+      "repo": "open-policy-agent/opa",
+      "category": "authority",
+      "description": "General-purpose policy engine for expressing and evaluating authorization decisions.",
+      "tags": [
+        "policy",
+        "authorization",
+        "governance"
+      ],
+      "repository_url": "https://github.com/open-policy-agent/opa",
+      "evidence_url": "https://github.com/open-policy-agent/opa#readme",
+      "github": {
+        "stars": 12130,
+        "forks": 1651,
+        "language": "Go",
+        "license": "Apache-2.0",
+        "archived": false,
+        "created_at": "2015-12-28T22:08:25Z",
+        "pushed_at": "2026-08-21T18:05:14Z"
+      }
+    },
+    {
+      "name": "OpenTelemetry Semantic Conventions",
+      "repo": "open-telemetry/semantic-conventions",
+      "category": "observability",
+      "description": "Standard semantic conventions, including GenAI and agent telemetry attributes.",
+      "exception": "Official standard; repository stars do not represent OpenTelemetry adoption.",
+      "tags": [
+        "OpenTelemetry",
+        "tracing",
+        "standard"
+      ],
+      "repository_url": "https://github.com/open-telemetry/semantic-conventions",
+      "evidence_url": "https://github.com/open-telemetry/semantic-conventions#readme",
+      "github": {
+        "stars": 637,
+        "forks": 384,
+        "language": "Jinja",
+        "license": "Apache-2.0",
+        "archived": false,
+        "created_at": "2023-05-09T17:15:53Z",
+        "pushed_at": "2026-08-20T04:52:56Z"
+      }
+    },
+    {
+      "name": "Phoenix",
+      "repo": "Arize-ai/phoenix",
+      "category": "observability",
+      "description": "Agent and LLM observability and evaluation platform built around traces and experiments.",
+      "license_override": "Elastic-2.0",
+      "tags": [
+        "tracing",
+        "evaluation",
+        "observability"
+      ],
+      "repository_url": "https://github.com/Arize-ai/phoenix",
+      "evidence_url": "https://github.com/Arize-ai/phoenix#readme",
+      "github": {
+        "stars": 11138,
+        "forks": 1072,
+        "language": "Python",
+        "license": "Elastic-2.0",
+        "archived": false,
+        "created_at": "2022-11-09T23:44:35Z",
+        "pushed_at": "2026-08-21T19:17:32Z"
+      }
+    },
+    {
+      "name": "Restate",
+      "repo": "restatedev/restate",
+      "category": "durable-reference",
+      "description": "Durable execution system with state, retries, promises, and recovery semantics.",
+      "license_override": "BSL-1.1",
+      "exception": "Architecturally relevant source-available reference; not an OSI-open core entry.",
+      "tags": [
+        "durable",
+        "recovery",
+        "stateful"
+      ],
+      "repository_url": "https://github.com/restatedev/restate",
+      "evidence_url": "https://github.com/restatedev/restate#readme",
+      "github": {
+        "stars": 4321,
+        "forks": 198,
+        "language": "Rust",
+        "license": "BSL-1.1",
+        "archived": false,
+        "created_at": "2023-01-04T15:03:32Z",
+        "pushed_at": "2026-08-21T14:55:35Z"
+      }
+    }
+  ]
+}

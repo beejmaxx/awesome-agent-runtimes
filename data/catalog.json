@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-21T16:28:10+00:00",
+  "generated_at": "2026-08-21T19:24:21+00:00",
   "categories": [
     {
       "id": "cognition-coding",
@@ -11,6 +11,11 @@
       "id": "cognition-frameworks",
       "title": "Agent cognition — construction SDKs",
       "description": "Libraries for constructing model/tool loops, routing, state transitions, and multi-agent behavior."
+    },
+    {
+      "id": "cognition-realtime",
+      "title": "Agent cognition — realtime voice and multimodal",
+      "description": "Frameworks and runtimes for low-latency voice, video, telephony, and multimodal agent interactions."
     },
     {
       "id": "cognition-computer-use",
@@ -41,6 +46,11 @@
       "id": "platforms",
       "title": "Application platforms and infrastructure",
       "description": "Platforms for building, packaging, exposing, and operating agent applications."
+    },
+    {
+      "id": "historical",
+      "title": "Historical projects",
+      "description": "Popular, influential implementations that are now archived or formally discontinued; retained for historical comparison, not recommended for new deployments."
     }
   ],
   "projects": [
@@ -49,6 +59,7 @@
       "repo": "agent0ai/agent-zero",
       "category": "hosts",
       "description": "General-purpose autonomous agent runtime with an interactive UI, subordinate agents, and executable tools.",
+      "license_override": "MIT",
       "deployment": [
         "local",
         "self-hosted"
@@ -59,17 +70,18 @@
         "memory"
       ],
       "repository_url": "https://github.com/agent0ai/agent-zero",
+      "evidence_url": "https://github.com/agent0ai/agent-zero#readme",
       "github": {
         "stars": 18922,
         "forks": 3747,
         "open_issues": 162,
         "language": "Python",
-        "license": "NOASSERTION",
         "archived": false,
         "created_at": "2024-06-10T09:10:45Z",
         "pushed_at": "2026-08-19T20:28:58Z",
         "homepage": "https://agent-zero.ai",
-        "default_branch": "main"
+        "default_branch": "main",
+        "license": "MIT"
       }
     },
     {
@@ -87,17 +99,18 @@
         "distributed"
       ],
       "repository_url": "https://github.com/agentscope-ai/agentscope",
+      "evidence_url": "https://github.com/agentscope-ai/agentscope#readme",
       "github": {
-        "stars": 29162,
+        "stars": 29168,
         "forks": 3393,
         "open_issues": 341,
         "language": "Python",
-        "license": "Apache-2.0",
         "archived": false,
         "created_at": "2024-01-12T03:41:59Z",
         "pushed_at": "2026-08-21T11:42:33Z",
         "homepage": "https://docs.agentscope.io/",
-        "default_branch": "main"
+        "default_branch": "main",
+        "license": "Apache-2.0"
       }
     },
     {
@@ -116,17 +129,18 @@
         "observability"
       ],
       "repository_url": "https://github.com/agno-agi/agno",
+      "evidence_url": "https://github.com/agno-agi/agno#readme",
       "github": {
-        "stars": 41824,
-        "forks": 5803,
+        "stars": 41825,
+        "forks": 5804,
         "open_issues": 1276,
         "language": "Python",
-        "license": "Apache-2.0",
         "archived": false,
         "created_at": "2022-05-04T15:23:02Z",
-        "pushed_at": "2026-08-21T16:27:06Z",
+        "pushed_at": "2026-08-21T19:20:56Z",
         "homepage": "https://docs.agno.com",
-        "default_branch": "main"
+        "default_branch": "main",
+        "license": "Apache-2.0"
       }
     },
     {
@@ -143,45 +157,47 @@
         "git"
       ],
       "repository_url": "https://github.com/Aider-AI/aider",
+      "evidence_url": "https://github.com/Aider-AI/aider#readme",
       "github": {
-        "stars": 48385,
+        "stars": 48388,
         "forks": 4867,
-        "open_issues": 1807,
+        "open_issues": 1808,
         "language": "Python",
-        "license": "Apache-2.0",
         "archived": false,
         "created_at": "2023-05-09T18:57:49Z",
         "pushed_at": "2026-05-22T14:02:20Z",
         "homepage": "https://aider.chat/",
-        "default_branch": "main"
+        "default_branch": "main",
+        "license": "Apache-2.0"
       }
     },
     {
-      "name": "AIOS",
-      "repo": "agiresearch/AIOS",
+      "name": "AionUi",
+      "repo": "iOfficeAI/AionUi",
       "category": "hosts",
-      "description": "Research agent operating-system kernel for scheduling LLM calls, memory, storage, and tools.",
+      "description": "Cross-platform cowork application for supervising built-in and external CLI agents with remote access and persistent automation.",
       "deployment": [
         "local",
-        "library"
+        "self-hosted"
       ],
       "tags": [
-        "scheduler",
-        "memory",
-        "research"
+        "control-plane",
+        "multi-agent",
+        "automation"
       ],
-      "repository_url": "https://github.com/agiresearch/AIOS",
+      "repository_url": "https://github.com/iOfficeAI/AionUi",
+      "evidence_url": "https://github.com/iOfficeAI/AionUi#readme",
       "github": {
-        "stars": 6261,
-        "forks": 893,
-        "open_issues": 59,
-        "language": "Python",
-        "license": "NOASSERTION",
+        "stars": 32178,
+        "forks": 3298,
+        "open_issues": 831,
+        "language": "TypeScript",
         "archived": false,
-        "created_at": "2024-01-15T03:52:41Z",
-        "pushed_at": "2026-07-20T14:43:34Z",
-        "homepage": "https://docs.aios.foundation",
-        "default_branch": "main"
+        "created_at": "2025-08-07T10:29:51Z",
+        "pushed_at": "2026-08-21T18:29:03Z",
+        "homepage": "https://www.aionui.com",
+        "default_branch": "main",
+        "license": "Apache-2.0"
       }
     },
     {
@@ -199,17 +215,18 @@
         "tools"
       ],
       "repository_url": "https://github.com/microsoft/autogen",
+      "evidence_url": "https://github.com/microsoft/autogen#readme",
       "github": {
-        "stars": 60560,
-        "forks": 9129,
+        "stars": 60562,
+        "forks": 9128,
         "open_issues": 996,
         "language": "Python",
-        "license": "CC-BY-4.0",
         "archived": false,
         "created_at": "2023-08-18T11:43:45Z",
         "pushed_at": "2026-04-15T11:59:09Z",
         "homepage": "https://microsoft.github.io/autogen/",
-        "default_branch": "main"
+        "default_branch": "main",
+        "license": "CC-BY-4.0"
       }
     },
     {
@@ -217,6 +234,7 @@
       "repo": "Significant-Gravitas/AutoGPT",
       "category": "hosts",
       "description": "Platform for creating, deploying, and continuously running autonomous agents.",
+      "license_override": "Mixed: MIT / PolyForm Shield",
       "deployment": [
         "self-hosted",
         "managed"
@@ -227,17 +245,18 @@
         "marketplace"
       ],
       "repository_url": "https://github.com/Significant-Gravitas/AutoGPT",
+      "evidence_url": "https://github.com/Significant-Gravitas/AutoGPT#readme",
       "github": {
-        "stars": 186714,
-        "forks": 46044,
-        "open_issues": 510,
+        "stars": 186722,
+        "forks": 46047,
+        "open_issues": 515,
         "language": "Python",
-        "license": "NOASSERTION",
         "archived": false,
         "created_at": "2023-03-16T09:21:07Z",
-        "pushed_at": "2026-08-21T14:45:33Z",
+        "pushed_at": "2026-08-21T19:14:08Z",
         "homepage": "https://agpt.co",
-        "default_branch": "master"
+        "default_branch": "master",
+        "license": "Mixed: MIT / PolyForm Shield"
       }
     },
     {
@@ -256,17 +275,18 @@
         "tools"
       ],
       "repository_url": "https://github.com/browser-use/browser-use",
+      "evidence_url": "https://github.com/browser-use/browser-use#readme",
       "github": {
-        "stars": 109993,
-        "forks": 12089,
+        "stars": 110005,
+        "forks": 12090,
         "open_issues": 364,
         "language": "Python",
-        "license": "MIT",
         "archived": false,
         "created_at": "2024-10-31T16:00:56Z",
         "pushed_at": "2026-08-21T00:00:12Z",
         "homepage": "https://browser-use.com",
-        "default_branch": "main"
+        "default_branch": "main",
+        "license": "MIT"
       }
     },
     {
@@ -284,17 +304,18 @@
         "memory"
       ],
       "repository_url": "https://github.com/camel-ai/camel",
+      "evidence_url": "https://github.com/camel-ai/camel#readme",
       "github": {
-        "stars": 17615,
+        "stars": 17616,
         "forks": 2049,
         "open_issues": 469,
         "language": "Python",
-        "license": "Apache-2.0",
         "archived": false,
         "created_at": "2023-03-17T21:41:54Z",
         "pushed_at": "2026-08-21T11:36:45Z",
         "homepage": "https://docs.camel-ai.org/",
-        "default_branch": "master"
+        "default_branch": "master",
+        "license": "Apache-2.0"
       }
     },
     {
@@ -312,17 +333,46 @@
         "SDK"
       ],
       "repository_url": "https://github.com/anthropics/claude-agent-sdk-python",
+      "evidence_url": "https://github.com/anthropics/claude-agent-sdk-python#readme",
       "github": {
         "stars": 7949,
         "forks": 1250,
         "open_issues": 436,
         "language": "Python",
-        "license": "MIT",
         "archived": false,
         "created_at": "2025-06-11T21:33:43Z",
         "pushed_at": "2026-08-20T20:48:57Z",
         "homepage": null,
-        "default_branch": "main"
+        "default_branch": "main",
+        "license": "MIT"
+      }
+    },
+    {
+      "name": "Claude Squad",
+      "repo": "smtg-ai/claude-squad",
+      "category": "hosts",
+      "description": "Terminal supervisor for running multiple coding agents concurrently in isolated Git workspaces.",
+      "deployment": [
+        "local"
+      ],
+      "tags": [
+        "supervisor",
+        "coding",
+        "worktrees"
+      ],
+      "repository_url": "https://github.com/smtg-ai/claude-squad",
+      "evidence_url": "https://github.com/smtg-ai/claude-squad#readme",
+      "github": {
+        "stars": 8347,
+        "forks": 611,
+        "open_issues": 54,
+        "language": "Go",
+        "archived": false,
+        "created_at": "2025-03-09T20:00:41Z",
+        "pushed_at": "2026-08-20T05:09:53Z",
+        "homepage": "https://smtg-ai.github.io/claude-squad/",
+        "default_branch": "main",
+        "license": "AGPL-3.0"
       }
     },
     {
@@ -340,17 +390,18 @@
         "human-in-the-loop"
       ],
       "repository_url": "https://github.com/cline/cline",
+      "evidence_url": "https://github.com/cline/cline#readme",
       "github": {
-        "stars": 66604,
-        "forks": 7178,
-        "open_issues": 1052,
+        "stars": 66610,
+        "forks": 7180,
+        "open_issues": 1056,
         "language": "TypeScript",
-        "license": "Apache-2.0",
         "archived": false,
         "created_at": "2024-07-06T07:28:10Z",
-        "pushed_at": "2026-08-21T15:20:19Z",
+        "pushed_at": "2026-08-21T19:19:56Z",
         "homepage": "https://cline.bot",
-        "default_branch": "main"
+        "default_branch": "main",
+        "license": "Apache-2.0"
       }
     },
     {
@@ -368,17 +419,18 @@
         "realtime"
       ],
       "repository_url": "https://github.com/cloudflare/agents",
+      "evidence_url": "https://github.com/cloudflare/agents#readme",
       "github": {
         "stars": 5471,
-        "forks": 676,
+        "forks": 677,
         "open_issues": 162,
         "language": "TypeScript",
-        "license": "MIT",
         "archived": false,
         "created_at": "2025-01-29T23:14:04Z",
-        "pushed_at": "2026-08-21T15:39:13Z",
+        "pushed_at": "2026-08-21T18:46:14Z",
         "homepage": "https://developers.cloudflare.com/agents/",
-        "default_branch": "main"
+        "default_branch": "main",
+        "license": "MIT"
       }
     },
     {
@@ -395,17 +447,18 @@
         "terminal"
       ],
       "repository_url": "https://github.com/openai/codex",
+      "evidence_url": "https://github.com/openai/codex#readme",
       "github": {
-        "stars": 110979,
-        "forks": 17013,
-        "open_issues": 13366,
+        "stars": 111155,
+        "forks": 17040,
+        "open_issues": 13377,
         "language": "Rust",
-        "license": "Apache-2.0",
         "archived": false,
         "created_at": "2025-04-13T05:37:54Z",
-        "pushed_at": "2026-08-21T16:07:14Z",
+        "pushed_at": "2026-08-21T19:21:26Z",
         "homepage": null,
-        "default_branch": "main"
+        "default_branch": "main",
+        "license": "Apache-2.0"
       }
     },
     {
@@ -423,17 +476,18 @@
         "automation"
       ],
       "repository_url": "https://github.com/continuedev/continue",
+      "evidence_url": "https://github.com/continuedev/continue#readme",
       "github": {
-        "stars": 35575,
+        "stars": 35576,
         "forks": 5264,
         "open_issues": 935,
         "language": "TypeScript",
-        "license": "Apache-2.0",
         "archived": false,
         "created_at": "2023-05-24T03:39:39Z",
         "pushed_at": "2026-08-20T10:27:05Z",
         "homepage": "https://continue.dev",
-        "default_branch": "main"
+        "default_branch": "main",
+        "license": "Apache-2.0"
       }
     },
     {
@@ -452,17 +506,18 @@
         "observability"
       ],
       "repository_url": "https://github.com/crewAIInc/crewAI",
+      "evidence_url": "https://github.com/crewAIInc/crewAI#readme",
       "github": {
-        "stars": 57428,
-        "forks": 8203,
-        "open_issues": 822,
+        "stars": 57430,
+        "forks": 8204,
+        "open_issues": 823,
         "language": "Python",
-        "license": "MIT",
         "archived": false,
         "created_at": "2023-10-27T03:26:59Z",
-        "pushed_at": "2026-08-21T11:36:09Z",
+        "pushed_at": "2026-08-21T18:57:51Z",
         "homepage": "https://crewai.com",
-        "default_branch": "main"
+        "default_branch": "main",
+        "license": "MIT"
       }
     },
     {
@@ -470,6 +525,7 @@
       "repo": "charmbracelet/crush",
       "category": "cognition-coding",
       "description": "Terminal coding-agent runtime with multi-model support, language-server integration, and extensible tools.",
+      "license_override": "FSL-1.1-MIT",
       "deployment": [
         "local"
       ],
@@ -479,45 +535,48 @@
         "LSP"
       ],
       "repository_url": "https://github.com/charmbracelet/crush",
+      "evidence_url": "https://github.com/charmbracelet/crush#readme",
       "github": {
-        "stars": 27558,
-        "forks": 2173,
+        "stars": 27561,
+        "forks": 2172,
         "open_issues": 663,
         "language": "Go",
-        "license": "NOASSERTION",
         "archived": false,
         "created_at": "2025-05-21T12:14:57Z",
-        "pushed_at": "2026-08-21T16:03:00Z",
+        "pushed_at": "2026-08-21T19:08:37Z",
         "homepage": null,
-        "default_branch": "main"
+        "default_branch": "main",
+        "license": "FSL-1.1-MIT"
       }
     },
     {
-      "name": "Daytona",
-      "repo": "daytonaio/daytona",
+      "name": "CUA",
+      "repo": "trycua/cua",
       "category": "execution",
-      "description": "Secure infrastructure for programmatically creating and managing agent execution sandboxes.",
+      "description": "Cross-platform computer-use infrastructure with background drivers, agent-ready VM and container sandboxes, and fleet tooling.",
       "deployment": [
-        "self-hosted",
+        "library",
+        "local",
         "managed"
       ],
       "tags": [
+        "computer-use",
         "sandbox",
-        "code-execution",
-        "API"
+        "virtualization"
       ],
-      "repository_url": "https://github.com/daytonaio/daytona",
+      "repository_url": "https://github.com/trycua/cua",
+      "evidence_url": "https://github.com/trycua/cua#readme",
       "github": {
-        "stars": 71927,
-        "forks": 5646,
-        "open_issues": 442,
-        "language": null,
-        "license": null,
+        "stars": 21771,
+        "forks": 1494,
+        "open_issues": 689,
+        "language": "HTML",
         "archived": false,
-        "created_at": "2024-02-06T08:21:20Z",
-        "pushed_at": "2026-07-24T07:12:07Z",
-        "homepage": "https://daytona.io",
-        "default_branch": "main"
+        "created_at": "2025-01-31T15:02:49Z",
+        "pushed_at": "2026-08-21T19:11:42Z",
+        "homepage": "https://cua.ai",
+        "default_branch": "main",
+        "license": "MIT"
       }
     },
     {
@@ -535,17 +594,18 @@
         "memory"
       ],
       "repository_url": "https://github.com/langchain-ai/deepagents",
+      "evidence_url": "https://github.com/langchain-ai/deepagents#readme",
       "github": {
-        "stars": 28040,
-        "forks": 3920,
-        "open_issues": 216,
+        "stars": 28047,
+        "forks": 3921,
+        "open_issues": 214,
         "language": "Python",
-        "license": "MIT",
         "archived": false,
         "created_at": "2025-07-27T23:07:53Z",
-        "pushed_at": "2026-08-21T16:24:41Z",
+        "pushed_at": "2026-08-21T19:23:02Z",
         "homepage": "https://docs.langchain.com/deepagents",
-        "default_branch": "main"
+        "default_branch": "main",
+        "license": "MIT"
       }
     },
     {
@@ -563,17 +623,18 @@
         "multi-agent"
       ],
       "repository_url": "https://github.com/bytedance/deer-flow",
+      "evidence_url": "https://github.com/bytedance/deer-flow#readme",
       "github": {
-        "stars": 80480,
-        "forks": 11040,
-        "open_issues": 905,
+        "stars": 80488,
+        "forks": 11043,
+        "open_issues": 910,
         "language": "Python",
-        "license": "MIT",
         "archived": false,
         "created_at": "2025-05-07T02:50:19Z",
         "pushed_at": "2026-08-20T00:57:10Z",
         "homepage": "https://deerflow.tech",
-        "default_branch": "main"
+        "default_branch": "main",
+        "license": "MIT"
       }
     },
     {
@@ -581,6 +642,7 @@
       "repo": "langgenius/dify",
       "category": "platforms",
       "description": "Visual platform for building and operating agentic applications, workflows, and model services.",
+      "license_override": "Modified Apache-2.0",
       "deployment": [
         "self-hosted",
         "managed"
@@ -591,17 +653,18 @@
         "observability"
       ],
       "repository_url": "https://github.com/langgenius/dify",
+      "evidence_url": "https://github.com/langgenius/dify#readme",
       "github": {
-        "stars": 153128,
+        "stars": 153138,
         "forks": 24177,
-        "open_issues": 946,
+        "open_issues": 947,
         "language": "TypeScript",
-        "license": "NOASSERTION",
         "archived": false,
         "created_at": "2023-04-12T07:40:24Z",
-        "pushed_at": "2026-08-21T13:40:06Z",
+        "pushed_at": "2026-08-21T19:14:27Z",
         "homepage": "https://dify.ai",
-        "default_branch": "main"
+        "default_branch": "main",
+        "license": "Modified Apache-2.0"
       }
     },
     {
@@ -619,17 +682,18 @@
         "API"
       ],
       "repository_url": "https://github.com/e2b-dev/E2B",
+      "evidence_url": "https://github.com/e2b-dev/E2B#readme",
       "github": {
         "stars": 13507,
         "forks": 1001,
-        "open_issues": 44,
+        "open_issues": 45,
         "language": "Python",
-        "license": "Apache-2.0",
         "archived": false,
         "created_at": "2023-03-04T13:41:18Z",
-        "pushed_at": "2026-08-21T16:19:56Z",
-        "homepage": "https://e2b.dev/docs?utm_source=github&utm_medium=referral&utm_campaign=repo_website&utm_content=e2b",
-        "default_branch": "main"
+        "pushed_at": "2026-08-21T19:17:36Z",
+        "homepage": "https://docs.e2b.dev/?utm_source=github&utm_medium=referral&utm_campaign=repo_website&utm_content=e2b",
+        "default_branch": "main",
+        "license": "Apache-2.0"
       }
     },
     {
@@ -647,24 +711,26 @@
         "memory"
       ],
       "repository_url": "https://github.com/elizaOS/eliza",
+      "evidence_url": "https://github.com/elizaOS/eliza#readme",
       "github": {
-        "stars": 19113,
-        "forks": 5681,
-        "open_issues": 468,
+        "stars": 19114,
+        "forks": 5680,
+        "open_issues": 339,
         "language": "TypeScript",
-        "license": "MIT",
         "archived": false,
         "created_at": "2024-07-09T07:55:40Z",
-        "pushed_at": "2026-08-21T16:20:40Z",
+        "pushed_at": "2026-08-21T19:21:04Z",
         "homepage": "https://elizaresearch.ai/",
-        "default_branch": "develop"
+        "default_branch": "develop",
+        "license": "MIT"
       }
     },
     {
       "name": "Flowise",
       "repo": "FlowiseAI/Flowise",
-      "category": "platforms",
-      "description": "Visual builder and serving platform for agent flows, assistants, and tool integrations.",
+      "category": "historical",
+      "description": "Archived visual builder and serving platform for agent flows, assistants, and tool integrations.",
+      "license_override": "Apache-2.0 (core)",
       "deployment": [
         "self-hosted",
         "managed"
@@ -675,17 +741,47 @@
         "tools"
       ],
       "repository_url": "https://github.com/FlowiseAI/Flowise",
+      "evidence_url": "https://github.com/FlowiseAI/Flowise#readme",
       "github": {
         "stars": 55382,
-        "forks": 24934,
+        "forks": 24933,
         "open_issues": 1047,
         "language": "TypeScript",
-        "license": "NOASSERTION",
         "archived": true,
         "created_at": "2023-03-31T12:23:09Z",
         "pushed_at": "2026-08-13T12:38:19Z",
         "homepage": "https://flowiseai.com",
-        "default_branch": "main"
+        "default_branch": "main",
+        "license": "Apache-2.0 (core)"
+      }
+    },
+    {
+      "name": "Gas Town",
+      "repo": "gastownhall/gastown",
+      "category": "hosts",
+      "description": "Multi-agent workspace manager with persistent work tracking, agent identities, mailboxes, handoffs, and Git worktrees.",
+      "deployment": [
+        "local"
+      ],
+      "tags": [
+        "supervisor",
+        "work-state",
+        "multi-agent",
+        "worktrees"
+      ],
+      "repository_url": "https://github.com/gastownhall/gastown",
+      "evidence_url": "https://github.com/gastownhall/gastown#readme",
+      "github": {
+        "stars": 17707,
+        "forks": 1626,
+        "open_issues": 411,
+        "language": "Go",
+        "archived": false,
+        "created_at": "2025-12-16T00:33:33Z",
+        "pushed_at": "2026-08-19T04:16:45Z",
+        "homepage": null,
+        "default_branch": "main",
+        "license": "MIT"
       }
     },
     {
@@ -702,17 +798,18 @@
         "MCP"
       ],
       "repository_url": "https://github.com/google-gemini/gemini-cli",
+      "evidence_url": "https://github.com/google-gemini/gemini-cli#readme",
       "github": {
-        "stars": 106598,
-        "forks": 14456,
-        "open_issues": 797,
+        "stars": 106600,
+        "forks": 14457,
+        "open_issues": 798,
         "language": "TypeScript",
-        "license": "Apache-2.0",
         "archived": false,
         "created_at": "2025-04-17T17:04:31Z",
-        "pushed_at": "2026-08-21T16:27:11Z",
+        "pushed_at": "2026-08-21T17:19:13Z",
         "homepage": "https://geminicli.com",
-        "default_branch": "main"
+        "default_branch": "main",
+        "license": "Apache-2.0"
       }
     },
     {
@@ -731,17 +828,18 @@
         "tools"
       ],
       "repository_url": "https://github.com/google/adk-python",
+      "evidence_url": "https://github.com/google/adk-python#readme",
       "github": {
-        "stars": 21216,
-        "forks": 3871,
+        "stars": 21218,
+        "forks": 3872,
         "open_issues": 536,
         "language": "Python",
-        "license": "Apache-2.0",
         "archived": false,
         "created_at": "2025-04-01T20:44:40Z",
-        "pushed_at": "2026-08-21T16:15:09Z",
+        "pushed_at": "2026-08-21T18:46:28Z",
         "homepage": "https://google.github.io/adk-docs/",
-        "default_branch": "main"
+        "default_branch": "main",
+        "license": "Apache-2.0"
       }
     },
     {
@@ -758,17 +856,18 @@
         "desktop"
       ],
       "repository_url": "https://github.com/aaif-goose/goose",
+      "evidence_url": "https://github.com/aaif-goose/goose#readme",
       "github": {
-        "stars": 53166,
-        "forks": 6062,
-        "open_issues": 220,
+        "stars": 53180,
+        "forks": 6064,
+        "open_issues": 232,
         "language": "Rust",
-        "license": "Apache-2.0",
         "archived": false,
         "created_at": "2024-08-23T19:03:36Z",
-        "pushed_at": "2026-08-21T16:25:51Z",
+        "pushed_at": "2026-08-21T19:21:33Z",
         "homepage": "https://goose-docs.ai/",
-        "default_branch": "main"
+        "default_branch": "main",
+        "license": "Apache-2.0"
       }
     },
     {
@@ -786,17 +885,18 @@
         "observability"
       ],
       "repository_url": "https://github.com/hatchet-dev/hatchet",
+      "evidence_url": "https://github.com/hatchet-dev/hatchet#readme",
       "github": {
         "stars": 7773,
         "forks": 470,
-        "open_issues": 132,
+        "open_issues": 133,
         "language": "Go",
-        "license": "MIT",
         "archived": false,
         "created_at": "2023-12-15T17:50:29Z",
-        "pushed_at": "2026-08-21T15:47:34Z",
+        "pushed_at": "2026-08-21T19:14:06Z",
         "homepage": "https://hatchet.run",
-        "default_branch": "main"
+        "default_branch": "main",
+        "license": "MIT"
       }
     },
     {
@@ -815,17 +915,18 @@
         "multi-agent"
       ],
       "repository_url": "https://github.com/NousResearch/hermes-agent",
+      "evidence_url": "https://github.com/NousResearch/hermes-agent#readme",
       "github": {
-        "stars": 233872,
-        "forks": 46928,
-        "open_issues": 34249,
+        "stars": 233923,
+        "forks": 46954,
+        "open_issues": 34291,
         "language": "Python",
-        "license": "MIT",
         "archived": false,
         "created_at": "2025-07-22T22:22:28Z",
-        "pushed_at": "2026-08-21T16:23:12Z",
+        "pushed_at": "2026-08-21T19:17:29Z",
         "homepage": "https://hermes-agent.nousresearch.com",
-        "default_branch": "main"
+        "default_branch": "main",
+        "license": "MIT"
       }
     },
     {
@@ -833,6 +934,7 @@
       "repo": "inngest/inngest",
       "category": "durable",
       "description": "Event-driven durable execution platform for step functions, scheduling, retries, and agent workflows.",
+      "license_override": "SSPL-1.0 / Apache-2.0 future",
       "deployment": [
         "self-hosted",
         "managed"
@@ -843,17 +945,47 @@
         "workflows"
       ],
       "repository_url": "https://github.com/inngest/inngest",
+      "evidence_url": "https://github.com/inngest/inngest#readme",
       "github": {
         "stars": 5752,
         "forks": 339,
         "open_issues": 228,
         "language": "Go",
-        "license": "NOASSERTION",
         "archived": false,
         "created_at": "2021-06-07T18:26:33Z",
-        "pushed_at": "2026-08-21T14:17:02Z",
+        "pushed_at": "2026-08-21T19:14:00Z",
         "homepage": "https://www.inngest.com/docs",
-        "default_branch": "main"
+        "default_branch": "main",
+        "license": "SSPL-1.0 / Apache-2.0 future"
+      }
+    },
+    {
+      "name": "Kilo Code",
+      "repo": "Kilo-Org/kilocode",
+      "category": "cognition-coding",
+      "description": "Open-source coding agent for IDEs and the terminal with multiple models, specialized agents, and a managed cloud option.",
+      "deployment": [
+        "local",
+        "managed"
+      ],
+      "tags": [
+        "coding",
+        "IDE",
+        "terminal"
+      ],
+      "repository_url": "https://github.com/Kilo-Org/kilocode",
+      "evidence_url": "https://github.com/Kilo-Org/kilocode#readme",
+      "github": {
+        "stars": 26966,
+        "forks": 3073,
+        "open_issues": 591,
+        "language": "TypeScript",
+        "archived": false,
+        "created_at": "2025-03-10T15:34:26Z",
+        "pushed_at": "2026-08-21T18:37:36Z",
+        "homepage": "https://kilo.ai/",
+        "default_branch": "main",
+        "license": "MIT"
       }
     },
     {
@@ -871,17 +1003,18 @@
         "ecosystem"
       ],
       "repository_url": "https://github.com/langchain-ai/langchain",
+      "evidence_url": "https://github.com/langchain-ai/langchain#readme",
       "github": {
-        "stars": 144724,
+        "stars": 144729,
         "forks": 24109,
-        "open_issues": 415,
+        "open_issues": 414,
         "language": "Python",
-        "license": "MIT",
         "archived": false,
         "created_at": "2022-10-17T02:58:36Z",
-        "pushed_at": "2026-08-21T15:25:10Z",
+        "pushed_at": "2026-08-21T18:38:05Z",
         "homepage": "https://docs.langchain.com/langchain/",
-        "default_branch": "master"
+        "default_branch": "master",
+        "license": "MIT"
       }
     },
     {
@@ -900,17 +1033,18 @@
         "API"
       ],
       "repository_url": "https://github.com/langflow-ai/langflow",
+      "evidence_url": "https://github.com/langflow-ai/langflow#readme",
       "github": {
-        "stars": 153528,
+        "stars": 153536,
         "forks": 9902,
-        "open_issues": 966,
+        "open_issues": 968,
         "language": "Python",
-        "license": "MIT",
         "archived": false,
         "created_at": "2023-02-08T22:28:03Z",
-        "pushed_at": "2026-08-21T15:31:07Z",
+        "pushed_at": "2026-08-21T18:26:54Z",
         "homepage": "http://www.langflow.org",
-        "default_branch": "main"
+        "default_branch": "main",
+        "license": "MIT"
       }
     },
     {
@@ -929,17 +1063,18 @@
         "graph"
       ],
       "repository_url": "https://github.com/langchain-ai/langgraph",
+      "evidence_url": "https://github.com/langchain-ai/langgraph#readme",
       "github": {
-        "stars": 40184,
-        "forks": 6765,
+        "stars": 40186,
+        "forks": 6767,
         "open_issues": 706,
         "language": "Python",
-        "license": "MIT",
         "archived": false,
         "created_at": "2023-08-09T18:33:12Z",
         "pushed_at": "2026-08-20T07:50:25Z",
         "homepage": "https://docs.langchain.com/oss/python/langgraph/",
-        "default_branch": "main"
+        "default_branch": "main",
+        "license": "MIT"
       }
     },
     {
@@ -957,17 +1092,49 @@
         "stateful"
       ],
       "repository_url": "https://github.com/letta-ai/letta",
+      "evidence_url": "https://github.com/letta-ai/letta#readme",
       "github": {
         "stars": 24332,
         "forks": 2585,
-        "open_issues": 41,
+        "open_issues": 42,
         "language": null,
-        "license": "Apache-2.0",
         "archived": false,
         "created_at": "2023-10-11T07:38:37Z",
         "pushed_at": "2026-08-16T03:56:11Z",
         "homepage": "https://docs.letta.com/",
-        "default_branch": "main"
+        "default_branch": "main",
+        "license": "Apache-2.0"
+      }
+    },
+    {
+      "name": "LiveKit Agents",
+      "repo": "livekit/agents",
+      "category": "cognition-realtime",
+      "description": "Server-side framework for realtime voice and multimodal agents with job dispatch, telephony, testing, and provider integrations.",
+      "deployment": [
+        "library",
+        "self-hosted",
+        "managed"
+      ],
+      "tags": [
+        "voice",
+        "multimodal",
+        "realtime",
+        "telephony"
+      ],
+      "repository_url": "https://github.com/livekit/agents",
+      "evidence_url": "https://github.com/livekit/agents#readme",
+      "github": {
+        "stars": 13126,
+        "forks": 3586,
+        "open_issues": 778,
+        "language": "Python",
+        "archived": false,
+        "created_at": "2023-10-19T23:00:55Z",
+        "pushed_at": "2026-08-21T18:35:17Z",
+        "homepage": "https://docs.livekit.io/agents",
+        "default_branch": "main",
+        "license": "Apache-2.0"
       }
     },
     {
@@ -986,17 +1153,18 @@
         "retrieval"
       ],
       "repository_url": "https://github.com/run-llama/llama_index",
+      "evidence_url": "https://github.com/run-llama/llama_index#readme",
       "github": {
-        "stars": 51790,
-        "forks": 7979,
-        "open_issues": 644,
+        "stars": 51791,
+        "forks": 7980,
+        "open_issues": 646,
         "language": "Python",
-        "license": "MIT",
         "archived": false,
         "created_at": "2022-11-02T04:24:54Z",
         "pushed_at": "2026-08-20T15:46:41Z",
         "homepage": "https://developers.llamaindex.ai",
-        "default_branch": "main"
+        "default_branch": "main",
+        "license": "MIT"
       }
     },
     {
@@ -1004,6 +1172,7 @@
       "repo": "mastra-ai/mastra",
       "category": "cognition-frameworks",
       "description": "TypeScript agent framework with workflows, memory, evaluation, and observability.",
+      "license_override": "Apache-2.0 (core)",
       "deployment": [
         "library",
         "self-hosted",
@@ -1015,17 +1184,18 @@
         "observability"
       ],
       "repository_url": "https://github.com/mastra-ai/mastra",
+      "evidence_url": "https://github.com/mastra-ai/mastra#readme",
       "github": {
         "stars": 27352,
-        "forks": 2671,
-        "open_issues": 504,
+        "forks": 2672,
+        "open_issues": 508,
         "language": "TypeScript",
-        "license": "NOASSERTION",
         "archived": false,
         "created_at": "2024-08-06T20:44:31Z",
-        "pushed_at": "2026-08-21T16:23:04Z",
+        "pushed_at": "2026-08-21T19:23:12Z",
         "homepage": "https://mastra.ai",
-        "default_branch": "main"
+        "default_branch": "main",
+        "license": "Apache-2.0 (core)"
       }
     },
     {
@@ -1043,17 +1213,18 @@
         "workflows"
       ],
       "repository_url": "https://github.com/FoundationAgents/MetaGPT",
+      "evidence_url": "https://github.com/FoundationAgents/MetaGPT#readme",
       "github": {
-        "stars": 69935,
-        "forks": 8891,
+        "stars": 69936,
+        "forks": 8892,
         "open_issues": 130,
         "language": "Python",
-        "license": "MIT",
         "archived": false,
         "created_at": "2023-06-30T09:04:55Z",
         "pushed_at": "2026-01-21T10:12:33Z",
         "homepage": "https://atoms.dev/",
-        "default_branch": "main"
+        "default_branch": "main",
+        "license": "MIT"
       }
     },
     {
@@ -1071,17 +1242,18 @@
         "code-execution"
       ],
       "repository_url": "https://github.com/superradcompany/microsandbox",
+      "evidence_url": "https://github.com/superradcompany/microsandbox#readme",
       "github": {
-        "stars": 7842,
+        "stars": 7845,
         "forks": 413,
-        "open_issues": 73,
+        "open_issues": 76,
         "language": "Rust",
-        "license": "Apache-2.0",
         "archived": false,
         "created_at": "2024-10-03T15:57:38Z",
-        "pushed_at": "2026-08-21T15:27:15Z",
+        "pushed_at": "2026-08-21T18:34:58Z",
         "homepage": "https://docs.microsandbox.dev",
-        "default_branch": "main"
+        "default_branch": "main",
+        "license": "Apache-2.0"
       }
     },
     {
@@ -1100,17 +1272,18 @@
         "middleware"
       ],
       "repository_url": "https://github.com/microsoft/agent-framework",
+      "evidence_url": "https://github.com/microsoft/agent-framework#readme",
       "github": {
-        "stars": 13026,
-        "forks": 2206,
+        "stars": 13027,
+        "forks": 2207,
         "open_issues": 593,
         "language": "Python",
-        "license": "MIT",
         "archived": false,
         "created_at": "2025-04-28T19:40:42Z",
-        "pushed_at": "2026-08-21T13:55:48Z",
+        "pushed_at": "2026-08-21T18:08:36Z",
         "homepage": "https://aka.ms/agent-framework",
-        "default_branch": "main"
+        "default_branch": "main",
+        "license": "MIT"
       }
     },
     {
@@ -1128,17 +1301,18 @@
         "automation"
       ],
       "repository_url": "https://github.com/HKUDS/nanobot",
+      "evidence_url": "https://github.com/HKUDS/nanobot#readme",
       "github": {
-        "stars": 47255,
+        "stars": 47260,
         "forks": 8339,
-        "open_issues": 726,
+        "open_issues": 718,
         "language": "Python",
-        "license": "MIT",
         "archived": false,
         "created_at": "2026-02-01T07:16:15Z",
-        "pushed_at": "2026-08-21T15:18:10Z",
+        "pushed_at": "2026-08-21T18:40:02Z",
         "homepage": "https://nanobot.wiki",
-        "default_branch": "main"
+        "default_branch": "main",
+        "license": "MIT"
       }
     },
     {
@@ -1156,45 +1330,18 @@
         "scheduler"
       ],
       "repository_url": "https://github.com/nanocoai/nanoclaw",
+      "evidence_url": "https://github.com/nanocoai/nanoclaw#readme",
       "github": {
         "stars": 30588,
-        "forks": 12846,
-        "open_issues": 933,
+        "forks": 12845,
+        "open_issues": 936,
         "language": "TypeScript",
-        "license": "MIT",
         "archived": false,
         "created_at": "2026-01-31T15:47:22Z",
-        "pushed_at": "2026-08-21T15:31:02Z",
+        "pushed_at": "2026-08-21T19:21:49Z",
         "homepage": "https://nanoclaw.dev",
-        "default_branch": "main"
-      }
-    },
-    {
-      "name": "NVIDIA OpenShell",
-      "repo": "NVIDIA/OpenShell",
-      "category": "execution",
-      "description": "Policy-governed runtime for running autonomous agents inside private sandboxes.",
-      "deployment": [
-        "local",
-        "self-hosted"
-      ],
-      "tags": [
-        "sandbox",
-        "policy",
-        "privacy"
-      ],
-      "repository_url": "https://github.com/NVIDIA/OpenShell",
-      "github": {
-        "stars": 8304,
-        "forks": 1227,
-        "open_issues": 474,
-        "language": "Rust",
-        "license": "Apache-2.0",
-        "archived": false,
-        "created_at": "2026-02-24T22:52:22Z",
-        "pushed_at": "2026-08-21T16:24:02Z",
-        "homepage": "https://docs.nvidia.com/openshell/latest/",
-        "default_branch": "main"
+        "default_branch": "main",
+        "license": "MIT"
       }
     },
     {
@@ -1211,17 +1358,18 @@
         "local-models"
       ],
       "repository_url": "https://github.com/openinterpreter/openinterpreter",
+      "evidence_url": "https://github.com/openinterpreter/openinterpreter#readme",
       "github": {
-        "stars": 68096,
-        "forks": 5857,
+        "stars": 68098,
+        "forks": 5859,
         "open_issues": 4,
         "language": "Rust",
-        "license": "Apache-2.0",
         "archived": false,
         "created_at": "2023-07-14T07:10:44Z",
         "pushed_at": "2026-08-20T03:35:38Z",
         "homepage": "http://openinterpreter.com/",
-        "default_branch": "main"
+        "default_branch": "main",
+        "license": "Apache-2.0"
       }
     },
     {
@@ -1238,17 +1386,18 @@
         "tracing"
       ],
       "repository_url": "https://github.com/openai/openai-agents-python",
+      "evidence_url": "https://github.com/openai/openai-agents-python#readme",
       "github": {
-        "stars": 28834,
-        "forks": 4548,
-        "open_issues": 15,
+        "stars": 28836,
+        "forks": 4549,
+        "open_issues": 18,
         "language": "Python",
-        "license": "MIT",
         "archived": false,
         "created_at": "2025-03-11T03:42:36Z",
         "pushed_at": "2026-08-21T05:14:09Z",
         "homepage": "https://openai.github.io/openai-agents-python/",
-        "default_branch": "main"
+        "default_branch": "main",
+        "license": "MIT"
       }
     },
     {
@@ -1256,6 +1405,7 @@
       "repo": "openclaw/openclaw",
       "category": "continuity",
       "description": "Personal agent runtime with messaging channels, schedules, memory, skills, and tool execution.",
+      "license_override": "MIT",
       "deployment": [
         "local",
         "self-hosted"
@@ -1266,17 +1416,18 @@
         "tools"
       ],
       "repository_url": "https://github.com/openclaw/openclaw",
+      "evidence_url": "https://github.com/openclaw/openclaw#readme",
       "github": {
-        "stars": 387029,
-        "forks": 81294,
-        "open_issues": 5901,
+        "stars": 387039,
+        "forks": 81297,
+        "open_issues": 5975,
         "language": "TypeScript",
-        "license": "NOASSERTION",
         "archived": false,
         "created_at": "2025-11-24T10:16:47Z",
-        "pushed_at": "2026-08-21T16:27:31Z",
+        "pushed_at": "2026-08-21T19:20:25Z",
         "homepage": "https://openclaw.ai",
-        "default_branch": "main"
+        "default_branch": "main",
+        "license": "MIT"
       }
     },
     {
@@ -1294,17 +1445,18 @@
         "multi-session"
       ],
       "repository_url": "https://github.com/anomalyco/opencode",
+      "evidence_url": "https://github.com/anomalyco/opencode#readme",
       "github": {
-        "stars": 199867,
-        "forks": 25808,
-        "open_issues": 5288,
+        "stars": 199938,
+        "forks": 25817,
+        "open_issues": 5313,
         "language": "TypeScript",
-        "license": "MIT",
         "archived": false,
         "created_at": "2025-04-30T20:08:00Z",
-        "pushed_at": "2026-08-21T16:00:50Z",
+        "pushed_at": "2026-08-21T19:22:25Z",
         "homepage": "https://opencode.ai",
-        "default_branch": "dev"
+        "default_branch": "dev",
+        "license": "MIT"
       }
     },
     {
@@ -1323,17 +1475,18 @@
         "multi-agent"
       ],
       "repository_url": "https://github.com/OpenHands/OpenHands",
+      "evidence_url": "https://github.com/OpenHands/OpenHands#readme",
       "github": {
-        "stars": 84708,
-        "forks": 11038,
-        "open_issues": 522,
+        "stars": 84725,
+        "forks": 11044,
+        "open_issues": 527,
         "language": "TypeScript",
-        "license": "MIT",
         "archived": false,
         "created_at": "2024-03-13T03:33:31Z",
-        "pushed_at": "2026-08-21T15:39:43Z",
+        "pushed_at": "2026-08-21T18:21:19Z",
         "homepage": "https://openhands.dev",
-        "default_branch": "main"
+        "default_branch": "main",
+        "license": "MIT"
       }
     },
     {
@@ -1351,17 +1504,49 @@
         "sessions"
       ],
       "repository_url": "https://github.com/earendil-works/pi",
+      "evidence_url": "https://github.com/earendil-works/pi#readme",
       "github": {
-        "stars": 94961,
-        "forks": 11748,
+        "stars": 95007,
+        "forks": 11754,
         "open_issues": 137,
         "language": "TypeScript",
-        "license": "MIT",
         "archived": false,
         "created_at": "2025-08-09T14:03:50Z",
-        "pushed_at": "2026-08-21T14:47:16Z",
+        "pushed_at": "2026-08-21T16:33:51Z",
         "homepage": null,
-        "default_branch": "main"
+        "default_branch": "main",
+        "license": "MIT"
+      }
+    },
+    {
+      "name": "Pipecat",
+      "repo": "pipecat-ai/pipecat",
+      "category": "cognition-realtime",
+      "description": "Python framework for realtime voice and multimodal agents with streaming pipelines and multi-agent coordination.",
+      "deployment": [
+        "library",
+        "self-hosted",
+        "managed"
+      ],
+      "tags": [
+        "voice",
+        "multimodal",
+        "realtime",
+        "multi-agent"
+      ],
+      "repository_url": "https://github.com/pipecat-ai/pipecat",
+      "evidence_url": "https://github.com/pipecat-ai/pipecat#readme",
+      "github": {
+        "stars": 14397,
+        "forks": 2501,
+        "open_issues": 234,
+        "language": "Python",
+        "archived": false,
+        "created_at": "2023-12-27T12:59:00Z",
+        "pushed_at": "2026-08-21T18:51:13Z",
+        "homepage": "https://pipecat.ai",
+        "default_branch": "main",
+        "license": "BSD-2-Clause"
       }
     },
     {
@@ -1379,17 +1564,18 @@
         "evaluation"
       ],
       "repository_url": "https://github.com/pydantic/pydantic-ai",
+      "evidence_url": "https://github.com/pydantic/pydantic-ai#readme",
       "github": {
-        "stars": 19433,
+        "stars": 19432,
         "forks": 2572,
-        "open_issues": 716,
+        "open_issues": 718,
         "language": "Python",
-        "license": "MIT",
         "archived": false,
         "created_at": "2024-06-21T15:55:04Z",
-        "pushed_at": "2026-08-21T15:50:32Z",
+        "pushed_at": "2026-08-21T19:23:22Z",
         "homepage": "https://pydantic.dev/pydantic-ai",
-        "default_branch": "main"
+        "default_branch": "main",
+        "license": "MIT"
       }
     },
     {
@@ -1406,24 +1592,25 @@
         "tools"
       ],
       "repository_url": "https://github.com/QwenLM/qwen-code",
+      "evidence_url": "https://github.com/QwenLM/qwen-code#readme",
       "github": {
-        "stars": 27261,
-        "forks": 2902,
-        "open_issues": 1171,
+        "stars": 27266,
+        "forks": 2903,
+        "open_issues": 1172,
         "language": "TypeScript",
-        "license": "Apache-2.0",
         "archived": false,
         "created_at": "2025-06-26T01:37:46Z",
-        "pushed_at": "2026-08-21T16:26:44Z",
+        "pushed_at": "2026-08-21T19:19:24Z",
         "homepage": "https://qwenlm.github.io/qwen-code-docs/en/users/overview",
-        "default_branch": "main"
+        "default_branch": "main",
+        "license": "Apache-2.0"
       }
     },
     {
       "name": "Roo Code",
       "repo": "RooCodeInc/Roo-Code",
-      "category": "cognition-coding",
-      "description": "IDE coding-agent runtime with specialized modes, tool use, and multi-agent orchestration.",
+      "category": "historical",
+      "description": "Archived IDE coding-agent runtime with specialized modes, tool use, and multi-agent orchestration.",
       "deployment": [
         "local"
       ],
@@ -1433,17 +1620,18 @@
         "multi-agent"
       ],
       "repository_url": "https://github.com/RooCodeInc/Roo-Code",
+      "evidence_url": "https://github.com/RooCodeInc/Roo-Code#readme",
       "github": {
         "stars": 24329,
-        "forks": 3416,
+        "forks": 3417,
         "open_issues": 1036,
         "language": "TypeScript",
-        "license": "Apache-2.0",
         "archived": true,
         "created_at": "2024-10-31T17:56:50Z",
         "pushed_at": "2026-05-15T18:08:47Z",
         "homepage": "https://roocode.com",
-        "default_branch": "main"
+        "default_branch": "main",
+        "license": "Apache-2.0"
       }
     },
     {
@@ -1462,17 +1650,18 @@
         "enterprise"
       ],
       "repository_url": "https://github.com/microsoft/semantic-kernel",
+      "evidence_url": "https://github.com/microsoft/semantic-kernel#readme",
       "github": {
         "stars": 28477,
         "forks": 4731,
         "open_issues": 249,
         "language": "C#",
-        "license": "MIT",
         "archived": false,
         "created_at": "2023-02-27T17:39:42Z",
         "pushed_at": "2026-08-21T02:44:34Z",
         "homepage": "https://aka.ms/semantic-kernel",
-        "default_branch": "main"
+        "default_branch": "main",
+        "license": "MIT"
       }
     },
     {
@@ -1490,17 +1679,18 @@
         "computer-use"
       ],
       "repository_url": "https://github.com/Skyvern-AI/skyvern",
+      "evidence_url": "https://github.com/Skyvern-AI/skyvern#readme",
       "github": {
-        "stars": 22817,
+        "stars": 22822,
         "forks": 2141,
         "open_issues": 214,
         "language": "Python",
-        "license": "AGPL-3.0",
         "archived": false,
         "created_at": "2024-02-28T15:45:19Z",
         "pushed_at": "2026-08-21T15:37:09Z",
         "homepage": "https://www.skyvern.com",
-        "default_branch": "main"
+        "default_branch": "main",
+        "license": "AGPL-3.0"
       }
     },
     {
@@ -1518,17 +1708,18 @@
         "lightweight"
       ],
       "repository_url": "https://github.com/huggingface/smolagents",
+      "evidence_url": "https://github.com/huggingface/smolagents#readme",
       "github": {
-        "stars": 28917,
+        "stars": 28920,
         "forks": 2878,
         "open_issues": 797,
         "language": "Python",
-        "license": "Apache-2.0",
         "archived": false,
         "created_at": "2024-12-05T11:28:04Z",
         "pushed_at": "2026-07-21T18:35:00Z",
         "homepage": "https://huggingface.co/docs/smolagents",
-        "default_branch": "main"
+        "default_branch": "main",
+        "license": "Apache-2.0"
       }
     },
     {
@@ -1547,17 +1738,18 @@
         "SDK"
       ],
       "repository_url": "https://github.com/browserbase/stagehand",
+      "evidence_url": "https://github.com/browserbase/stagehand#readme",
       "github": {
-        "stars": 24014,
+        "stars": 24015,
         "forks": 1652,
         "open_issues": 331,
         "language": "TypeScript",
-        "license": "MIT",
         "archived": false,
         "created_at": "2024-03-24T19:19:44Z",
-        "pushed_at": "2026-08-21T15:50:57Z",
+        "pushed_at": "2026-08-21T19:22:00Z",
         "homepage": "https://stagehand.dev",
-        "default_branch": "main"
+        "default_branch": "main",
+        "license": "MIT"
       }
     },
     {
@@ -1575,17 +1767,18 @@
         "benchmark"
       ],
       "repository_url": "https://github.com/SWE-agent/SWE-agent",
+      "evidence_url": "https://github.com/SWE-agent/SWE-agent#readme",
       "github": {
         "stars": 20096,
         "forks": 2204,
         "open_issues": 82,
         "language": "Python",
-        "license": "MIT",
         "archived": false,
         "created_at": "2024-04-02T04:09:47Z",
         "pushed_at": "2026-08-17T22:33:19Z",
         "homepage": "https://swe-agent.com",
-        "default_branch": "main"
+        "default_branch": "main",
+        "license": "MIT"
       }
     },
     {
@@ -1603,17 +1796,18 @@
         "remote-access"
       ],
       "repository_url": "https://github.com/pingdotgg/t3code",
+      "evidence_url": "https://github.com/pingdotgg/t3code#readme",
       "github": {
-        "stars": 19905,
-        "forks": 4668,
-        "open_issues": 1707,
+        "stars": 19928,
+        "forks": 4681,
+        "open_issues": 1714,
         "language": "TypeScript",
-        "license": "MIT",
         "archived": false,
         "created_at": "2026-02-08T23:46:22Z",
-        "pushed_at": "2026-08-21T12:25:32Z",
+        "pushed_at": "2026-08-21T18:23:57Z",
         "homepage": "https://t3.codes",
-        "default_branch": "main"
+        "default_branch": "main",
+        "license": "MIT"
       }
     },
     {
@@ -1631,17 +1825,18 @@
         "recovery"
       ],
       "repository_url": "https://github.com/temporalio/temporal",
+      "evidence_url": "https://github.com/temporalio/temporal#readme",
       "github": {
-        "stars": 22438,
+        "stars": 22445,
         "forks": 1828,
-        "open_issues": 911,
+        "open_issues": 912,
         "language": "Go",
-        "license": "MIT",
         "archived": false,
         "created_at": "2019-10-16T22:15:35Z",
-        "pushed_at": "2026-08-21T16:09:56Z",
+        "pushed_at": "2026-08-21T19:10:55Z",
         "homepage": "https://docs.temporal.io",
-        "default_branch": "main"
+        "default_branch": "main",
+        "license": "MIT"
       }
     },
     {
@@ -1659,17 +1854,18 @@
         "observability"
       ],
       "repository_url": "https://github.com/triggerdotdev/trigger.dev",
+      "evidence_url": "https://github.com/triggerdotdev/trigger.dev#readme",
       "github": {
         "stars": 16084,
         "forks": 1414,
         "open_issues": 423,
         "language": "TypeScript",
-        "license": "Apache-2.0",
         "archived": false,
         "created_at": "2022-11-30T14:59:07Z",
-        "pushed_at": "2026-08-21T16:24:54Z",
+        "pushed_at": "2026-08-21T18:27:56Z",
         "homepage": "https://trigger.dev/changelog",
-        "default_branch": "main"
+        "default_branch": "main",
+        "license": "Apache-2.0"
       }
     },
     {
@@ -1686,17 +1882,18 @@
         "multi-agent"
       ],
       "repository_url": "https://github.com/microsoft/UFO",
+      "evidence_url": "https://github.com/microsoft/UFO#readme",
       "github": {
-        "stars": 9533,
+        "stars": 9536,
         "forks": 1049,
         "open_issues": 77,
         "language": "Python",
-        "license": "MIT",
         "archived": false,
         "created_at": "2024-01-08T05:07:52Z",
         "pushed_at": "2026-08-10T06:52:54Z",
         "homepage": "https://microsoft.github.io/UFO/",
-        "default_branch": "main"
+        "default_branch": "main",
+        "license": "MIT"
       }
     }
   ]

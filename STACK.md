@@ -1,31 +1,136 @@
 # Agent Stack Ownership Map
 
 "Agent runtime" is overloaded. Frameworks, supervisors, sandboxes, workflow
-engines, protocols, and memory systems all appear under that label, even though
-they own different parts of the stack. This map asks two sharper questions:
-**who owns the intelligence, and who owns operational truth when it acts?**
+engines, protocols, memory systems, and work ledgers own different parts of the
+stack. This map asks two sharper questions: **who owns the intelligence, and who
+owns operational truth when it acts?**
 
-The core catalog groups comparable implementations. This page also includes
-adjacent layers and conceptual patterns that matter architecturally but are not
-themselves agent runtimes.
+Projects on this page are tracked with the same GitHub metadata and star history
+as the core catalog, but they are not mislabeled as runtimes. Low-star exceptions
+are limited to official standards or mature architectural primitives and are
+explained inline.
+
+## Contents
+
+- [Layer map](#layer-map)
+- [Tracked supporting projects](#tracked-supporting-projects)
+- [The host and work-state boundaries](#the-host-and-work-state-boundaries)
+- [Architectural boundary questions](#architectural-boundary-questions)
+- [Scope notes](#scope-notes)
 
 ## Layer map
 
-| Layer | What it owns | Proven references |
+| Layer | What it owns | Core or supporting examples |
 | --- | --- | --- |
-| Agent cognition | Model/tool loop, context assembly, planning, routing | [OpenCode](https://github.com/anomalyco/opencode), [Pi](https://github.com/earendil-works/pi), [PydanticAI](https://github.com/pydantic/pydantic-ai) |
-| Agent host and supervisor | Start, identity, environment, event stream, control, reconnect, failure supervision | [T3 Code](https://github.com/pingdotgg/t3code), [OpenHands](https://github.com/OpenHands/OpenHands), [Cloudflare Agents](https://github.com/cloudflare/agents) |
-| Durable orchestration | Checkpoints, retries, durable timers, recovery, unknown outcomes, reconciliation | [Temporal](https://github.com/temporalio/temporal), [LangGraph](https://github.com/langchain-ai/langgraph), [Hatchet](https://github.com/hatchet-dev/hatchet), [Restate](https://github.com/restatedev/restate) |
-| Execution and isolation | Process, container, browser, or microVM execution boundary | [E2B](https://github.com/e2b-dev/E2B), [Daytona](https://github.com/daytonaio/daytona), [Firecracker](https://github.com/firecracker-microvm/firecracker), [gVisor](https://github.com/google/gvisor) |
-| Authority and safety | Credentials, capabilities, approvals, effect policy, containment | [NVIDIA OpenShell](https://github.com/NVIDIA/OpenShell), [Open Policy Agent](https://github.com/open-policy-agent/opa), [Cedar](https://github.com/cedar-policy/cedar) |
-| Work state and continuity | Projects, tasks, artifacts, decisions, context, and outcomes across heterogeneous agents | **Ecosystem gap:** no vendor-neutral project currently clears this catalog's adoption and maturity bar |
-| Personal agent OS and daemon | Long-lived identity, connections, schedules, notifications, memory | [Hermes Agent](https://github.com/NousResearch/hermes-agent), [OpenClaw](https://github.com/openclaw/openclaw), [ElizaOS](https://github.com/elizaOS/eliza) |
-| Tool and agent protocol | Tool discovery, transport, and agent/client interoperability | [Model Context Protocol](https://github.com/modelcontextprotocol/modelcontextprotocol), [A2A](https://github.com/a2aproject/A2A), [Agent Client Protocol](https://github.com/agentclientprotocol/agent-client-protocol) |
-| Model gateway | Provider routing, credentials, budgets, and fallback | [LiteLLM](https://github.com/BerriAI/litellm) |
-| Observability | Traces, evaluations, causality, and post-incident explanation | [OpenTelemetry semantic conventions](https://github.com/open-telemetry/semantic-conventions), [Langfuse](https://github.com/langfuse/langfuse), [Phoenix](https://github.com/Arize-ai/phoenix) |
-| Deployment and compute | Placement, scaling, networking, and service lifecycle | [Kubernetes](https://github.com/kubernetes/kubernetes), [Modal](https://github.com/modal-labs/modal-client) |
+| Agent cognition | Model/tool loop, context assembly, planning, routing | OpenCode, Pi, PydanticAI |
+| Agent host and supervisor | Start, identity, environment, event stream, control, reconnect, failure supervision | T3 Code, OpenHands, Gas Town |
+| Durable orchestration | Checkpoints, retries, durable timers, recovery, unknown outcomes, reconciliation | Temporal, LangGraph, Hatchet |
+| Execution and isolation | Process, container, browser, or microVM execution boundary | E2B, CUA, Firecracker, gVisor |
+| Authority and safety | Credentials, capabilities, approvals, effect policy, containment | Open Policy Agent, Cedar |
+| Work state and continuity | Projects, tasks, artifacts, decisions, dependencies, and outcomes across agents | Beads |
+| Personal agent OS and daemon | Long-lived identity, connections, schedules, notifications, memory | Hermes Agent, OpenClaw, ElizaOS |
+| Memory and context | Recall, retrieval, knowledge graphs, and context assembly | Mem0, Graphiti, Cognee |
+| Protocols | Tool discovery, agent exchange, client control, and application events | MCP, A2A, ACP, AG-UI |
+| Integrations | Authentication, tool catalogs, and managed external actions | Composio |
+| Model gateway | Provider routing, credentials, budgets, and fallback | LiteLLM |
+| Observability | Traces, evaluations, causality, and post-incident explanation | OpenTelemetry, Langfuse, Phoenix |
+| Deployment and compute | Placement, scaling, networking, and service lifecycle | Kubernetes, Modal |
 
-## The host and work-state gaps
+## Tracked supporting projects
+
+<!-- BEGIN GENERATED STACK CATALOG -->
+### Work state and continuity
+
+Durable projects, tasks, artifacts, decisions, dependencies, and outcomes that survive agent and session boundaries.
+
+| Project                                       | Stars    | 30d | Role                                                                                                                                                                               | License | Last push  |
+| --------------------------------------------- | -------: | --: | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- | ---------- |
+| [Beads](https://github.com/gastownhall/beads) | ⭐ 26,503 | —   | Distributed graph issue tracker for agents with persistent tasks, dependencies, claims, and cross-machine synchronization. [evidence](https://github.com/gastownhall/beads#readme) | MIT     | 2026-08-21 |
+
+### Memory and context
+
+Recall, retrieval, and context substrates; useful to agents but distinct from durable work state.
+
+| Project                                         | Stars    | 30d | Role                                                                                                                                | License    | Last push  |
+| ----------------------------------------------- | -------: | --: | ----------------------------------------------------------------------------------------------------------------------------------- | ---------- | ---------- |
+| [Cognee](https://github.com/topoteretes/cognee) | ⭐ 30,170 | —   | Self-hosted agent memory and context engine built around knowledge graphs. [evidence](https://github.com/topoteretes/cognee#readme) | Apache-2.0 | 2026-08-21 |
+| [Graphiti](https://github.com/getzep/graphiti)  | ⭐ 30,168 | —   | Temporal knowledge-graph framework for continuously updated agent memory. [evidence](https://github.com/getzep/graphiti#readme)     | Apache-2.0 | 2026-08-21 |
+| [Mem0](https://github.com/mem0ai/mem0)          | ⭐ 63,762 | —   | Memory layer for retaining and retrieving information across agent interactions. [evidence](https://github.com/mem0ai/mem0#readme)  | Apache-2.0 | 2026-08-21 |
+
+### Tool execution and integrations
+
+Authentication, tool catalogs, and managed action execution across external applications.
+
+| Project                                            | Stars    | 30d | Role                                                                                                                                      | License | Last push  |
+| -------------------------------------------------- | -------: | --: | ----------------------------------------------------------------------------------------------------------------------------------------- | ------- | ---------- |
+| [Composio](https://github.com/ComposioHQ/composio) | ⭐ 29,809 | —   | Tool catalog, authentication layer, and managed execution workbench for agents. [evidence](https://github.com/ComposioHQ/composio#readme) | MIT     | 2026-08-21 |
+
+### Tool, agent, and user-interface protocols
+
+Open interfaces for tools, agent-to-agent exchange, agent clients, and agent-facing applications.
+
+| Project                                                                                | Stars    | 30d | Role                                                                                                                                                                                                                                                       | License                     | Last push  |
+| -------------------------------------------------------------------------------------- | -------: | --: | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------- | ---------- |
+| [AG-UI](https://github.com/ag-ui-protocol/ag-ui)                                       | ⭐ 15,473 | —   | Event protocol connecting agent backends with user-facing applications. [evidence](https://github.com/ag-ui-protocol/ag-ui#readme)                                                                                                                         | MIT                         | 2026-08-21 |
+| [Agent Client Protocol](https://github.com/agentclientprotocol/agent-client-protocol)  | ⭐ 4,039  | —   | Protocol for communication between code editors or clients and coding agents. [evidence](https://github.com/agentclientprotocol/agent-client-protocol#readme) **Scope note:** Official protocol boundary; tracked despite being below the core star floor. | Apache-2.0                  | 2026-08-21 |
+| [Agent2Agent](https://github.com/a2aproject/A2A)                                       | ⭐ 25,444 | —   | Open protocol for communication and interoperability between opaque agent applications. [evidence](https://github.com/a2aproject/A2A#readme)                                                                                                               | Apache-2.0                  | 2026-08-18 |
+| [Model Context Protocol](https://github.com/modelcontextprotocol/modelcontextprotocol) | ⭐ 9,018  | —   | Open protocol for connecting AI applications to tools and context providers. [evidence](https://github.com/modelcontextprotocol/modelcontextprotocol#readme)                                                                                               | Apache-2.0 / MIT transition | 2026-08-21 |
+
+### Authority and policy
+
+General policy engines used to express credentials, capabilities, approvals, and effect boundaries.
+
+| Project                                                       | Stars    | 30d | Role                                                                                                                                                                                                                            | License    | Last push  |
+| ------------------------------------------------------------- | -------: | --: | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | ---------- |
+| [Cedar](https://github.com/cedar-policy/cedar)                | ⭐ 1,679  | —   | Policy language and evaluation engine for fine-grained authorization. [evidence](https://github.com/cedar-policy/cedar#readme) **Scope note:** Mature authorization primitive; tracked despite being below the core star floor. | Apache-2.0 | 2026-08-21 |
+| [Open Policy Agent](https://github.com/open-policy-agent/opa) | ⭐ 12,130 | —   | General-purpose policy engine for expressing and evaluating authorization decisions. [evidence](https://github.com/open-policy-agent/opa#readme)                                                                                | Apache-2.0 | 2026-08-21 |
+
+### Durable execution references
+
+Durable execution systems kept as architectural references when licensing or scope excludes them from the core catalog.
+
+| Project                                          | Stars   | 30d | Role                                                                                                                                                                                                                                      | License | Last push  |
+| ------------------------------------------------ | ------: | --: | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- | ---------- |
+| [Restate](https://github.com/restatedev/restate) | ⭐ 4,321 | —   | Durable execution system with state, retries, promises, and recovery semantics. [evidence](https://github.com/restatedev/restate#readme) **Scope note:** Architecturally relevant source-available reference; not an OSI-open core entry. | BSL-1.1 | 2026-08-21 |
+
+### Observability and evaluation
+
+Tracing, evaluation, causality, and post-incident explanation for agent behavior.
+
+| Project                                                                                      | Stars    | 30d | Role                                                                                                                                                                                                                                                  | License     | Last push  |
+| -------------------------------------------------------------------------------------------- | -------: | --: | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- | ---------- |
+| [Langfuse](https://github.com/langfuse/langfuse)                                             | ⭐ 33,526 | —   | LLM engineering platform for traces, evaluations, metrics, prompts, and datasets. [evidence](https://github.com/langfuse/langfuse#readme)                                                                                                             | MIT (core)  | 2026-08-21 |
+| [OpenTelemetry Semantic Conventions](https://github.com/open-telemetry/semantic-conventions) | ⭐ 637    | —   | Standard semantic conventions, including GenAI and agent telemetry attributes. [evidence](https://github.com/open-telemetry/semantic-conventions#readme) **Scope note:** Official standard; repository stars do not represent OpenTelemetry adoption. | Apache-2.0  | 2026-08-20 |
+| [Phoenix](https://github.com/Arize-ai/phoenix)                                               | ⭐ 11,138 | —   | Agent and LLM observability and evaluation platform built around traces and experiments. [evidence](https://github.com/Arize-ai/phoenix#readme)                                                                                                       | Elastic-2.0 | 2026-08-21 |
+
+### Model gateways
+
+Provider routing, credentials, budgets, fallback, and model-facing policy.
+
+| Project                                       | Stars    | 30d | Role                                                                                                                                                | License    | Last push  |
+| --------------------------------------------- | -------: | --: | --------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | ---------- |
+| [LiteLLM](https://github.com/BerriAI/litellm) | ⭐ 56,947 | —   | Model gateway and SDK for provider routing, budgets, load balancing, guardrails, and logging. [evidence](https://github.com/BerriAI/litellm#readme) | MIT (core) | 2026-08-21 |
+
+### Deployment and compute
+
+Placement, scaling, networking, and service lifecycle for agent workloads.
+
+| Project                                                | Stars     | 30d | Role                                                                                                                                                                                                                                                                 | License    | Last push  |
+| ------------------------------------------------------ | --------: | --: | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | ---------- |
+| [Kubernetes](https://github.com/kubernetes/kubernetes) | ⭐ 124,756 | —   | Container orchestration platform and reference implementation of desired-state reconciliation. [evidence](https://github.com/kubernetes/kubernetes#readme)                                                                                                           | Apache-2.0 | 2026-08-21 |
+| [Modal](https://github.com/modal-labs/modal-client)    | ⭐ 506     | —   | Client and SDK for running containerized workloads on Modal's managed compute platform. [evidence](https://github.com/modal-labs/modal-client#readme) **Scope note:** Official SDK for a widely used managed platform; repository stars understate service adoption. | Apache-2.0 | 2026-08-21 |
+
+### Execution primitives
+
+Generic microVM and userspace-kernel isolation beneath agent-specific sandboxes.
+
+| Project                                                           | Stars    | 30d | Role                                                                                                                                                       | License    | Last push  |
+| ----------------------------------------------------------------- | -------: | --: | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | ---------- |
+| [Firecracker](https://github.com/firecracker-microvm/firecracker) | ⭐ 36,197 | —   | MicroVM monitor used to provide lightweight hardware-virtualized workload isolation. [evidence](https://github.com/firecracker-microvm/firecracker#readme) | Apache-2.0 | 2026-08-21 |
+| [gVisor](https://github.com/google/gvisor)                        | ⭐ 19,134 | —   | Userspace application kernel that adds an isolation boundary around containers. [evidence](https://github.com/google/gvisor#readme)                        | Apache-2.0 | 2026-08-21 |
+<!-- END GENERATED STACK CATALOG -->
+
+## The host and work-state boundaries
 
 An **agent host or supervisor** sits around one or more replaceable agent brains.
 It starts the agent, attaches identity and environment, streams structured events,
@@ -35,33 +140,33 @@ not just a framework, workflow engine, or sandbox.
 **Work state and continuity** is different from both hosting and memory. It owns
 the durable objects of work—projects, tasks, artifacts, decisions, blockers,
 accepted outcomes, and their causal history—across agents and sessions. A chat
-transcript, vector store, or checkpoint can support this layer without replacing
-it. The absence of a proven neutral implementation is recorded as a gap instead
-of being filled with a low-adoption repository.
+transcript, vector store, or workflow checkpoint can support this layer without
+replacing it. Beads is tracked here as a proven work-state implementation rather
+than being forced into the runtime catalog.
 
 ## Architectural boundary questions
 
-Use the map to ask ownership questions, not to assemble every product at once:
-
-- Which component owns the agent's reasoning, and which component owns whether the work actually happened?
+- Which component owns the agent's reasoning, and which owns whether the work actually happened?
 - Does the host own execution safety, or only policy and delegation?
-- Is state a conversation transcript, a workflow checkpoint, a durable work object, or reconciled desired state?
+- Is state a transcript, workflow checkpoint, durable work object, or reconciled desired state?
 - Who resolves an unknown outcome after a timeout or process crash?
 - Which credentials can a task exercise, for how long, and with whose approval?
 - Can an operator reconstruct why an action happened from traces and durable state?
 - Can the agent brain be replaced without losing projects, decisions, artifacts, and history?
 
-Kubernetes controller patterns are an important conceptual reference even when
-Kubernetes itself is not deployed: declare desired state, observe reality, and
-continuously reconcile the difference. That pattern is often more useful for
-long-running work than treating each prompt as an isolated request.
+Kubernetes controller patterns remain useful even when Kubernetes itself is not
+deployed: declare desired state, observe reality, and continuously reconcile the
+difference. That pattern is often more useful for long-running work than treating
+each prompt as an isolated request.
 
 ## Scope notes
 
-This page does not imply endorsement or license equivalence. In particular,
-Restate's server uses the Business Source License rather than an OSI-approved
-open-source license. Generic primitives such as Firecracker, gVisor, OPA,
-Cedar, Kubernetes, and OpenTelemetry appear as architectural references, not
-core agent-runtime entries. Agent Client Protocol currently falls below the
-core catalog's 5,000-star floor and is listed only because it defines a protocol
-boundary, not as a popularity-qualified runtime.
+The adjacent map does not imply endorsement or license equivalence. Restate is
+included as a source-available architectural reference; its server uses BSL-1.1.
+Generic primitives and official protocols can appear here below the core catalog's
+5,000-star floor when their relevance and adoption are not represented accurately
+by repository stars. Every exception is explicit in the generated table.
+
+Source data: [`data/stack-projects.json`](data/stack-projects.json). Machine views:
+[`data/stack-catalog.json`](data/stack-catalog.json) and
+[`data/stack-catalog.csv`](data/stack-catalog.csv).

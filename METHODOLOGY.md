@@ -35,10 +35,12 @@ inherited after a repository pivot, or unrelated to the runtime component. Newer
 projects with limited adoption receive extra scrutiny and are included sparingly.
 There are no paid placements.
 
-The operational floor for the core catalog is currently 5,000 GitHub stars,
-180 days of public repository history, and activity within the last year. The
-star floor is enforced automatically; age, maintenance quality, repository pivots,
-and runtime scope are reviewed editorially. Crossing the floor makes a project
+The operational floor for the active core catalog is currently 5,000 GitHub
+stars, 180 days of public repository history, activity within the last year, and
+a detected license or manually verified license declaration. Stars, age,
+activity, archive status, canonical repository identity, and license visibility
+are enforced automatically. Repository pivots, implementation availability, and
+runtime scope remain editorial reviews. Crossing the floor makes a project
 eligible for review, not entitled to inclusion.
 
 ## Classification
@@ -47,17 +49,20 @@ Projects are placed by the primary ownership boundary they implement:
 
 - **Agent cognition — coding harnesses** own repository context, coding tools, and the software-engineering loop.
 - **Agent cognition — construction SDKs** define model/tool loops, routing, state transitions, or multi-agent behavior.
+- **Agent cognition — realtime voice and multimodal** owns low-latency audio, video, telephony, and multimodal interaction loops.
 - **Agent cognition — browser and computer use** owns perception and action loops over user interfaces.
 - **Agent hosts and supervisors** own lifecycle, identity, environment, event streaming, reconnection, and failure supervision around one or more agent brains.
 - **Durable orchestration** owns checkpoints, retries, waits, schedules, recovery, and reconciliation.
 - **Personal agent OSes and continuity** own long-lived identity, sessions, connections, schedules, notifications, or memory across interactions.
 - **Execution and isolation** owns the process, container, browser, or microVM boundary for agent-controlled effects.
 - **Application platforms and infrastructure** package, expose, and operate complete agent applications.
+- **Historical projects** preserves influential archived implementations without presenting them as current defaults.
 
 Authority and safety, tool protocols, model gateways, observability, deployment,
-and durable work state remain first-class layers in `STACK.md`. They enter the
-core catalog only when a project also owns agent execution. This avoids calling
-every adjacent infrastructure component an "agent runtime."
+memory, integrations, and durable work state remain first-class layers in
+`STACK.md`. They are tracked with stars and activity in `data/stack-projects.json`
+but enter the core catalog only when they also own agent execution. This avoids
+calling every adjacent infrastructure component an "agent runtime."
 
 Memory and durable work state are classified separately. Remembering messages
 or retrieving embeddings is not evidence that a system owns projects, tasks,
@@ -81,7 +86,8 @@ default recommendations.
 ## Descriptions and corrections
 
 Descriptions are concise paraphrases of project READMEs and official
-documentation. They avoid unverified performance, security, and production-readiness
+documentation. Every generated entry includes a primary-source evidence URL.
+Descriptions avoid unverified performance, security, and production-readiness
 claims. Maintainer corrections are welcome, but affiliation must be disclosed.
 Category changes should explain which alternatives become easier to compare.
 
@@ -90,5 +96,8 @@ schema-like constraints, regenerate every derived artifact, and run the canonica
 Awesome list linter before merge.
 
 Coverage audits union the trusted lists in `data/sources.json`, normalize renamed
-repositories, and create a popularity-and-freshness-filtered review queue. See
-`DISCOVERY.md`; appearance in that queue is not an endorsement.
+repositories, add boundary-specific GitHub searches from `data/searches.json`,
+and create a popularity-and-freshness-filtered review queue. See `DISCOVERY.md`;
+appearance in that queue is not an endorsement. Projects awaiting a maturity
+check live in `WATCHLIST.md`; notable rejected projects and reconsideration
+conditions live in `EXCLUSIONS.md`.

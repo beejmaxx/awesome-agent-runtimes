@@ -31,12 +31,14 @@ are no paid placements and stars never determine ordering.
 - [Catalog](#catalog)
   - [Agent cognition — coding harnesses](#agent-cognition--coding-harnesses)
   - [Agent cognition — construction SDKs](#agent-cognition--construction-sdks)
+  - [Agent cognition — realtime voice and multimodal](#agent-cognition--realtime-voice-and-multimodal)
   - [Agent cognition — browser and computer use](#agent-cognition--browser-and-computer-use)
   - [Agent hosts and supervisors](#agent-hosts-and-supervisors)
   - [Durable orchestration](#durable-orchestration)
   - [Personal agent OSes and continuity](#personal-agent-oses-and-continuity)
   - [Execution and isolation](#execution-and-isolation)
   - [Application platforms and infrastructure](#application-platforms-and-infrastructure)
+  - [Historical projects](#historical-projects)
 - [Tracking and data](#tracking-and-data)
 - [Related lists](#related-lists)
 
@@ -66,8 +68,8 @@ a sandbox, and rely on a workflow engine for durable waits.
 The last distinction matters: **memory is not the same as durable project
 state**. A transcript or vector store can help an agent recall information
 without owning tasks, artifacts, decisions, outcomes, or reconciliation. The
-broader [architecture map](STACK.md#the-host-and-work-state-gaps) keeps this boundary visible
-even where no project yet clears the core catalog's maturity bar.
+broader [architecture map](STACK.md#the-host-and-work-state-boundaries) keeps this boundary visible
+without mislabeling supporting work-state systems as agent runtimes.
 
 ## Quality bar
 
@@ -77,11 +79,16 @@ execution. Projects are reviewed for scope, maintenance, license visibility, and
 distinctiveness. See [`METHODOLOGY.md`](METHODOLOGY.md) for lifecycle rules,
 metadata limitations, and the correction process.
 
+The validator enforces the 5,000-star floor, 180 days of public history, activity
+within the last year, a visible license or reviewed license override, and a
+separate historical category for archived projects.
+
 ## Choose a layer
 
 | If you need to…                                           | Start with…                                  |
 | --------------------------------------------------------- | -------------------------------------------- |
 | Give an agent a coding or general reasoning loop          | Agent cognition                              |
+| Build realtime voice, video, or telephony agents          | Realtime voice and multimodal                |
 | Start, reconnect to, and supervise heterogeneous agents   | Agent hosts and supervisors                  |
 | Survive retries, long waits, restarts, and unknown states | Durable orchestration                        |
 | Run a long-lived personal assistant across interactions   | Personal agent OSes and continuity           |
@@ -101,19 +108,26 @@ audit. An **Archived** marker comes directly from GitHub.
 
 ## Tracking and data
 
-The catalog has one editorial source of truth:
-[`data/projects.json`](data/projects.json). [`scripts/update.py`](scripts/update.py)
-validates every entry, retrieves public repository metadata from the GitHub API,
-renders the human and machine views, and stores one star snapshot per UTC day.
-No third-party Python packages are required.
+The core and supporting catalogs have separate editorial sources of truth:
+[`data/projects.json`](data/projects.json) and
+[`data/stack-projects.json`](data/stack-projects.json).
+[`scripts/update.py`](scripts/update.py) validates every entry, retrieves public
+repository metadata from the GitHub API, renders the human and machine views,
+and stores one star snapshot per UTC day. No third-party Python packages are
+required.
 
 | Artifact | Purpose |
 | --- | --- |
-| [`data/catalog.json`](data/catalog.json) | Curated fields joined with current GitHub metadata |
-| [`data/catalog.csv`](data/catalog.csv) | Spreadsheet-ready flat export |
+| [`data/catalog.json`](data/catalog.json) | Core entries joined with current GitHub metadata and evidence URLs |
+| [`data/catalog.csv`](data/catalog.csv) | Spreadsheet-ready core catalog |
+| [`data/stack-catalog.json`](data/stack-catalog.json) | Adjacent stack projects with the same metadata tracking |
+| [`data/stack-catalog.csv`](data/stack-catalog.csv) | Spreadsheet-ready adjacent stack map |
 | [`llms.txt`](llms.txt) | Compact agent-readable catalog |
 | [`TAGS.md`](TAGS.md) | Generated capability index |
 | [`data/history.json`](data/history.json) | Daily star history for trend analysis |
+| [`data/trends.json`](data/trends.json) | Computed 7-, 30-, and 90-day star changes |
+| [`data/watchlist.json`](data/watchlist.json) | Deferred projects and scheduled review dates |
+| [`data/exclusions.json`](data/exclusions.json) | Reviewed exclusions and reconsideration conditions |
 | [`data/schema.json`](data/schema.json) | Source catalog JSON Schema |
 
 Coverage is audited against the trusted upstream lists in
@@ -121,7 +135,8 @@ Coverage is audited against the trusted upstream lists in
 candidate queue are documented in [`DISCOVERY.md`](DISCOVERY.md). Production
 layers that matter but are not themselves core entries—including protocols,
 authority, observability, and work-state primitives—are mapped separately in
-[`STACK.md`](STACK.md).
+[`STACK.md`](STACK.md). Deliberate deferrals and rejections are recorded in
+[`WATCHLIST.md`](WATCHLIST.md) and [`EXCLUSIONS.md`](EXCLUSIONS.md).
 
 ```bash
 # Validate the catalog and generated files without using the network

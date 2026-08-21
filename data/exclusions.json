@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "projects": [
+    {
+      "name": "AIOS",
+      "repo": "agiresearch/AIOS",
+      "reviewed_at": "2026-08-22",
+      "reason": "The repository's LICENSE file contains only a newline, so the public implementation has no effective usage grant.",
+      "reconsider_when": "A clear license is added."
+    },
+    {
+      "name": "Claude Code",
+      "repo": "anthropics/claude-code",
+      "reviewed_at": "2026-08-22",
+      "reason": "The public repository contains plugins, documentation, and installers rather than the core client implementation; its license reserves modification rights.",
+      "reconsider_when": "The core implementation is published under a qualifying license."
+    },
+    {
+      "name": "GitHub Copilot CLI",
+      "repo": "github/copilot-cli",
+      "reviewed_at": "2026-08-22",
+      "reason": "The custom license permits running and limited redistribution but prohibits modification and derivative works.",
+      "reconsider_when": "The implementation is released under a qualifying license."
+    },
+    {
+      "name": "Daytona",
+      "repo": "daytonaio/daytona",
+      "reviewed_at": "2026-08-22",
+      "reason": "The current default branch contains a README and assets but not the sandbox implementation represented by the repository's historical stars.",
+      "reconsider_when": "A maintained public implementation returns to the default branch."
+    },
+    {
+      "name": "Multica",
+      "repo": "multica-ai/multica",
+      "reviewed_at": "2026-08-22",
+      "reason": "The source-available license restricts hosted services and commercial embedding, so it is not treated as an open core entry.",
+      "reconsider_when": "The core implementation adopts an OSI-approved license."
+    },
+    {
+      "name": "Vibe Kanban",
+      "repo": "BloopAI/vibe-kanban",
+      "reviewed_at": "2026-08-22",
+      "reason": "The project README announces that Vibe Kanban is sunsetting.",
+      "reconsider_when": "Maintainers formally resume the project or identify a maintained successor."
+    }
+  ]
+}

@@ -13,6 +13,11 @@
       "description": "Libraries for constructing model/tool loops, routing, state transitions, and multi-agent behavior."
     },
     {
+      "id": "cognition-realtime",
+      "title": "Agent cognition — realtime voice and multimodal",
+      "description": "Frameworks and runtimes for low-latency voice, video, telephony, and multimodal agent interactions."
+    },
+    {
       "id": "cognition-computer-use",
       "title": "Agent cognition — browser and computer use",
       "description": "Harnesses and SDKs that own perception and action loops over browsers or desktop interfaces."
@@ -41,6 +46,11 @@
       "id": "platforms",
       "title": "Application platforms and infrastructure",
       "description": "Platforms for building, packaging, exposing, and operating agent applications."
+    },
+    {
+      "id": "historical",
+      "title": "Historical projects",
+      "description": "Popular, influential implementations that are now archived or formally discontinued; retained for historical comparison, not recommended for new deployments."
     }
   ],
   "projects": [
@@ -49,22 +59,16 @@
       "repo": "agent0ai/agent-zero",
       "category": "hosts",
       "description": "General-purpose autonomous agent runtime with an interactive UI, subordinate agents, and executable tools.",
+      "license_override": "MIT",
       "deployment": ["local", "self-hosted"],
       "tags": ["multi-agent", "code-execution", "memory"]
-    },
-    {
-      "name": "AIOS",
-      "repo": "agiresearch/AIOS",
-      "category": "hosts",
-      "description": "Research agent operating-system kernel for scheduling LLM calls, memory, storage, and tools.",
-      "deployment": ["local", "library"],
-      "tags": ["scheduler", "memory", "research"]
     },
     {
       "name": "AutoGPT",
       "repo": "Significant-Gravitas/AutoGPT",
       "category": "hosts",
       "description": "Platform for creating, deploying, and continuously running autonomous agents.",
+      "license_override": "Mixed: MIT / PolyForm Shield",
       "deployment": ["self-hosted", "managed"],
       "tags": ["continuous", "builder", "marketplace"]
     },
@@ -129,6 +133,7 @@
       "repo": "openclaw/openclaw",
       "category": "continuity",
       "description": "Personal agent runtime with messaging channels, schedules, memory, skills, and tool execution.",
+      "license_override": "MIT",
       "deployment": ["local", "self-hosted"],
       "tags": ["personal-agent", "scheduler", "tools"]
     },
@@ -155,6 +160,14 @@
       "description": "Extensible coding-agent toolkit and CLI with persistent sessions, a unified model API, and UI libraries.",
       "deployment": ["local", "library"],
       "tags": ["coding", "extensible", "sessions"]
+    },
+    {
+      "name": "Kilo Code",
+      "repo": "Kilo-Org/kilocode",
+      "category": "cognition-coding",
+      "description": "Open-source coding agent for IDEs and the terminal with multiple models, specialized agents, and a managed cloud option.",
+      "deployment": ["local", "managed"],
+      "tags": ["coding", "IDE", "terminal"]
     },
     {
       "name": "Aider",
@@ -193,6 +206,7 @@
       "repo": "charmbracelet/crush",
       "category": "cognition-coding",
       "description": "Terminal coding-agent runtime with multi-model support, language-server integration, and extensible tools.",
+      "license_override": "FSL-1.1-MIT",
       "deployment": ["local"],
       "tags": ["coding", "terminal", "LSP"]
     },
@@ -215,8 +229,8 @@
     {
       "name": "Roo Code",
       "repo": "RooCodeInc/Roo-Code",
-      "category": "cognition-coding",
-      "description": "IDE coding-agent runtime with specialized modes, tool use, and multi-agent orchestration.",
+      "category": "historical",
+      "description": "Archived IDE coding-agent runtime with specialized modes, tool use, and multi-agent orchestration.",
       "deployment": ["local"],
       "tags": ["coding", "IDE", "multi-agent"]
     },
@@ -235,6 +249,22 @@
       "description": "Open-source terminal coding-agent runtime with tools, extensibility, and model-provider support.",
       "deployment": ["local"],
       "tags": ["coding", "terminal", "tools"]
+    },
+    {
+      "name": "LiveKit Agents",
+      "repo": "livekit/agents",
+      "category": "cognition-realtime",
+      "description": "Server-side framework for realtime voice and multimodal agents with job dispatch, telephony, testing, and provider integrations.",
+      "deployment": ["library", "self-hosted", "managed"],
+      "tags": ["voice", "multimodal", "realtime", "telephony"]
+    },
+    {
+      "name": "Pipecat",
+      "repo": "pipecat-ai/pipecat",
+      "category": "cognition-realtime",
+      "description": "Python framework for realtime voice and multimodal agents with streaming pipelines and multi-agent coordination.",
+      "deployment": ["library", "self-hosted", "managed"],
+      "tags": ["voice", "multimodal", "realtime", "multi-agent"]
     },
     {
       "name": "Browser Use",
@@ -369,6 +399,7 @@
       "repo": "mastra-ai/mastra",
       "category": "cognition-frameworks",
       "description": "TypeScript agent framework with workflows, memory, evaluation, and observability.",
+      "license_override": "Apache-2.0 (core)",
       "deployment": ["library", "self-hosted", "managed"],
       "tags": ["workflows", "memory", "observability"]
     },
@@ -425,14 +456,16 @@
       "repo": "langgenius/dify",
       "category": "platforms",
       "description": "Visual platform for building and operating agentic applications, workflows, and model services.",
+      "license_override": "Modified Apache-2.0",
       "deployment": ["self-hosted", "managed"],
       "tags": ["low-code", "workflows", "observability"]
     },
     {
       "name": "Flowise",
       "repo": "FlowiseAI/Flowise",
-      "category": "platforms",
-      "description": "Visual builder and serving platform for agent flows, assistants, and tool integrations.",
+      "category": "historical",
+      "description": "Archived visual builder and serving platform for agent flows, assistants, and tool integrations.",
+      "license_override": "Apache-2.0 (core)",
       "deployment": ["self-hosted", "managed"],
       "tags": ["low-code", "builder", "tools"]
     },
@@ -453,12 +486,36 @@
       "tags": ["control-plane", "coding", "remote-access"]
     },
     {
-      "name": "Daytona",
-      "repo": "daytonaio/daytona",
+      "name": "AionUi",
+      "repo": "iOfficeAI/AionUi",
+      "category": "hosts",
+      "description": "Cross-platform cowork application for supervising built-in and external CLI agents with remote access and persistent automation.",
+      "deployment": ["local", "self-hosted"],
+      "tags": ["control-plane", "multi-agent", "automation"]
+    },
+    {
+      "name": "Claude Squad",
+      "repo": "smtg-ai/claude-squad",
+      "category": "hosts",
+      "description": "Terminal supervisor for running multiple coding agents concurrently in isolated Git workspaces.",
+      "deployment": ["local"],
+      "tags": ["supervisor", "coding", "worktrees"]
+    },
+    {
+      "name": "Gas Town",
+      "repo": "gastownhall/gastown",
+      "category": "hosts",
+      "description": "Multi-agent workspace manager with persistent work tracking, agent identities, mailboxes, handoffs, and Git worktrees.",
+      "deployment": ["local"],
+      "tags": ["supervisor", "work-state", "multi-agent", "worktrees"]
+    },
+    {
+      "name": "CUA",
+      "repo": "trycua/cua",
       "category": "execution",
-      "description": "Secure infrastructure for programmatically creating and managing agent execution sandboxes.",
-      "deployment": ["self-hosted", "managed"],
-      "tags": ["sandbox", "code-execution", "API"]
+      "description": "Cross-platform computer-use infrastructure with background drivers, agent-ready VM and container sandboxes, and fleet tooling.",
+      "deployment": ["library", "local", "managed"],
+      "tags": ["computer-use", "sandbox", "virtualization"]
     },
     {
       "name": "E2B",
@@ -477,14 +534,6 @@
       "tags": ["microVM", "isolation", "code-execution"]
     },
     {
-      "name": "NVIDIA OpenShell",
-      "repo": "NVIDIA/OpenShell",
-      "category": "execution",
-      "description": "Policy-governed runtime for running autonomous agents inside private sandboxes.",
-      "deployment": ["local", "self-hosted"],
-      "tags": ["sandbox", "policy", "privacy"]
-    },
-    {
       "name": "Hatchet",
       "repo": "hatchet-dev/hatchet",
       "category": "durable",
@@ -497,6 +546,7 @@
       "repo": "inngest/inngest",
       "category": "durable",
       "description": "Event-driven durable execution platform for step functions, scheduling, retries, and agent workflows.",
+      "license_override": "SSPL-1.0 / Apache-2.0 future",
       "deployment": ["self-hosted", "managed"],
       "tags": ["durable", "event-driven", "workflows"]
     },

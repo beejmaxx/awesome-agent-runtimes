@@ -10,6 +10,7 @@ import os
 import re
 import sys
 import urllib.error
+import urllib.parse
 import urllib.request
 from collections import defaultdict
 from pathlib import Path
@@ -19,6 +20,10 @@ from typing import Any
 ROOT = Path(__file__).resolve().parents[1]
 SOURCES_PATH = ROOT / "data" / "sources.json"
 PROJECTS_PATH = ROOT / "data" / "projects.json"
+STACK_PROJECTS_PATH = ROOT / "data" / "stack-projects.json"
+WATCHLIST_PATH = ROOT / "data" / "watchlist.json"
+EXCLUSIONS_PATH = ROOT / "data" / "exclusions.json"
+SEARCHES_PATH = ROOT / "data" / "searches.json"
 OUTPUT_PATH = ROOT / "data" / "candidates.json"
 GITHUB_REPO_URL = re.compile(
     r"https?://github\.com/([A-Za-z0-9_.-]+)/([A-Za-z0-9_.-]+)", re.IGNORECASE
@@ -67,11 +72,16 @@ def main() -> int:
     parser.add_argument("--min-sources", type=int, default=2)
     parser.add_argument("--min-age-days", type=int, default=180)
     parser.add_argument("--max-stale-days", type=int, default=365)
+    parser.add_argument("--search-limit", type=int, default=50)
     parser.add_argument("--output", type=Path, default=OUTPUT_PATH)
     args = parser.parse_args()
 
     sources = load_json(SOURCES_PATH)["sources"]
-    cataloged = {item["repo"].casefold() for item in load_json(PROJECTS_PATH)["projects"]}
+    reviewed = {
+        item["repo"].casefold()
+        for source_path in (PROJECTS_PATH, STACK_PROJECTS_PATH, WATCHLIST_PATH, EXCLUSIONS_PATH)
+        for item in load_json(source_path)["projects"]
+    }
     mentions: dict[str, set[str]] = defaultdict(set)
     original_names: dict[str, str] = {}
 
@@ -85,11 +95,30 @@ def main() -> int:
         found: set[str] = set()
         for match in GITHUB_REPO_URL.finditer(readme):
             candidate = normalize_link(match.group(1), match.group(2))
-            if candidate and candidate.casefold() not in cataloged:
+            if candidate and candidate.casefold() not in reviewed:
                 found.add(candidate.casefold())
                 original_names.setdefault(candidate.casefold(), candidate)
         for candidate in found:
             mentions[candidate].add(repo)
+
+    searches = load_json(SEARCHES_PATH)["queries"]
+    for search in searches:
+        query = urllib.parse.urlencode(
+            {"q": search["query"], "sort": "stars", "order": "desc", "per_page": args.search_limit}
+        )
+        try:
+            result = github_request(f"search/repositories?{query}")
+        except urllib.error.URLError as error:
+            print(f"warning: could not run search {search['id']}: {error}", file=sys.stderr)
+            continue
+        source_name = f"github-search:{search['id']}"
+        for item in result.get("items", []):
+            candidate = item.get("full_name")
+            if not isinstance(candidate, str) or candidate.casefold() in reviewed:
+                continue
+            key = candidate.casefold()
+            original_names.setdefault(key, candidate)
+            mentions[key].add(source_name)
 
     repeated = [repo for repo, found_in in mentions.items() if len(found_in) >= args.min_sources]
     now = dt.datetime.now(dt.timezone.utc)
@@ -104,7 +133,7 @@ def main() -> int:
             continue
         canonical = item["full_name"]
         canonical_key = canonical.casefold()
-        if canonical_key in cataloged or item["fork"] or item["archived"]:
+        if canonical_key in reviewed or item["fork"] or item["archived"]:
             continue
         pushed_at = parse_time(item["pushed_at"])
         created_at = parse_time(item["created_at"])
@@ -152,6 +181,7 @@ def main() -> int:
             "forks": "excluded",
         },
         "source_count": len(sources),
+        "search_count": len(searches),
         "candidate_count": len(candidates),
         "candidates": candidates,
     }
