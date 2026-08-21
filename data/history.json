@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "snapshots": [
+    {
+      "date": "2026-08-21",
+      "stars": {
+        "FlowiseAI/Flowise": 55383,
+        "NVIDIA/OpenShell": 8302,
+        "OpenHands/OpenHands": 84701,
+        "Significant-Gravitas/AutoGPT": 186709,
+        "TencentCloudAgentRuntime/CubeSandbox": 0,
+        "aaif-goose/goose": 53151,
+        "agent0ai/agent-zero": 18921,
+        "agentscope-ai/agentscope": 29149,
+        "agiresearch/AIOS": 6261,
+        "agno-agi/agno": 41822,
+        "bytedance/SandboxFusion": 1059,
+        "camel-ai/camel": 17614,
+        "crewAIInc/crewAI": 57425,
+        "dapr/dapr-agents": 740,
+        "daytonaio/daytona": 71933,
+        "dbos-inc/dbos-transact-py": 1539,
+        "docker/docker-agent": 3279,
+        "e2b-dev/E2B": 13506,
+        "google/adk-python": 21216,
+        "hatchet-dev/hatchet": 7772,
+        "inngest/inngest": 5752,
+        "langchain-ai/langgraph": 40175,
+        "langflow-ai/langflow": 153529,
+        "langgenius/dify": 153122,
+        "letta-ai/letta": 24331,
+        "mastra-ai/mastra": 27351,
+        "microsoft/agent-framework": 13024,
+        "microsoft/autogen": 60559,
+        "openai/openai-agents-python": 28830,
+        "openclaw/openclaw": 387024,
+        "pydantic/pydantic-ai": 19430,
+        "run-llama/llama_deploy": 2068,
+        "superradcompany/microsandbox": 7841,
+        "temporalio/temporal": 22438,
+        "triggerdotdev/trigger.dev": 16084
+      }
+    }
+  ]
+}

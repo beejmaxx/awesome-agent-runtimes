@@ -1,0 +1,312 @@
+{
+  "schema_version": 1,
+  "categories": [
+    {
+      "id": "persistent",
+      "title": "Persistent agent runtimes",
+      "description": "Complete environments for long-lived assistants, autonomous workers, or coding agents."
+    },
+    {
+      "id": "orchestration",
+      "title": "Agent and workflow runtimes",
+      "description": "Libraries and kernels that own the agent loop, state transitions, or multi-agent coordination."
+    },
+    {
+      "id": "serving",
+      "title": "Serving and control planes",
+      "description": "Systems for packaging, deploying, exposing, and operating agent workloads."
+    },
+    {
+      "id": "sandbox",
+      "title": "Sandboxes and execution environments",
+      "description": "Isolated environments in which agents can safely run code, commands, and tools."
+    },
+    {
+      "id": "durable",
+      "title": "Durable execution substrates",
+      "description": "Agent-adjacent workflow engines used for retries, resumability, schedules, and long-running work."
+    }
+  ],
+  "projects": [
+    {
+      "name": "Agent Zero",
+      "repo": "agent0ai/agent-zero",
+      "category": "persistent",
+      "description": "General-purpose autonomous agent runtime with an interactive UI, subordinate agents, and executable tools.",
+      "deployment": ["local", "self-hosted"],
+      "tags": ["multi-agent", "code-execution", "memory"]
+    },
+    {
+      "name": "AIOS",
+      "repo": "agiresearch/AIOS",
+      "category": "persistent",
+      "description": "Research agent operating-system kernel for scheduling LLM calls, memory, storage, and tools.",
+      "deployment": ["local", "library"],
+      "tags": ["scheduler", "memory", "research"]
+    },
+    {
+      "name": "AutoGPT",
+      "repo": "Significant-Gravitas/AutoGPT",
+      "category": "persistent",
+      "description": "Platform for creating, deploying, and continuously running autonomous agents.",
+      "deployment": ["self-hosted", "managed"],
+      "tags": ["continuous", "builder", "marketplace"]
+    },
+    {
+      "name": "Goose",
+      "repo": "aaif-goose/goose",
+      "category": "persistent",
+      "description": "Local extensible agent runtime that automates engineering tasks through MCP tools.",
+      "deployment": ["local"],
+      "tags": ["coding", "MCP", "desktop"]
+    },
+    {
+      "name": "Letta",
+      "repo": "letta-ai/letta",
+      "category": "persistent",
+      "description": "Stateful agent server centered on persistent memory, context management, and long-lived identities.",
+      "deployment": ["self-hosted", "managed"],
+      "tags": ["memory", "server", "stateful"]
+    },
+    {
+      "name": "OpenClaw",
+      "repo": "openclaw/openclaw",
+      "category": "persistent",
+      "description": "Personal agent runtime with messaging channels, schedules, memory, skills, and tool execution.",
+      "deployment": ["local", "self-hosted"],
+      "tags": ["personal-agent", "scheduler", "tools"]
+    },
+    {
+      "name": "OpenHands",
+      "repo": "OpenHands/OpenHands",
+      "category": "persistent",
+      "description": "Software-development agent platform with a runtime for executing tools in isolated workspaces.",
+      "deployment": ["local", "self-hosted", "managed"],
+      "tags": ["coding", "sandbox", "multi-agent"]
+    },
+    {
+      "name": "Agno",
+      "repo": "agno-agi/agno",
+      "category": "orchestration",
+      "description": "Python framework and AgentOS runtime for building, serving, and monitoring agent systems.",
+      "deployment": ["library", "self-hosted", "managed"],
+      "tags": ["multi-agent", "memory", "observability"]
+    },
+    {
+      "name": "AgentScope",
+      "repo": "agentscope-ai/agentscope",
+      "category": "orchestration",
+      "description": "Developer framework for tool-using and multi-agent applications with runtime services.",
+      "deployment": ["library", "self-hosted"],
+      "tags": ["multi-agent", "tools", "distributed"]
+    },
+    {
+      "name": "AutoGen",
+      "repo": "microsoft/autogen",
+      "category": "orchestration",
+      "description": "Event-driven framework for conversational, tool-using, and multi-agent applications.",
+      "deployment": ["library", "self-hosted"],
+      "tags": ["multi-agent", "event-driven", "tools"]
+    },
+    {
+      "name": "CAMEL",
+      "repo": "camel-ai/camel",
+      "category": "orchestration",
+      "description": "Multi-agent framework and research platform for agent societies, tools, memory, and task execution.",
+      "deployment": ["library", "self-hosted"],
+      "tags": ["multi-agent", "research", "memory"]
+    },
+    {
+      "name": "CrewAI",
+      "repo": "crewAIInc/crewAI",
+      "category": "orchestration",
+      "description": "Role-based multi-agent runtime for coordinating crews and event-driven flows.",
+      "deployment": ["library", "self-hosted", "managed"],
+      "tags": ["multi-agent", "flows", "observability"]
+    },
+    {
+      "name": "Dapr Agents",
+      "repo": "dapr/dapr-agents",
+      "category": "orchestration",
+      "description": "Agent framework built on Dapr actors and durable workflows for resilient distributed execution.",
+      "deployment": ["library", "self-hosted"],
+      "tags": ["durable", "actors", "distributed"]
+    },
+    {
+      "name": "Google Agent Development Kit",
+      "repo": "google/adk-python",
+      "category": "orchestration",
+      "description": "Code-first agent framework with sessions, tools, evaluation, and local or managed runtime options.",
+      "deployment": ["library", "local", "managed"],
+      "tags": ["multi-agent", "evaluation", "tools"]
+    },
+    {
+      "name": "LangGraph",
+      "repo": "langchain-ai/langgraph",
+      "category": "orchestration",
+      "description": "Graph-based runtime for stateful, durable, and human-in-the-loop agent workflows.",
+      "deployment": ["library", "self-hosted", "managed"],
+      "tags": ["durable", "human-in-the-loop", "graph"]
+    },
+    {
+      "name": "Mastra",
+      "repo": "mastra-ai/mastra",
+      "category": "orchestration",
+      "description": "TypeScript agent framework with workflows, memory, evaluation, and observability.",
+      "deployment": ["library", "self-hosted", "managed"],
+      "tags": ["workflows", "memory", "observability"]
+    },
+    {
+      "name": "Microsoft Agent Framework",
+      "repo": "microsoft/agent-framework",
+      "category": "orchestration",
+      "description": "Microsoft framework for building agents and graph workflows with middleware and state management.",
+      "deployment": ["library", "self-hosted", "managed"],
+      "tags": ["workflows", "multi-agent", "middleware"]
+    },
+    {
+      "name": "OpenAI Agents SDK",
+      "repo": "openai/openai-agents-python",
+      "category": "orchestration",
+      "description": "Lightweight Python runtime for agent loops, handoffs, guardrails, sessions, and tracing.",
+      "deployment": ["library"],
+      "tags": ["handoffs", "guardrails", "tracing"]
+    },
+    {
+      "name": "Pydantic AI",
+      "repo": "pydantic/pydantic-ai",
+      "category": "orchestration",
+      "description": "Typed Python agent framework with tools, durable execution integrations, graphs, and evaluation.",
+      "deployment": ["library", "self-hosted"],
+      "tags": ["typed", "durable", "evaluation"]
+    },
+    {
+      "name": "Dify",
+      "repo": "langgenius/dify",
+      "category": "serving",
+      "description": "Visual platform for building and operating agentic applications, workflows, and model services.",
+      "deployment": ["self-hosted", "managed"],
+      "tags": ["low-code", "workflows", "observability"]
+    },
+    {
+      "name": "Docker Agent",
+      "repo": "docker/docker-agent",
+      "category": "serving",
+      "description": "Declarative runtime and CLI for packaging and running agents with models, MCP tools, and subagents.",
+      "deployment": ["local", "self-hosted"],
+      "tags": ["containers", "MCP", "multi-agent"]
+    },
+    {
+      "name": "Flowise",
+      "repo": "FlowiseAI/Flowise",
+      "category": "serving",
+      "description": "Visual builder and serving platform for agent flows, assistants, and tool integrations.",
+      "deployment": ["self-hosted", "managed"],
+      "tags": ["low-code", "builder", "tools"]
+    },
+    {
+      "name": "Langflow",
+      "repo": "langflow-ai/langflow",
+      "category": "serving",
+      "description": "Visual Python framework for composing and serving agent workflows with an API.",
+      "deployment": ["local", "self-hosted", "managed"],
+      "tags": ["low-code", "builder", "API"]
+    },
+    {
+      "name": "LlamaDeploy",
+      "repo": "run-llama/llama_deploy",
+      "category": "serving",
+      "description": "Deployment system for running agent workflows as scalable, event-driven services.",
+      "deployment": ["self-hosted"],
+      "tags": ["event-driven", "services", "scaling"]
+    },
+    {
+      "name": "CubeSandbox",
+      "repo": "TencentCloudAgentRuntime/CubeSandbox",
+      "category": "sandbox",
+      "description": "High-performance microVM sandbox runtime for concurrent AI-agent workloads.",
+      "deployment": ["self-hosted"],
+      "tags": ["microVM", "isolation", "code-execution"]
+    },
+    {
+      "name": "Daytona",
+      "repo": "daytonaio/daytona",
+      "category": "sandbox",
+      "description": "Secure infrastructure for programmatically creating and managing agent execution sandboxes.",
+      "deployment": ["self-hosted", "managed"],
+      "tags": ["sandbox", "code-execution", "API"]
+    },
+    {
+      "name": "E2B",
+      "repo": "e2b-dev/E2B",
+      "category": "sandbox",
+      "description": "Open-source infrastructure for running agent-generated code in isolated cloud sandboxes.",
+      "deployment": ["self-hosted", "managed"],
+      "tags": ["sandbox", "code-execution", "API"]
+    },
+    {
+      "name": "Microsandbox",
+      "repo": "superradcompany/microsandbox",
+      "category": "sandbox",
+      "description": "Self-hosted microVM platform for secure, fast, and isolated user or agent code execution.",
+      "deployment": ["local", "self-hosted"],
+      "tags": ["microVM", "isolation", "code-execution"]
+    },
+    {
+      "name": "NVIDIA OpenShell",
+      "repo": "NVIDIA/OpenShell",
+      "category": "sandbox",
+      "description": "Policy-governed runtime for running autonomous agents inside private sandboxes.",
+      "deployment": ["local", "self-hosted"],
+      "tags": ["sandbox", "policy", "privacy"]
+    },
+    {
+      "name": "SandboxFusion",
+      "repo": "bytedance/SandboxFusion",
+      "category": "sandbox",
+      "description": "Execution service for isolated code evaluation across many programming languages.",
+      "deployment": ["self-hosted"],
+      "tags": ["sandbox", "code-execution", "multi-language"]
+    },
+    {
+      "name": "DBOS",
+      "repo": "dbos-inc/dbos-transact-py",
+      "category": "durable",
+      "description": "Python durable-execution library for workflows that recover state and resume after failures.",
+      "deployment": ["library", "self-hosted", "managed"],
+      "tags": ["durable", "workflows", "recovery"]
+    },
+    {
+      "name": "Hatchet",
+      "repo": "hatchet-dev/hatchet",
+      "category": "durable",
+      "description": "Task orchestration platform for durable workflows, queues, retries, concurrency, and monitoring.",
+      "deployment": ["self-hosted", "managed"],
+      "tags": ["durable", "workflows", "observability"]
+    },
+    {
+      "name": "Inngest",
+      "repo": "inngest/inngest",
+      "category": "durable",
+      "description": "Event-driven durable execution platform for step functions, scheduling, retries, and agent workflows.",
+      "deployment": ["self-hosted", "managed"],
+      "tags": ["durable", "event-driven", "workflows"]
+    },
+    {
+      "name": "Temporal",
+      "repo": "temporalio/temporal",
+      "category": "durable",
+      "description": "General durable-execution platform commonly used to make long-running agent workflows resilient.",
+      "deployment": ["self-hosted", "managed"],
+      "tags": ["durable", "workflows", "recovery"]
+    },
+    {
+      "name": "Trigger.dev",
+      "repo": "triggerdotdev/trigger.dev",
+      "category": "durable",
+      "description": "TypeScript background-job platform for long-running AI tasks with retries, queues, and monitoring.",
+      "deployment": ["self-hosted", "managed"],
+      "tags": ["durable", "background-jobs", "observability"]
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+name: Suggest a runtime
+description: Propose a project for the catalog
+title: "Add: "
+labels: [addition]
+body:
+  - type: input
+    id: repository
+    attributes:
+      label: Repository
+      placeholder: https://github.com/owner/repository
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Proposed layer
+      options:
+        - Persistent agent runtime
+        - Agent and workflow runtime
+        - Serving and control plane
+        - Sandbox and execution environment
+        - Durable execution substrate
+    validations:
+      required: true
+  - type: textarea
+    id: runtime-role
+    attributes:
+      label: What runtime responsibility does it own?
+      description: Link to documentation for execution, state, serving, or isolation claims.
+    validations:
+      required: true
+  - type: textarea
+    id: distinction
+    attributes:
+      label: What makes it distinct from existing entries?
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Submission checks
+      options:
+        - label: The repository has documentation and an identifiable license.
+          required: true
+        - label: I have disclosed any affiliation with this project below.
+          required: true
+  - type: input
+    id: affiliation
+    attributes:
+      label: Affiliation
+      placeholder: None, maintainer, employee, user, etc.
