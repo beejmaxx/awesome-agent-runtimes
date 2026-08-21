@@ -22,6 +22,5 @@ jobs:
           args: >-
             --no-progress
             --accept 200,429
-            --exclude-mail
             README.md METHODOLOGY.md CONTRIBUTING.md TAGS.md
           fail: true
