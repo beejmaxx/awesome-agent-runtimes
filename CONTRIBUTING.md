@@ -14,16 +14,20 @@ A project should:
   archived.
 - Add a distinct implementation or operational tradeoff to the catalog.
 
-Star count is not an inclusion criterion. Paid products are eligible only when
-the linked repository contains a meaningful open-source runtime component.
+Established adoption is the default expectation. Star count is not itself an
+inclusion criterion, but projects with limited adoption need especially strong
+evidence of a distinct architecture, credible maintainership, and real usability.
+Paid products are eligible only when the linked repository contains a meaningful
+open-source runtime component. See `METHODOLOGY.md` for the full editorial policy.
 
 ## Add or update a project
 
-1. Edit `data/projects.json`; do not edit the generated catalog in `README.md`.
+1. Edit `data/projects.json`; do not edit `README.md`, `TAGS.md`, `llms.txt`, or
+   the generated `data/catalog.*` exports.
 2. Keep the description factual, concise, and free of marketing superlatives.
 3. Choose the layer that owns the project's primary runtime responsibility.
 4. Use one to four short tags and only the documented deployment values.
-5. Run `python3 scripts/update.py` to refresh metadata and render the README.
+5. Run `python3 scripts/update.py` to refresh metadata and every generated view.
 6. Run `python3 scripts/update.py --check` before opening a pull request.
 
 Please keep entries alphabetic within their category conceptually; the renderer

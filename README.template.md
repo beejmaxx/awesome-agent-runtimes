@@ -3,8 +3,8 @@
 <!--lint disable table-cell-padding table-pipe-alignment-->
 
 > A curated, comparable map of the software that actually **runs AI agents**:
-> persistent agent operating systems, orchestration runtimes, serving layers,
-> secure execution environments, and durable workflow substrates.
+> persistent agent operating systems, coding-agent harnesses, orchestration
+> runtimes, serving layers, secure execution environments, and durable workflows.
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 ![Catalog entries](https://img.shields.io/badge/entries-{{PROJECT_COUNT}}-5b5bd6.svg)
@@ -15,14 +15,21 @@ state, and where its tools execute**. It deliberately does not try to catalog
 every chatbot, model SDK, prompt library, or finished agent application.
 
 Metadata was last refreshed on **{{UPDATED_AT}}**. Star counts are snapshots;
-the daily workflow records their history in [`data/history.json`](data/history.json).
+the daily workflow records their history in `data/history.json`.
+
+**High signal, not exhaustive.** Established adoption is the default bar. A
+smaller project is included only when it contributes a distinct runtime design
+and has credible maintainership, documentation, and licensing. There are no paid
+placements and stars never determine ordering.
 
 ## Contents
 
 - [Runtime scope](#runtime-scope)
+- [Quality bar](#quality-bar)
 - [Choose a layer](#choose-a-layer)
 - [Catalog](#catalog)
   - [Persistent agent runtimes](#persistent-agent-runtimes)
+  - [Coding agent runtimes](#coding-agent-runtimes)
   - [Agent and workflow runtimes](#agent-and-workflow-runtimes)
   - [Serving and control planes](#serving-and-control-planes)
   - [Sandboxes and execution environments](#sandboxes-and-execution-environments)
@@ -41,11 +48,20 @@ The list separates layers because they are complementary, not interchangeable.
 For example, an orchestration library can run inside a serving platform while
 delegating code execution to a sandbox and durable waits to a workflow engine.
 
+## Quality bar
+
+Every entry must have a meaningful public implementation, identifiable
+maintainers, usable documentation, and evidence that it owns part of runtime
+execution. Projects are reviewed for scope, maintenance, license visibility, and
+distinctiveness. See [`METHODOLOGY.md`](METHODOLOGY.md) for lifecycle rules,
+metadata limitations, and the correction process.
+
 ## Choose a layer
 
 | If you need to…                                               | Start with…                         |
 | ------------------------------------------------------------- | ----------------------------------- |
 | Run a persistent assistant or autonomous worker               | Persistent agent runtimes           |
+| Run an agent against a software repository                    | Coding agent runtimes               |
 | Embed agent control flow in an application                    | Agent and workflow runtimes         |
 | Deploy, operate, and expose agents as a service               | Serving and control planes          |
 | Execute untrusted code or browser tasks safely                | Sandboxes and execution environments |
@@ -63,10 +79,20 @@ audit. An **Archived** marker comes directly from GitHub.
 
 ## Tracking and data
 
-The catalog has one source of truth: [`data/projects.json`](data/projects.json).
-[`scripts/update.py`](scripts/update.py) validates every entry, retrieves public
-repository metadata from the GitHub API, renders this README, and stores one star
-snapshot per UTC day. No third-party Python packages are required.
+The catalog has one editorial source of truth:
+[`data/projects.json`](data/projects.json). [`scripts/update.py`](scripts/update.py)
+validates every entry, retrieves public repository metadata from the GitHub API,
+renders the human and machine views, and stores one star snapshot per UTC day.
+No third-party Python packages are required.
+
+| Artifact | Purpose |
+| --- | --- |
+| [`data/catalog.json`](data/catalog.json) | Curated fields joined with current GitHub metadata |
+| [`data/catalog.csv`](data/catalog.csv) | Spreadsheet-ready flat export |
+| [`llms.txt`](llms.txt) | Compact agent-readable catalog |
+| [`TAGS.md`](TAGS.md) | Generated capability index |
+| [`data/history.json`](data/history.json) | Daily star history for trend analysis |
+| [`data/schema.json`](data/schema.json) | Source catalog JSON Schema |
 
 ```bash
 # Validate the catalog and generated files without using the network

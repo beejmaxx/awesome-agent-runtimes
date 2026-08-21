@@ -1,0 +1,27 @@
+name: Check links
+
+on:
+  pull_request:
+    paths:
+      - "**.md"
+      - "data/projects.json"
+  schedule:
+    - cron: "41 5 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: lycheeverse/lychee-action@v2.9.0
+        with:
+          args: >-
+            --no-progress
+            --accept 200,429
+            --exclude-mail
+            README.md METHODOLOGY.md CONTRIBUTING.md TAGS.md
+          fail: true

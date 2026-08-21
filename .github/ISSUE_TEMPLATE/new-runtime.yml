@@ -35,6 +35,13 @@ body:
       label: What makes it distinct from existing entries?
     validations:
       required: true
+  - type: textarea
+    id: adoption
+    attributes:
+      label: Adoption and maintenance evidence
+      description: Share releases, users, contributors, or other evidence beyond the raw star count.
+    validations:
+      required: true
   - type: checkboxes
     id: checks
     attributes:

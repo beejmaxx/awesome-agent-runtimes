@@ -4,7 +4,9 @@
 from __future__ import annotations
 
 import argparse
+import csv
 import datetime as dt
+import io
 import json
 import os
 import re
@@ -19,6 +21,10 @@ ROOT = Path(__file__).resolve().parents[1]
 PROJECTS_PATH = ROOT / "data" / "projects.json"
 METRICS_PATH = ROOT / "data" / "metrics.json"
 HISTORY_PATH = ROOT / "data" / "history.json"
+CATALOG_PATH = ROOT / "data" / "catalog.json"
+CSV_PATH = ROOT / "data" / "catalog.csv"
+LLMS_PATH = ROOT / "llms.txt"
+TAGS_PATH = ROOT / "TAGS.md"
 TEMPLATE_PATH = ROOT / "README.template.md"
 README_PATH = ROOT / "README.md"
 REPO_RE = re.compile(r"^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$")
@@ -180,8 +186,9 @@ def render_catalog(catalog: dict[str, Any], metrics: dict[str, Any]) -> str:
             stack = " · ".join(stack_parts) or "—"
             fit = f"{project['description']} `{'` `'.join(project['tags'])}`"
             deploy = ", ".join(project["deployment"])
-            rows.append([project_name, star_text, escape_cell(fit), escape_cell(stack), escape_cell(deploy)])
-        sections.extend(markdown_table(["Project", "Stars", "Runtime fit", "Stack", "Deploy"], rows, {1}))
+            activity = item.get("pushed_at", "")[:10] or "—"
+            rows.append([project_name, star_text, escape_cell(fit), escape_cell(stack), escape_cell(deploy), activity])
+        sections.extend(markdown_table(["Project", "Stars", "Runtime fit", "Stack", "Deploy", "Last push"], rows, {1}))
         sections.append("")
     return "\n".join(sections).rstrip()
 
@@ -195,6 +202,145 @@ def render_readme(catalog: dict[str, Any], metrics: dict[str, Any]) -> str:
         .replace("{{UPDATED_AT}}", updated)
         .replace("{{CATALOG}}", render_catalog(catalog, metrics))
     )
+
+
+def merged_catalog(catalog: dict[str, Any], metrics: dict[str, Any]) -> dict[str, Any]:
+    """Return the curated catalog joined with its latest GitHub metadata."""
+    metadata = metrics.get("repositories", {})
+    projects: list[dict[str, Any]] = []
+    for project in catalog["projects"]:
+        repo = project["repo"]
+        item = metadata.get(repo, {})
+        projects.append(
+            {
+                **project,
+                "repository_url": f"https://github.com/{repo}",
+                "github": {
+                    key: item.get(key)
+                    for key in (
+                        "stars",
+                        "forks",
+                        "open_issues",
+                        "language",
+                        "license",
+                        "archived",
+                        "pushed_at",
+                        "homepage",
+                        "default_branch",
+                    )
+                },
+            }
+        )
+    return {
+        "schema_version": 1,
+        "generated_at": metrics.get("fetched_at"),
+        "categories": catalog["categories"],
+        "projects": sorted(projects, key=lambda item: item["name"].casefold()),
+    }
+
+
+def render_csv(catalog: dict[str, Any], metrics: dict[str, Any]) -> str:
+    output = io.StringIO(newline="")
+    fields = [
+        "name",
+        "category",
+        "repository",
+        "description",
+        "stars",
+        "forks",
+        "language",
+        "license",
+        "archived",
+        "last_push",
+        "deployment",
+        "tags",
+    ]
+    writer = csv.DictWriter(output, fieldnames=fields, lineterminator="\n")
+    writer.writeheader()
+    metadata = metrics.get("repositories", {})
+    for project in sorted(catalog["projects"], key=lambda item: item["name"].casefold()):
+        item = metadata.get(project["repo"], {})
+        writer.writerow(
+            {
+                "name": project["name"],
+                "category": project["category"],
+                "repository": f"https://github.com/{project['repo']}",
+                "description": project["description"],
+                "stars": item.get("stars", ""),
+                "forks": item.get("forks", ""),
+                "language": item.get("language") or "",
+                "license": item.get("license") or "",
+                "archived": str(bool(item.get("archived"))).lower(),
+                "last_push": item.get("pushed_at") or "",
+                "deployment": ";".join(project["deployment"]),
+                "tags": ";".join(project["tags"]),
+            }
+        )
+    return output.getvalue()
+
+
+def render_llms(catalog: dict[str, Any], metrics: dict[str, Any]) -> str:
+    metadata = metrics.get("repositories", {})
+    lines = [
+        "# Awesome Agent Runtimes",
+        "",
+        "A curated map of software that owns AI-agent execution, state, serving, or isolation.",
+        f"Generated: {metrics.get('fetched_at', 'unavailable')}",
+        "Source: https://github.com/beejmaxx/awesome-agent-runtimes",
+        "Methodology: https://github.com/beejmaxx/awesome-agent-runtimes/blob/main/METHODOLOGY.md",
+        "",
+    ]
+    for category in catalog["categories"]:
+        lines.extend([f"## {category['title']}", "", category["description"], ""])
+        projects = sorted(
+            (project for project in catalog["projects"] if project["category"] == category["id"]),
+            key=lambda item: item["name"].casefold(),
+        )
+        for project in projects:
+            item = metadata.get(project["repo"], {})
+            stars = f"{item['stars']:,} stars" if isinstance(item.get("stars"), int) else "stars unavailable"
+            state = "archived; " if item.get("archived") else ""
+            labels = ", ".join([*project["deployment"], *project["tags"]])
+            lines.append(
+                f"- {project['name']} (https://github.com/{project['repo']}): "
+                f"{project['description']} [{state}{stars}; {labels}]"
+            )
+        lines.append("")
+    return "\n".join(lines).rstrip() + "\n"
+
+
+def render_tags(catalog: dict[str, Any]) -> str:
+    by_tag: dict[str, list[dict[str, Any]]] = {}
+    for project in catalog["projects"]:
+        for tag in project["tags"]:
+            by_tag.setdefault(tag, []).append(project)
+    lines = [
+        "# Agent Runtime Capability Index",
+        "",
+        "Generated from [`data/projects.json`](data/projects.json). Edit the source catalog, not this file.",
+        "",
+    ]
+    for tag in sorted(by_tag, key=str.casefold):
+        lines.extend([f"## {tag}", ""])
+        for project in sorted(by_tag[tag], key=lambda item: item["name"].casefold()):
+            lines.append(f"- [{project['name']}](https://github.com/{project['repo']}) - {project['description']}")
+        lines.append("")
+    return "\n".join(lines).rstrip() + "\n"
+
+
+def generated_files(catalog: dict[str, Any], metrics: dict[str, Any]) -> dict[Path, str]:
+    return {
+        README_PATH: render_readme(catalog, metrics),
+        CATALOG_PATH: json.dumps(merged_catalog(catalog, metrics), indent=2, ensure_ascii=False) + "\n",
+        CSV_PATH: render_csv(catalog, metrics),
+        LLMS_PATH: render_llms(catalog, metrics),
+        TAGS_PATH: render_tags(catalog),
+    }
+
+
+def write_generated_files(catalog: dict[str, Any], metrics: dict[str, Any]) -> None:
+    for path, content in generated_files(catalog, metrics).items():
+        path.write_text(content, encoding="utf-8")
 
 
 def update_history(metrics: dict[str, Any]) -> None:
@@ -230,17 +376,21 @@ def main() -> int:
 
     if args.check:
         metrics = load_json(METRICS_PATH)
-        expected = render_readme(catalog, metrics)
-        actual = README_PATH.read_text(encoding="utf-8") if README_PATH.exists() else ""
-        if actual != expected:
-            print("error: README.md is stale; run python3 scripts/update.py", file=sys.stderr)
+        stale = [
+            str(path.relative_to(ROOT))
+            for path, expected in generated_files(catalog, metrics).items()
+            if not path.exists() or path.read_text(encoding="utf-8") != expected
+        ]
+        if stale:
+            print(f"error: generated files are stale: {', '.join(stale)}", file=sys.stderr)
+            print("run python3 scripts/update.py --render-only", file=sys.stderr)
             return 1
         print(f"catalog valid: {len(catalog['projects'])} projects")
         return 0
 
     if args.render_only:
         metrics = load_json(METRICS_PATH)
-        README_PATH.write_text(render_readme(catalog, metrics), encoding="utf-8")
+        write_generated_files(catalog, metrics)
         print(f"rendered {len(catalog['projects'])} projects")
         return 0
 
@@ -253,7 +403,7 @@ def main() -> int:
     dump_json(METRICS_PATH, metrics)
     if not args.no_history:
         update_history(metrics)
-    README_PATH.write_text(render_readme(catalog, metrics), encoding="utf-8")
+    write_generated_files(catalog, metrics)
     print(f"updated {len(catalog['projects'])} projects")
     return 0
 

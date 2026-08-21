@@ -1,0 +1,1307 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-08-21T15:01:00+00:00",
+  "categories": [
+    {
+      "id": "persistent",
+      "title": "Persistent agent runtimes",
+      "description": "Complete environments for long-lived assistants and autonomous workers."
+    },
+    {
+      "id": "coding",
+      "title": "Coding agent runtimes",
+      "description": "Agent harnesses that own the software-engineering loop, workspace, tools, and sessions."
+    },
+    {
+      "id": "orchestration",
+      "title": "Agent and workflow runtimes",
+      "description": "Libraries and kernels that own the agent loop, state transitions, or multi-agent coordination."
+    },
+    {
+      "id": "serving",
+      "title": "Serving and control planes",
+      "description": "Systems for packaging, deploying, exposing, and operating agent workloads."
+    },
+    {
+      "id": "sandbox",
+      "title": "Sandboxes and execution environments",
+      "description": "Isolated environments in which agents can safely run code, commands, and tools."
+    },
+    {
+      "id": "durable",
+      "title": "Durable execution substrates",
+      "description": "Agent-adjacent workflow engines used for retries, resumability, schedules, and long-running work."
+    }
+  ],
+  "projects": [
+    {
+      "name": "Agent Zero",
+      "repo": "agent0ai/agent-zero",
+      "category": "persistent",
+      "description": "General-purpose autonomous agent runtime with an interactive UI, subordinate agents, and executable tools.",
+      "deployment": [
+        "local",
+        "self-hosted"
+      ],
+      "tags": [
+        "multi-agent",
+        "code-execution",
+        "memory"
+      ],
+      "repository_url": "https://github.com/agent0ai/agent-zero",
+      "github": {
+        "stars": 18921,
+        "forks": 3747,
+        "open_issues": 162,
+        "language": "Python",
+        "license": "NOASSERTION",
+        "archived": false,
+        "pushed_at": "2026-08-19T20:28:58Z",
+        "homepage": "https://agent-zero.ai",
+        "default_branch": "main"
+      }
+    },
+    {
+      "name": "AgentScope",
+      "repo": "agentscope-ai/agentscope",
+      "category": "orchestration",
+      "description": "Developer framework for tool-using and multi-agent applications with runtime services.",
+      "deployment": [
+        "library",
+        "self-hosted"
+      ],
+      "tags": [
+        "multi-agent",
+        "tools",
+        "distributed"
+      ],
+      "repository_url": "https://github.com/agentscope-ai/agentscope",
+      "github": {
+        "stars": 29150,
+        "forks": 3393,
+        "open_issues": 341,
+        "language": "Python",
+        "license": "Apache-2.0",
+        "archived": false,
+        "pushed_at": "2026-08-21T11:42:33Z",
+        "homepage": "https://docs.agentscope.io/",
+        "default_branch": "main"
+      }
+    },
+    {
+      "name": "Agno",
+      "repo": "agno-agi/agno",
+      "category": "orchestration",
+      "description": "Python framework and AgentOS runtime for building, serving, and monitoring agent systems.",
+      "deployment": [
+        "library",
+        "self-hosted",
+        "managed"
+      ],
+      "tags": [
+        "multi-agent",
+        "memory",
+        "observability"
+      ],
+      "repository_url": "https://github.com/agno-agi/agno",
+      "github": {
+        "stars": 41822,
+        "forks": 5803,
+        "open_issues": 1276,
+        "language": "Python",
+        "license": "Apache-2.0",
+        "archived": false,
+        "pushed_at": "2026-08-21T14:47:34Z",
+        "homepage": "https://docs.agno.com",
+        "default_branch": "main"
+      }
+    },
+    {
+      "name": "Aider",
+      "repo": "Aider-AI/aider",
+      "category": "coding",
+      "description": "Terminal coding-agent runtime built around repository maps, editable worktrees, and Git-native sessions.",
+      "deployment": [
+        "local"
+      ],
+      "tags": [
+        "coding",
+        "terminal",
+        "git"
+      ],
+      "repository_url": "https://github.com/Aider-AI/aider",
+      "github": {
+        "stars": 48382,
+        "forks": 4867,
+        "open_issues": 1807,
+        "language": "Python",
+        "license": "Apache-2.0",
+        "archived": false,
+        "pushed_at": "2026-05-22T14:02:20Z",
+        "homepage": "https://aider.chat/",
+        "default_branch": "main"
+      }
+    },
+    {
+      "name": "AIOS",
+      "repo": "agiresearch/AIOS",
+      "category": "persistent",
+      "description": "Research agent operating-system kernel for scheduling LLM calls, memory, storage, and tools.",
+      "deployment": [
+        "local",
+        "library"
+      ],
+      "tags": [
+        "scheduler",
+        "memory",
+        "research"
+      ],
+      "repository_url": "https://github.com/agiresearch/AIOS",
+      "github": {
+        "stars": 6261,
+        "forks": 893,
+        "open_issues": 59,
+        "language": "Python",
+        "license": "NOASSERTION",
+        "archived": false,
+        "pushed_at": "2026-07-20T14:43:34Z",
+        "homepage": "https://docs.aios.foundation",
+        "default_branch": "main"
+      }
+    },
+    {
+      "name": "AutoGen",
+      "repo": "microsoft/autogen",
+      "category": "orchestration",
+      "description": "Event-driven framework for conversational, tool-using, and multi-agent applications.",
+      "deployment": [
+        "library",
+        "self-hosted"
+      ],
+      "tags": [
+        "multi-agent",
+        "event-driven",
+        "tools"
+      ],
+      "repository_url": "https://github.com/microsoft/autogen",
+      "github": {
+        "stars": 60559,
+        "forks": 9129,
+        "open_issues": 996,
+        "language": "Python",
+        "license": "CC-BY-4.0",
+        "archived": false,
+        "pushed_at": "2026-04-15T11:59:09Z",
+        "homepage": "https://microsoft.github.io/autogen/",
+        "default_branch": "main"
+      }
+    },
+    {
+      "name": "AutoGPT",
+      "repo": "Significant-Gravitas/AutoGPT",
+      "category": "persistent",
+      "description": "Platform for creating, deploying, and continuously running autonomous agents.",
+      "deployment": [
+        "self-hosted",
+        "managed"
+      ],
+      "tags": [
+        "continuous",
+        "builder",
+        "marketplace"
+      ],
+      "repository_url": "https://github.com/Significant-Gravitas/AutoGPT",
+      "github": {
+        "stars": 186710,
+        "forks": 46043,
+        "open_issues": 510,
+        "language": "Python",
+        "license": "NOASSERTION",
+        "archived": false,
+        "pushed_at": "2026-08-21T14:45:33Z",
+        "homepage": "https://agpt.co",
+        "default_branch": "master"
+      }
+    },
+    {
+      "name": "CAMEL",
+      "repo": "camel-ai/camel",
+      "category": "orchestration",
+      "description": "Multi-agent framework and research platform for agent societies, tools, memory, and task execution.",
+      "deployment": [
+        "library",
+        "self-hosted"
+      ],
+      "tags": [
+        "multi-agent",
+        "research",
+        "memory"
+      ],
+      "repository_url": "https://github.com/camel-ai/camel",
+      "github": {
+        "stars": 17614,
+        "forks": 2049,
+        "open_issues": 470,
+        "language": "Python",
+        "license": "Apache-2.0",
+        "archived": false,
+        "pushed_at": "2026-08-21T11:36:45Z",
+        "homepage": "https://docs.camel-ai.org/",
+        "default_branch": "master"
+      }
+    },
+    {
+      "name": "Cline",
+      "repo": "cline/cline",
+      "category": "coding",
+      "description": "Autonomous coding-agent runtime available as an IDE extension, CLI, and embeddable SDK.",
+      "deployment": [
+        "local",
+        "library"
+      ],
+      "tags": [
+        "coding",
+        "IDE",
+        "human-in-the-loop"
+      ],
+      "repository_url": "https://github.com/cline/cline",
+      "github": {
+        "stars": 66598,
+        "forks": 7178,
+        "open_issues": 1053,
+        "language": "TypeScript",
+        "license": "Apache-2.0",
+        "archived": false,
+        "pushed_at": "2026-08-21T14:36:01Z",
+        "homepage": "https://cline.bot",
+        "default_branch": "main"
+      }
+    },
+    {
+      "name": "Codex",
+      "repo": "openai/codex",
+      "category": "coding",
+      "description": "Local coding-agent runtime and CLI with sandboxed command execution, approvals, and automation modes.",
+      "deployment": [
+        "local"
+      ],
+      "tags": [
+        "coding",
+        "sandbox",
+        "terminal"
+      ],
+      "repository_url": "https://github.com/openai/codex",
+      "github": {
+        "stars": 110805,
+        "forks": 16978,
+        "open_issues": 13356,
+        "language": "Rust",
+        "license": "Apache-2.0",
+        "archived": false,
+        "pushed_at": "2026-08-21T14:25:53Z",
+        "homepage": null,
+        "default_branch": "main"
+      }
+    },
+    {
+      "name": "CrewAI",
+      "repo": "crewAIInc/crewAI",
+      "category": "orchestration",
+      "description": "Role-based multi-agent runtime for coordinating crews and event-driven flows.",
+      "deployment": [
+        "library",
+        "self-hosted",
+        "managed"
+      ],
+      "tags": [
+        "multi-agent",
+        "flows",
+        "observability"
+      ],
+      "repository_url": "https://github.com/crewAIInc/crewAI",
+      "github": {
+        "stars": 57425,
+        "forks": 8203,
+        "open_issues": 822,
+        "language": "Python",
+        "license": "MIT",
+        "archived": false,
+        "pushed_at": "2026-08-21T11:36:09Z",
+        "homepage": "https://crewai.com",
+        "default_branch": "main"
+      }
+    },
+    {
+      "name": "Crush",
+      "repo": "charmbracelet/crush",
+      "category": "coding",
+      "description": "Terminal coding-agent runtime with multi-model support, language-server integration, and extensible tools.",
+      "deployment": [
+        "local"
+      ],
+      "tags": [
+        "coding",
+        "terminal",
+        "LSP"
+      ],
+      "repository_url": "https://github.com/charmbracelet/crush",
+      "github": {
+        "stars": 27554,
+        "forks": 2172,
+        "open_issues": 662,
+        "language": "Go",
+        "license": "NOASSERTION",
+        "archived": false,
+        "pushed_at": "2026-08-21T10:37:03Z",
+        "homepage": null,
+        "default_branch": "main"
+      }
+    },
+    {
+      "name": "Dapr Agents",
+      "repo": "dapr/dapr-agents",
+      "category": "orchestration",
+      "description": "Agent framework built on Dapr actors and durable workflows for resilient distributed execution.",
+      "deployment": [
+        "library",
+        "self-hosted"
+      ],
+      "tags": [
+        "durable",
+        "actors",
+        "distributed"
+      ],
+      "repository_url": "https://github.com/dapr/dapr-agents",
+      "github": {
+        "stars": 740,
+        "forks": 139,
+        "open_issues": 20,
+        "language": "Python",
+        "license": "Apache-2.0",
+        "archived": false,
+        "pushed_at": "2026-08-17T04:36:54Z",
+        "homepage": "https://docs.dapr.io/developing-applications/dapr-agents/",
+        "default_branch": "main"
+      }
+    },
+    {
+      "name": "Daytona",
+      "repo": "daytonaio/daytona",
+      "category": "sandbox",
+      "description": "Secure infrastructure for programmatically creating and managing agent execution sandboxes.",
+      "deployment": [
+        "self-hosted",
+        "managed"
+      ],
+      "tags": [
+        "sandbox",
+        "code-execution",
+        "API"
+      ],
+      "repository_url": "https://github.com/daytonaio/daytona",
+      "github": {
+        "stars": 71932,
+        "forks": 5647,
+        "open_issues": 442,
+        "language": null,
+        "license": null,
+        "archived": false,
+        "pushed_at": "2026-07-24T07:12:07Z",
+        "homepage": "https://daytona.io",
+        "default_branch": "main"
+      }
+    },
+    {
+      "name": "DBOS",
+      "repo": "dbos-inc/dbos-transact-py",
+      "category": "durable",
+      "description": "Python durable-execution library for workflows that recover state and resume after failures.",
+      "deployment": [
+        "library",
+        "self-hosted",
+        "managed"
+      ],
+      "tags": [
+        "durable",
+        "workflows",
+        "recovery"
+      ],
+      "repository_url": "https://github.com/dbos-inc/dbos-transact-py",
+      "github": {
+        "stars": 1539,
+        "forks": 89,
+        "open_issues": 5,
+        "language": "Python",
+        "license": "MIT",
+        "archived": false,
+        "pushed_at": "2026-08-20T23:28:16Z",
+        "homepage": "https://docs.dbos.dev",
+        "default_branch": "main"
+      }
+    },
+    {
+      "name": "Dify",
+      "repo": "langgenius/dify",
+      "category": "serving",
+      "description": "Visual platform for building and operating agentic applications, workflows, and model services.",
+      "deployment": [
+        "self-hosted",
+        "managed"
+      ],
+      "tags": [
+        "low-code",
+        "workflows",
+        "observability"
+      ],
+      "repository_url": "https://github.com/langgenius/dify",
+      "github": {
+        "stars": 153122,
+        "forks": 24174,
+        "open_issues": 942,
+        "language": "TypeScript",
+        "license": "NOASSERTION",
+        "archived": false,
+        "pushed_at": "2026-08-21T13:40:06Z",
+        "homepage": "https://dify.ai",
+        "default_branch": "main"
+      }
+    },
+    {
+      "name": "Docker Agent",
+      "repo": "docker/docker-agent",
+      "category": "serving",
+      "description": "Declarative runtime and CLI for packaging and running agents with models, MCP tools, and subagents.",
+      "deployment": [
+        "local",
+        "self-hosted"
+      ],
+      "tags": [
+        "containers",
+        "MCP",
+        "multi-agent"
+      ],
+      "repository_url": "https://github.com/docker/docker-agent",
+      "github": {
+        "stars": 3279,
+        "forks": 440,
+        "open_issues": 28,
+        "language": "Go",
+        "license": "Apache-2.0",
+        "archived": false,
+        "pushed_at": "2026-08-21T14:42:59Z",
+        "homepage": "https://docker.github.io/docker-agent/",
+        "default_branch": "main"
+      }
+    },
+    {
+      "name": "E2B",
+      "repo": "e2b-dev/E2B",
+      "category": "sandbox",
+      "description": "Open-source infrastructure for running agent-generated code in isolated cloud sandboxes.",
+      "deployment": [
+        "self-hosted",
+        "managed"
+      ],
+      "tags": [
+        "sandbox",
+        "code-execution",
+        "API"
+      ],
+      "repository_url": "https://github.com/e2b-dev/E2B",
+      "github": {
+        "stars": 13506,
+        "forks": 1001,
+        "open_issues": 43,
+        "language": "Python",
+        "license": "Apache-2.0",
+        "archived": false,
+        "pushed_at": "2026-08-21T14:59:47Z",
+        "homepage": "https://e2b.dev/docs?utm_source=github&utm_medium=referral&utm_campaign=repo_website&utm_content=e2b",
+        "default_branch": "main"
+      }
+    },
+    {
+      "name": "ElizaOS",
+      "repo": "elizaOS/eliza",
+      "category": "persistent",
+      "description": "Agent operating system with persistent identities, multi-agent coordination, and a plugin ecosystem.",
+      "deployment": [
+        "local",
+        "self-hosted"
+      ],
+      "tags": [
+        "multi-agent",
+        "plugins",
+        "memory"
+      ],
+      "repository_url": "https://github.com/elizaOS/eliza",
+      "github": {
+        "stars": 19113,
+        "forks": 5681,
+        "open_issues": 440,
+        "language": "TypeScript",
+        "license": "MIT",
+        "archived": false,
+        "pushed_at": "2026-08-21T14:57:19Z",
+        "homepage": "https://elizaresearch.ai/",
+        "default_branch": "develop"
+      }
+    },
+    {
+      "name": "Flowise",
+      "repo": "FlowiseAI/Flowise",
+      "category": "serving",
+      "description": "Visual builder and serving platform for agent flows, assistants, and tool integrations.",
+      "deployment": [
+        "self-hosted",
+        "managed"
+      ],
+      "tags": [
+        "low-code",
+        "builder",
+        "tools"
+      ],
+      "repository_url": "https://github.com/FlowiseAI/Flowise",
+      "github": {
+        "stars": 55383,
+        "forks": 24932,
+        "open_issues": 1047,
+        "language": "TypeScript",
+        "license": "NOASSERTION",
+        "archived": true,
+        "pushed_at": "2026-08-13T12:38:19Z",
+        "homepage": "https://flowiseai.com",
+        "default_branch": "main"
+      }
+    },
+    {
+      "name": "Gemini CLI",
+      "repo": "google-gemini/gemini-cli",
+      "category": "coding",
+      "description": "Terminal agent runtime for coding and general automation with tools, extensions, and MCP support.",
+      "deployment": [
+        "local"
+      ],
+      "tags": [
+        "coding",
+        "terminal",
+        "MCP"
+      ],
+      "repository_url": "https://github.com/google-gemini/gemini-cli",
+      "github": {
+        "stars": 106598,
+        "forks": 14455,
+        "open_issues": 797,
+        "language": "TypeScript",
+        "license": "Apache-2.0",
+        "archived": false,
+        "pushed_at": "2026-08-21T01:08:09Z",
+        "homepage": "https://geminicli.com",
+        "default_branch": "main"
+      }
+    },
+    {
+      "name": "Google Agent Development Kit",
+      "repo": "google/adk-python",
+      "category": "orchestration",
+      "description": "Code-first agent framework with sessions, tools, evaluation, and local or managed runtime options.",
+      "deployment": [
+        "library",
+        "local",
+        "managed"
+      ],
+      "tags": [
+        "multi-agent",
+        "evaluation",
+        "tools"
+      ],
+      "repository_url": "https://github.com/google/adk-python",
+      "github": {
+        "stars": 21216,
+        "forks": 3870,
+        "open_issues": 536,
+        "language": "Python",
+        "license": "Apache-2.0",
+        "archived": false,
+        "pushed_at": "2026-08-21T01:57:32Z",
+        "homepage": "https://google.github.io/adk-docs/",
+        "default_branch": "main"
+      }
+    },
+    {
+      "name": "Goose",
+      "repo": "aaif-goose/goose",
+      "category": "coding",
+      "description": "Local extensible agent runtime that automates engineering tasks through MCP tools.",
+      "deployment": [
+        "local"
+      ],
+      "tags": [
+        "coding",
+        "MCP",
+        "desktop"
+      ],
+      "repository_url": "https://github.com/aaif-goose/goose",
+      "github": {
+        "stars": 53151,
+        "forks": 6061,
+        "open_issues": 224,
+        "language": "Rust",
+        "license": "Apache-2.0",
+        "archived": false,
+        "pushed_at": "2026-08-21T14:56:07Z",
+        "homepage": "https://goose-docs.ai/",
+        "default_branch": "main"
+      }
+    },
+    {
+      "name": "Hatchet",
+      "repo": "hatchet-dev/hatchet",
+      "category": "durable",
+      "description": "Task orchestration platform for durable workflows, queues, retries, concurrency, and monitoring.",
+      "deployment": [
+        "self-hosted",
+        "managed"
+      ],
+      "tags": [
+        "durable",
+        "workflows",
+        "observability"
+      ],
+      "repository_url": "https://github.com/hatchet-dev/hatchet",
+      "github": {
+        "stars": 7772,
+        "forks": 470,
+        "open_issues": 133,
+        "language": "Go",
+        "license": "MIT",
+        "archived": false,
+        "pushed_at": "2026-08-21T14:30:32Z",
+        "homepage": "https://hatchet.run",
+        "default_branch": "main"
+      }
+    },
+    {
+      "name": "Hermes Agent",
+      "repo": "NousResearch/hermes-agent",
+      "category": "persistent",
+      "description": "Persistent agent runtime with learned skills, cross-session memory, schedules, messaging gateways, and subagents.",
+      "deployment": [
+        "local",
+        "self-hosted"
+      ],
+      "tags": [
+        "self-improving",
+        "skills",
+        "scheduler",
+        "multi-agent"
+      ],
+      "repository_url": "https://github.com/NousResearch/hermes-agent",
+      "github": {
+        "stars": 233848,
+        "forks": 46910,
+        "open_issues": 34205,
+        "language": "Python",
+        "license": "MIT",
+        "archived": false,
+        "pushed_at": "2026-08-21T13:47:57Z",
+        "homepage": "https://hermes-agent.nousresearch.com",
+        "default_branch": "main"
+      }
+    },
+    {
+      "name": "Inngest",
+      "repo": "inngest/inngest",
+      "category": "durable",
+      "description": "Event-driven durable execution platform for step functions, scheduling, retries, and agent workflows.",
+      "deployment": [
+        "self-hosted",
+        "managed"
+      ],
+      "tags": [
+        "durable",
+        "event-driven",
+        "workflows"
+      ],
+      "repository_url": "https://github.com/inngest/inngest",
+      "github": {
+        "stars": 5752,
+        "forks": 338,
+        "open_issues": 227,
+        "language": "Go",
+        "license": "NOASSERTION",
+        "archived": false,
+        "pushed_at": "2026-08-21T14:17:02Z",
+        "homepage": "https://www.inngest.com/docs",
+        "default_branch": "main"
+      }
+    },
+    {
+      "name": "Langflow",
+      "repo": "langflow-ai/langflow",
+      "category": "serving",
+      "description": "Visual Python framework for composing and serving agent workflows with an API.",
+      "deployment": [
+        "local",
+        "self-hosted",
+        "managed"
+      ],
+      "tags": [
+        "low-code",
+        "builder",
+        "API"
+      ],
+      "repository_url": "https://github.com/langflow-ai/langflow",
+      "github": {
+        "stars": 153529,
+        "forks": 9902,
+        "open_issues": 966,
+        "language": "Python",
+        "license": "MIT",
+        "archived": false,
+        "pushed_at": "2026-08-21T15:00:18Z",
+        "homepage": "http://www.langflow.org",
+        "default_branch": "main"
+      }
+    },
+    {
+      "name": "LangGraph",
+      "repo": "langchain-ai/langgraph",
+      "category": "orchestration",
+      "description": "Graph-based runtime for stateful, durable, and human-in-the-loop agent workflows.",
+      "deployment": [
+        "library",
+        "self-hosted",
+        "managed"
+      ],
+      "tags": [
+        "durable",
+        "human-in-the-loop",
+        "graph"
+      ],
+      "repository_url": "https://github.com/langchain-ai/langgraph",
+      "github": {
+        "stars": 40175,
+        "forks": 6763,
+        "open_issues": 705,
+        "language": "Python",
+        "license": "MIT",
+        "archived": false,
+        "pushed_at": "2026-08-20T07:50:25Z",
+        "homepage": "https://docs.langchain.com/oss/python/langgraph/",
+        "default_branch": "main"
+      }
+    },
+    {
+      "name": "Letta",
+      "repo": "letta-ai/letta",
+      "category": "persistent",
+      "description": "Stateful agent server centered on persistent memory, context management, and long-lived identities.",
+      "deployment": [
+        "self-hosted",
+        "managed"
+      ],
+      "tags": [
+        "memory",
+        "server",
+        "stateful"
+      ],
+      "repository_url": "https://github.com/letta-ai/letta",
+      "github": {
+        "stars": 24331,
+        "forks": 2585,
+        "open_issues": 41,
+        "language": null,
+        "license": "Apache-2.0",
+        "archived": false,
+        "pushed_at": "2026-08-16T03:56:11Z",
+        "homepage": "https://docs.letta.com/",
+        "default_branch": "main"
+      }
+    },
+    {
+      "name": "LlamaDeploy",
+      "repo": "run-llama/llama_deploy",
+      "category": "serving",
+      "description": "Deployment system for running agent workflows as scalable, event-driven services.",
+      "deployment": [
+        "self-hosted"
+      ],
+      "tags": [
+        "event-driven",
+        "services",
+        "scaling"
+      ],
+      "repository_url": "https://github.com/run-llama/llama_deploy",
+      "github": {
+        "stars": 2068,
+        "forks": 224,
+        "open_issues": 41,
+        "language": "Python",
+        "license": "MIT",
+        "archived": false,
+        "pushed_at": "2026-04-06T20:36:41Z",
+        "homepage": "https://docs.llamaindex.ai/en/stable/module_guides/llama_deploy/",
+        "default_branch": "main"
+      }
+    },
+    {
+      "name": "Mastra",
+      "repo": "mastra-ai/mastra",
+      "category": "orchestration",
+      "description": "TypeScript agent framework with workflows, memory, evaluation, and observability.",
+      "deployment": [
+        "library",
+        "self-hosted",
+        "managed"
+      ],
+      "tags": [
+        "workflows",
+        "memory",
+        "observability"
+      ],
+      "repository_url": "https://github.com/mastra-ai/mastra",
+      "github": {
+        "stars": 27351,
+        "forks": 2670,
+        "open_issues": 500,
+        "language": "TypeScript",
+        "license": "NOASSERTION",
+        "archived": false,
+        "pushed_at": "2026-08-21T14:58:28Z",
+        "homepage": "https://mastra.ai",
+        "default_branch": "main"
+      }
+    },
+    {
+      "name": "Microsandbox",
+      "repo": "superradcompany/microsandbox",
+      "category": "sandbox",
+      "description": "Self-hosted microVM platform for secure, fast, and isolated user or agent code execution.",
+      "deployment": [
+        "local",
+        "self-hosted"
+      ],
+      "tags": [
+        "microVM",
+        "isolation",
+        "code-execution"
+      ],
+      "repository_url": "https://github.com/superradcompany/microsandbox",
+      "github": {
+        "stars": 7841,
+        "forks": 413,
+        "open_issues": 73,
+        "language": "Rust",
+        "license": "Apache-2.0",
+        "archived": false,
+        "pushed_at": "2026-08-21T14:59:38Z",
+        "homepage": "https://docs.microsandbox.dev",
+        "default_branch": "main"
+      }
+    },
+    {
+      "name": "Microsoft Agent Framework",
+      "repo": "microsoft/agent-framework",
+      "category": "orchestration",
+      "description": "Microsoft framework for building agents and graph workflows with middleware and state management.",
+      "deployment": [
+        "library",
+        "self-hosted",
+        "managed"
+      ],
+      "tags": [
+        "workflows",
+        "multi-agent",
+        "middleware"
+      ],
+      "repository_url": "https://github.com/microsoft/agent-framework",
+      "github": {
+        "stars": 13024,
+        "forks": 2204,
+        "open_issues": 592,
+        "language": "Python",
+        "license": "MIT",
+        "archived": false,
+        "pushed_at": "2026-08-21T13:55:48Z",
+        "homepage": "https://aka.ms/agent-framework",
+        "default_branch": "main"
+      }
+    },
+    {
+      "name": "NVIDIA OpenShell",
+      "repo": "NVIDIA/OpenShell",
+      "category": "sandbox",
+      "description": "Policy-governed runtime for running autonomous agents inside private sandboxes.",
+      "deployment": [
+        "local",
+        "self-hosted"
+      ],
+      "tags": [
+        "sandbox",
+        "policy",
+        "privacy"
+      ],
+      "repository_url": "https://github.com/NVIDIA/OpenShell",
+      "github": {
+        "stars": 8302,
+        "forks": 1227,
+        "open_issues": 472,
+        "language": "Rust",
+        "license": "Apache-2.0",
+        "archived": false,
+        "pushed_at": "2026-08-21T14:54:01Z",
+        "homepage": "https://docs.nvidia.com/openshell/latest/",
+        "default_branch": "main"
+      }
+    },
+    {
+      "name": "Open Interpreter",
+      "repo": "openinterpreter/openinterpreter",
+      "category": "coding",
+      "description": "Local coding-agent runtime for open models with computer tools and executable workflows.",
+      "deployment": [
+        "local"
+      ],
+      "tags": [
+        "coding",
+        "computer-use",
+        "local-models"
+      ],
+      "repository_url": "https://github.com/openinterpreter/openinterpreter",
+      "github": {
+        "stars": 68097,
+        "forks": 5857,
+        "open_issues": 4,
+        "language": "Rust",
+        "license": "Apache-2.0",
+        "archived": false,
+        "pushed_at": "2026-08-20T03:35:38Z",
+        "homepage": "http://openinterpreter.com/",
+        "default_branch": "main"
+      }
+    },
+    {
+      "name": "OpenAI Agents SDK",
+      "repo": "openai/openai-agents-python",
+      "category": "orchestration",
+      "description": "Lightweight Python runtime for agent loops, handoffs, guardrails, sessions, and tracing.",
+      "deployment": [
+        "library"
+      ],
+      "tags": [
+        "handoffs",
+        "guardrails",
+        "tracing"
+      ],
+      "repository_url": "https://github.com/openai/openai-agents-python",
+      "github": {
+        "stars": 28830,
+        "forks": 4546,
+        "open_issues": 15,
+        "language": "Python",
+        "license": "MIT",
+        "archived": false,
+        "pushed_at": "2026-08-21T05:14:09Z",
+        "homepage": "https://openai.github.io/openai-agents-python/",
+        "default_branch": "main"
+      }
+    },
+    {
+      "name": "OpenClaw",
+      "repo": "openclaw/openclaw",
+      "category": "persistent",
+      "description": "Personal agent runtime with messaging channels, schedules, memory, skills, and tool execution.",
+      "deployment": [
+        "local",
+        "self-hosted"
+      ],
+      "tags": [
+        "personal-agent",
+        "scheduler",
+        "tools"
+      ],
+      "repository_url": "https://github.com/openclaw/openclaw",
+      "github": {
+        "stars": 387025,
+        "forks": 81291,
+        "open_issues": 5884,
+        "language": "TypeScript",
+        "license": "NOASSERTION",
+        "archived": false,
+        "pushed_at": "2026-08-21T14:59:48Z",
+        "homepage": "https://openclaw.ai",
+        "default_branch": "main"
+      }
+    },
+    {
+      "name": "OpenCode",
+      "repo": "anomalyco/opencode",
+      "category": "coding",
+      "description": "Open-source coding-agent runtime for terminal, desktop, and IDE clients with parallel sessions.",
+      "deployment": [
+        "local",
+        "self-hosted"
+      ],
+      "tags": [
+        "coding",
+        "client-server",
+        "multi-session"
+      ],
+      "repository_url": "https://github.com/anomalyco/opencode",
+      "github": {
+        "stars": 199829,
+        "forks": 25799,
+        "open_issues": 5278,
+        "language": "TypeScript",
+        "license": "MIT",
+        "archived": false,
+        "pushed_at": "2026-08-21T14:59:34Z",
+        "homepage": "https://opencode.ai",
+        "default_branch": "dev"
+      }
+    },
+    {
+      "name": "OpenHands",
+      "repo": "OpenHands/OpenHands",
+      "category": "coding",
+      "description": "Software-development agent platform with a runtime for executing tools in isolated workspaces.",
+      "deployment": [
+        "local",
+        "self-hosted",
+        "managed"
+      ],
+      "tags": [
+        "coding",
+        "sandbox",
+        "multi-agent"
+      ],
+      "repository_url": "https://github.com/OpenHands/OpenHands",
+      "github": {
+        "stars": 84702,
+        "forks": 11038,
+        "open_issues": 518,
+        "language": "TypeScript",
+        "license": "MIT",
+        "archived": false,
+        "pushed_at": "2026-08-21T14:20:40Z",
+        "homepage": "https://openhands.dev",
+        "default_branch": "main"
+      }
+    },
+    {
+      "name": "Pi",
+      "repo": "earendil-works/pi",
+      "category": "coding",
+      "description": "Extensible coding-agent toolkit and CLI with persistent sessions, a unified model API, and UI libraries.",
+      "deployment": [
+        "local",
+        "library"
+      ],
+      "tags": [
+        "coding",
+        "extensible",
+        "sessions"
+      ],
+      "repository_url": "https://github.com/earendil-works/pi",
+      "github": {
+        "stars": 94928,
+        "forks": 11743,
+        "open_issues": 137,
+        "language": "TypeScript",
+        "license": "MIT",
+        "archived": false,
+        "pushed_at": "2026-08-21T14:47:16Z",
+        "homepage": null,
+        "default_branch": "main"
+      }
+    },
+    {
+      "name": "Pydantic AI",
+      "repo": "pydantic/pydantic-ai",
+      "category": "orchestration",
+      "description": "Typed Python agent framework with tools, durable execution integrations, graphs, and evaluation.",
+      "deployment": [
+        "library",
+        "self-hosted"
+      ],
+      "tags": [
+        "typed",
+        "durable",
+        "evaluation"
+      ],
+      "repository_url": "https://github.com/pydantic/pydantic-ai",
+      "github": {
+        "stars": 19430,
+        "forks": 2572,
+        "open_issues": 720,
+        "language": "Python",
+        "license": "MIT",
+        "archived": false,
+        "pushed_at": "2026-08-21T14:52:50Z",
+        "homepage": "https://pydantic.dev/pydantic-ai",
+        "default_branch": "main"
+      }
+    },
+    {
+      "name": "Roo Code",
+      "repo": "RooCodeInc/Roo-Code",
+      "category": "coding",
+      "description": "IDE coding-agent runtime with specialized modes, tool use, and multi-agent orchestration.",
+      "deployment": [
+        "local"
+      ],
+      "tags": [
+        "coding",
+        "IDE",
+        "multi-agent"
+      ],
+      "repository_url": "https://github.com/RooCodeInc/Roo-Code",
+      "github": {
+        "stars": 24329,
+        "forks": 3416,
+        "open_issues": 1036,
+        "language": "TypeScript",
+        "license": "Apache-2.0",
+        "archived": true,
+        "pushed_at": "2026-05-15T18:08:47Z",
+        "homepage": "https://roocode.com",
+        "default_branch": "main"
+      }
+    },
+    {
+      "name": "SandboxFusion",
+      "repo": "bytedance/SandboxFusion",
+      "category": "sandbox",
+      "description": "Execution service for isolated code evaluation across many programming languages.",
+      "deployment": [
+        "self-hosted"
+      ],
+      "tags": [
+        "sandbox",
+        "code-execution",
+        "multi-language"
+      ],
+      "repository_url": "https://github.com/bytedance/SandboxFusion",
+      "github": {
+        "stars": 1059,
+        "forks": 103,
+        "open_issues": 28,
+        "language": "Python",
+        "license": "Apache-2.0",
+        "archived": false,
+        "pushed_at": "2026-07-14T03:43:19Z",
+        "homepage": "https://bytedance.github.io/SandboxFusion/",
+        "default_branch": "main"
+      }
+    },
+    {
+      "name": "SWE-agent",
+      "repo": "SWE-agent/SWE-agent",
+      "category": "coding",
+      "description": "Research-backed software-engineering agent runtime for resolving repository issues in controlled environments.",
+      "deployment": [
+        "local",
+        "self-hosted"
+      ],
+      "tags": [
+        "coding",
+        "research",
+        "benchmark"
+      ],
+      "repository_url": "https://github.com/SWE-agent/SWE-agent",
+      "github": {
+        "stars": 20095,
+        "forks": 2204,
+        "open_issues": 82,
+        "language": "Python",
+        "license": "MIT",
+        "archived": false,
+        "pushed_at": "2026-08-17T22:33:19Z",
+        "homepage": "https://swe-agent.com",
+        "default_branch": "main"
+      }
+    },
+    {
+      "name": "T3 Code",
+      "repo": "pingdotgg/t3code",
+      "category": "serving",
+      "description": "Local control plane for operating existing coding-agent CLIs from web, desktop, and mobile clients.",
+      "deployment": [
+        "local",
+        "self-hosted"
+      ],
+      "tags": [
+        "control-plane",
+        "coding",
+        "remote-access"
+      ],
+      "repository_url": "https://github.com/pingdotgg/t3code",
+      "github": {
+        "stars": 19894,
+        "forks": 4667,
+        "open_issues": 1706,
+        "language": "TypeScript",
+        "license": "MIT",
+        "archived": false,
+        "pushed_at": "2026-08-21T12:25:32Z",
+        "homepage": "https://t3.codes",
+        "default_branch": "main"
+      }
+    },
+    {
+      "name": "Temporal",
+      "repo": "temporalio/temporal",
+      "category": "durable",
+      "description": "General durable-execution platform commonly used to make long-running agent workflows resilient.",
+      "deployment": [
+        "self-hosted",
+        "managed"
+      ],
+      "tags": [
+        "durable",
+        "workflows",
+        "recovery"
+      ],
+      "repository_url": "https://github.com/temporalio/temporal",
+      "github": {
+        "stars": 22438,
+        "forks": 1828,
+        "open_issues": 909,
+        "language": "Go",
+        "license": "MIT",
+        "archived": false,
+        "pushed_at": "2026-08-21T14:44:05Z",
+        "homepage": "https://docs.temporal.io",
+        "default_branch": "main"
+      }
+    },
+    {
+      "name": "Trigger.dev",
+      "repo": "triggerdotdev/trigger.dev",
+      "category": "durable",
+      "description": "TypeScript background-job platform for long-running AI tasks with retries, queues, and monitoring.",
+      "deployment": [
+        "self-hosted",
+        "managed"
+      ],
+      "tags": [
+        "durable",
+        "background-jobs",
+        "observability"
+      ],
+      "repository_url": "https://github.com/triggerdotdev/trigger.dev",
+      "github": {
+        "stars": 16084,
+        "forks": 1414,
+        "open_issues": 426,
+        "language": "TypeScript",
+        "license": "Apache-2.0",
+        "archived": false,
+        "pushed_at": "2026-08-21T14:59:37Z",
+        "homepage": "https://trigger.dev/changelog",
+        "default_branch": "main"
+      }
+    }
+  ]
+}
