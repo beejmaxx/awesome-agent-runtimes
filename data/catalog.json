@@ -3,46 +3,51 @@
   "generated_at": "2026-08-21T16:28:10+00:00",
   "categories": [
     {
-      "id": "persistent",
-      "title": "Persistent agent runtimes",
-      "description": "Complete environments for long-lived assistants and autonomous workers."
+      "id": "cognition-coding",
+      "title": "Agent cognition — coding harnesses",
+      "description": "Agent brains that own the software-engineering loop, repository context, tools, and coding sessions."
     },
     {
-      "id": "coding",
-      "title": "Coding agent runtimes",
-      "description": "Agent harnesses that own the software-engineering loop, workspace, tools, and sessions."
+      "id": "cognition-frameworks",
+      "title": "Agent cognition — construction SDKs",
+      "description": "Libraries for constructing model/tool loops, routing, state transitions, and multi-agent behavior."
     },
     {
-      "id": "computer-use",
-      "title": "Browser and computer-use runtimes",
-      "description": "Runtimes and SDKs that own browser or desktop perception, action, and execution loops."
+      "id": "cognition-computer-use",
+      "title": "Agent cognition — browser and computer use",
+      "description": "Harnesses and SDKs that own perception and action loops over browsers or desktop interfaces."
     },
     {
-      "id": "orchestration",
-      "title": "Agent and workflow runtimes",
-      "description": "Libraries and kernels that own the agent loop, state transitions, or multi-agent coordination."
-    },
-    {
-      "id": "serving",
-      "title": "Serving and control planes",
-      "description": "Systems for packaging, deploying, exposing, and operating agent workloads."
-    },
-    {
-      "id": "sandbox",
-      "title": "Sandboxes and execution environments",
-      "description": "Isolated environments in which agents can safely run code, commands, and tools."
+      "id": "hosts",
+      "title": "Agent hosts and supervisors",
+      "description": "Systems that start agents, provide environments and identity, stream events, supervise sessions, and recover failures."
     },
     {
       "id": "durable",
-      "title": "Durable execution substrates",
-      "description": "Agent-adjacent workflow engines used for retries, resumability, schedules, and long-running work."
+      "title": "Durable orchestration",
+      "description": "Workflow and state-machine substrates for checkpoints, retries, waits, schedules, recovery, and reconciliation."
+    },
+    {
+      "id": "continuity",
+      "title": "Personal agent OSes and continuity",
+      "description": "Long-lived personal agents that own identity, sessions, memory, schedules, connections, or notifications across interactions."
+    },
+    {
+      "id": "execution",
+      "title": "Execution and isolation",
+      "description": "Sandboxes and controlled environments in which agents run code, commands, browsers, and tools."
+    },
+    {
+      "id": "platforms",
+      "title": "Application platforms and infrastructure",
+      "description": "Platforms for building, packaging, exposing, and operating agent applications."
     }
   ],
   "projects": [
     {
       "name": "Agent Zero",
       "repo": "agent0ai/agent-zero",
-      "category": "persistent",
+      "category": "hosts",
       "description": "General-purpose autonomous agent runtime with an interactive UI, subordinate agents, and executable tools.",
       "deployment": [
         "local",
@@ -70,7 +75,7 @@
     {
       "name": "AgentScope",
       "repo": "agentscope-ai/agentscope",
-      "category": "orchestration",
+      "category": "cognition-frameworks",
       "description": "Developer framework for tool-using and multi-agent applications with runtime services.",
       "deployment": [
         "library",
@@ -98,7 +103,7 @@
     {
       "name": "Agno",
       "repo": "agno-agi/agno",
-      "category": "orchestration",
+      "category": "cognition-frameworks",
       "description": "Python framework and AgentOS runtime for building, serving, and monitoring agent systems.",
       "deployment": [
         "library",
@@ -127,7 +132,7 @@
     {
       "name": "Aider",
       "repo": "Aider-AI/aider",
-      "category": "coding",
+      "category": "cognition-coding",
       "description": "Terminal coding-agent runtime built around repository maps, editable worktrees, and Git-native sessions.",
       "deployment": [
         "local"
@@ -154,7 +159,7 @@
     {
       "name": "AIOS",
       "repo": "agiresearch/AIOS",
-      "category": "persistent",
+      "category": "hosts",
       "description": "Research agent operating-system kernel for scheduling LLM calls, memory, storage, and tools.",
       "deployment": [
         "local",
@@ -182,7 +187,7 @@
     {
       "name": "AutoGen",
       "repo": "microsoft/autogen",
-      "category": "orchestration",
+      "category": "cognition-frameworks",
       "description": "Event-driven framework for conversational, tool-using, and multi-agent applications.",
       "deployment": [
         "library",
@@ -210,7 +215,7 @@
     {
       "name": "AutoGPT",
       "repo": "Significant-Gravitas/AutoGPT",
-      "category": "persistent",
+      "category": "hosts",
       "description": "Platform for creating, deploying, and continuously running autonomous agents.",
       "deployment": [
         "self-hosted",
@@ -238,7 +243,7 @@
     {
       "name": "Browser Use",
       "repo": "browser-use/browser-use",
-      "category": "computer-use",
+      "category": "cognition-computer-use",
       "description": "Browser-agent framework and runtime for perception, action, sessions, and web task automation.",
       "deployment": [
         "library",
@@ -267,7 +272,7 @@
     {
       "name": "CAMEL",
       "repo": "camel-ai/camel",
-      "category": "orchestration",
+      "category": "cognition-frameworks",
       "description": "Multi-agent framework and research platform for agent societies, tools, memory, and task execution.",
       "deployment": [
         "library",
@@ -295,7 +300,7 @@
     {
       "name": "Claude Agent SDK",
       "repo": "anthropics/claude-agent-sdk-python",
-      "category": "orchestration",
+      "category": "cognition-frameworks",
       "description": "Anthropic's Python SDK for building agents with Claude Code's tools, sessions, and execution loop.",
       "deployment": [
         "library",
@@ -323,7 +328,7 @@
     {
       "name": "Cline",
       "repo": "cline/cline",
-      "category": "coding",
+      "category": "cognition-coding",
       "description": "Autonomous coding-agent runtime available as an IDE extension, CLI, and embeddable SDK.",
       "deployment": [
         "local",
@@ -351,7 +356,7 @@
     {
       "name": "Cloudflare Agents",
       "repo": "cloudflare/agents",
-      "category": "orchestration",
+      "category": "hosts",
       "description": "Stateful agent SDK built on Durable Objects with identity, persistence, scheduling, and realtime connections.",
       "deployment": [
         "library",
@@ -379,7 +384,7 @@
     {
       "name": "Codex",
       "repo": "openai/codex",
-      "category": "coding",
+      "category": "cognition-coding",
       "description": "Local coding-agent runtime and CLI with sandboxed command execution, approvals, and automation modes.",
       "deployment": [
         "local"
@@ -406,7 +411,7 @@
     {
       "name": "Continue",
       "repo": "continuedev/continue",
-      "category": "coding",
+      "category": "cognition-coding",
       "description": "Open-source coding-agent runtime spanning IDE, CLI, and continuous repository automation.",
       "deployment": [
         "local",
@@ -434,7 +439,7 @@
     {
       "name": "CrewAI",
       "repo": "crewAIInc/crewAI",
-      "category": "orchestration",
+      "category": "cognition-frameworks",
       "description": "Role-based multi-agent runtime for coordinating crews and event-driven flows.",
       "deployment": [
         "library",
@@ -463,7 +468,7 @@
     {
       "name": "Crush",
       "repo": "charmbracelet/crush",
-      "category": "coding",
+      "category": "cognition-coding",
       "description": "Terminal coding-agent runtime with multi-model support, language-server integration, and extensible tools.",
       "deployment": [
         "local"
@@ -490,7 +495,7 @@
     {
       "name": "Daytona",
       "repo": "daytonaio/daytona",
-      "category": "sandbox",
+      "category": "execution",
       "description": "Secure infrastructure for programmatically creating and managing agent execution sandboxes.",
       "deployment": [
         "self-hosted",
@@ -518,7 +523,7 @@
     {
       "name": "Deep Agents",
       "repo": "langchain-ai/deepagents",
-      "category": "orchestration",
+      "category": "cognition-frameworks",
       "description": "Batteries-included agent harness with planning, filesystems, subagents, and long-term memory.",
       "deployment": [
         "library",
@@ -546,7 +551,7 @@
     {
       "name": "DeerFlow",
       "repo": "bytedance/deer-flow",
-      "category": "persistent",
+      "category": "hosts",
       "description": "Long-horizon agent harness with sandboxes, memory, skills, subagents, and a messaging gateway.",
       "deployment": [
         "local",
@@ -574,7 +579,7 @@
     {
       "name": "Dify",
       "repo": "langgenius/dify",
-      "category": "serving",
+      "category": "platforms",
       "description": "Visual platform for building and operating agentic applications, workflows, and model services.",
       "deployment": [
         "self-hosted",
@@ -602,7 +607,7 @@
     {
       "name": "E2B",
       "repo": "e2b-dev/E2B",
-      "category": "sandbox",
+      "category": "execution",
       "description": "Open-source infrastructure for running agent-generated code in isolated cloud sandboxes.",
       "deployment": [
         "self-hosted",
@@ -630,7 +635,7 @@
     {
       "name": "ElizaOS",
       "repo": "elizaOS/eliza",
-      "category": "persistent",
+      "category": "continuity",
       "description": "Agent operating system with persistent identities, multi-agent coordination, and a plugin ecosystem.",
       "deployment": [
         "local",
@@ -658,7 +663,7 @@
     {
       "name": "Flowise",
       "repo": "FlowiseAI/Flowise",
-      "category": "serving",
+      "category": "platforms",
       "description": "Visual builder and serving platform for agent flows, assistants, and tool integrations.",
       "deployment": [
         "self-hosted",
@@ -686,7 +691,7 @@
     {
       "name": "Gemini CLI",
       "repo": "google-gemini/gemini-cli",
-      "category": "coding",
+      "category": "cognition-coding",
       "description": "Terminal agent runtime for coding and general automation with tools, extensions, and MCP support.",
       "deployment": [
         "local"
@@ -713,7 +718,7 @@
     {
       "name": "Google Agent Development Kit",
       "repo": "google/adk-python",
-      "category": "orchestration",
+      "category": "cognition-frameworks",
       "description": "Code-first agent framework with sessions, tools, evaluation, and local or managed runtime options.",
       "deployment": [
         "library",
@@ -742,7 +747,7 @@
     {
       "name": "Goose",
       "repo": "aaif-goose/goose",
-      "category": "coding",
+      "category": "cognition-coding",
       "description": "Local extensible agent runtime that automates engineering tasks through MCP tools.",
       "deployment": [
         "local"
@@ -797,7 +802,7 @@
     {
       "name": "Hermes Agent",
       "repo": "NousResearch/hermes-agent",
-      "category": "persistent",
+      "category": "continuity",
       "description": "Persistent agent runtime with learned skills, cross-session memory, schedules, messaging gateways, and subagents.",
       "deployment": [
         "local",
@@ -854,7 +859,7 @@
     {
       "name": "LangChain",
       "repo": "langchain-ai/langchain",
-      "category": "orchestration",
+      "category": "cognition-frameworks",
       "description": "Established agent application framework with model, tool, middleware, and agent-loop abstractions.",
       "deployment": [
         "library",
@@ -882,7 +887,7 @@
     {
       "name": "Langflow",
       "repo": "langflow-ai/langflow",
-      "category": "serving",
+      "category": "platforms",
       "description": "Visual Python framework for composing and serving agent workflows with an API.",
       "deployment": [
         "local",
@@ -911,7 +916,7 @@
     {
       "name": "LangGraph",
       "repo": "langchain-ai/langgraph",
-      "category": "orchestration",
+      "category": "durable",
       "description": "Graph-based runtime for stateful, durable, and human-in-the-loop agent workflows.",
       "deployment": [
         "library",
@@ -940,7 +945,7 @@
     {
       "name": "Letta",
       "repo": "letta-ai/letta",
-      "category": "persistent",
+      "category": "continuity",
       "description": "Stateful agent server centered on persistent memory, context management, and long-lived identities.",
       "deployment": [
         "self-hosted",
@@ -968,7 +973,7 @@
     {
       "name": "LlamaIndex",
       "repo": "run-llama/llama_index",
-      "category": "orchestration",
+      "category": "cognition-frameworks",
       "description": "Data-centric agent framework with workflows, tools, retrieval, memory, and multi-agent patterns.",
       "deployment": [
         "library",
@@ -997,7 +1002,7 @@
     {
       "name": "Mastra",
       "repo": "mastra-ai/mastra",
-      "category": "orchestration",
+      "category": "cognition-frameworks",
       "description": "TypeScript agent framework with workflows, memory, evaluation, and observability.",
       "deployment": [
         "library",
@@ -1026,7 +1031,7 @@
     {
       "name": "MetaGPT",
       "repo": "FoundationAgents/MetaGPT",
-      "category": "orchestration",
+      "category": "cognition-frameworks",
       "description": "Multi-agent software-company framework that coordinates role-based agents through structured workflows.",
       "deployment": [
         "library",
@@ -1054,7 +1059,7 @@
     {
       "name": "Microsandbox",
       "repo": "superradcompany/microsandbox",
-      "category": "sandbox",
+      "category": "execution",
       "description": "Self-hosted microVM platform for secure, fast, and isolated user or agent code execution.",
       "deployment": [
         "local",
@@ -1082,7 +1087,7 @@
     {
       "name": "Microsoft Agent Framework",
       "repo": "microsoft/agent-framework",
-      "category": "orchestration",
+      "category": "cognition-frameworks",
       "description": "Microsoft framework for building agents and graph workflows with middleware and state management.",
       "deployment": [
         "library",
@@ -1111,7 +1116,7 @@
     {
       "name": "Nanobot",
       "repo": "HKUDS/nanobot",
-      "category": "persistent",
+      "category": "continuity",
       "description": "Lightweight self-hosted personal agent with tools, memory, MCP, automations, and chat integrations.",
       "deployment": [
         "local",
@@ -1139,7 +1144,7 @@
     {
       "name": "NanoClaw",
       "repo": "nanocoai/nanoclaw",
-      "category": "persistent",
+      "category": "continuity",
       "description": "Container-isolated personal agent runtime with messaging channels, memory, skills, and scheduled jobs.",
       "deployment": [
         "local",
@@ -1167,7 +1172,7 @@
     {
       "name": "NVIDIA OpenShell",
       "repo": "NVIDIA/OpenShell",
-      "category": "sandbox",
+      "category": "execution",
       "description": "Policy-governed runtime for running autonomous agents inside private sandboxes.",
       "deployment": [
         "local",
@@ -1195,7 +1200,7 @@
     {
       "name": "Open Interpreter",
       "repo": "openinterpreter/openinterpreter",
-      "category": "coding",
+      "category": "cognition-coding",
       "description": "Local coding-agent runtime for open models with computer tools and executable workflows.",
       "deployment": [
         "local"
@@ -1222,7 +1227,7 @@
     {
       "name": "OpenAI Agents SDK",
       "repo": "openai/openai-agents-python",
-      "category": "orchestration",
+      "category": "cognition-frameworks",
       "description": "Lightweight Python runtime for agent loops, handoffs, guardrails, sessions, and tracing.",
       "deployment": [
         "library"
@@ -1249,7 +1254,7 @@
     {
       "name": "OpenClaw",
       "repo": "openclaw/openclaw",
-      "category": "persistent",
+      "category": "continuity",
       "description": "Personal agent runtime with messaging channels, schedules, memory, skills, and tool execution.",
       "deployment": [
         "local",
@@ -1277,7 +1282,7 @@
     {
       "name": "OpenCode",
       "repo": "anomalyco/opencode",
-      "category": "coding",
+      "category": "cognition-coding",
       "description": "Open-source coding-agent runtime for terminal, desktop, and IDE clients with parallel sessions.",
       "deployment": [
         "local",
@@ -1305,7 +1310,7 @@
     {
       "name": "OpenHands",
       "repo": "OpenHands/OpenHands",
-      "category": "coding",
+      "category": "hosts",
       "description": "Software-development agent platform with a runtime for executing tools in isolated workspaces.",
       "deployment": [
         "local",
@@ -1334,7 +1339,7 @@
     {
       "name": "Pi",
       "repo": "earendil-works/pi",
-      "category": "coding",
+      "category": "cognition-coding",
       "description": "Extensible coding-agent toolkit and CLI with persistent sessions, a unified model API, and UI libraries.",
       "deployment": [
         "local",
@@ -1362,7 +1367,7 @@
     {
       "name": "Pydantic AI",
       "repo": "pydantic/pydantic-ai",
-      "category": "orchestration",
+      "category": "cognition-frameworks",
       "description": "Typed Python agent framework with tools, durable execution integrations, graphs, and evaluation.",
       "deployment": [
         "library",
@@ -1390,7 +1395,7 @@
     {
       "name": "Qwen Code",
       "repo": "QwenLM/qwen-code",
-      "category": "coding",
+      "category": "cognition-coding",
       "description": "Open-source terminal coding-agent runtime with tools, extensibility, and model-provider support.",
       "deployment": [
         "local"
@@ -1417,7 +1422,7 @@
     {
       "name": "Roo Code",
       "repo": "RooCodeInc/Roo-Code",
-      "category": "coding",
+      "category": "cognition-coding",
       "description": "IDE coding-agent runtime with specialized modes, tool use, and multi-agent orchestration.",
       "deployment": [
         "local"
@@ -1444,7 +1449,7 @@
     {
       "name": "Semantic Kernel",
       "repo": "microsoft/semantic-kernel",
-      "category": "orchestration",
+      "category": "cognition-frameworks",
       "description": "Microsoft agent SDK with plugins, process orchestration, memory integrations, and multi-agent patterns.",
       "deployment": [
         "library",
@@ -1473,7 +1478,7 @@
     {
       "name": "Skyvern",
       "repo": "Skyvern-AI/skyvern",
-      "category": "computer-use",
+      "category": "cognition-computer-use",
       "description": "Browser workflow runtime using visual and language-model reasoning instead of site-specific selectors.",
       "deployment": [
         "self-hosted",
@@ -1501,7 +1506,7 @@
     {
       "name": "smolagents",
       "repo": "huggingface/smolagents",
-      "category": "orchestration",
+      "category": "cognition-frameworks",
       "description": "Compact Hugging Face agent library centered on code-executing agents and composable tools.",
       "deployment": [
         "library",
@@ -1529,7 +1534,7 @@
     {
       "name": "Stagehand",
       "repo": "browserbase/stagehand",
-      "category": "computer-use",
+      "category": "cognition-computer-use",
       "description": "Browser-agent SDK that combines natural-language actions with deterministic browser automation.",
       "deployment": [
         "library",
@@ -1558,7 +1563,7 @@
     {
       "name": "SWE-agent",
       "repo": "SWE-agent/SWE-agent",
-      "category": "coding",
+      "category": "cognition-coding",
       "description": "Research-backed software-engineering agent runtime for resolving repository issues in controlled environments.",
       "deployment": [
         "local",
@@ -1586,7 +1591,7 @@
     {
       "name": "T3 Code",
       "repo": "pingdotgg/t3code",
-      "category": "serving",
+      "category": "hosts",
       "description": "Local control plane for operating existing coding-agent CLIs from web, desktop, and mobile clients.",
       "deployment": [
         "local",
@@ -1670,7 +1675,7 @@
     {
       "name": "UFO",
       "repo": "microsoft/UFO",
-      "category": "computer-use",
+      "category": "cognition-computer-use",
       "description": "Microsoft agent framework for automating Windows applications and multi-device desktop workflows.",
       "deployment": [
         "local"

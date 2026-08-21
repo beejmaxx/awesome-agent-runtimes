@@ -5,19 +5,20 @@ This document makes its editorial choices auditable.
 
 ## Scope
 
-A runtime owns at least one consequential part of agent execution:
+A core entry owns at least one consequential part of agent execution:
 
 - The model/tool loop and its approval boundaries.
-- Persistent state, checkpointing, resumption, or scheduling.
-- Multi-agent routing and coordination.
+- Agent lifecycle, identity, event streaming, or supervision.
+- Checkpointing, resumption, scheduling, recovery, or reconciliation.
+- Long-lived personal-agent continuity across sessions and connections.
 - Packaging, serving, or operating agent workloads.
 - Isolated code, command, browser, or tool execution.
 
 Model clients, prompt collections, memory databases, observability products,
-MCP directories, and finished single-purpose agents are out of scope unless they
-also own execution. Generic workflow or compute infrastructure is included only
-when it is widely used as an agent substrate and materially changes reliability
-or isolation.
+protocol registries, and finished single-purpose agents are out of scope unless
+they also own execution. Generic workflow or compute infrastructure is included
+only when it is widely used as an agent substrate and materially changes
+reliability or isolation.
 
 ## Inclusion bar
 
@@ -42,15 +43,25 @@ eligible for review, not entitled to inclusion.
 
 ## Classification
 
-Projects are placed by their primary runtime responsibility:
+Projects are placed by the primary ownership boundary they implement:
 
-- **Persistent agent runtimes** run long-lived assistants or autonomous workers.
-- **Coding agent runtimes** own repository sessions, coding tools, and workspaces.
-- **Browser and computer-use runtimes** own perception and action loops over user interfaces.
-- **Agent and workflow runtimes** embed agent loops or control flow in applications.
-- **Serving and control planes** package, deploy, expose, or operate agents.
-- **Sandboxes and execution environments** isolate agent-controlled execution.
-- **Durable execution substrates** provide recovery, retries, waits, and scheduling.
+- **Agent cognition — coding harnesses** own repository context, coding tools, and the software-engineering loop.
+- **Agent cognition — construction SDKs** define model/tool loops, routing, state transitions, or multi-agent behavior.
+- **Agent cognition — browser and computer use** owns perception and action loops over user interfaces.
+- **Agent hosts and supervisors** own lifecycle, identity, environment, event streaming, reconnection, and failure supervision around one or more agent brains.
+- **Durable orchestration** owns checkpoints, retries, waits, schedules, recovery, and reconciliation.
+- **Personal agent OSes and continuity** own long-lived identity, sessions, connections, schedules, notifications, or memory across interactions.
+- **Execution and isolation** owns the process, container, browser, or microVM boundary for agent-controlled effects.
+- **Application platforms and infrastructure** package, expose, and operate complete agent applications.
+
+Authority and safety, tool protocols, model gateways, observability, deployment,
+and durable work state remain first-class layers in `STACK.md`. They enter the
+core catalog only when a project also owns agent execution. This avoids calling
+every adjacent infrastructure component an "agent runtime."
+
+Memory and durable work state are classified separately. Remembering messages
+or retrieving embeddings is not evidence that a system owns projects, tasks,
+artifacts, decisions, outcomes, or cross-agent reconciliation.
 
 A project may span several layers. It appears once, in the category most useful
 for comparing alternatives. Tags expose important secondary capabilities.

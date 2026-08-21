@@ -307,7 +307,7 @@ def render_llms(catalog: dict[str, Any], metrics: dict[str, Any]) -> str:
     lines = [
         "# Awesome Agent Runtimes",
         "",
-        "A curated map of software that owns AI-agent execution, state, serving, or isolation.",
+        "A curated ownership map for agent cognition, supervision, continuity, isolation, and durable recovery.",
         f"Generated: {metrics.get('fetched_at', 'unavailable')}",
         "Source: https://github.com/beejmaxx/awesome-agent-runtimes",
         "Methodology: https://github.com/beejmaxx/awesome-agent-runtimes/blob/main/METHODOLOGY.md",

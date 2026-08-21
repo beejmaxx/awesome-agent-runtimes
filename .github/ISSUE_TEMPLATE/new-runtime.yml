@@ -1,5 +1,5 @@
-name: Suggest a runtime
-description: Propose a project for the catalog
+name: Suggest a project
+description: Propose an agent-stack project for the core catalog
 title: "Add: "
 labels: [addition]
 body:
@@ -15,18 +15,21 @@ body:
     attributes:
       label: Proposed layer
       options:
-        - Persistent agent runtime
-        - Agent and workflow runtime
-        - Serving and control plane
-        - Sandbox and execution environment
-        - Durable execution substrate
+        - Agent cognition — coding harness
+        - Agent cognition — construction SDK
+        - Agent cognition — browser or computer use
+        - Agent host or supervisor
+        - Durable orchestration
+        - Personal agent OS or continuity
+        - Execution and isolation
+        - Application platform or infrastructure
     validations:
       required: true
   - type: textarea
     id: runtime-role
     attributes:
-      label: What runtime responsibility does it own?
-      description: Link to documentation for execution, state, serving, or isolation claims.
+      label: What ownership boundary does it implement?
+      description: Link to documentation for cognition, supervision, recovery, continuity, serving, or isolation claims.
     validations:
       required: true
   - type: textarea

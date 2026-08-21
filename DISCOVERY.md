@@ -41,7 +41,9 @@ python3 scripts/discover.py --min-stars 2000 --min-sources 2 --max-stale-days 18
 
 ## Manual review questions
 
-- Which runtime responsibility does the project actually own?
+- Which ownership boundary does the project actually implement: cognition,
+  supervision, recovery, isolation, authority, continuity, or infrastructure?
+- Does it own durable work objects, or only transcripts, checkpoints, or memory?
 - Is that component usable in the public repository?
 - Is it an alternative to an existing entry, or merely an integration?
 - Are deployment, persistence, isolation, and license claims supported by primary
