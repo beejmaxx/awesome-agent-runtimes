@@ -71,6 +71,7 @@ Generated from [`data/projects.json`](data/projects.json). Edit the source catal
 
 ## computer-use
 
+- [Agent-S](https://github.com/simular-ai/Agent-S) - Open computer-use agent framework for planning and executing tasks across desktop operating systems.
 - [CUA](https://github.com/trycua/cua) - Cross-platform computer-use infrastructure with background drivers, agent-ready VM and container sandboxes, and fleet tooling.
 - [Open Interpreter](https://github.com/openinterpreter/openinterpreter) - Local coding-agent runtime for open models with computer tools and executable workflows.
 - [Skyvern](https://github.com/Skyvern-AI/skyvern) - Browser workflow runtime using visual and language-model reasoning instead of site-specific selectors.
@@ -95,6 +96,7 @@ Generated from [`data/projects.json`](data/projects.json). Edit the source catal
 
 ## desktop
 
+- [Agent-S](https://github.com/simular-ai/Agent-S) - Open computer-use agent framework for planning and executing tasks across desktop operating systems.
 - [Goose](https://github.com/aaif-goose/goose) - Local extensible agent runtime that automates engineering tasks through MCP tools.
 - [UFO](https://github.com/microsoft/UFO) - Microsoft agent framework for automating Windows applications and multi-device desktop workflows.
 
@@ -292,6 +294,7 @@ Generated from [`data/projects.json`](data/projects.json). Edit the source catal
 
 ## research
 
+- [Agent-S](https://github.com/simular-ai/Agent-S) - Open computer-use agent framework for planning and executing tasks across desktop operating systems.
 - [CAMEL](https://github.com/camel-ai/camel) - Multi-agent framework and research platform for agent societies, tools, memory, and task execution.
 - [SWE-agent](https://github.com/SWE-agent/SWE-agent) - Research-backed software-engineering agent runtime for resolving repository issues in controlled environments.
 

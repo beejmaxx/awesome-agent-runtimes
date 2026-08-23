@@ -63,7 +63,9 @@ a sandbox, and rely on a workflow engine for durable waits.
 | Execution and isolation | Processes, containers, browsers, microVMs, resource limits | Approval policy or user intent |
 | Authority and safety | Credentials, capabilities, approvals, effect policy | The sandbox implementation |
 | Work state and continuity | Projects, tasks, artifacts, decisions, context across agents | Merely storing chat history or embeddings |
-| Supporting infrastructure | Protocols, gateways, observability, deployment | Ownership of the end-to-end agent experience |
+| Agent interaction and UI | Shared application state, human approvals, and generative interfaces | Agent reasoning or runtime lifecycle |
+| Evaluation and assurance | Behavioral tests, red teaming, and quality or security gates | Live operational tracing |
+| Supporting infrastructure | Protocols, portable formats, gateways, observability, deployment | Ownership of the end-to-end agent experience |
 
 The last distinction matters: **memory is not the same as durable project
 state**. A transcript or vector store can help an agent recall information
@@ -134,7 +136,8 @@ Coverage is audited against the trusted upstream lists in
 [`data/sources.json`](data/sources.json). The reproducible funnel and unreviewed
 candidate queue are documented in [`DISCOVERY.md`](DISCOVERY.md). Production
 layers that matter but are not themselves core entries—including protocols,
-authority, observability, and work-state primitives—are mapped separately in
+portable formats, interaction, authority, evaluation, observability, and
+work-state primitives—are mapped separately in
 [`STACK.md`](STACK.md). Deliberate deferrals and rejections are recorded in
 [`WATCHLIST.md`](WATCHLIST.md) and [`EXCLUSIONS.md`](EXCLUSIONS.md).
 

@@ -58,9 +58,10 @@ Projects are placed by the primary ownership boundary they implement:
 - **Application platforms and infrastructure** package, expose, and operate complete agent applications.
 - **Historical projects** preserves influential archived implementations without presenting them as current defaults.
 
-Authority and safety, tool protocols, model gateways, observability, deployment,
-memory, integrations, and durable work state remain first-class layers in
-`STACK.md`. They are tracked with stars and activity in `data/stack-projects.json`
+Authority and safety, agent interaction, protocols and portable formats,
+evaluation and assurance, model gateways, observability, deployment, memory,
+integrations, and durable work state remain first-class layers in `STACK.md`.
+They are tracked with stars and activity in `data/stack-projects.json`
 but enter the core catalog only when they also own agent execution. This avoids
 calling every adjacent infrastructure component an "agent runtime."
 

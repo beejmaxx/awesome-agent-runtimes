@@ -63,6 +63,13 @@
       "boundary": "Execution and isolation",
       "review_after": "2026-09-30",
       "reason": "Clears quantitative gates, but the server is still at an early 0.x release; reassess operational maturity."
+    },
+    {
+      "name": "Agent Orchestrator",
+      "repo": "Untrivial-ai/agent-orchestrator",
+      "boundary": "Agent host and supervisor",
+      "review_after": "2026-09-30",
+      "reason": "Clears the quantitative gates, but remains on nightly releases and overlaps substantially with established supervisors; reassess operational maturity and distinctiveness."
     }
   ]
 }

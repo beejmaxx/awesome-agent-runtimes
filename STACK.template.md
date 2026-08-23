@@ -26,14 +26,16 @@ explained inline.
 | Agent host and supervisor | Start, identity, environment, event stream, control, reconnect, failure supervision | T3 Code, OpenHands, Gas Town |
 | Durable orchestration | Checkpoints, retries, durable timers, recovery, unknown outcomes, reconciliation | Temporal, LangGraph, Hatchet |
 | Execution and isolation | Process, container, browser, or microVM execution boundary | E2B, CUA, Firecracker, gVisor |
-| Authority and safety | Credentials, capabilities, approvals, effect policy, containment | Open Policy Agent, Cedar |
-| Work state and continuity | Projects, tasks, artifacts, decisions, dependencies, and outcomes across agents | Beads |
+| Authority and safety | Credentials, capabilities, approvals, effect policy, containment | Open Policy Agent, Cedar, Superagent |
+| Work state and continuity | Projects, tasks, artifacts, decisions, dependencies, and outcomes across agents | Beads, Planning with Files |
 | Personal agent OS and daemon | Long-lived identity, connections, schedules, notifications, memory | Hermes Agent, OpenClaw, ElizaOS |
 | Memory and context | Recall, retrieval, knowledge graphs, and context assembly | Mem0, Graphiti, Cognee |
-| Protocols | Tool discovery, agent exchange, client control, and application events | MCP, A2A, ACP, AG-UI |
+| Agent interaction and UI | Shared application state, human approvals, generative interfaces, and agent-user events | CopilotKit |
+| Protocols and portable formats | Tool discovery, agent exchange, client control, skills, and repository instructions | MCP, A2A, ACP, AG-UI, Agent Skills, AGENTS.md |
 | Integrations | Authentication, tool catalogs, and managed external actions | Composio |
 | Model gateway | Provider routing, credentials, budgets, and fallback | LiteLLM |
-| Observability | Traces, evaluations, causality, and post-incident explanation | OpenTelemetry, Langfuse, Phoenix |
+| Observability | Traces, causality, metrics, and post-incident explanation | OpenTelemetry, Langfuse, Phoenix |
+| Evaluation and assurance | Behavioral tests, red teaming, vulnerability scanning, and quality gates | Promptfoo, DeepEval |
 | Deployment and compute | Placement, scaling, networking, and service lifecycle | Kubernetes, Modal |
 
 ## Tracked supporting projects

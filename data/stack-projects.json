@@ -17,9 +17,14 @@
       "description": "Authentication, tool catalogs, and managed action execution across external applications."
     },
     {
+      "id": "interaction",
+      "title": "Agent interaction and user interfaces",
+      "description": "Application frameworks that connect agents to people, shared UI state, approvals, and generative interfaces."
+    },
+    {
       "id": "protocols",
-      "title": "Tool, agent, and user-interface protocols",
-      "description": "Open interfaces for tools, agent-to-agent exchange, agent clients, and agent-facing applications."
+      "title": "Protocols and portable formats",
+      "description": "Open interfaces and repository formats for tools, agents, clients, applications, skills, and instructions."
     },
     {
       "id": "authority",
@@ -33,8 +38,13 @@
     },
     {
       "id": "observability",
-      "title": "Observability and evaluation",
-      "description": "Tracing, evaluation, causality, and post-incident explanation for agent behavior."
+      "title": "Observability",
+      "description": "Tracing, causality, metrics, and post-incident explanation for agent behavior."
+    },
+    {
+      "id": "evaluation",
+      "title": "Evaluation and assurance",
+      "description": "Behavioral tests, red teaming, vulnerability scanning, and repeatable quality gates for agents."
     },
     {
       "id": "gateway",
@@ -61,6 +71,13 @@
       "tags": ["tasks", "dependency-graph", "multi-agent"]
     },
     {
+      "name": "Planning with Files",
+      "repo": "OthmanAdi/planning-with-files",
+      "category": "work-state",
+      "description": "Portable file-backed planning skill that preserves task plans, findings, and progress across context resets and crashes.",
+      "tags": ["planning", "files", "continuity"]
+    },
+    {
       "name": "Mem0",
       "repo": "mem0ai/mem0",
       "category": "memory",
@@ -82,11 +99,25 @@
       "tags": ["memory", "knowledge-graph", "self-hosted"]
     },
     {
+      "name": "Claude-Mem",
+      "repo": "thedotmack/claude-mem",
+      "category": "memory",
+      "description": "Cross-agent session capture and context-injection system backed by structured observations and local persistence.",
+      "tags": ["memory", "sessions", "context"]
+    },
+    {
       "name": "Composio",
       "repo": "ComposioHQ/composio",
       "category": "integrations",
       "description": "Tool catalog, authentication layer, and managed execution workbench for agents.",
       "tags": ["integrations", "authentication", "tools"]
+    },
+    {
+      "name": "CopilotKit",
+      "repo": "CopilotKit/CopilotKit",
+      "category": "interaction",
+      "description": "Full-stack framework for connecting agents to web, mobile, messaging, generative UI, shared state, and human approvals.",
+      "tags": ["frontend", "generative-UI", "human-in-the-loop"]
     },
     {
       "name": "Model Context Protocol",
@@ -119,6 +150,20 @@
       "tags": ["AG-UI", "events", "protocol"]
     },
     {
+      "name": "Agent Skills",
+      "repo": "agentskills/agentskills",
+      "category": "protocols",
+      "description": "Open specification for packaging portable instructions, scripts, and resources as agent skills.",
+      "tags": ["skills", "specification", "portability"]
+    },
+    {
+      "name": "AGENTS.md",
+      "repo": "agentsmd/agents.md",
+      "category": "protocols",
+      "description": "Open repository format for supplying durable project instructions to coding agents.",
+      "tags": ["instructions", "repository", "format"]
+    },
+    {
       "name": "Open Policy Agent",
       "repo": "open-policy-agent/opa",
       "category": "authority",
@@ -132,6 +177,13 @@
       "description": "Policy language and evaluation engine for fine-grained authorization.",
       "exception": "Mature authorization primitive; tracked despite being below the core star floor.",
       "tags": ["policy", "authorization", "language"]
+    },
+    {
+      "name": "Superagent",
+      "repo": "superagent-ai/superagent",
+      "category": "authority",
+      "description": "Agent-safety SDK for prompt-injection blocking, sensitive-data redaction, repository threat scanning, and red-team scenarios.",
+      "tags": ["security", "redaction", "red-team"]
     },
     {
       "name": "Restate",
@@ -165,6 +217,20 @@
       "description": "Agent and LLM observability and evaluation platform built around traces and experiments.",
       "license_override": "Elastic-2.0",
       "tags": ["tracing", "evaluation", "observability"]
+    },
+    {
+      "name": "DeepEval",
+      "repo": "confident-ai/deepeval",
+      "category": "evaluation",
+      "description": "Testing framework for repeatable LLM and agent evaluations with metrics, datasets, and CI integration.",
+      "tags": ["evaluation", "testing", "CI"]
+    },
+    {
+      "name": "Promptfoo",
+      "repo": "promptfoo/promptfoo",
+      "category": "evaluation",
+      "description": "CLI and library for agent evaluations, red teaming, pentesting, and vulnerability scanning.",
+      "tags": ["evaluation", "red-team", "security"]
     },
     {
       "name": "LiteLLM",

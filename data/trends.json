@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-23T04:55:35+00:00",
+  "generated_at": "2026-08-23T14:13:54+00:00",
   "repositories": {
     "agent0ai/agent-zero": {
       "7d": null,
@@ -133,6 +133,11 @@
       "90d": null
     },
     "browser-use/browser-use": {
+      "7d": null,
+      "30d": null,
+      "90d": null
+    },
+    "simular-ai/Agent-S": {
       "7d": null,
       "30d": null,
       "90d": null
@@ -322,6 +327,11 @@
       "30d": null,
       "90d": null
     },
+    "OthmanAdi/planning-with-files": {
+      "7d": null,
+      "30d": null,
+      "90d": null
+    },
     "mem0ai/mem0": {
       "7d": null,
       "30d": null,
@@ -337,7 +347,17 @@
       "30d": null,
       "90d": null
     },
+    "thedotmack/claude-mem": {
+      "7d": null,
+      "30d": null,
+      "90d": null
+    },
     "ComposioHQ/composio": {
+      "7d": null,
+      "30d": null,
+      "90d": null
+    },
+    "CopilotKit/CopilotKit": {
       "7d": null,
       "30d": null,
       "90d": null
@@ -362,12 +382,27 @@
       "30d": null,
       "90d": null
     },
+    "agentskills/agentskills": {
+      "7d": null,
+      "30d": null,
+      "90d": null
+    },
+    "agentsmd/agents.md": {
+      "7d": null,
+      "30d": null,
+      "90d": null
+    },
     "open-policy-agent/opa": {
       "7d": null,
       "30d": null,
       "90d": null
     },
     "cedar-policy/cedar": {
+      "7d": null,
+      "30d": null,
+      "90d": null
+    },
+    "superagent-ai/superagent": {
       "7d": null,
       "30d": null,
       "90d": null
@@ -388,6 +423,16 @@
       "90d": null
     },
     "Arize-ai/phoenix": {
+      "7d": null,
+      "30d": null,
+      "90d": null
+    },
+    "confident-ai/deepeval": {
+      "7d": null,
+      "30d": null,
+      "90d": null
+    },
+    "promptfoo/promptfoo": {
       "7d": null,
       "30d": null,
       "90d": null
@@ -458,6 +503,11 @@
       "90d": null
     },
     "opensandbox-group/OpenSandbox": {
+      "7d": null,
+      "30d": null,
+      "90d": null
+    },
+    "Untrivial-ai/agent-orchestrator": {
       "7d": null,
       "30d": null,
       "90d": null

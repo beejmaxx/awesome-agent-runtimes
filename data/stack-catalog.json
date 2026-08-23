@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-23T04:55:35+00:00",
+  "generated_at": "2026-08-23T14:13:54+00:00",
   "categories": [
     {
       "id": "work-state",
@@ -18,9 +18,14 @@
       "description": "Authentication, tool catalogs, and managed action execution across external applications."
     },
     {
+      "id": "interaction",
+      "title": "Agent interaction and user interfaces",
+      "description": "Application frameworks that connect agents to people, shared UI state, approvals, and generative interfaces."
+    },
+    {
       "id": "protocols",
-      "title": "Tool, agent, and user-interface protocols",
-      "description": "Open interfaces for tools, agent-to-agent exchange, agent clients, and agent-facing applications."
+      "title": "Protocols and portable formats",
+      "description": "Open interfaces and repository formats for tools, agents, clients, applications, skills, and instructions."
     },
     {
       "id": "authority",
@@ -34,8 +39,13 @@
     },
     {
       "id": "observability",
-      "title": "Observability and evaluation",
-      "description": "Tracing, evaluation, causality, and post-incident explanation for agent behavior."
+      "title": "Observability",
+      "description": "Tracing, causality, metrics, and post-incident explanation for agent behavior."
+    },
+    {
+      "id": "evaluation",
+      "title": "Evaluation and assurance",
+      "description": "Behavioral tests, red teaming, vulnerability scanning, and repeatable quality gates for agents."
     },
     {
       "id": "gateway",
@@ -67,13 +77,13 @@
       "repository_url": "https://github.com/ag-ui-protocol/ag-ui",
       "evidence_url": "https://github.com/ag-ui-protocol/ag-ui#readme",
       "github": {
-        "stars": 15493,
-        "forks": 1393,
+        "stars": 15495,
+        "forks": 1395,
         "language": "Python",
         "license": "MIT",
         "archived": false,
         "created_at": "2025-05-07T12:49:37Z",
-        "pushed_at": "2026-08-22T21:24:22Z"
+        "pushed_at": "2026-08-23T11:14:56Z"
       }
     },
     {
@@ -90,13 +100,35 @@
       "repository_url": "https://github.com/agentclientprotocol/agent-client-protocol",
       "evidence_url": "https://github.com/agentclientprotocol/agent-client-protocol#readme",
       "github": {
-        "stars": 4045,
+        "stars": 4048,
         "forks": 351,
         "language": "Rust",
         "license": "Apache-2.0",
         "archived": false,
         "created_at": "2025-06-23T17:39:36Z",
         "pushed_at": "2026-08-23T02:04:15Z"
+      }
+    },
+    {
+      "name": "Agent Skills",
+      "repo": "agentskills/agentskills",
+      "category": "protocols",
+      "description": "Open specification for packaging portable instructions, scripts, and resources as agent skills.",
+      "tags": [
+        "skills",
+        "specification",
+        "portability"
+      ],
+      "repository_url": "https://github.com/agentskills/agentskills",
+      "evidence_url": "https://github.com/agentskills/agentskills#readme",
+      "github": {
+        "stars": 24617,
+        "forks": 1815,
+        "language": "Python",
+        "license": "Apache-2.0",
+        "archived": false,
+        "created_at": "2025-12-16T15:47:19Z",
+        "pushed_at": "2026-08-09T20:36:04Z"
       }
     },
     {
@@ -112,13 +144,35 @@
       "repository_url": "https://github.com/a2aproject/A2A",
       "evidence_url": "https://github.com/a2aproject/A2A#readme",
       "github": {
-        "stars": 25460,
+        "stars": 25462,
         "forks": 2579,
         "language": "Shell",
         "license": "Apache-2.0",
         "archived": false,
         "created_at": "2025-03-25T18:44:21Z",
         "pushed_at": "2026-08-21T19:46:58Z"
+      }
+    },
+    {
+      "name": "AGENTS.md",
+      "repo": "agentsmd/agents.md",
+      "category": "protocols",
+      "description": "Open repository format for supplying durable project instructions to coding agents.",
+      "tags": [
+        "instructions",
+        "repository",
+        "format"
+      ],
+      "repository_url": "https://github.com/agentsmd/agents.md",
+      "evidence_url": "https://github.com/agentsmd/agents.md#readme",
+      "github": {
+        "stars": 23804,
+        "forks": 1795,
+        "language": "TypeScript",
+        "license": "MIT",
+        "archived": false,
+        "created_at": "2025-08-19T17:22:54Z",
+        "pushed_at": "2026-03-12T14:26:14Z"
       }
     },
     {
@@ -134,8 +188,8 @@
       "repository_url": "https://github.com/gastownhall/beads",
       "evidence_url": "https://github.com/gastownhall/beads#readme",
       "github": {
-        "stars": 26530,
-        "forks": 1786,
+        "stars": 26534,
+        "forks": 1788,
         "language": "Go",
         "license": "MIT",
         "archived": false,
@@ -157,13 +211,35 @@
       "repository_url": "https://github.com/cedar-policy/cedar",
       "evidence_url": "https://github.com/cedar-policy/cedar#readme",
       "github": {
-        "stars": 1681,
+        "stars": 1682,
         "forks": 169,
         "language": "Rust",
         "license": "Apache-2.0",
         "archived": false,
         "created_at": "2023-04-25T15:13:59Z",
         "pushed_at": "2026-08-21T21:18:21Z"
+      }
+    },
+    {
+      "name": "Claude-Mem",
+      "repo": "thedotmack/claude-mem",
+      "category": "memory",
+      "description": "Cross-agent session capture and context-injection system backed by structured observations and local persistence.",
+      "tags": [
+        "memory",
+        "sessions",
+        "context"
+      ],
+      "repository_url": "https://github.com/thedotmack/claude-mem",
+      "evidence_url": "https://github.com/thedotmack/claude-mem#readme",
+      "github": {
+        "stars": 91577,
+        "forks": 8021,
+        "language": "JavaScript",
+        "license": "Apache-2.0",
+        "archived": false,
+        "created_at": "2025-08-31T20:50:03Z",
+        "pushed_at": "2026-08-21T23:43:00Z"
       }
     },
     {
@@ -179,13 +255,13 @@
       "repository_url": "https://github.com/topoteretes/cognee",
       "evidence_url": "https://github.com/topoteretes/cognee#readme",
       "github": {
-        "stars": 30189,
-        "forks": 2950,
+        "stars": 30194,
+        "forks": 2952,
         "language": "Python",
         "license": "Apache-2.0",
         "archived": false,
         "created_at": "2023-08-16T16:16:33Z",
-        "pushed_at": "2026-08-22T16:06:10Z"
+        "pushed_at": "2026-08-23T13:46:28Z"
       }
     },
     {
@@ -201,13 +277,57 @@
       "repository_url": "https://github.com/ComposioHQ/composio",
       "evidence_url": "https://github.com/ComposioHQ/composio#readme",
       "github": {
-        "stars": 29832,
-        "forks": 4728,
+        "stars": 29840,
+        "forks": 4727,
         "language": "TypeScript",
         "license": "MIT",
         "archived": false,
         "created_at": "2024-02-23T13:58:27Z",
-        "pushed_at": "2026-08-22T23:36:42Z"
+        "pushed_at": "2026-08-23T14:07:16Z"
+      }
+    },
+    {
+      "name": "CopilotKit",
+      "repo": "CopilotKit/CopilotKit",
+      "category": "interaction",
+      "description": "Full-stack framework for connecting agents to web, mobile, messaging, generative UI, shared state, and human approvals.",
+      "tags": [
+        "frontend",
+        "generative-UI",
+        "human-in-the-loop"
+      ],
+      "repository_url": "https://github.com/CopilotKit/CopilotKit",
+      "evidence_url": "https://github.com/CopilotKit/CopilotKit#readme",
+      "github": {
+        "stars": 36978,
+        "forks": 4573,
+        "language": "TypeScript",
+        "license": "MIT",
+        "archived": false,
+        "created_at": "2023-06-19T04:08:31Z",
+        "pushed_at": "2026-08-23T07:44:50Z"
+      }
+    },
+    {
+      "name": "DeepEval",
+      "repo": "confident-ai/deepeval",
+      "category": "evaluation",
+      "description": "Testing framework for repeatable LLM and agent evaluations with metrics, datasets, and CI integration.",
+      "tags": [
+        "evaluation",
+        "testing",
+        "CI"
+      ],
+      "repository_url": "https://github.com/confident-ai/deepeval",
+      "evidence_url": "https://github.com/confident-ai/deepeval#readme",
+      "github": {
+        "stars": 17800,
+        "forks": 1841,
+        "language": "Python",
+        "license": "Apache-2.0",
+        "archived": false,
+        "created_at": "2023-08-10T05:35:04Z",
+        "pushed_at": "2026-08-21T19:24:44Z"
       }
     },
     {
@@ -223,7 +343,7 @@
       "repository_url": "https://github.com/firecracker-microvm/firecracker",
       "evidence_url": "https://github.com/firecracker-microvm/firecracker#readme",
       "github": {
-        "stars": 36211,
+        "stars": 36221,
         "forks": 2578,
         "language": "Rust",
         "license": "Apache-2.0",
@@ -245,7 +365,7 @@
       "repository_url": "https://github.com/getzep/graphiti",
       "evidence_url": "https://github.com/getzep/graphiti#readme",
       "github": {
-        "stars": 30203,
+        "stars": 30212,
         "forks": 3058,
         "language": "Python",
         "license": "Apache-2.0",
@@ -267,7 +387,7 @@
       "repository_url": "https://github.com/google/gvisor",
       "evidence_url": "https://github.com/google/gvisor#readme",
       "github": {
-        "stars": 19138,
+        "stars": 19141,
         "forks": 1933,
         "language": "Go",
         "license": "Apache-2.0",
@@ -289,8 +409,8 @@
       "repository_url": "https://github.com/kubernetes/kubernetes",
       "evidence_url": "https://github.com/kubernetes/kubernetes#readme",
       "github": {
-        "stars": 124914,
-        "forks": 43897,
+        "stars": 124918,
+        "forks": 43904,
         "language": "Go",
         "license": "Apache-2.0",
         "archived": false,
@@ -312,13 +432,13 @@
       "repository_url": "https://github.com/langfuse/langfuse",
       "evidence_url": "https://github.com/langfuse/langfuse#readme",
       "github": {
-        "stars": 33566,
+        "stars": 33574,
         "forks": 3621,
         "language": "TypeScript",
         "license": "MIT (core)",
         "archived": false,
         "created_at": "2023-05-18T17:47:09Z",
-        "pushed_at": "2026-08-23T02:55:22Z"
+        "pushed_at": "2026-08-23T13:17:36Z"
       }
     },
     {
@@ -335,13 +455,13 @@
       "repository_url": "https://github.com/BerriAI/litellm",
       "evidence_url": "https://github.com/BerriAI/litellm#readme",
       "github": {
-        "stars": 57031,
-        "forks": 10823,
+        "stars": 57064,
+        "forks": 10827,
         "language": "Python",
         "license": "MIT (core)",
         "archived": false,
         "created_at": "2023-07-27T00:09:52Z",
-        "pushed_at": "2026-08-23T04:51:40Z"
+        "pushed_at": "2026-08-23T10:12:17Z"
       }
     },
     {
@@ -357,8 +477,8 @@
       "repository_url": "https://github.com/mem0ai/mem0",
       "evidence_url": "https://github.com/mem0ai/mem0#readme",
       "github": {
-        "stars": 63843,
-        "forks": 7466,
+        "stars": 63867,
+        "forks": 7470,
         "language": "Python",
         "license": "Apache-2.0",
         "archived": false,
@@ -381,7 +501,7 @@
       "evidence_url": "https://github.com/modal-labs/modal-client#readme",
       "github": {
         "stars": 509,
-        "forks": 121,
+        "forks": 122,
         "language": "Python",
         "license": "Apache-2.0",
         "archived": false,
@@ -403,13 +523,13 @@
       "repository_url": "https://github.com/modelcontextprotocol/modelcontextprotocol",
       "evidence_url": "https://github.com/modelcontextprotocol/modelcontextprotocol#readme",
       "github": {
-        "stars": 9030,
-        "forks": 1747,
+        "stars": 9031,
+        "forks": 1748,
         "language": "TypeScript",
         "license": "Apache-2.0 / MIT transition",
         "archived": false,
         "created_at": "2024-09-24T20:26:52Z",
-        "pushed_at": "2026-08-22T20:46:47Z"
+        "pushed_at": "2026-08-23T09:06:38Z"
       }
     },
     {
@@ -425,7 +545,7 @@
       "repository_url": "https://github.com/open-policy-agent/opa",
       "evidence_url": "https://github.com/open-policy-agent/opa#readme",
       "github": {
-        "stars": 12136,
+        "stars": 12137,
         "forks": 1655,
         "language": "Go",
         "license": "Apache-2.0",
@@ -471,13 +591,57 @@
       "repository_url": "https://github.com/Arize-ai/phoenix",
       "evidence_url": "https://github.com/Arize-ai/phoenix#readme",
       "github": {
-        "stars": 11147,
+        "stars": 11148,
         "forks": 1073,
         "language": "Python",
         "license": "Elastic-2.0",
         "archived": false,
         "created_at": "2022-11-09T23:44:35Z",
         "pushed_at": "2026-08-22T21:03:47Z"
+      }
+    },
+    {
+      "name": "Planning with Files",
+      "repo": "OthmanAdi/planning-with-files",
+      "category": "work-state",
+      "description": "Portable file-backed planning skill that preserves task plans, findings, and progress across context resets and crashes.",
+      "tags": [
+        "planning",
+        "files",
+        "continuity"
+      ],
+      "repository_url": "https://github.com/OthmanAdi/planning-with-files",
+      "evidence_url": "https://github.com/OthmanAdi/planning-with-files#readme",
+      "github": {
+        "stars": 26304,
+        "forks": 2204,
+        "language": "Shell",
+        "license": "MIT",
+        "archived": false,
+        "created_at": "2026-01-03T07:37:28Z",
+        "pushed_at": "2026-08-22T11:09:40Z"
+      }
+    },
+    {
+      "name": "Promptfoo",
+      "repo": "promptfoo/promptfoo",
+      "category": "evaluation",
+      "description": "CLI and library for agent evaluations, red teaming, pentesting, and vulnerability scanning.",
+      "tags": [
+        "evaluation",
+        "red-team",
+        "security"
+      ],
+      "repository_url": "https://github.com/promptfoo/promptfoo",
+      "evidence_url": "https://github.com/promptfoo/promptfoo#readme",
+      "github": {
+        "stars": 24481,
+        "forks": 2221,
+        "language": "TypeScript",
+        "license": "MIT",
+        "archived": false,
+        "created_at": "2023-04-28T15:48:49Z",
+        "pushed_at": "2026-08-23T03:11:11Z"
       }
     },
     {
@@ -495,13 +659,35 @@
       "repository_url": "https://github.com/restatedev/restate",
       "evidence_url": "https://github.com/restatedev/restate#readme",
       "github": {
-        "stars": 4327,
+        "stars": 4330,
         "forks": 199,
         "language": "Rust",
         "license": "BSL-1.1",
         "archived": false,
         "created_at": "2023-01-04T15:03:32Z",
         "pushed_at": "2026-08-22T09:30:15Z"
+      }
+    },
+    {
+      "name": "Superagent",
+      "repo": "superagent-ai/superagent",
+      "category": "authority",
+      "description": "Agent-safety SDK for prompt-injection blocking, sensitive-data redaction, repository threat scanning, and red-team scenarios.",
+      "tags": [
+        "security",
+        "redaction",
+        "red-team"
+      ],
+      "repository_url": "https://github.com/superagent-ai/superagent",
+      "evidence_url": "https://github.com/superagent-ai/superagent#readme",
+      "github": {
+        "stars": 6717,
+        "forks": 964,
+        "language": "TypeScript",
+        "license": "MIT",
+        "archived": false,
+        "created_at": "2023-05-10T18:50:39Z",
+        "pushed_at": "2026-08-21T17:36:34Z"
       }
     }
   ]

@@ -1,7 +1,7 @@
 # Awesome Agent Runtimes
 
 A curated ownership map for agent cognition, supervision, continuity, isolation, and durable recovery.
-Generated: 2026-08-23T04:55:35+00:00
+Generated: 2026-08-23T14:13:54+00:00
 Source: https://github.com/beejmaxx/awesome-agent-runtimes
 Methodology: https://github.com/beejmaxx/awesome-agent-runtimes/blob/main/METHODOLOGY.md
 
@@ -9,111 +9,112 @@ Methodology: https://github.com/beejmaxx/awesome-agent-runtimes/blob/main/METHOD
 
 Agent brains that own the software-engineering loop, repository context, tools, and coding sessions.
 
-- Aider (https://github.com/Aider-AI/aider): Terminal coding-agent runtime built around repository maps, editable worktrees, and Git-native sessions. [48,407 stars; local, coding, terminal, git]
-- Cline (https://github.com/cline/cline): Autonomous coding-agent runtime available as an IDE extension, CLI, and embeddable SDK. [66,685 stars; local, library, coding, IDE, human-in-the-loop]
-- Codex (https://github.com/openai/codex): Local coding-agent runtime and CLI with sandboxed command execution, approvals, and automation modes. [113,830 stars; local, coding, sandbox, terminal]
-- Continue (https://github.com/continuedev/continue): Open-source coding-agent runtime spanning IDE, CLI, and continuous repository automation. [35,599 stars; local, self-hosted, coding, IDE, automation]
-- Crush (https://github.com/charmbracelet/crush): Terminal coding-agent runtime with multi-model support, language-server integration, and extensible tools. [27,589 stars; local, coding, terminal, LSP]
-- Gemini CLI (https://github.com/google-gemini/gemini-cli): Terminal agent runtime for coding and general automation with tools, extensions, and MCP support. [106,619 stars; local, coding, terminal, MCP]
-- Goose (https://github.com/aaif-goose/goose): Local extensible agent runtime that automates engineering tasks through MCP tools. [53,272 stars; local, coding, MCP, desktop]
-- Kilo Code (https://github.com/Kilo-Org/kilocode): Open-source coding agent for IDEs and the terminal with multiple models, specialized agents, and a managed cloud option. [26,975 stars; local, managed, coding, IDE, terminal]
-- Open Interpreter (https://github.com/openinterpreter/openinterpreter): Local coding-agent runtime for open models with computer tools and executable workflows. [68,117 stars; local, coding, computer-use, local-models]
-- OpenCode (https://github.com/anomalyco/opencode): Open-source coding-agent runtime for terminal, desktop, and IDE clients with parallel sessions. [200,398 stars; local, self-hosted, coding, client-server, multi-session]
-- Pi (https://github.com/earendil-works/pi): Extensible coding-agent toolkit and CLI with persistent sessions, a unified model API, and UI libraries. [95,575 stars; local, library, coding, extensible, sessions]
-- Qwen Code (https://github.com/QwenLM/qwen-code): Open-source terminal coding-agent runtime with tools, extensibility, and model-provider support. [27,300 stars; local, coding, terminal, tools]
-- SWE-agent (https://github.com/SWE-agent/SWE-agent): Research-backed software-engineering agent runtime for resolving repository issues in controlled environments. [20,109 stars; local, self-hosted, coding, research, benchmark]
+- Aider (https://github.com/Aider-AI/aider): Terminal coding-agent runtime built around repository maps, editable worktrees, and Git-native sessions. [48,419 stars; local, coding, terminal, git]
+- Cline (https://github.com/cline/cline): Autonomous coding-agent runtime available as an IDE extension, CLI, and embeddable SDK. [66,707 stars; local, library, coding, IDE, human-in-the-loop]
+- Codex (https://github.com/openai/codex): Local coding-agent runtime and CLI with sandboxed command execution, approvals, and automation modes. [114,830 stars; local, coding, sandbox, terminal]
+- Continue (https://github.com/continuedev/continue): Open-source coding-agent runtime spanning IDE, CLI, and continuous repository automation. [35,601 stars; local, self-hosted, coding, IDE, automation]
+- Crush (https://github.com/charmbracelet/crush): Terminal coding-agent runtime with multi-model support, language-server integration, and extensible tools. [27,601 stars; local, coding, terminal, LSP]
+- Gemini CLI (https://github.com/google-gemini/gemini-cli): Terminal agent runtime for coding and general automation with tools, extensions, and MCP support. [106,625 stars; local, coding, terminal, MCP]
+- Goose (https://github.com/aaif-goose/goose): Local extensible agent runtime that automates engineering tasks through MCP tools. [53,292 stars; local, coding, MCP, desktop]
+- Kilo Code (https://github.com/Kilo-Org/kilocode): Open-source coding agent for IDEs and the terminal with multiple models, specialized agents, and a managed cloud option. [26,978 stars; local, managed, coding, IDE, terminal]
+- Open Interpreter (https://github.com/openinterpreter/openinterpreter): Local coding-agent runtime for open models with computer tools and executable workflows. [68,121 stars; local, coding, computer-use, local-models]
+- OpenCode (https://github.com/anomalyco/opencode): Open-source coding-agent runtime for terminal, desktop, and IDE clients with parallel sessions. [200,555 stars; local, self-hosted, coding, client-server, multi-session]
+- Pi (https://github.com/earendil-works/pi): Extensible coding-agent toolkit and CLI with persistent sessions, a unified model API, and UI libraries. [95,745 stars; local, library, coding, extensible, sessions]
+- Qwen Code (https://github.com/QwenLM/qwen-code): Open-source terminal coding-agent runtime with tools, extensibility, and model-provider support. [27,310 stars; local, coding, terminal, tools]
+- SWE-agent (https://github.com/SWE-agent/SWE-agent): Research-backed software-engineering agent runtime for resolving repository issues in controlled environments. [20,112 stars; local, self-hosted, coding, research, benchmark]
 
 ## Agent cognition — construction SDKs
 
 Libraries for constructing model/tool loops, routing, state transitions, and multi-agent behavior.
 
-- AgentScope (https://github.com/agentscope-ai/agentscope): Developer framework for tool-using and multi-agent applications with runtime services. [29,298 stars; library, self-hosted, multi-agent, tools, distributed]
-- Agno (https://github.com/agno-agi/agno): Python framework and AgentOS runtime for building, serving, and monitoring agent systems. [41,839 stars; library, self-hosted, managed, multi-agent, memory, observability]
-- AutoGen (https://github.com/microsoft/autogen): Event-driven framework for conversational, tool-using, and multi-agent applications. [60,577 stars; library, self-hosted, multi-agent, event-driven, tools]
-- CAMEL (https://github.com/camel-ai/camel): Multi-agent framework and research platform for agent societies, tools, memory, and task execution. [17,621 stars; library, self-hosted, multi-agent, research, memory]
-- Claude Agent SDK (https://github.com/anthropics/claude-agent-sdk-python): Anthropic's Python SDK for building agents with Claude Code's tools, sessions, and execution loop. [7,953 stars; library, self-hosted, tools, sessions, SDK]
-- CrewAI (https://github.com/crewAIInc/crewAI): Role-based multi-agent runtime for coordinating crews and event-driven flows. [57,484 stars; library, self-hosted, managed, multi-agent, flows, observability]
-- Deep Agents (https://github.com/langchain-ai/deepagents): Batteries-included agent harness with planning, filesystems, subagents, and long-term memory. [28,085 stars; library, self-hosted, planning, multi-agent, memory]
-- Google Agent Development Kit (https://github.com/google/adk-python): Code-first agent framework with sessions, tools, evaluation, and local or managed runtime options. [21,228 stars; library, local, managed, multi-agent, evaluation, tools]
-- LangChain (https://github.com/langchain-ai/langchain): Established agent application framework with model, tool, middleware, and agent-loop abstractions. [144,802 stars; library, self-hosted, tools, middleware, ecosystem]
-- LlamaIndex (https://github.com/run-llama/llama_index): Data-centric agent framework with workflows, tools, retrieval, memory, and multi-agent patterns. [51,805 stars; library, self-hosted, managed, data, workflows, retrieval]
-- Mastra (https://github.com/mastra-ai/mastra): TypeScript agent framework with workflows, memory, evaluation, and observability. [27,371 stars; library, self-hosted, managed, workflows, memory, observability]
-- MetaGPT (https://github.com/FoundationAgents/MetaGPT): Multi-agent software-company framework that coordinates role-based agents through structured workflows. [69,951 stars; library, local, multi-agent, roles, workflows]
-- Microsoft Agent Framework (https://github.com/microsoft/agent-framework): Microsoft framework for building agents and graph workflows with middleware and state management. [13,056 stars; library, self-hosted, managed, workflows, multi-agent, middleware]
-- OpenAI Agents SDK (https://github.com/openai/openai-agents-python): Lightweight Python runtime for agent loops, handoffs, guardrails, sessions, and tracing. [28,876 stars; library, handoffs, guardrails, tracing]
-- Pydantic AI (https://github.com/pydantic/pydantic-ai): Typed Python agent framework with tools, durable execution integrations, graphs, and evaluation. [19,445 stars; library, self-hosted, typed, durable, evaluation]
-- Semantic Kernel (https://github.com/microsoft/semantic-kernel): Microsoft agent SDK with plugins, process orchestration, memory integrations, and multi-agent patterns. [28,480 stars; library, self-hosted, managed, plugins, multi-agent, enterprise]
-- smolagents (https://github.com/huggingface/smolagents): Compact Hugging Face agent library centered on code-executing agents and composable tools. [28,929 stars; library, local, code-agents, tools, lightweight]
+- AgentScope (https://github.com/agentscope-ai/agentscope): Developer framework for tool-using and multi-agent applications with runtime services. [29,349 stars; library, self-hosted, multi-agent, tools, distributed]
+- Agno (https://github.com/agno-agi/agno): Python framework and AgentOS runtime for building, serving, and monitoring agent systems. [41,848 stars; library, self-hosted, managed, multi-agent, memory, observability]
+- AutoGen (https://github.com/microsoft/autogen): Event-driven framework for conversational, tool-using, and multi-agent applications. [60,585 stars; library, self-hosted, multi-agent, event-driven, tools]
+- CAMEL (https://github.com/camel-ai/camel): Multi-agent framework and research platform for agent societies, tools, memory, and task execution. [17,623 stars; library, self-hosted, multi-agent, research, memory]
+- Claude Agent SDK (https://github.com/anthropics/claude-agent-sdk-python): Anthropic's Python SDK for building agents with Claude Code's tools, sessions, and execution loop. [7,957 stars; library, self-hosted, tools, sessions, SDK]
+- CrewAI (https://github.com/crewAIInc/crewAI): Role-based multi-agent runtime for coordinating crews and event-driven flows. [57,501 stars; library, self-hosted, managed, multi-agent, flows, observability]
+- Deep Agents (https://github.com/langchain-ai/deepagents): Batteries-included agent harness with planning, filesystems, subagents, and long-term memory. [28,168 stars; library, self-hosted, planning, multi-agent, memory]
+- Google Agent Development Kit (https://github.com/google/adk-python): Code-first agent framework with sessions, tools, evaluation, and local or managed runtime options. [21,234 stars; library, local, managed, multi-agent, evaluation, tools]
+- LangChain (https://github.com/langchain-ai/langchain): Established agent application framework with model, tool, middleware, and agent-loop abstractions. [144,822 stars; library, self-hosted, tools, middleware, ecosystem]
+- LlamaIndex (https://github.com/run-llama/llama_index): Data-centric agent framework with workflows, tools, retrieval, memory, and multi-agent patterns. [51,815 stars; library, self-hosted, managed, data, workflows, retrieval]
+- Mastra (https://github.com/mastra-ai/mastra): TypeScript agent framework with workflows, memory, evaluation, and observability. [27,375 stars; library, self-hosted, managed, workflows, memory, observability]
+- MetaGPT (https://github.com/FoundationAgents/MetaGPT): Multi-agent software-company framework that coordinates role-based agents through structured workflows. [69,961 stars; library, local, multi-agent, roles, workflows]
+- Microsoft Agent Framework (https://github.com/microsoft/agent-framework): Microsoft framework for building agents and graph workflows with middleware and state management. [13,060 stars; library, self-hosted, managed, workflows, multi-agent, middleware]
+- OpenAI Agents SDK (https://github.com/openai/openai-agents-python): Lightweight Python runtime for agent loops, handoffs, guardrails, sessions, and tracing. [28,886 stars; library, handoffs, guardrails, tracing]
+- Pydantic AI (https://github.com/pydantic/pydantic-ai): Typed Python agent framework with tools, durable execution integrations, graphs, and evaluation. [19,453 stars; library, self-hosted, typed, durable, evaluation]
+- Semantic Kernel (https://github.com/microsoft/semantic-kernel): Microsoft agent SDK with plugins, process orchestration, memory integrations, and multi-agent patterns. [28,481 stars; library, self-hosted, managed, plugins, multi-agent, enterprise]
+- smolagents (https://github.com/huggingface/smolagents): Compact Hugging Face agent library centered on code-executing agents and composable tools. [28,938 stars; library, local, code-agents, tools, lightweight]
 
 ## Agent cognition — realtime voice and multimodal
 
 Frameworks and runtimes for low-latency voice, video, telephony, and multimodal agent interactions.
 
-- LiveKit Agents (https://github.com/livekit/agents): Server-side framework for realtime voice and multimodal agents with job dispatch, telephony, testing, and provider integrations. [13,133 stars; library, self-hosted, managed, voice, multimodal, realtime, telephony]
-- Pipecat (https://github.com/pipecat-ai/pipecat): Python framework for realtime voice and multimodal agents with streaming pipelines and multi-agent coordination. [14,475 stars; library, self-hosted, managed, voice, multimodal, realtime, multi-agent]
+- LiveKit Agents (https://github.com/livekit/agents): Server-side framework for realtime voice and multimodal agents with job dispatch, telephony, testing, and provider integrations. [13,136 stars; library, self-hosted, managed, voice, multimodal, realtime, telephony]
+- Pipecat (https://github.com/pipecat-ai/pipecat): Python framework for realtime voice and multimodal agents with streaming pipelines and multi-agent coordination. [14,503 stars; library, self-hosted, managed, voice, multimodal, realtime, multi-agent]
 
 ## Agent cognition — browser and computer use
 
 Harnesses and SDKs that own perception and action loops over browsers or desktop interfaces.
 
-- Browser Use (https://github.com/browser-use/browser-use): Browser-agent framework and runtime for perception, action, sessions, and web task automation. [110,163 stars; library, local, managed, browser, automation, tools]
-- Skyvern (https://github.com/Skyvern-AI/skyvern): Browser workflow runtime using visual and language-model reasoning instead of site-specific selectors. [22,834 stars; self-hosted, managed, browser, workflows, computer-use]
-- Stagehand (https://github.com/browserbase/stagehand): Browser-agent SDK that combines natural-language actions with deterministic browser automation. [24,022 stars; library, self-hosted, managed, browser, automation, SDK]
-- UFO (https://github.com/microsoft/UFO): Microsoft agent framework for automating Windows applications and multi-device desktop workflows. [9,539 stars; local, computer-use, desktop, multi-agent]
+- Agent-S (https://github.com/simular-ai/Agent-S): Open computer-use agent framework for planning and executing tasks across desktop operating systems. [12,185 stars; library, local, computer-use, desktop, research]
+- Browser Use (https://github.com/browser-use/browser-use): Browser-agent framework and runtime for perception, action, sessions, and web task automation. [110,218 stars; library, local, managed, browser, automation, tools]
+- Skyvern (https://github.com/Skyvern-AI/skyvern): Browser workflow runtime using visual and language-model reasoning instead of site-specific selectors. [22,837 stars; self-hosted, managed, browser, workflows, computer-use]
+- Stagehand (https://github.com/browserbase/stagehand): Browser-agent SDK that combines natural-language actions with deterministic browser automation. [24,023 stars; library, self-hosted, managed, browser, automation, SDK]
+- UFO (https://github.com/microsoft/UFO): Microsoft agent framework for automating Windows applications and multi-device desktop workflows. [9,542 stars; local, computer-use, desktop, multi-agent]
 
 ## Agent hosts and supervisors
 
 Systems that start agents, provide environments and identity, stream events, supervise sessions, and recover failures.
 
-- Agent Zero (https://github.com/agent0ai/agent-zero): General-purpose autonomous agent runtime with an interactive UI, subordinate agents, and executable tools. [18,939 stars; local, self-hosted, multi-agent, code-execution, memory]
-- AionUi (https://github.com/iOfficeAI/AionUi): Cross-platform cowork application for supervising built-in and external CLI agents with remote access and persistent automation. [32,212 stars; local, self-hosted, control-plane, multi-agent, automation]
-- AutoGPT (https://github.com/Significant-Gravitas/AutoGPT): Platform for creating, deploying, and continuously running autonomous agents. [186,783 stars; self-hosted, managed, continuous, builder, marketplace]
+- Agent Zero (https://github.com/agent0ai/agent-zero): General-purpose autonomous agent runtime with an interactive UI, subordinate agents, and executable tools. [18,943 stars; local, self-hosted, multi-agent, code-execution, memory]
+- AionUi (https://github.com/iOfficeAI/AionUi): Cross-platform cowork application for supervising built-in and external CLI agents with remote access and persistent automation. [32,218 stars; local, self-hosted, control-plane, multi-agent, automation]
+- AutoGPT (https://github.com/Significant-Gravitas/AutoGPT): Platform for creating, deploying, and continuously running autonomous agents. [186,806 stars; self-hosted, managed, continuous, builder, marketplace]
 - Claude Squad (https://github.com/smtg-ai/claude-squad): Terminal supervisor for running multiple coding agents concurrently in isolated Git workspaces. [8,354 stars; local, supervisor, coding, worktrees]
-- Cloudflare Agents (https://github.com/cloudflare/agents): Stateful agent SDK built on Durable Objects with identity, persistence, scheduling, and realtime connections. [5,474 stars; library, managed, stateful, serverless, realtime]
-- DeerFlow (https://github.com/bytedance/deer-flow): Long-horizon agent harness with sandboxes, memory, skills, subagents, and a messaging gateway. [80,599 stars; local, self-hosted, long-running, skills, multi-agent]
-- Gas Town (https://github.com/gastownhall/gastown): Multi-agent workspace manager with persistent work tracking, agent identities, mailboxes, handoffs, and Git worktrees. [17,728 stars; local, supervisor, work-state, multi-agent, worktrees]
-- OpenHands (https://github.com/OpenHands/OpenHands): Software-development agent platform with a runtime for executing tools in isolated workspaces. [84,814 stars; local, self-hosted, managed, coding, sandbox, multi-agent]
-- T3 Code (https://github.com/pingdotgg/t3code): Local control plane for operating existing coding-agent CLIs from web, desktop, and mobile clients. [20,086 stars; local, self-hosted, control-plane, coding, remote-access]
+- Cloudflare Agents (https://github.com/cloudflare/agents): Stateful agent SDK built on Durable Objects with identity, persistence, scheduling, and realtime connections. [5,478 stars; library, managed, stateful, serverless, realtime]
+- DeerFlow (https://github.com/bytedance/deer-flow): Long-horizon agent harness with sandboxes, memory, skills, subagents, and a messaging gateway. [80,647 stars; local, self-hosted, long-running, skills, multi-agent]
+- Gas Town (https://github.com/gastownhall/gastown): Multi-agent workspace manager with persistent work tracking, agent identities, mailboxes, handoffs, and Git worktrees. [17,736 stars; local, supervisor, work-state, multi-agent, worktrees]
+- OpenHands (https://github.com/OpenHands/OpenHands): Software-development agent platform with a runtime for executing tools in isolated workspaces. [84,844 stars; local, self-hosted, managed, coding, sandbox, multi-agent]
+- T3 Code (https://github.com/pingdotgg/t3code): Local control plane for operating existing coding-agent CLIs from web, desktop, and mobile clients. [20,126 stars; local, self-hosted, control-plane, coding, remote-access]
 
 ## Durable orchestration
 
 Workflow and state-machine substrates for checkpoints, retries, waits, schedules, recovery, and reconciliation.
 
-- Hatchet (https://github.com/hatchet-dev/hatchet): Task orchestration platform for durable workflows, queues, retries, concurrency, and monitoring. [7,778 stars; self-hosted, managed, durable, workflows, observability]
-- Inngest (https://github.com/inngest/inngest): Event-driven durable execution platform for step functions, scheduling, retries, and agent workflows. [5,758 stars; self-hosted, managed, durable, event-driven, workflows]
-- LangGraph (https://github.com/langchain-ai/langgraph): Graph-based runtime for stateful, durable, and human-in-the-loop agent workflows. [40,261 stars; library, self-hosted, managed, durable, human-in-the-loop, graph]
-- Temporal (https://github.com/temporalio/temporal): General durable-execution platform commonly used to make long-running agent workflows resilient. [22,467 stars; self-hosted, managed, durable, workflows, recovery]
-- Trigger.dev (https://github.com/triggerdotdev/trigger.dev): TypeScript background-job platform for long-running AI tasks with retries, queues, and monitoring. [16,102 stars; self-hosted, managed, durable, background-jobs, observability]
+- Hatchet (https://github.com/hatchet-dev/hatchet): Task orchestration platform for durable workflows, queues, retries, concurrency, and monitoring. [7,781 stars; self-hosted, managed, durable, workflows, observability]
+- Inngest (https://github.com/inngest/inngest): Event-driven durable execution platform for step functions, scheduling, retries, and agent workflows. [5,759 stars; self-hosted, managed, durable, event-driven, workflows]
+- LangGraph (https://github.com/langchain-ai/langgraph): Graph-based runtime for stateful, durable, and human-in-the-loop agent workflows. [40,276 stars; library, self-hosted, managed, durable, human-in-the-loop, graph]
+- Temporal (https://github.com/temporalio/temporal): General durable-execution platform commonly used to make long-running agent workflows resilient. [22,473 stars; self-hosted, managed, durable, workflows, recovery]
+- Trigger.dev (https://github.com/triggerdotdev/trigger.dev): TypeScript background-job platform for long-running AI tasks with retries, queues, and monitoring. [16,104 stars; self-hosted, managed, durable, background-jobs, observability]
 
 ## Personal agent OSes and continuity
 
 Long-lived personal agents that own identity, sessions, memory, schedules, connections, or notifications across interactions.
 
-- ElizaOS (https://github.com/elizaOS/eliza): Agent operating system with persistent identities, multi-agent coordination, and a plugin ecosystem. [19,133 stars; local, self-hosted, multi-agent, plugins, memory]
-- Hermes Agent (https://github.com/NousResearch/hermes-agent): Persistent agent runtime with learned skills, cross-session memory, schedules, messaging gateways, and subagents. [234,450 stars; local, self-hosted, self-improving, skills, scheduler, multi-agent]
-- Letta (https://github.com/letta-ai/letta): Stateful agent server centered on persistent memory, context management, and long-lived identities. [24,355 stars; self-hosted, managed, memory, server, stateful]
-- Nanobot (https://github.com/HKUDS/nanobot): Lightweight self-hosted personal agent with tools, memory, MCP, automations, and chat integrations. [47,288 stars; local, self-hosted, personal-agent, MCP, automation]
-- NanoClaw (https://github.com/nanocoai/nanoclaw): Container-isolated personal agent runtime with messaging channels, memory, skills, and scheduled jobs. [30,603 stars; local, self-hosted, personal-agent, containers, scheduler]
-- OpenClaw (https://github.com/openclaw/openclaw): Personal agent runtime with messaging channels, schedules, memory, skills, and tool execution. [387,171 stars; local, self-hosted, personal-agent, scheduler, tools]
+- ElizaOS (https://github.com/elizaOS/eliza): Agent operating system with persistent identities, multi-agent coordination, and a plugin ecosystem. [19,137 stars; local, self-hosted, multi-agent, plugins, memory]
+- Hermes Agent (https://github.com/NousResearch/hermes-agent): Persistent agent runtime with learned skills, cross-session memory, schedules, messaging gateways, and subagents. [234,685 stars; local, self-hosted, self-improving, skills, scheduler, multi-agent]
+- Letta (https://github.com/letta-ai/letta): Stateful agent server centered on persistent memory, context management, and long-lived identities. [24,360 stars; self-hosted, managed, memory, server, stateful]
+- Nanobot (https://github.com/HKUDS/nanobot): Lightweight self-hosted personal agent with tools, memory, MCP, automations, and chat integrations. [47,301 stars; local, self-hosted, personal-agent, MCP, automation]
+- NanoClaw (https://github.com/nanocoai/nanoclaw): Container-isolated personal agent runtime with messaging channels, memory, skills, and scheduled jobs. [30,604 stars; local, self-hosted, personal-agent, containers, scheduler]
+- OpenClaw (https://github.com/openclaw/openclaw): Personal agent runtime with messaging channels, schedules, memory, skills, and tool execution. [387,219 stars; local, self-hosted, personal-agent, scheduler, tools]
 
 ## Execution and isolation
 
 Sandboxes and controlled environments in which agents run code, commands, browsers, and tools.
 
-- CUA (https://github.com/trycua/cua): Cross-platform computer-use infrastructure with background drivers, agent-ready VM and container sandboxes, and fleet tooling. [21,808 stars; library, local, managed, computer-use, sandbox, virtualization]
-- E2B (https://github.com/e2b-dev/E2B): Open-source infrastructure for running agent-generated code in isolated cloud sandboxes. [13,521 stars; self-hosted, managed, sandbox, code-execution, API]
-- Microsandbox (https://github.com/superradcompany/microsandbox): Self-hosted microVM platform for secure, fast, and isolated user or agent code execution. [7,871 stars; local, self-hosted, microVM, isolation, code-execution]
+- CUA (https://github.com/trycua/cua): Cross-platform computer-use infrastructure with background drivers, agent-ready VM and container sandboxes, and fleet tooling. [21,820 stars; library, local, managed, computer-use, sandbox, virtualization]
+- E2B (https://github.com/e2b-dev/E2B): Open-source infrastructure for running agent-generated code in isolated cloud sandboxes. [13,523 stars; self-hosted, managed, sandbox, code-execution, API]
+- Microsandbox (https://github.com/superradcompany/microsandbox): Self-hosted microVM platform for secure, fast, and isolated user or agent code execution. [7,879 stars; local, self-hosted, microVM, isolation, code-execution]
 
 ## Application platforms and infrastructure
 
 Platforms for building, packaging, exposing, and operating agent applications.
 
-- Dify (https://github.com/langgenius/dify): Visual platform for building and operating agentic applications, workflows, and model services. [153,236 stars; self-hosted, managed, low-code, workflows, observability]
-- Langflow (https://github.com/langflow-ai/langflow): Visual Python framework for composing and serving agent workflows with an API. [153,570 stars; local, self-hosted, managed, low-code, builder, API]
+- Dify (https://github.com/langgenius/dify): Visual platform for building and operating agentic applications, workflows, and model services. [153,268 stars; self-hosted, managed, low-code, workflows, observability]
+- Langflow (https://github.com/langflow-ai/langflow): Visual Python framework for composing and serving agent workflows with an API. [153,582 stars; local, self-hosted, managed, low-code, builder, API]
 
 ## Historical projects
 
 Popular, influential implementations that are now archived or formally discontinued; retained for historical comparison, not recommended for new deployments.
 
-- Flowise (https://github.com/FlowiseAI/Flowise): Archived visual builder and serving platform for agent flows, assistants, and tool integrations. [archived; 55,383 stars; self-hosted, managed, low-code, builder, tools]
+- Flowise (https://github.com/FlowiseAI/Flowise): Archived visual builder and serving platform for agent flows, assistants, and tool integrations. [archived; 55,385 stars; self-hosted, managed, low-code, builder, tools]
 - Roo Code (https://github.com/RooCodeInc/Roo-Code): Archived IDE coding-agent runtime with specialized modes, tool use, and multi-agent orchestration. [archived; 24,326 stars; local, coding, IDE, multi-agent]

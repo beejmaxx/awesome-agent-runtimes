@@ -11,6 +11,10 @@
     {"id": "agent-sandbox", "query": "\"AI agents\" sandbox stars:>5000 archived:false"},
     {"id": "durable-agent-work", "query": "task \"coding agents\" stars:>5000 archived:false"},
     {"id": "agent-protocol", "query": "agent protocol stars:>5000 archived:false"},
-    {"id": "personal-agent", "query": "\"personal AI agent\" stars:>5000 archived:false"}
+    {"id": "personal-agent", "query": "\"personal AI agent\" stars:>5000 archived:false"},
+    {"id": "agent-interaction", "query": "\"agent frontend\" stars:>5000 archived:false"},
+    {"id": "agent-evaluation", "query": "agent evaluation red teaming stars:>5000 archived:false"},
+    {"id": "agent-skills", "query": "\"Agent Skills\" stars:>5000 archived:false"},
+    {"id": "agent-instructions", "query": "\"AGENTS.md\" stars:>5000 archived:false"}
   ]
 }

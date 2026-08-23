@@ -275,6 +275,14 @@
       "tags": ["browser", "automation", "tools"]
     },
     {
+      "name": "Agent-S",
+      "repo": "simular-ai/Agent-S",
+      "category": "cognition-computer-use",
+      "description": "Open computer-use agent framework for planning and executing tasks across desktop operating systems.",
+      "deployment": ["library", "local"],
+      "tags": ["computer-use", "desktop", "research"]
+    },
+    {
       "name": "Stagehand",
       "repo": "browserbase/stagehand",
       "category": "cognition-computer-use",
