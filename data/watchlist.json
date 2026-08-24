@@ -70,6 +70,13 @@
       "boundary": "Agent host and supervisor",
       "review_after": "2026-09-30",
       "reason": "Clears the quantitative gates, but remains on nightly releases and overlaps substantially with established supervisors; reassess operational maturity and distinctiveness."
+    },
+    {
+      "name": "Orkas",
+      "repo": "Orkas-AI/Orkas",
+      "boundary": "Agent host and supervisor",
+      "review_after": "2026-10-27",
+      "reason": "Distinct local-first multi-agent desktop supervisor, but below both the 180-day age and 5,000-star adoption gates."
     }
   ]
 }
