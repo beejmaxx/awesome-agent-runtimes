@@ -1,84 +1,84 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-29T11:10:41+00:00",
+  "generated_at": "2026-08-30T09:59:04+00:00",
   "repositories": {
     "agent0ai/agent-zero": {
-      "7d": 83,
+      "7d": 76,
       "30d": null,
       "90d": null
     },
     "Significant-Gravitas/AutoGPT": {
-      "7d": 233,
+      "7d": 193,
       "30d": null,
       "90d": null
     },
     "elizaOS/eliza": {
-      "7d": 83,
+      "7d": 72,
       "30d": null,
       "90d": null
     },
     "bytedance/deer-flow": {
-      "7d": 563,
+      "7d": 474,
       "30d": null,
       "90d": null
     },
     "aaif-goose/goose": {
-      "7d": 440,
+      "7d": 389,
       "30d": null,
       "90d": null
     },
     "NousResearch/hermes-agent": {
-      "7d": 3855,
+      "7d": 3588,
       "30d": null,
       "90d": null
     },
     "letta-ai/letta": {
-      "7d": 146,
+      "7d": 131,
       "30d": null,
       "90d": null
     },
     "nanocoai/nanoclaw": {
-      "7d": 45,
+      "7d": 42,
       "30d": null,
       "90d": null
     },
     "HKUDS/nanobot": {
-      "7d": 251,
+      "7d": 229,
       "30d": null,
       "90d": null
     },
     "openclaw/openclaw": {
-      "7d": 895,
+      "7d": 826,
       "30d": null,
       "90d": null
     },
     "OpenHands/OpenHands": {
-      "7d": 764,
+      "7d": 761,
       "30d": null,
       "90d": null
     },
     "anomalyco/opencode": {
-      "7d": 2239,
+      "7d": 1917,
       "30d": null,
       "90d": null
     },
     "earendil-works/pi": {
-      "7d": 3810,
+      "7d": 3475,
       "30d": null,
       "90d": null
     },
     "Kilo-Org/kilocode": {
-      "7d": 84,
+      "7d": 101,
       "30d": null,
       "90d": null
     },
     "Aider-AI/aider": {
-      "7d": 173,
+      "7d": 180,
       "30d": null,
       "90d": null
     },
     "cline/cline": {
-      "7d": 477,
+      "7d": 447,
       "30d": null,
       "90d": null
     },
@@ -88,187 +88,187 @@
       "90d": null
     },
     "openai/codex": {
-      "7d": 8055,
+      "7d": 5111,
       "30d": null,
       "90d": null
     },
     "charmbracelet/crush": {
-      "7d": 204,
+      "7d": 197,
       "30d": null,
       "90d": null
     },
     "google-gemini/gemini-cli": {
-      "7d": 130,
+      "7d": 122,
       "30d": null,
       "90d": null
     },
     "openinterpreter/openinterpreter": {
-      "7d": 74,
+      "7d": 76,
       "30d": null,
       "90d": null
     },
     "RooCodeInc/Roo-Code": {
-      "7d": -6,
+      "7d": -5,
       "30d": null,
       "90d": null
     },
     "SWE-agent/SWE-agent": {
-      "7d": 73,
+      "7d": 59,
       "30d": null,
       "90d": null
     },
     "QwenLM/qwen-code": {
-      "7d": 194,
+      "7d": 188,
       "30d": null,
       "90d": null
     },
     "livekit/agents": {
-      "7d": 319,
+      "7d": 436,
       "30d": null,
       "90d": null
     },
     "pipecat-ai/pipecat": {
-      "7d": 519,
+      "7d": 461,
       "30d": null,
       "90d": null
     },
     "browser-use/browser-use": {
-      "7d": 1581,
+      "7d": 1485,
       "30d": null,
       "90d": null
     },
     "simular-ai/Agent-S": {
-      "7d": null,
+      "7d": 19,
       "30d": null,
       "90d": null
     },
     "browserbase/stagehand": {
-      "7d": 73,
+      "7d": 71,
       "30d": null,
       "90d": null
     },
     "Skyvern-AI/skyvern": {
-      "7d": 49,
+      "7d": 43,
       "30d": null,
       "90d": null
     },
     "microsoft/UFO": {
-      "7d": 47,
+      "7d": 45,
       "30d": null,
       "90d": null
     },
     "agno-agi/agno": {
-      "7d": 132,
+      "7d": 121,
       "30d": null,
       "90d": null
     },
     "agentscope-ai/agentscope": {
-      "7d": 792,
+      "7d": 741,
       "30d": null,
       "90d": null
     },
     "anthropics/claude-agent-sdk-python": {
-      "7d": 47,
+      "7d": 46,
       "30d": null,
       "90d": null
     },
     "cloudflare/agents": {
-      "7d": 25,
+      "7d": 20,
       "30d": null,
       "90d": null
     },
     "microsoft/autogen": {
-      "7d": 120,
+      "7d": 113,
       "30d": null,
       "90d": null
     },
     "camel-ai/camel": {
-      "7d": 36,
+      "7d": 27,
       "30d": null,
       "90d": null
     },
     "crewAIInc/crewAI": {
-      "7d": 340,
+      "7d": 316,
       "30d": null,
       "90d": null
     },
     "langchain-ai/deepagents": {
-      "7d": 627,
+      "7d": 548,
       "30d": null,
       "90d": null
     },
     "google/adk-python": {
-      "7d": 103,
+      "7d": 94,
       "30d": null,
       "90d": null
     },
     "langchain-ai/langgraph": {
-      "7d": 443,
+      "7d": 423,
       "30d": null,
       "90d": null
     },
     "langchain-ai/langchain": {
-      "7d": 491,
+      "7d": 447,
       "30d": null,
       "90d": null
     },
     "run-llama/llama_index": {
-      "7d": 118,
+      "7d": 101,
       "30d": null,
       "90d": null
     },
     "mastra-ai/mastra": {
-      "7d": 196,
+      "7d": 192,
       "30d": null,
       "90d": null
     },
     "microsoft/agent-framework": {
-      "7d": 163,
+      "7d": 157,
       "30d": null,
       "90d": null
     },
     "FoundationAgents/MetaGPT": {
-      "7d": 149,
+      "7d": 136,
       "30d": null,
       "90d": null
     },
     "openai/openai-agents-python": {
-      "7d": 209,
+      "7d": 182,
       "30d": null,
       "90d": null
     },
     "pydantic/pydantic-ai": {
-      "7d": 132,
+      "7d": 128,
       "30d": null,
       "90d": null
     },
     "microsoft/semantic-kernel": {
-      "7d": 36,
+      "7d": 37,
       "30d": null,
       "90d": null
     },
     "huggingface/smolagents": {
-      "7d": 117,
+      "7d": 109,
       "30d": null,
       "90d": null
     },
     "langgenius/dify": {
-      "7d": 651,
+      "7d": 605,
       "30d": null,
       "90d": null
     },
     "FlowiseAI/Flowise": {
-      "7d": 15,
+      "7d": 14,
       "30d": null,
       "90d": null
     },
     "langflow-ai/langflow": {
-      "7d": 299,
+      "7d": 298,
       "30d": null,
       "90d": null
     },
     "pingdotgg/t3code": {
-      "7d": 966,
+      "7d": 887,
       "30d": null,
       "90d": null
     },
@@ -278,32 +278,32 @@
       "90d": null
     },
     "smtg-ai/claude-squad": {
-      "7d": 40,
+      "7d": 36,
       "30d": null,
       "90d": null
     },
     "gastownhall/gastown": {
-      "7d": 115,
+      "7d": 108,
       "30d": null,
       "90d": null
     },
     "trycua/cua": {
-      "7d": 222,
+      "7d": 199,
       "30d": null,
       "90d": null
     },
     "e2b-dev/E2B": {
-      "7d": 72,
+      "7d": 67,
       "30d": null,
       "90d": null
     },
     "superradcompany/microsandbox": {
-      "7d": 145,
+      "7d": 136,
       "30d": null,
       "90d": null
     },
     "hatchet-dev/hatchet": {
-      "7d": 36,
+      "7d": 31,
       "30d": null,
       "90d": null
     },
@@ -313,57 +313,57 @@
       "90d": null
     },
     "temporalio/temporal": {
-      "7d": 140,
+      "7d": 129,
       "30d": null,
       "90d": null
     },
     "triggerdotdev/trigger.dev": {
-      "7d": 67,
+      "7d": 58,
       "30d": null,
       "90d": null
     },
     "gastownhall/beads": {
-      "7d": 185,
+      "7d": 182,
       "30d": null,
       "90d": null
     },
     "OthmanAdi/planning-with-files": {
-      "7d": null,
+      "7d": 118,
       "30d": null,
       "90d": null
     },
     "mem0ai/mem0": {
-      "7d": 518,
+      "7d": 477,
       "30d": null,
       "90d": null
     },
     "getzep/graphiti": {
-      "7d": 211,
+      "7d": 199,
       "30d": null,
       "90d": null
     },
     "topoteretes/cognee": {
-      "7d": 158,
+      "7d": 151,
       "30d": null,
       "90d": null
     },
     "thedotmack/claude-mem": {
-      "7d": null,
+      "7d": 1032,
       "30d": null,
       "90d": null
     },
     "ComposioHQ/composio": {
-      "7d": 114,
+      "7d": 103,
       "30d": null,
       "90d": null
     },
     "CopilotKit/CopilotKit": {
-      "7d": null,
+      "7d": 133,
       "30d": null,
       "90d": null
     },
     "modelcontextprotocol/modelcontextprotocol": {
-      "7d": 55,
+      "7d": 52,
       "30d": null,
       "90d": null
     },
@@ -373,42 +373,42 @@
       "90d": null
     },
     "agentclientprotocol/agent-client-protocol": {
-      "7d": 59,
+      "7d": 60,
       "30d": null,
       "90d": null
     },
     "ag-ui-protocol/ag-ui": {
-      "7d": 130,
+      "7d": 129,
       "30d": null,
       "90d": null
     },
     "agentskills/agentskills": {
-      "7d": null,
+      "7d": 248,
       "30d": null,
       "90d": null
     },
     "agentsmd/agents.md": {
-      "7d": null,
+      "7d": 183,
       "30d": null,
       "90d": null
     },
     "open-policy-agent/opa": {
-      "7d": 43,
+      "7d": 41,
       "30d": null,
       "90d": null
     },
     "cedar-policy/cedar": {
-      "7d": 21,
+      "7d": 18,
       "30d": null,
       "90d": null
     },
     "superagent-ai/superagent": {
-      "7d": null,
+      "7d": 3,
       "30d": null,
       "90d": null
     },
     "restatedev/restate": {
-      "7d": 23,
+      "7d": 22,
       "30d": null,
       "90d": null
     },
@@ -418,52 +418,52 @@
       "90d": null
     },
     "langfuse/langfuse": {
-      "7d": 354,
+      "7d": 345,
       "30d": null,
       "90d": null
     },
     "Arize-ai/phoenix": {
-      "7d": 94,
+      "7d": 98,
       "30d": null,
       "90d": null
     },
     "confident-ai/deepeval": {
-      "7d": null,
+      "7d": 161,
       "30d": null,
       "90d": null
     },
     "promptfoo/promptfoo": {
-      "7d": null,
+      "7d": 191,
       "30d": null,
       "90d": null
     },
     "BerriAI/litellm": {
-      "7d": 550,
+      "7d": 512,
       "30d": null,
       "90d": null
     },
     "kubernetes/kubernetes": {
-      "7d": 578,
+      "7d": 655,
       "30d": null,
       "90d": null
     },
     "modal-labs/modal-client": {
-      "7d": 4,
+      "7d": 2,
       "30d": null,
       "90d": null
     },
     "firecracker-microvm/firecracker": {
-      "7d": 156,
+      "7d": 151,
       "30d": null,
       "90d": null
     },
     "google/gvisor": {
-      "7d": 54,
+      "7d": 50,
       "30d": null,
       "90d": null
     },
     "NVIDIA/OpenShell": {
-      "7d": 97,
+      "7d": 85,
       "30d": null,
       "90d": null
     },
@@ -473,42 +473,42 @@
       "90d": null
     },
     "paperclipai/paperclip": {
-      "7d": 495,
+      "7d": 444,
       "30d": null,
       "90d": null
     },
     "microsoft/agent-governance-toolkit": {
-      "7d": 67,
+      "7d": 61,
       "30d": null,
       "90d": null
     },
     "stablyai/orca": {
-      "7d": 5674,
+      "7d": 5397,
       "30d": null,
       "90d": null
     },
     "herdrdev/herdr": {
-      "7d": 1868,
+      "7d": 1797,
       "30d": null,
       "90d": null
     },
     "TencentCloud/CubeSandbox": {
-      "7d": 86,
+      "7d": 78,
       "30d": null,
       "90d": null
     },
     "steel-dev/steel-browser": {
-      "7d": 34,
+      "7d": 36,
       "30d": null,
       "90d": null
     },
     "opensandbox-group/OpenSandbox": {
-      "7d": 253,
+      "7d": 229,
       "30d": null,
       "90d": null
     },
     "Untrivial-ai/agent-orchestrator": {
-      "7d": null,
+      "7d": 699,
       "30d": null,
       "90d": null
     }
