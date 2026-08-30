@@ -70,6 +70,13 @@
       "boundary": "Agent host and supervisor",
       "review_after": "2026-09-30",
       "reason": "Clears the quantitative gates, but remains on nightly releases and overlaps substantially with established supervisors; reassess operational maturity and distinctiveness."
+    },
+    {
+      "name": "SandBase Harness",
+      "repo": "sandbaseai/sandbase-harness",
+      "boundary": "Agent host and supervisor",
+      "review_after": "2026-12-01",
+      "reason": "Relevant local-first runtime with MCP, memory, credentials, audit/replay, and sandboxed sessions, but below the active-core 5,000-star adoption gate and still within its first 180 days of public history; reassess for promotion after broader adoption and a longer maintenance record."
     }
   ]
 }
