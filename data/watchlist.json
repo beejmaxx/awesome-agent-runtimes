@@ -70,6 +70,13 @@
       "boundary": "Agent host and supervisor",
       "review_after": "2026-09-30",
       "reason": "Clears the quantitative gates, but remains on nightly releases and overlaps substantially with established supervisors; reassess operational maturity and distinctiveness."
+    },
+    {
+      "name": "SandBase Harness",
+      "repo": "sandbaseai/sandbase-harness",
+      "boundary": "Agent host and supervisor",
+      "review_after": "2027-01-07",
+      "reason": "Distinct self-hosted runtime with persistent sessions, governed MCP tools, approvals, credentials, audit/replay, and selectable execution backends; below the 5,000-star and 180-day maturity gates when submitted."
     }
   ]
 }
