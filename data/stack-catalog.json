@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-15T09:29:06+00:00",
+  "generated_at": "2026-09-16T09:21:34+00:00",
   "categories": [
     {
       "id": "work-state",
@@ -77,13 +77,13 @@
       "repository_url": "https://github.com/ag-ui-protocol/ag-ui",
       "evidence_url": "https://github.com/ag-ui-protocol/ag-ui#readme",
       "github": {
-        "stars": 15898,
-        "forks": 1436,
+        "stars": 15916,
+        "forks": 1438,
         "language": "Python",
         "license": "MIT",
         "archived": false,
         "created_at": "2025-05-07T12:49:37Z",
-        "pushed_at": "2026-09-15T09:28:58Z"
+        "pushed_at": "2026-09-15T16:23:29Z"
       }
     },
     {
@@ -100,13 +100,13 @@
       "repository_url": "https://github.com/agentclientprotocol/agent-client-protocol",
       "evidence_url": "https://github.com/agentclientprotocol/agent-client-protocol#readme",
       "github": {
-        "stars": 4240,
+        "stars": 4257,
         "forks": 389,
         "language": "Rust",
         "license": "Apache-2.0",
         "archived": false,
         "created_at": "2025-06-23T17:39:36Z",
-        "pushed_at": "2026-09-14T17:02:29Z"
+        "pushed_at": "2026-09-15T23:26:52Z"
       }
     },
     {
@@ -122,8 +122,8 @@
       "repository_url": "https://github.com/agentskills/agentskills",
       "evidence_url": "https://github.com/agentskills/agentskills#readme",
       "github": {
-        "stars": 25353,
-        "forks": 1900,
+        "stars": 25394,
+        "forks": 1902,
         "language": "Python",
         "license": "Apache-2.0",
         "archived": false,
@@ -144,8 +144,8 @@
       "repository_url": "https://github.com/a2aproject/A2A",
       "evidence_url": "https://github.com/a2aproject/A2A#readme",
       "github": {
-        "stars": 25780,
-        "forks": 2609,
+        "stars": 25795,
+        "forks": 2610,
         "language": "Shell",
         "license": "Apache-2.0",
         "archived": false,
@@ -166,8 +166,8 @@
       "repository_url": "https://github.com/agentsmd/agents.md",
       "evidence_url": "https://github.com/agentsmd/agents.md#readme",
       "github": {
-        "stars": 24379,
-        "forks": 1857,
+        "stars": 24403,
+        "forks": 1858,
         "language": "TypeScript",
         "license": "MIT",
         "archived": false,
@@ -188,13 +188,13 @@
       "repository_url": "https://github.com/gastownhall/beads",
       "evidence_url": "https://github.com/gastownhall/beads#readme",
       "github": {
-        "stars": 27162,
-        "forks": 1847,
+        "stars": 27187,
+        "forks": 1848,
         "language": "Go",
         "license": "MIT",
         "archived": false,
         "created_at": "2025-10-12T03:09:46Z",
-        "pushed_at": "2026-09-15T08:20:38Z"
+        "pushed_at": "2026-09-16T09:00:46Z"
       }
     },
     {
@@ -211,13 +211,13 @@
       "repository_url": "https://github.com/cedar-policy/cedar",
       "evidence_url": "https://github.com/cedar-policy/cedar#readme",
       "github": {
-        "stars": 1735,
+        "stars": 1736,
         "forks": 172,
         "language": "Rust",
         "license": "Apache-2.0",
         "archived": false,
         "created_at": "2023-04-25T15:13:59Z",
-        "pushed_at": "2026-09-14T21:09:41Z"
+        "pushed_at": "2026-09-16T00:55:09Z"
       }
     },
     {
@@ -233,13 +233,13 @@
       "repository_url": "https://github.com/thedotmack/claude-mem",
       "evidence_url": "https://github.com/thedotmack/claude-mem#readme",
       "github": {
-        "stars": 93924,
-        "forks": 8264,
+        "stars": 94005,
+        "forks": 8281,
         "language": "TypeScript",
         "license": "Apache-2.0",
         "archived": false,
         "created_at": "2025-08-31T20:50:03Z",
-        "pushed_at": "2026-09-13T09:42:20Z"
+        "pushed_at": "2026-09-16T01:00:29Z"
       }
     },
     {
@@ -255,13 +255,13 @@
       "repository_url": "https://github.com/topoteretes/cognee",
       "evidence_url": "https://github.com/topoteretes/cognee#readme",
       "github": {
-        "stars": 30694,
-        "forks": 3029,
+        "stars": 30711,
+        "forks": 3035,
         "language": "Python",
         "license": "Apache-2.0",
         "archived": false,
         "created_at": "2023-08-16T16:16:33Z",
-        "pushed_at": "2026-09-15T09:27:59Z"
+        "pushed_at": "2026-09-16T08:35:12Z"
       }
     },
     {
@@ -277,13 +277,13 @@
       "repository_url": "https://github.com/ComposioHQ/composio",
       "evidence_url": "https://github.com/ComposioHQ/composio#readme",
       "github": {
-        "stars": 30176,
+        "stars": 30195,
         "forks": 4795,
         "language": "TypeScript",
         "license": "MIT",
         "archived": false,
         "created_at": "2024-02-23T13:58:27Z",
-        "pushed_at": "2026-09-15T08:28:36Z"
+        "pushed_at": "2026-09-16T06:42:18Z"
       }
     },
     {
@@ -299,13 +299,13 @@
       "repository_url": "https://github.com/CopilotKit/CopilotKit",
       "evidence_url": "https://github.com/CopilotKit/CopilotKit#readme",
       "github": {
-        "stars": 37366,
-        "forks": 4629,
+        "stars": 37381,
+        "forks": 4631,
         "language": "TypeScript",
         "license": "MIT",
         "archived": false,
         "created_at": "2023-06-19T04:08:31Z",
-        "pushed_at": "2026-09-15T09:24:49Z"
+        "pushed_at": "2026-09-16T04:04:07Z"
       }
     },
     {
@@ -321,13 +321,13 @@
       "repository_url": "https://github.com/confident-ai/deepeval",
       "evidence_url": "https://github.com/confident-ai/deepeval#readme",
       "github": {
-        "stars": 18274,
-        "forks": 1930,
+        "stars": 18289,
+        "forks": 1937,
         "language": "Python",
         "license": "Apache-2.0",
         "archived": false,
         "created_at": "2023-08-10T05:35:04Z",
-        "pushed_at": "2026-09-14T15:16:15Z"
+        "pushed_at": "2026-09-16T04:43:30Z"
       }
     },
     {
@@ -343,13 +343,13 @@
       "repository_url": "https://github.com/firecracker-microvm/firecracker",
       "evidence_url": "https://github.com/firecracker-microvm/firecracker#readme",
       "github": {
-        "stars": 36743,
-        "forks": 2623,
+        "stars": 36806,
+        "forks": 2626,
         "language": "Rust",
         "license": "Apache-2.0",
         "archived": false,
         "created_at": "2017-10-19T06:18:47Z",
-        "pushed_at": "2026-09-14T20:36:28Z"
+        "pushed_at": "2026-09-15T22:51:44Z"
       }
     },
     {
@@ -365,8 +365,8 @@
       "repository_url": "https://github.com/getzep/graphiti",
       "evidence_url": "https://github.com/getzep/graphiti#readme",
       "github": {
-        "stars": 30889,
-        "forks": 3138,
+        "stars": 30922,
+        "forks": 3140,
         "language": "Python",
         "license": "Apache-2.0",
         "archived": false,
@@ -387,13 +387,13 @@
       "repository_url": "https://github.com/google/gvisor",
       "evidence_url": "https://github.com/google/gvisor#readme",
       "github": {
-        "stars": 19326,
-        "forks": 1987,
+        "stars": 19335,
+        "forks": 1988,
         "language": "Go",
         "license": "Apache-2.0",
         "archived": false,
         "created_at": "2018-04-26T21:28:49Z",
-        "pushed_at": "2026-09-15T03:39:47Z"
+        "pushed_at": "2026-09-16T09:05:07Z"
       }
     },
     {
@@ -409,13 +409,13 @@
       "repository_url": "https://github.com/kubernetes/kubernetes",
       "evidence_url": "https://github.com/kubernetes/kubernetes#readme",
       "github": {
-        "stars": 127732,
-        "forks": 44069,
+        "stars": 127753,
+        "forks": 44255,
         "language": "Go",
         "license": "Apache-2.0",
         "archived": false,
         "created_at": "2014-06-06T22:56:04Z",
-        "pushed_at": "2026-09-15T08:47:31Z"
+        "pushed_at": "2026-09-16T09:11:24Z"
       }
     },
     {
@@ -432,13 +432,13 @@
       "repository_url": "https://github.com/langfuse/langfuse",
       "evidence_url": "https://github.com/langfuse/langfuse#readme",
       "github": {
-        "stars": 34629,
-        "forks": 3771,
+        "stars": 34677,
+        "forks": 3777,
         "language": "TypeScript",
         "license": "MIT (core)",
         "archived": false,
         "created_at": "2023-05-18T17:47:09Z",
-        "pushed_at": "2026-09-15T09:28:44Z"
+        "pushed_at": "2026-09-16T09:21:00Z"
       }
     },
     {
@@ -455,13 +455,13 @@
       "repository_url": "https://github.com/BerriAI/litellm",
       "evidence_url": "https://github.com/BerriAI/litellm#readme",
       "github": {
-        "stars": 58774,
-        "forks": 11452,
+        "stars": 58865,
+        "forks": 11490,
         "language": "Python",
         "license": "MIT (core)",
         "archived": false,
         "created_at": "2023-07-27T00:09:52Z",
-        "pushed_at": "2026-09-15T09:25:27Z"
+        "pushed_at": "2026-09-16T09:13:46Z"
       }
     },
     {
@@ -477,13 +477,13 @@
       "repository_url": "https://github.com/mem0ai/mem0",
       "evidence_url": "https://github.com/mem0ai/mem0#readme",
       "github": {
-        "stars": 65318,
-        "forks": 7654,
+        "stars": 65382,
+        "forks": 7663,
         "language": "Python",
         "license": "Apache-2.0",
         "archived": false,
         "created_at": "2023-06-20T08:58:36Z",
-        "pushed_at": "2026-09-14T19:12:46Z"
+        "pushed_at": "2026-09-15T21:19:16Z"
       }
     },
     {
@@ -501,12 +501,12 @@
       "evidence_url": "https://github.com/modal-labs/modal-client#readme",
       "github": {
         "stars": 515,
-        "forks": 129,
+        "forks": 130,
         "language": "Python",
         "license": "Apache-2.0",
         "archived": false,
         "created_at": "2022-10-18T23:14:11Z",
-        "pushed_at": "2026-09-14T18:32:06Z"
+        "pushed_at": "2026-09-15T20:45:55Z"
       }
     },
     {
@@ -523,13 +523,13 @@
       "repository_url": "https://github.com/modelcontextprotocol/modelcontextprotocol",
       "evidence_url": "https://github.com/modelcontextprotocol/modelcontextprotocol#readme",
       "github": {
-        "stars": 9214,
-        "forks": 1795,
+        "stars": 9225,
+        "forks": 1796,
         "language": "TypeScript",
         "license": "Apache-2.0 / MIT transition",
         "archived": false,
         "created_at": "2024-09-24T20:26:52Z",
-        "pushed_at": "2026-09-14T22:23:25Z"
+        "pushed_at": "2026-09-15T21:42:20Z"
       }
     },
     {
@@ -545,13 +545,13 @@
       "repository_url": "https://github.com/open-policy-agent/opa",
       "evidence_url": "https://github.com/open-policy-agent/opa#readme",
       "github": {
-        "stars": 12234,
-        "forks": 1679,
+        "stars": 12238,
+        "forks": 1683,
         "language": "Go",
         "license": "Apache-2.0",
         "archived": false,
         "created_at": "2015-12-28T22:08:25Z",
-        "pushed_at": "2026-09-15T06:11:33Z"
+        "pushed_at": "2026-09-16T06:08:59Z"
       }
     },
     {
@@ -568,13 +568,13 @@
       "repository_url": "https://github.com/open-telemetry/semantic-conventions",
       "evidence_url": "https://github.com/open-telemetry/semantic-conventions#readme",
       "github": {
-        "stars": 650,
+        "stars": 651,
         "forks": 394,
         "language": "Jinja",
         "license": "Apache-2.0",
         "archived": false,
         "created_at": "2023-05-09T17:15:53Z",
-        "pushed_at": "2026-09-15T04:51:22Z"
+        "pushed_at": "2026-09-15T12:20:42Z"
       }
     },
     {
@@ -591,13 +591,13 @@
       "repository_url": "https://github.com/Arize-ai/phoenix",
       "evidence_url": "https://github.com/Arize-ai/phoenix#readme",
       "github": {
-        "stars": 11464,
-        "forks": 1130,
+        "stars": 11479,
+        "forks": 1131,
         "language": "Python",
         "license": "Elastic-2.0",
         "archived": false,
         "created_at": "2022-11-09T23:44:35Z",
-        "pushed_at": "2026-09-15T07:50:09Z"
+        "pushed_at": "2026-09-16T08:44:17Z"
       }
     },
     {
@@ -613,13 +613,13 @@
       "repository_url": "https://github.com/OthmanAdi/planning-with-files",
       "evidence_url": "https://github.com/OthmanAdi/planning-with-files#readme",
       "github": {
-        "stars": 26902,
-        "forks": 2238,
+        "stars": 26928,
+        "forks": 2241,
         "language": "Shell",
         "license": "MIT",
         "archived": false,
         "created_at": "2026-01-03T07:37:28Z",
-        "pushed_at": "2026-09-15T08:42:11Z"
+        "pushed_at": "2026-09-16T09:09:47Z"
       }
     },
     {
@@ -635,13 +635,13 @@
       "repository_url": "https://github.com/promptfoo/promptfoo",
       "evidence_url": "https://github.com/promptfoo/promptfoo#readme",
       "github": {
-        "stars": 25115,
-        "forks": 2308,
+        "stars": 25163,
+        "forks": 2317,
         "language": "TypeScript",
         "license": "MIT",
         "archived": false,
         "created_at": "2023-04-28T15:48:49Z",
-        "pushed_at": "2026-09-15T09:28:51Z"
+        "pushed_at": "2026-09-16T09:06:51Z"
       }
     },
     {
@@ -659,13 +659,13 @@
       "repository_url": "https://github.com/restatedev/restate",
       "evidence_url": "https://github.com/restatedev/restate#readme",
       "github": {
-        "stars": 4420,
+        "stars": 4423,
         "forks": 202,
         "language": "Rust",
         "license": "BSL-1.1",
         "archived": false,
         "created_at": "2023-01-04T15:03:32Z",
-        "pushed_at": "2026-09-15T08:13:00Z"
+        "pushed_at": "2026-09-16T08:56:14Z"
       }
     },
     {
@@ -681,7 +681,7 @@
       "repository_url": "https://github.com/superagent-ai/superagent",
       "evidence_url": "https://github.com/superagent-ai/superagent#readme",
       "github": {
-        "stars": 6747,
+        "stars": 6748,
         "forks": 963,
         "language": "TypeScript",
         "license": "MIT",
