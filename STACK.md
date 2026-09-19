@@ -47,8 +47,8 @@ Durable projects, tasks, artifacts, decisions, dependencies, and outcomes that s
 
 | Project                                                                 | Stars    | 30d | Role                                                                                                                                                                                         | License | Last push  |
 | ----------------------------------------------------------------------- | -------: | --: | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- | ---------- |
-| [Beads](https://github.com/gastownhall/beads)                           | ⭐ 27,278 | —   | Distributed graph issue tracker for agents with persistent tasks, dependencies, claims, and cross-machine synchronization. [evidence](https://github.com/gastownhall/beads#readme)           | MIT     | 2026-09-16 |
-| [Planning with Files](https://github.com/OthmanAdi/planning-with-files) | ⭐ 26,974 | —   | Portable file-backed planning skill that preserves task plans, findings, and progress across context resets and crashes. [evidence](https://github.com/OthmanAdi/planning-with-files#readme) | MIT     | 2026-09-17 |
+| [Beads](https://github.com/gastownhall/beads)                           | ⭐ 27,303 | —   | Distributed graph issue tracker for agents with persistent tasks, dependencies, claims, and cross-machine synchronization. [evidence](https://github.com/gastownhall/beads#readme)           | MIT     | 2026-09-19 |
+| [Planning with Files](https://github.com/OthmanAdi/planning-with-files) | ⭐ 26,986 | —   | Portable file-backed planning skill that preserves task plans, findings, and progress across context resets and crashes. [evidence](https://github.com/OthmanAdi/planning-with-files#readme) | MIT     | 2026-09-19 |
 
 ### Memory and context
 
@@ -56,10 +56,10 @@ Recall, retrieval, and context substrates; useful to agents but distinct from du
 
 | Project                                                | Stars    | 30d | Role                                                                                                                                                                          | License    | Last push  |
 | ------------------------------------------------------ | -------: | --: | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | ---------- |
-| [Claude-Mem](https://github.com/thedotmack/claude-mem) | ⭐ 94,154 | —   | Cross-agent session capture and context-injection system backed by structured observations and local persistence. [evidence](https://github.com/thedotmack/claude-mem#readme) | Apache-2.0 | 2026-09-18 |
-| [Cognee](https://github.com/topoteretes/cognee)        | ⭐ 30,800 | —   | Self-hosted agent memory and context engine built around knowledge graphs. [evidence](https://github.com/topoteretes/cognee#readme)                                           | Apache-2.0 | 2026-09-18 |
-| [Graphiti](https://github.com/getzep/graphiti)         | ⭐ 30,978 | —   | Temporal knowledge-graph framework for continuously updated agent memory. [evidence](https://github.com/getzep/graphiti#readme)                                               | Apache-2.0 | 2026-09-17 |
-| [Mem0](https://github.com/mem0ai/mem0)                 | ⭐ 65,557 | —   | Memory layer for retaining and retrieving information across agent interactions. [evidence](https://github.com/mem0ai/mem0#readme)                                            | Apache-2.0 | 2026-09-18 |
+| [Claude-Mem](https://github.com/thedotmack/claude-mem) | ⭐ 94,231 | —   | Cross-agent session capture and context-injection system backed by structured observations and local persistence. [evidence](https://github.com/thedotmack/claude-mem#readme) | Apache-2.0 | 2026-09-19 |
+| [Cognee](https://github.com/topoteretes/cognee)        | ⭐ 30,831 | —   | Self-hosted agent memory and context engine built around knowledge graphs. [evidence](https://github.com/topoteretes/cognee#readme)                                           | Apache-2.0 | 2026-09-18 |
+| [Graphiti](https://github.com/getzep/graphiti)         | ⭐ 31,001 | —   | Temporal knowledge-graph framework for continuously updated agent memory. [evidence](https://github.com/getzep/graphiti#readme)                                               | Apache-2.0 | 2026-09-19 |
+| [Mem0](https://github.com/mem0ai/mem0)                 | ⭐ 65,624 | —   | Memory layer for retaining and retrieving information across agent interactions. [evidence](https://github.com/mem0ai/mem0#readme)                                            | Apache-2.0 | 2026-09-19 |
 
 ### Tool execution and integrations
 
@@ -67,7 +67,7 @@ Authentication, tool catalogs, and managed action execution across external appl
 
 | Project                                            | Stars    | 30d | Role                                                                                                                                      | License | Last push  |
 | -------------------------------------------------- | -------: | --: | ----------------------------------------------------------------------------------------------------------------------------------------- | ------- | ---------- |
-| [Composio](https://github.com/ComposioHQ/composio) | ⭐ 30,228 | —   | Tool catalog, authentication layer, and managed execution workbench for agents. [evidence](https://github.com/ComposioHQ/composio#readme) | MIT     | 2026-09-18 |
+| [Composio](https://github.com/ComposioHQ/composio) | ⭐ 30,241 | —   | Tool catalog, authentication layer, and managed execution workbench for agents. [evidence](https://github.com/ComposioHQ/composio#readme) | MIT     | 2026-09-18 |
 
 ### Agent interaction and user interfaces
 
@@ -75,7 +75,7 @@ Application frameworks that connect agents to people, shared UI state, approvals
 
 | Project                                                | Stars    | 30d | Role                                                                                                                                                                                | License | Last push  |
 | ------------------------------------------------------ | -------: | --: | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- | ---------- |
-| [CopilotKit](https://github.com/CopilotKit/CopilotKit) | ⭐ 37,405 | —   | Full-stack framework for connecting agents to web, mobile, messaging, generative UI, shared state, and human approvals. [evidence](https://github.com/CopilotKit/CopilotKit#readme) | MIT     | 2026-09-18 |
+| [CopilotKit](https://github.com/CopilotKit/CopilotKit) | ⭐ 37,412 | —   | Full-stack framework for connecting agents to web, mobile, messaging, generative UI, shared state, and human approvals. [evidence](https://github.com/CopilotKit/CopilotKit#readme) | MIT     | 2026-09-19 |
 
 ### Protocols and portable formats
 
@@ -83,12 +83,12 @@ Open interfaces and repository formats for tools, agents, clients, applications,
 
 | Project                                                                                | Stars    | 30d | Role                                                                                                                                                                                                                                                       | License                     | Last push  |
 | -------------------------------------------------------------------------------------- | -------: | --: | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------- | ---------- |
-| [AG-UI](https://github.com/ag-ui-protocol/ag-ui)                                       | ⭐ 15,940 | —   | Event protocol connecting agent backends with user-facing applications. [evidence](https://github.com/ag-ui-protocol/ag-ui#readme)                                                                                                                         | MIT                         | 2026-09-18 |
-| [Agent Client Protocol](https://github.com/agentclientprotocol/agent-client-protocol)  | ⭐ 4,275  | —   | Protocol for communication between code editors or clients and coding agents. [evidence](https://github.com/agentclientprotocol/agent-client-protocol#readme) **Scope note:** Official protocol boundary; tracked despite being below the core star floor. | Apache-2.0                  | 2026-09-18 |
-| [Agent Skills](https://github.com/agentskills/agentskills)                             | ⭐ 25,478 | —   | Open specification for packaging portable instructions, scripts, and resources as agent skills. [evidence](https://github.com/agentskills/agentskills#readme)                                                                                              | Apache-2.0                  | 2026-08-09 |
-| [Agent2Agent](https://github.com/a2aproject/A2A)                                       | ⭐ 25,831 | —   | Open protocol for communication and interoperability between opaque agent applications. [evidence](https://github.com/a2aproject/A2A#readme)                                                                                                               | Apache-2.0                  | 2026-09-16 |
-| [AGENTS.md](https://github.com/agentsmd/agents.md)                                     | ⭐ 24,440 | —   | Open repository format for supplying durable project instructions to coding agents. [evidence](https://github.com/agentsmd/agents.md#readme)                                                                                                               | MIT                         | 2026-09-10 |
-| [Model Context Protocol](https://github.com/modelcontextprotocol/modelcontextprotocol) | ⭐ 9,244  | —   | Open protocol for connecting AI applications to tools and context providers. [evidence](https://github.com/modelcontextprotocol/modelcontextprotocol#readme)                                                                                               | Apache-2.0 / MIT transition | 2026-09-16 |
+| [AG-UI](https://github.com/ag-ui-protocol/ag-ui)                                       | ⭐ 15,951 | —   | Event protocol connecting agent backends with user-facing applications. [evidence](https://github.com/ag-ui-protocol/ag-ui#readme)                                                                                                                         | MIT                         | 2026-09-18 |
+| [Agent Client Protocol](https://github.com/agentclientprotocol/agent-client-protocol)  | ⭐ 4,282  | —   | Protocol for communication between code editors or clients and coding agents. [evidence](https://github.com/agentclientprotocol/agent-client-protocol#readme) **Scope note:** Official protocol boundary; tracked despite being below the core star floor. | Apache-2.0                  | 2026-09-19 |
+| [Agent Skills](https://github.com/agentskills/agentskills)                             | ⭐ 25,508 | —   | Open specification for packaging portable instructions, scripts, and resources as agent skills. [evidence](https://github.com/agentskills/agentskills#readme)                                                                                              | Apache-2.0                  | 2026-08-09 |
+| [Agent2Agent](https://github.com/a2aproject/A2A)                                       | ⭐ 25,848 | —   | Open protocol for communication and interoperability between opaque agent applications. [evidence](https://github.com/a2aproject/A2A#readme)                                                                                                               | Apache-2.0                  | 2026-09-16 |
+| [AGENTS.md](https://github.com/agentsmd/agents.md)                                     | ⭐ 24,461 | —   | Open repository format for supplying durable project instructions to coding agents. [evidence](https://github.com/agentsmd/agents.md#readme)                                                                                                               | MIT                         | 2026-09-10 |
+| [Model Context Protocol](https://github.com/modelcontextprotocol/modelcontextprotocol) | ⭐ 9,254  | —   | Open protocol for connecting AI applications to tools and context providers. [evidence](https://github.com/modelcontextprotocol/modelcontextprotocol#readme)                                                                                               | Apache-2.0 / MIT transition | 2026-09-18 |
 
 ### Authority and policy
 
@@ -96,8 +96,8 @@ General policy engines used to express credentials, capabilities, approvals, and
 
 | Project                                                       | Stars    | 30d | Role                                                                                                                                                                                                                            | License    | Last push  |
 | ------------------------------------------------------------- | -------: | --: | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | ---------- |
-| [Cedar](https://github.com/cedar-policy/cedar)                | ⭐ 1,738  | —   | Policy language and evaluation engine for fine-grained authorization. [evidence](https://github.com/cedar-policy/cedar#readme) **Scope note:** Mature authorization primitive; tracked despite being below the core star floor. | Apache-2.0 | 2026-09-17 |
-| [Open Policy Agent](https://github.com/open-policy-agent/opa) | ⭐ 12,248 | —   | General-purpose policy engine for expressing and evaluating authorization decisions. [evidence](https://github.com/open-policy-agent/opa#readme)                                                                                | Apache-2.0 | 2026-09-18 |
+| [Cedar](https://github.com/cedar-policy/cedar)                | ⭐ 1,737  | —   | Policy language and evaluation engine for fine-grained authorization. [evidence](https://github.com/cedar-policy/cedar#readme) **Scope note:** Mature authorization primitive; tracked despite being below the core star floor. | Apache-2.0 | 2026-09-18 |
+| [Open Policy Agent](https://github.com/open-policy-agent/opa) | ⭐ 12,249 | —   | General-purpose policy engine for expressing and evaluating authorization decisions. [evidence](https://github.com/open-policy-agent/opa#readme)                                                                                | Apache-2.0 | 2026-09-19 |
 | [Superagent](https://github.com/superagent-ai/superagent)     | ⭐ 6,752  | —   | Agent-safety SDK for prompt-injection blocking, sensitive-data redaction, repository threat scanning, and red-team scenarios. [evidence](https://github.com/superagent-ai/superagent#readme)                                    | MIT        | 2026-08-25 |
 
 ### Durable execution references
@@ -106,7 +106,7 @@ Durable execution systems kept as architectural references when licensing or sco
 
 | Project                                          | Stars   | 30d | Role                                                                                                                                                                                                                                      | License | Last push  |
 | ------------------------------------------------ | ------: | --: | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- | ---------- |
-| [Restate](https://github.com/restatedev/restate) | ⭐ 4,438 | —   | Durable execution system with state, retries, promises, and recovery semantics. [evidence](https://github.com/restatedev/restate#readme) **Scope note:** Architecturally relevant source-available reference; not an OSI-open core entry. | BSL-1.1 | 2026-09-18 |
+| [Restate](https://github.com/restatedev/restate) | ⭐ 4,439 | —   | Durable execution system with state, retries, promises, and recovery semantics. [evidence](https://github.com/restatedev/restate#readme) **Scope note:** Architecturally relevant source-available reference; not an OSI-open core entry. | BSL-1.1 | 2026-09-18 |
 
 ### Observability
 
@@ -114,9 +114,9 @@ Tracing, causality, metrics, and post-incident explanation for agent behavior.
 
 | Project                                                                                      | Stars    | 30d | Role                                                                                                                                                                                                                                                  | License     | Last push  |
 | -------------------------------------------------------------------------------------------- | -------: | --: | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- | ---------- |
-| [Langfuse](https://github.com/langfuse/langfuse)                                             | ⭐ 34,765 | —   | LLM engineering platform for traces, evaluations, metrics, prompts, and datasets. [evidence](https://github.com/langfuse/langfuse#readme)                                                                                                             | MIT (core)  | 2026-09-18 |
+| [Langfuse](https://github.com/langfuse/langfuse)                                             | ⭐ 34,800 | —   | LLM engineering platform for traces, evaluations, metrics, prompts, and datasets. [evidence](https://github.com/langfuse/langfuse#readme)                                                                                                             | MIT (core)  | 2026-09-19 |
 | [OpenTelemetry Semantic Conventions](https://github.com/open-telemetry/semantic-conventions) | ⭐ 651    | —   | Standard semantic conventions, including GenAI and agent telemetry attributes. [evidence](https://github.com/open-telemetry/semantic-conventions#readme) **Scope note:** Official standard; repository stars do not represent OpenTelemetry adoption. | Apache-2.0  | 2026-09-16 |
-| [Phoenix](https://github.com/Arize-ai/phoenix)                                               | ⭐ 11,529 | —   | Agent and LLM observability and evaluation platform built around traces and experiments. [evidence](https://github.com/Arize-ai/phoenix#readme)                                                                                                       | Elastic-2.0 | 2026-09-18 |
+| [Phoenix](https://github.com/Arize-ai/phoenix)                                               | ⭐ 11,538 | —   | Agent and LLM observability and evaluation platform built around traces and experiments. [evidence](https://github.com/Arize-ai/phoenix#readme)                                                                                                       | Elastic-2.0 | 2026-09-19 |
 
 ### Evaluation and assurance
 
@@ -124,8 +124,8 @@ Behavioral tests, red teaming, vulnerability scanning, and repeatable quality ga
 
 | Project                                              | Stars    | 30d | Role                                                                                                                                                               | License    | Last push  |
 | ---------------------------------------------------- | -------: | --: | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | ---------- |
-| [DeepEval](https://github.com/confident-ai/deepeval) | ⭐ 18,322 | —   | Testing framework for repeatable LLM and agent evaluations with metrics, datasets, and CI integration. [evidence](https://github.com/confident-ai/deepeval#readme) | Apache-2.0 | 2026-09-16 |
-| [Promptfoo](https://github.com/promptfoo/promptfoo)  | ⭐ 25,254 | —   | CLI and library for agent evaluations, red teaming, pentesting, and vulnerability scanning. [evidence](https://github.com/promptfoo/promptfoo#readme)              | MIT        | 2026-09-18 |
+| [DeepEval](https://github.com/confident-ai/deepeval) | ⭐ 18,331 | —   | Testing framework for repeatable LLM and agent evaluations with metrics, datasets, and CI integration. [evidence](https://github.com/confident-ai/deepeval#readme) | Apache-2.0 | 2026-09-18 |
+| [Promptfoo](https://github.com/promptfoo/promptfoo)  | ⭐ 25,280 | —   | CLI and library for agent evaluations, red teaming, pentesting, and vulnerability scanning. [evidence](https://github.com/promptfoo/promptfoo#readme)              | MIT        | 2026-09-19 |
 
 ### Model gateways
 
@@ -133,7 +133,7 @@ Provider routing, credentials, budgets, fallback, and model-facing policy.
 
 | Project                                       | Stars    | 30d | Role                                                                                                                                                | License    | Last push  |
 | --------------------------------------------- | -------: | --: | --------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | ---------- |
-| [LiteLLM](https://github.com/BerriAI/litellm) | ⭐ 59,054 | —   | Model gateway and SDK for provider routing, budgets, load balancing, guardrails, and logging. [evidence](https://github.com/BerriAI/litellm#readme) | MIT (core) | 2026-09-18 |
+| [LiteLLM](https://github.com/BerriAI/litellm) | ⭐ 59,129 | —   | Model gateway and SDK for provider routing, budgets, load balancing, guardrails, and logging. [evidence](https://github.com/BerriAI/litellm#readme) | MIT (core) | 2026-09-19 |
 
 ### Deployment and compute
 
@@ -141,8 +141,8 @@ Placement, scaling, networking, and service lifecycle for agent workloads.
 
 | Project                                                | Stars     | 30d | Role                                                                                                                                                                                                                                                                 | License    | Last push  |
 | ------------------------------------------------------ | --------: | --: | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | ---------- |
-| [Kubernetes](https://github.com/kubernetes/kubernetes) | ⭐ 127,802 | —   | Container orchestration platform and reference implementation of desired-state reconciliation. [evidence](https://github.com/kubernetes/kubernetes#readme)                                                                                                           | Apache-2.0 | 2026-09-18 |
-| [Modal](https://github.com/modal-labs/modal-client)    | ⭐ 515     | —   | Client and SDK for running containerized workloads on Modal's managed compute platform. [evidence](https://github.com/modal-labs/modal-client#readme) **Scope note:** Official SDK for a widely used managed platform; repository stars understate service adoption. | Apache-2.0 | 2026-09-18 |
+| [Kubernetes](https://github.com/kubernetes/kubernetes) | ⭐ 127,817 | —   | Container orchestration platform and reference implementation of desired-state reconciliation. [evidence](https://github.com/kubernetes/kubernetes#readme)                                                                                                           | Apache-2.0 | 2026-09-18 |
+| [Modal](https://github.com/modal-labs/modal-client)    | ⭐ 514     | —   | Client and SDK for running containerized workloads on Modal's managed compute platform. [evidence](https://github.com/modal-labs/modal-client#readme) **Scope note:** Official SDK for a widely used managed platform; repository stars understate service adoption. | Apache-2.0 | 2026-09-18 |
 
 ### Execution primitives
 
@@ -150,8 +150,8 @@ Generic microVM and userspace-kernel isolation beneath agent-specific sandboxes.
 
 | Project                                                           | Stars    | 30d | Role                                                                                                                                                       | License    | Last push  |
 | ----------------------------------------------------------------- | -------: | --: | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | ---------- |
-| [Firecracker](https://github.com/firecracker-microvm/firecracker) | ⭐ 36,806 | —   | MicroVM monitor used to provide lightweight hardware-virtualized workload isolation. [evidence](https://github.com/firecracker-microvm/firecracker#readme) | Apache-2.0 | 2026-09-17 |
-| [gVisor](https://github.com/google/gvisor)                        | ⭐ 19,346 | —   | Userspace application kernel that adds an isolation boundary around containers. [evidence](https://github.com/google/gvisor#readme)                        | Apache-2.0 | 2026-09-18 |
+| [Firecracker](https://github.com/firecracker-microvm/firecracker) | ⭐ 36,817 | —   | MicroVM monitor used to provide lightweight hardware-virtualized workload isolation. [evidence](https://github.com/firecracker-microvm/firecracker#readme) | Apache-2.0 | 2026-09-18 |
+| [gVisor](https://github.com/google/gvisor)                        | ⭐ 19,352 | —   | Userspace application kernel that adds an isolation boundary around containers. [evidence](https://github.com/google/gvisor#readme)                        | Apache-2.0 | 2026-09-19 |
 <!-- END GENERATED STACK CATALOG -->
 
 ## The host and work-state boundaries
